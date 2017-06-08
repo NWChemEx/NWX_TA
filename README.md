@@ -12,3 +12,33 @@ regression tests, etc., are kept in the source code repository. The rationale fo
 is that users and developers who build the code from source should test whether it
 built correctly in their environment.
 
+## Layout of the repository
+
+The test cases in this repository serve a number of purposes:
+   1. Generate baseline performance data from NWChem
+      1. For plane wave DFT
+      2. For Gaussian basis DFT
+      3. For Coupled Cluster
+      4. For classical MD
+   2. Generate performance data for NWChemEx
+      1. For plane wave / real space DFT
+      2. For Gaussian basis DFT
+      3. For Coupled Cluster
+      4. For the embedding capabilities
+
+As at the present time the input structure for NWChemEx is not clear yet, and
+as we need to be able run the same test cases with NWChem and NWChemEx it seems
+sensible to separate the molecular structure data of the test cases from the
+test inputs. At the same time deep directory trees should be avoided hence a 
+two level approach is suggested:
+
+    <test system>/
+        struct_raw/            - the initial structure data
+        struct_<modification>/ - modified versions of the structures (hydrogens added, 
+                                 Si/Al substitutions, solvated, etc.)
+        nwc_<method>/          - NWChem test for <method> capability
+        nwx_<method>/          - NWChemEx test for <method> capability
+      
+This structure should not be too cumbersome to navigate yet compartimentalize what needs to be kept
+separate but still close together. Obviously how successfull this choice is
+can be reviewed at a later date when experience has informed us.
