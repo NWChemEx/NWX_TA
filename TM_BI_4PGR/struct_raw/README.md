@@ -1,7 +1,7 @@
 # TM_BI_4PGR: Trans-Membrane Bax Inhibitor Protein 4PGR
 
 Protein YetJ from Bacillus Subtilis at pH 8 [Chang:2014] as obtained from the
-Protein Data Bank.
+Protein Data Bank with structure ID [4PGR](http://www.rcsb.org/pdb/explore/explore.do?structureId=4pgr).
 
 ## References
 
