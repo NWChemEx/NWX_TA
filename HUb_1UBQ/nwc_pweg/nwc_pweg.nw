@@ -1,0 +1,19 @@
+echo
+start nwc_pweg_dat
+title "E and Grad of 1UBQ"
+geometry noautoz
+   load format pdb "../struct_h_added/step1_pdbreader.pdb"
+end
+nwpw
+  boundary_conditions aperiodic
+  simulation_cell
+    lattice
+      lat_a 60.0  0.0  0.0
+      lat_b  0.0 60.0  0.0
+      lat_c  0.0  0.0 60.0
+    end
+  end
+  xc pbe96
+  lmbfgs
+end
+task pspw gradient
