@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH -A PQ0006
+#SBATCH -N 1
+#SBATCH -n 36
+#SBATCH -t 8:00:00
+#SBATCH -p long
+#SBATCH -o nwc_gbeg.out
+#SBATCH -e nwc_gbeg.err
+#SBATCH -J nwc_gbeg
+#
+source /etc/profile.d/modules.sh
+#source /home/scicons/bin/set_modulepath.sh
+module purge
+module load pgi/pgi64/17.5
+module load pgi/openmpi/1.10.2/2017
+unset PYTHONHOME
+export NWCHEM_EXE=~/nwchem-trunk-svn/bin/LINUX64/nwchem
+export NONSTD_MPI=y
+export MPIRUN_PATH="srun --mpi=openmpi --kill-on-bad-exit -n 36 -N 1 -p long --ntasks-per-node=36"
+export MPIRUN_PATH="mpirun -np 36 --hostfile ./hostfile"
+env | sort
+ntask=$SLURM_TASKS_PER_NODE
+nodes=$SLURM_NODELIST
+rm -f hostfile
+for (( ii=1; ii<=$ntask; ii++ ))
+do
+  echo $ii
+  echo $nodes >> hostfile
+done
+#./doNightlyTests.mpi
+$MPIRUN_PATH $NWCHEM_EXE nwc_gbeg.nw

@@ -1,0 +1,14 @@
+echo
+start nwc_gbeg_dat
+title "E and Grad of 1UBQ"
+geometry noautoz
+   load format pdb "../struct_h_added/step1_pdbreader.pdb"
+end
+basis
+  * library cc-pVTZ
+end
+dft
+  xc pbe96
+end
+set "dft:pstat" T
+task dft gradient
