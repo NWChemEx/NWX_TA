@@ -8,6 +8,7 @@ basis
   * library cc-pVTZ
 end
 dft
+  direct
   xc pbe96
 end
 set "dft:pstat" T
