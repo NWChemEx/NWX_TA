@@ -8,9 +8,9 @@ nwpw
   simulation_cell
     boundary_conditions aperiodic
     lattice
-      lat_a 60.0  0.0  0.0
-      lat_b  0.0 60.0  0.0
-      lat_c  0.0  0.0 60.0
+      lat_a 60.0
+      lat_b 60.0
+      lat_c 60.0
     end
   end
   xc pbe96
