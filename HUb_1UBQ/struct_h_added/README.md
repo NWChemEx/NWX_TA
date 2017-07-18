@@ -5,13 +5,29 @@ as obtained from the Protein Data Bank with structure ID [1UBQ](http://www.rcsb.
 
 Added Hydrogens with the [CHARMM-GUI](HTTP://WWW.CHARMM-GUI.ORG) [Jo:2008]
 using the "Quick MD Simulator" running only STEP1. The structure stored here
-is from the file "step1_pdbreader.pdb".
+is from the file "step1_pdbreader.pdb". However, the CHARMM-GUI has moved the
+heavy atoms while adding the Hydrogens. So, more was done to this structure 
+than just adding Hydrogens. Presumably the energy was minimized to arrive
+at physically reasonable distances between atoms.
+
+A Ubiquitin structure with added Hydrogens can be obtained from [Ruger:2015] 
+and is stored in the file "ct500838h_si_003.xyz". The positions of the heavy
+atoms are those of [Vijay-Kumar:1987] but while the structure has Hydrogen atoms
+it is not clear how they were added. This question does not necessarily pose 
+a problem for this particular structure but it does leave the question of how
+to add Hydrogen atoms properly open for the membrane proteins.
 
 ## References
 
 [Jo:2008] S. Jo, T. Kim, V.G. Iyer, W. Im, “CHARMM-GUI: A Web-based Graphical
 User Interface for CHARMM”, _Journal of Computational Chemistry_ (2008) 
 **29**, 1859-1865, [10.1002/jcc.20945](https://dx.doi.org/10.1002/jcc.20945).
+
+[Ruger:2015] R. R&uuml;ger, E. van Lenthe, Y. Lu, J. Frenzel, T. Heine, 
+L. Visscher, "Efficient Calculation of Electronic Absorption Spectra by Means
+of Intensity-Selected Time-Dependent Density Functional Tight Binding",
+_Journal of Chemical Theory and Computation_ (2015) **11**, 157-167,
+[10.1021/ct500838h](https://dx.doi.org/10.1021/ct500838h).
 
 [Vijay-Kumar:1987] S. Vijay-Kumar, C.E. Bugg, W.J. Cook, "Structure of ubiquitin
 refined at 1.8 A resolution", _Journal of Molecular Biology_ **194** (1987)
