@@ -25,6 +25,7 @@ from the 2-electron integrals).
 | S          |    1   | 13    | 18      | 34      |   50        |
 | Total      | 1231   | 6680  | 9690    | 26870   |   42163     |
 | Cost       |        | 1     | 4.4     | 261.2   |   1595.4    |
+
 [Table 1. Basis sets sizes and total number of basis functions for Ubiquitin]
 
 ## References
