@@ -54,4 +54,3 @@ amino acids and peptides [IUPAC-IUB:1983]
 ["Nomenclature and Symbolism for Amino Acids and Peptides"](http://www.chem.qmul.ac.uk/iupac/AminoAcid/) (1984), Walter de Gruyter, Berlin.
 DOI: [10.1351/pac198456050595](https://doi.org/10.1351/pac198456050595).
 
-Biochem. J., 1984, 219, 345-373; Eur. J. Biochem., 1984, 138, 9-37; 1985, 152, 1; 1993, 213, 2; Internat. J. Pept. Prot. Res., 1984, 24, following p 84; J. Biol. Chem., 1985, 260,14-42; Pure Appl. Chem., 1984, 56, 595-624; Amino Acids and Peptides, 1985, 16, 387-410.
