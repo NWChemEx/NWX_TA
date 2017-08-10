@@ -1,7 +1,7 @@
 echo
 start nwc_gbeg_dat
 title "E and Grad of 1UBQ"
-memory stack 800 mb heap 100 mb global 2000 mb noverify
+#memory stack 800 mb heap 100 mb global 2000 mb noverify
 geometry noautoz
    #load format pdb "../struct_h_added/step1_pdbreader.pdb"
    load format xyz "ct500838h_si_003.xyz"
