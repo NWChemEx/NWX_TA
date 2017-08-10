@@ -1,4 +1,4 @@
-# HUb_1UBQ: Human Ubiquitin 1UBQ: Plane Wave DFT Energy & Gradient
+# HUb_1UBQ: Human Ubiquitin 1UBQ: Gaussian basis set DFT Energy & Gradient
 
 Structure of Ubiquitin refined at 1.8 Angstroms resolution [Vijay-Kumar:1987]
 as obtained from the Protein Data Bank with structure ID [1UBQ](http://www.rcsb.org/pdb/explore/explore.do?structureId=1UBQ).
