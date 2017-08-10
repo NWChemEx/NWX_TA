@@ -42,3 +42,15 @@ two level approach is suggested:
 This structure should not be too cumbersome to navigate yet compartimentalize what needs to be kept
 separate but still close together. Obviously how successfull this choice is
 can be reviewed at a later date when experience has informed us.
+
+## Additional resources
+
+For the proteins it is useful to be aware of the IUPAC nomenclature and symbolism for
+amino acids and peptides [IUPAC-IUB:1983]
+
+## References
+
+[IUPAC-IUB:1983] IUPAC-IUB Joint Commission on Biochemical Nomenclature (JCBN), 
+["Nomenclature and Symbolism for Amino Acids and Peptides"](http://www.chem.qmul.ac.uk/iupac/AminoAcid/) (1984), Walter de Gruyter, Berlin.
+DOI: [10.1351/pac198456050595](https://doi.org/10.1351/pac198456050595).
+
