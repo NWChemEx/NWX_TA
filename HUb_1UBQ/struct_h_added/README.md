@@ -21,19 +21,32 @@ The run_xyz_to_pdbs script takes the "ct500838h_si_003.xyz" file and generates
 a number of PDB files from it. These PDB files include files for the whole
 structure as well as subsequences. The subsequences are terminated with 
 Hydrogens. This means that the end carboxyl groups end up getting replaced
-by a ketone.
+by a ketone. The script uses AWK [Aho:1979] and Open Babel [Boyle:2011] to
+achieve this.
 
 ## References
 
+[Aho:1979] A. V. Aho, B. W. Kernighan, P. J. Weinberger, "Awk — a pattern
+scanning and processing language", _Software: Practice and Experience_
+(1979) **9**, 267-279, Doi: 
+[10.1002/spe.4380090403](https://dx.doi.org/10.1002/spe.4380090403).
+
+[Boyle:2011] N. M. O'Boyle, M. Banck, C. A. James, C. Morley, T. Vandermeersch,
+G. R. Hutchison, "Open Babel: An open chemical toolbox", _Journal of
+Cheminformatics_ (2011) **3**, 33-46, 
+Doi: [10.1186/1758-2946-3-33](https://dx.doi.org/10.1186/1758-2946-3-33).
+The Open Babel Package, version 2.4.1, http://openbabel.org
+(accessed Aug 2017).
+
 [Jo:2008] S. Jo, T. Kim, V.G. Iyer, W. Im, “CHARMM-GUI: A Web-based Graphical
 User Interface for CHARMM”, _Journal of Computational Chemistry_ (2008) 
-**29**, 1859-1865, [10.1002/jcc.20945](https://dx.doi.org/10.1002/jcc.20945).
+**29**, 1859-1865, Doi: [10.1002/jcc.20945](https://dx.doi.org/10.1002/jcc.20945).
 
 [Ruger:2015] R. R&uuml;ger, E. van Lenthe, Y. Lu, J. Frenzel, T. Heine, 
 L. Visscher, "Efficient Calculation of Electronic Absorption Spectra by Means
 of Intensity-Selected Time-Dependent Density Functional Tight Binding",
 _Journal of Chemical Theory and Computation_ (2015) **11**, 157-167,
-[10.1021/ct500838h](https://dx.doi.org/10.1021/ct500838h).
+Doi: [10.1021/ct500838h](https://dx.doi.org/10.1021/ct500838h).
 
 [Vijay-Kumar:1987] S. Vijay-Kumar, C.E. Bugg, W.J. Cook, "Structure of ubiquitin
 refined at 1.8 A resolution", _Journal of Molecular Biology_ **194** (1987)
