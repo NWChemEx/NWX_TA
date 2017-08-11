@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+# Convert the Ubiquitin structure with hydrogen atoms from an XYZ to a PDB file.
+# Here OpenBabel 2.4.1 was used.
+#
+obabel -V
+obabel -ixyz ct500838h_si_003.xyz -opdb -Oct500838h_si_003.pdb
+#
+# Below subsequences are extracted from the Ubiquitin structure including 
+# Hydrogen atoms. Obviously by just cutting a piece out of a protein the
+# OH of the carboxyl group and the H of the amino group are still missing.
+#
+# Select all atoms associated with the DQQRLI subsequence using awk.
+#
+awk '$6 >= 39 && $6 <= 44 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -Odqqrli_44.pdb -h
+#
+# Select all atoms associated with the DGRTL subsequence using awk.
+#
+awk '$6 >= 52 && $6 <= 56 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -Odgrtl.pdb -h
+#
+# Select all atoms associated with the EDGRTLS subsequence using awk.
+#
+awk '$6 >= 51 && $6 <= 57 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -Oedgrtls.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSD subsequence using awk.
+#
+awk '$6 >= 50 && $6 <= 58 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -Oledgrtlsd.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 50 && $6 <= 59 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -Oledgrtlsdy.pdb -h
+
