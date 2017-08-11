@@ -17,6 +17,12 @@ it is not clear how they were added. This question does not necessarily pose
 a problem for this particular structure but it does leave the question of how
 to add Hydrogen atoms properly open for the membrane proteins.
 
+The run_xyz_to_pdbs script takes the "ct500838h_si_003.xyz" file and generates
+a number of PDB files from it. These PDB files include files for the whole
+structure as well as subsequences. The subsequences are terminated with 
+Hydrogens. This means that the end carboxyl groups end up getting replaced
+by a ketone.
+
 ## References
 
 [Jo:2008] S. Jo, T. Kim, V.G. Iyer, W. Im, “CHARMM-GUI: A Web-based Graphical
