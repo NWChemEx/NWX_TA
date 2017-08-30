@@ -50,7 +50,28 @@ end
 task dft ignore
 
 tce
+  tilesize 40
   dft
   ccsd
+  thresh 1.0e-3
+  maxiter 100
 end
+
+set tce:nts T
+
+### tce restart ########
+#
+# when generating 2-electron integrals for the first time:
+# uncomment "set tce:writeint T"
+# in following runs please
+# comment  "set tce:writeint T"
+# and
+# uncomment "set tce:readint T"
+# it will save time :-)
+#
+set tce:tceiop 2048
+set tce:writeint T
+#set tce:readint T
+#######################
+
 task tce energy
