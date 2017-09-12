@@ -2,7 +2,7 @@
 #PBS -A csc242
 #PBS -N nwc_gbeg_pvdz.004096
 #PBS -j oe
-#PBS -l walltime=12:00:00,nodes=256
+#PBS -l walltime=6:00:00,nodes=256
 pwd
 ls
 export SCRATCH_DIR=$MEMBERWORK/csc242/$PBS_JOBNAME.$PBS_JOBID
