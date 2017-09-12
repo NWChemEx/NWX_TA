@@ -19,13 +19,13 @@ assuming that the cost scales like _N_<sup>4</sup> if we increase the
 basis set (basically assuming that the change in cost comes entirely
 from the 2-electron integrals).
 
-| Elements   | #atoms | 6-31g | 6-31g\* | cc-pVDZ | aug-cc-pVDZ | cc-pVTZ | aug-cc-pVTZ |
-| ---------- | ------ | ----- | ------- | ------- | ----------- | ------- | ----------- |
-| H          |  629   |  2    |  2      |  5      |  9          | 14      |   23        |
-| C, N, O    |  601   |  9    | 14      | 14      | 23          | 30      |   46        |
-| S          |    1   | 13    | 18      | 18      | 27          | 34      |   50        |
-| Total      | 1231   | 6680  | 9690    | 11577   | 19511       | 26870   |   42163     |
-| Cost       |        |  1    | 4.4     | 9.0     | 72.7        | 261.2   |   1595.4    |
+| Elements   | #atoms | 6-31g | 6-31g\* | cc-pVDZ | aug-cc-pVDZ | cc-pVTZ | aug-cc-pVTZ | cc-pVQZ |
+| ---------- | ------ | ----- | ------- | ------- | ----------- | ------- | ----------- | ------- |
+| H          |  629   |  2    |  2      |  5      |  9          | 14      |   23        |  30     |
+| C, N, O    |  601   |  9    | 14      | 14      | 23          | 30      |   46        |  55     |
+| S          |    1   | 13    | 18      | 18      | 27          | 34      |   50        |  59     |
+| Total      | 1231   | 6680  | 9690    | 11577   | 19511       | 26870   |   42163     |  51984  |
+| Cost       |        |  1    | 4.4     | 9.0     | 72.7        | 261.2   |   1595.4    |  3667.5 |
 
 [Table 1. Basis sets sizes and total number of basis functions for Ubiquitin]
 
