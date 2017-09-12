@@ -13,6 +13,12 @@ end
 basis 631gp spherical
   * library 6-31g*
 end
+basis pvdz spherical
+  * library cc-pVDZ
+end
+basis apvdz spherical
+  * library aug-cc-pVDZ
+end
 basis pvtz spherical
   * library cc-pVTZ
 end
@@ -39,6 +45,7 @@ set int:acc_std double 1.d-10
 task dft ignore
 
 set "ao basis" pvtz
+set "dft:xcreplicated" F
 dft
   direct
   xc pbe0
