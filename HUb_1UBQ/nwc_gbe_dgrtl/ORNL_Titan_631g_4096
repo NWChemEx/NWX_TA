@@ -1,8 +1,8 @@
 #!/bin/bash
 #PBS -A csc242
-#PBS -N nwc_gbe_631g.002048
+#PBS -N nwc_gbe_631g.004096
 #PBS -j oe
-#PBS -l walltime=4:00:00,nodes=128
+#PBS -l walltime=4:00:00,nodes=256
 pwd
 ls
 export SCRATCH_DIR=$MEMBERWORK/csc242/$JOB_NAME.$PBS_JOBID
