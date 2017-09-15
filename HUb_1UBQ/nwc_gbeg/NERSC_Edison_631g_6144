@@ -1,0 +1,36 @@
+#!/bin/bash -l
+#SBATCH --nodes=256
+#SBATCH --ntasks-per-node=24
+#SBATCH --time=06:00:00
+#SBATCH --partition=regular
+#SBATCH --license=SCRATCH
+#SBATCH --job-name=eds_nwc_gbeg_006144
+#SBATCH --error=eds_nwc_gbeg_006144.e%j
+#SBATCH --output=eds_nwc_gbeg_006144.o%j
+export NWCHEM_MEMORY_HEAP=6553600
+export NWCHEM_MEMORY_STACK=104857600
+export NWCHEM_MEMORY_GLOBAL=268435456
+export NWCHEM_BASIS_LIBRARY=/global/common/sw/cray/cnl6/ivybridge/nwchem/6.6/intel/17.0.2.174/kdw3gtl/share/nwchem/libraries/
+export SCRATCH_DIR=$SCRATCH/$SLURM_JOB_NAME.$SLURM_JOB_ID
+export PERMANENT_DIR=$SCRATCH_DIR
+export OMP_NUM_THREADS=1
+env | sort
+pwd
+#
+# Copy data into place
+#
+mkdir $SCRATCH_DIR
+cd ..
+cp nwc_gbeg/nwc_gbeg_631g.nw            $SCRATCH_DIR
+cp struct_h_added/ct500838h_si_003.xyz  $SCRATCH_DIR
+cd 
+cp edison/nwchem-dev/bin/LINUX64/nwchem $SCRATCH_DIR
+cd $SCRATCH_DIR
+#
+# Fire up NWChem
+#
+srun -n $SLURM_NPROCS ./nwchem nwc_gbeg_631g.nw
+#
+# Clean up
+#
+rm -rf $SCRATCH_DIR
