@@ -4,9 +4,9 @@
 #SBATCH --time=06:00:00
 #SBATCH --partition=regular
 #SBATCH --license=SCRATCH
-#SBATCH --job-name=eds_nwc_gbeg_001536
-#SBATCH --error=eds_nwc_gbeg_001536.e%j
-#SBATCH --output=eds_nwc_gbeg_001536.o%j
+#SBATCH --job-name=eds_nwc_gbeg_631g_001536
+#SBATCH --error=eds_nwc_gbeg_631g_001536.e%j
+#SBATCH --output=eds_nwc_gbeg_631g_001536.o%j
 export NWCHEM_MEMORY_HEAP=6553600
 export NWCHEM_MEMORY_STACK=104857600
 export NWCHEM_MEMORY_GLOBAL=268435456
