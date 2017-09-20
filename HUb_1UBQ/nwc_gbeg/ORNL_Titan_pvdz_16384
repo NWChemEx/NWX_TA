@@ -10,6 +10,7 @@ export PERMANENT_DIR=$SCRATCH_DIR
 mkdir $SCRATCH_DIR
 cp NWX_TA/HUb_1UBQ/nwc_gbeg/nwc_gbeg_pvdz.nw           $SCRATCH_DIR
 cp NWX_TA/HUb_1UBQ/struct_h_added/ct500838h_si_003.xyz $SCRATCH_DIR
+cp NWX_TA/HUb_1UBQ/nwc_gbeg/ub_start_631g.mos          $SCRATCH_DIR
 cp titan/nwchem-dev/bin/LINUX64/nwchem                 $SCRATCH_DIR
 cd $SCRATCH_DIR
 export MPICH_USE_DMAPP_COLL=1

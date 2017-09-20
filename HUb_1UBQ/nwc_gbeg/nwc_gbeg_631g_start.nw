@@ -1,0 +1,55 @@
+# This job just generates the starting wavefunction for other calculations.
+# The 6-31G basis set calculations does not scale beyond 2048 cores and in
+# fact the performance deteriorates beyond 16384 cores. Hence to avoid
+# wasting vast amounts of resources we need to calculate and store the
+# initial wavefunction up front. This means that large scale calculations
+# need to copy the initial wavefunction to the scratch space and pick it
+# up from there.
+echo
+start nwc_gbeg_dat
+title "E and Grad of 1UBQ"
+geometry noautoz
+   load format xyz "ct500838h_si_003.xyz"
+end
+basis 631g spherical
+  * library 6-31g
+end
+basis 631gp spherical
+  * library 6-31g*
+end
+basis pvtz spherical
+  * library cc-pVTZ
+end
+basis apvtz spherical
+  * library aug-cc-pVTZ
+end
+
+set "ao basis" 631g
+dft
+  direct
+  xc pbe0
+  convergence energy 1d-5 diis 5 ncydp 0 damp 40 dampon 1d99 dampoff 1d-3
+  smear
+  tolerances acccoul 11
+  convergence energy 1d-5
+  vectors input atomic output ub_start_631g.mos
+  noprint "final vectors analysis" multipole
+  maxiter 10
+end
+set quickguess t
+set dft:pstat t
+set int:cando_hnd f
+set int:acc_std double 1.d-10
+task dft ignore
+
+#set "ao basis" 631g
+#dft
+#  direct
+#  xc pbe0
+#  convergence energy 1d-5 
+#  tolerances acccoul 11
+#  vectors input project 631g ub_start_631g.mos  output ub_631g.mos
+#  noprint "final vectors analysis" multipole
+#  maxiter 120
+#end
+#task dft ignore
