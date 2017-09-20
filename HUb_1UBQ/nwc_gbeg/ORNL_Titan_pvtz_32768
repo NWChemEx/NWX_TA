@@ -1,11 +1,11 @@
 #!/bin/bash
-#PBS -A csc242
+#PBS -A csc249adse11
 #PBS -N nwc_gbeg_pvtz.032768
 #PBS -j oe
 #PBS -l walltime=12:00:00,nodes=2048
 pwd
 ls
-export SCRATCH_DIR=$MEMBERWORK/csc242/$PBS_JOBNAME.$PBS_JOBID
+export SCRATCH_DIR=$MEMBERWORK/csc249adse11/$PBS_JOBNAME.$PBS_JOBID
 export PERMANENT_DIR=$SCRATCH_DIR
 mkdir $SCRATCH_DIR
 cp NWX_TA/HUb_1UBQ/nwc_gbeg/nwc_gbeg_pvtz.nw           $SCRATCH_DIR
