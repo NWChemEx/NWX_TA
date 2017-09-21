@@ -1,10 +1,7 @@
 echo
 start nwc_gbeg_dat
 title "E and Grad of 1UBQ"
-#memory stack 800 mb heap 50 mb global 2000 mb noverify
 geometry noautoz
-   #load format pdb "../struct_h_added/step1_pdbreader.pdb"
-   #load format xyz "../struct_h_added/ct500838h_si_003.xyz"
    load format xyz "ct500838h_si_003.xyz"
 end
 basis 631g spherical
@@ -42,7 +39,7 @@ set quickguess t
 set dft:pstat t
 set int:cando_hnd f
 set int:acc_std double 1.d-10
-task dft ignore
+#task dft ignore
 
 set "ao basis" pvtz
 set "dft:xcreplicated" F

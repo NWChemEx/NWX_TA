@@ -11,50 +11,33 @@ end
 basis 631gp spherical
   * library 6-31g*
 end
+basis pvdz spherical
+  * library cc-pVDZ
+end
 basis pvtz spherical
   * library cc-pVTZ
 end
-basis apvtz spherical
-  * library aug-cc-pVTZ
+basis pvqz spherical
+  * library cc-pVQZ
 end
 
-set "ao basis" 631g
+set "ao basis" pvdz
 charge +1
-dft
-  direct
-  xc hfexch
-  convergence energy 1d-5 diis 5 ncydp 0 damp 40 dampon 1d99 dampoff 1d-3
-  smear
-  tolerances acccoul 11
-  convergence energy 1d-5
-  vectors input atomic output ub_start_631g.mos
-  noprint "final vectors analysis" multipole
-  maxiter 10
+scf
+  thresh 1.0e-6
+  tol2e 1.0e-10
+  singlet
+  rhf
+  maxiter 300
 end
-set quickguess t
-set dft:pstat t
-set int:cando_hnd f
-set int:acc_std double 1.d-10
-task dft ignore
-
-set "ao basis" 631g
-dft
-  direct
-  xc hfexch
-  convergence energy 1d-5 
-  tolerances acccoul 11
-  vectors input project 631g ub_start_631g.mos  output ub_631g.mos
-  noprint "final vectors analysis" multipole
-  maxiter 120
-end
-set dft:pstat t
+set scf:pstat t
 set tce:pstat t
-task dft ignore
 
 tce
+  2eorb
+  2emet 15
   tilesize 40
-  dft
-  ccsd
+  attilesize 45
   thresh 1.0e-3
   maxiter 100
 end

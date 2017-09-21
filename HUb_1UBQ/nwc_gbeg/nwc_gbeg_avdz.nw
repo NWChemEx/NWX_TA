@@ -45,6 +45,7 @@ set int:acc_std double 1.d-10
 task dft ignore
 
 set "ao basis" apvdz
+set "dft:xcreplicated" F
 dft
   direct
   xc pbe0

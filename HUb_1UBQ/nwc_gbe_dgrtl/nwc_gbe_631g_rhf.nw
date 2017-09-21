@@ -27,6 +27,8 @@ scf
   rhf
   maxiter 300
 end
+set scf:pstat t
+set tce:pstat t
 
 tce
   2eorb
