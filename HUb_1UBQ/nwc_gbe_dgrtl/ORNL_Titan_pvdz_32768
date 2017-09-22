@@ -5,7 +5,7 @@
 #PBS -l walltime=12:00:00,nodes=2048
 pwd
 ls
-export SCRATCH_DIR=$MEMBERWORK/csc249/$JOB_NAME.$PBS_JOBID
+export SCRATCH_DIR=$MEMBERWORK/csc249/$PBS_JOBNAME.$PBS_JOBID
 export PERMANENT_DIR=$SCRATCH_DIR
 mkdir $SCRATCH_DIR
 cp NWX_TA/HUb_1UBQ/nwc_gbe_dgrtl/nwc_gbe_pvdz_rhf.nw  $SCRATCH_DIR
