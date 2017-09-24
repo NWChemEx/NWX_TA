@@ -1,7 +1,10 @@
 echo
 start nwc_gbeg_dat
 title "E and Grad of 1UBQ"
+#memory stack 800 mb heap 50 mb global 2000 mb noverify
 geometry noautoz
+   #load format pdb "../struct_h_added/step1_pdbreader.pdb"
+   #load format xyz "../struct_h_added/ct500838h_si_003.xyz"
    load format xyz "ct500838h_si_003.xyz"
 end
 basis 631g spherical
@@ -39,16 +42,16 @@ set quickguess t
 set dft:pstat t
 set int:cando_hnd f
 set int:acc_std double 1.d-10
-#task dft ignore
+task dft ignore
 
-set "ao basis" pvtz
+set "ao basis" apvdz
 set "dft:xcreplicated" F
 dft
   direct
   xc pbe0
   convergence energy 1d-5 
   tolerances acccoul 11
-  vectors input project 631g ub_start_631g.mos  output ub_pvtz.mos
+  vectors input project 631g ub_start_631g.mos  output ub_apvdz.mos
   noprint "final vectors analysis" multipole
   maxiter 120
 end

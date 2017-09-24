@@ -1,20 +1,15 @@
 echo
-start nwc_gbeg_dat
+start nwc_gbe_dat
 title "E and Grad of 1UBQ"
+#memory stack 800 mb heap 100 mb global 2000 mb noverify
 geometry noautoz
-   load format xyz "ct500838h_si_003.xyz"
+   load format pdb "dgrtl.pdb"
 end
 basis 631g spherical
   * library 6-31g
 end
 basis 631gp spherical
   * library 6-31g*
-end
-basis pvdz spherical
-  * library cc-pVDZ
-end
-basis apvdz spherical
-  * library aug-cc-pVDZ
 end
 basis pvtz spherical
   * library cc-pVTZ
@@ -24,9 +19,10 @@ basis apvtz spherical
 end
 
 set "ao basis" 631g
+charge +1
 dft
   direct
-  xc pbe0
+  xc hfexch
   convergence energy 1d-5 diis 5 ncydp 0 damp 40 dampon 1d99 dampoff 1d-3
   smear
   tolerances acccoul 11
@@ -39,17 +35,45 @@ set quickguess t
 set dft:pstat t
 set int:cando_hnd f
 set int:acc_std double 1.d-10
-#task dft ignore
+task dft ignore
 
-set "ao basis" pvtz
-set "dft:xcreplicated" F
+set "ao basis" 631g
 dft
   direct
-  xc pbe0
+  xc hfexch
   convergence energy 1d-5 
   tolerances acccoul 11
-  vectors input project 631g ub_start_631g.mos  output ub_pvtz.mos
+  vectors input project 631g ub_start_631g.mos  output ub_631g.mos
   noprint "final vectors analysis" multipole
   maxiter 120
 end
+set dft:pstat t
+set tce:pstat t
 task dft ignore
+
+tce
+  tilesize 40
+  dft
+  ccsd
+  thresh 1.0e-3
+  maxiter 100
+end
+
+set tce:nts T
+
+### tce restart ########
+#
+# when generating 2-electron integrals for the first time:
+# uncomment "set tce:writeint T"
+# in following runs please
+# comment  "set tce:writeint T"
+# and
+# uncomment "set tce:readint T"
+# it will save time :-)
+#
+set tce:tceiop 2048
+set tce:writeint T
+#set tce:readint T
+#######################
+
+task tce energy

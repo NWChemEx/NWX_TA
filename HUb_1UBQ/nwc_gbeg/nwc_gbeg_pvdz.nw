@@ -41,14 +41,14 @@ set int:cando_hnd f
 set int:acc_std double 1.d-10
 #task dft ignore
 
-set "ao basis" pvtz
+set "ao basis" pvdz
 set "dft:xcreplicated" F
 dft
   direct
   xc pbe0
   convergence energy 1d-5 
   tolerances acccoul 11
-  vectors input project 631g ub_start_631g.mos  output ub_pvtz.mos
+  vectors input project 631g ub_start_631g.mos  output ub_pvdz.mos
   noprint "final vectors analysis" multipole
   maxiter 120
 end

@@ -22,6 +22,9 @@ end
 basis apvtz spherical
   * library aug-cc-pVTZ
 end
+basis pvqz spherical
+  * library cc-pVQZ
+end
 
 set "ao basis" 631g
 dft
@@ -41,7 +44,7 @@ set int:cando_hnd f
 set int:acc_std double 1.d-10
 #task dft ignore
 
-set "ao basis" pvtz
+set "ao basis" pvqz
 set "dft:xcreplicated" F
 dft
   direct

@@ -19,15 +19,39 @@ assuming that the cost scales like _N_<sup>4</sup> if we increase the
 basis set (basically assuming that the change in cost comes entirely
 from the 2-electron integrals).
 
-| Elements   | #atoms | 6-31g | 6-31g\* | cc-pVDZ | aug-cc-pVDZ | cc-pVTZ | aug-cc-pVTZ |
-| ---------- | ------ | ----- | ------- | ------- | ----------- | ------- | ----------- |
-| H          |  629   |  2    |  2      |  5      |  9          | 14      |   23        |
-| C, N, O    |  601   |  9    | 14      | 14      | 23          | 30      |   46        |
-| S          |    1   | 13    | 18      | 18      | 27          | 34      |   50        |
-| Total      | 1231   | 6680  | 9690    | 11577   | 19511       | 26870   |   42163     |
-| Cost       |        |  1    | 4.4     | 9.0     | 72.7        | 261.2   |   1595.4    |
+| Elements   | #atoms | 6-31g | 6-31g\* | cc-pVDZ | aug-cc-pVDZ | cc-pVTZ | aug-cc-pVTZ | cc-pVQZ |
+| ---------- | ------ | ----- | ------- | ------- | ----------- | ------- | ----------- | ------- |
+| H          |  629   |  2    |  2      |  5      |  9          | 14      |   23        |  30     |
+| C, N, O    |  601   |  9    | 14      | 14      | 23          | 30      |   46        |  55     |
+| S          |    1   | 13    | 18      | 18      | 27          | 34      |   50        |  59     |
+| Total      | 1231   | 6680  | 9690    | 11577   | 19511       | 26870   |   42163     |  51984  |
+| Cost       |        |  1    | 4.4     | 9.0     | 72.7        | 261.2   |   1595.4    |  3667.5 |
 
 [Table 1. Basis sets sizes and total number of basis functions for Ubiquitin]
+
+The calculations in this directory need to start from a reasonable guess.
+This guess is obtained from a calculations in the 6-31G basis set using
+the "smear" directive. The smearing approach enables fractional occupations
+of orbitals which helps with the convergence. After 10 iterations the
+wavefunction is sufficiently far down the right track that regular
+calculations can be started from this guess.
+
+Initially, the calculation that produces the guess was an integral part of the
+whole calculation. Because the guess construction is a small calculation it
+does not scale to the numbers of cores that the calculations using large basis
+sets need. Therefore, the calculations are currently performed in two steps:
+
+1. Run nwc_gbeg_631g_start.nw to produce ub_start_631g.mos and copy this into 
+   the current directory
+2. Run any of the other inputs but make sure that the code can read the guess
+   orbitals. 
+
+A good way to ensure that files are accessible to the job is to create a
+directory on a scratch file system and copy all relevant data into that
+directory before launching the program. On Titan this is required as the user
+directories are not accessible from the compute nodes. Hence, the Titan 
+job scripts are a good place to look for examples.
+
 
 ## References
 

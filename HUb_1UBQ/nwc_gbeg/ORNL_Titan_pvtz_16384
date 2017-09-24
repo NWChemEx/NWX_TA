@@ -1,17 +1,17 @@
 #!/bin/bash
 #PBS -A csc249adse11
-#PBS -N nwc_gbeg_631gp.008192
+#PBS -N nwc_gbeg_pvtz.016384
 #PBS -j oe
-#PBS -l walltime=6:00:00,nodes=512
+#PBS -l walltime=12:00:00,nodes=1024
 pwd
 ls
 export SCRATCH_DIR=$MEMBERWORK/csc249/$PBS_JOBNAME.$PBS_JOBID
 export PERMANENT_DIR=$SCRATCH_DIR
 mkdir $SCRATCH_DIR
-cp NWX_TA/HUb_1UBQ/nwc_gbeg/nwc_gbeg_631gp.nw          $SCRATCH_DIR
+cp NWX_TA/HUb_1UBQ/nwc_gbeg/nwc_gbeg_pvtz.nw           $SCRATCH_DIR
 cp NWX_TA/HUb_1UBQ/struct_h_added/ct500838h_si_003.xyz $SCRATCH_DIR
 cp NWX_TA/HUb_1UBQ/nwc_gbeg/ub_start_631g.mos          $SCRATCH_DIR
-cp titan/nwchem-6.6/bin/LINUX64/nwchem                 $SCRATCH_DIR
+cp titan/nwchem-dev/bin/LINUX64/nwchem                 $SCRATCH_DIR
 cd $SCRATCH_DIR
 export MPICH_USE_DMAPP_COLL=1
 export MPICH_GNI_NUM_BUFS=300
@@ -30,5 +30,5 @@ export NWCHEM_MEMORY_STACK=80740352
 export NWCHEM_MEMORY_GLOBAL=161480704
 export NWCHEM_BASIS_LIBRARY=/sw/xk6/nwchem/6.6/sles11.3_pgi15.7.0/src/basis/libraries/
 export NCORES=$((16*$PBS_NUM_NODES))
-aprun -n $NCORES $SCRATCH_DIR/nwchem nwc_gbeg_631gp.nw
+aprun -n $NCORES $SCRATCH_DIR/nwchem nwc_gbeg_pvtz.nw
 rm -rf $SCRATCH_DIR
