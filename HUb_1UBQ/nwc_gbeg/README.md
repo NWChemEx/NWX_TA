@@ -17,7 +17,14 @@ sizes. We are using spherical harmonic basis functions for all
 basis sets. The cost estimates are relative to the smallest basis set
 assuming that the cost scales like _N_<sup>4</sup> if we increase the
 basis set (basically assuming that the change in cost comes entirely
-from the 2-electron integrals).
+from the 2-electron integrals). In practice the cost does not quite scale
+that way. This discrepancy stems from a number of factors, such as: with
+increasing basis set size the additional basis functions tend to have 
+fewer primitive functions; the additional basis functions have higher
+angular momenta; going from one family of basis sets to another the 
+structure of the basis set may be very different. The row name
+"Measured" under "Cost" gives the relative cost as seen in
+benchmarks.
 
 | Elements   | #atoms | 6-31g | 6-31g\* | cc-pVDZ | aug-cc-pVDZ | cc-pVTZ | aug-cc-pVTZ | cc-pVQZ |
 | ---------- | ------ | ----- | ------- | ------- | ----------- | ------- | ----------- | ------- |
@@ -26,6 +33,7 @@ from the 2-electron integrals).
 | S          |    1   | 13    | 18      | 18      | 27          | 34      |   50        |  59     |
 | Total      | 1231   | 6680  | 9690    | 11577   | 19511       | 26870   |   42163     |  51984  |
 | Cost       |        |  1    | 4.4     | 9.0     | 72.7        | 261.2   |   1595.4    |  3667.5 |
+| Measured   |        |  1    | 2.2     | 1.7     |             | 17.9    |             |         |
 
 [Table 1. Basis sets sizes and total number of basis functions for Ubiquitin]
 
