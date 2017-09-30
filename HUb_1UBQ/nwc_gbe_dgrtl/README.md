@@ -25,7 +25,8 @@ Woon:1993] are considered.
 
 Table 1 provides some details about the structure and the resulting calculation
 sizes. We are using spherical harmonic basis functions for all
-basis sets. The cost estimates are relative to the smallest basis set
+basis sets. The cost estimates, in the row labeled "Cost",
+are relative to the smallest basis set
 assuming that the cost scales like _N_<sup>4</sup> if we increase the
 basis set. Note that this cost scaling with the size of the basis set
 is different from the cost scaling with the number of atoms. This is a 
@@ -34,6 +35,7 @@ where _o_ is the number of occupied orbitals and _v_ is the number of virtual
 orbitals. If the number of atoms is increased both the number of basis functions
 and the number of electrons increases simultaneously generating a cost scaling of
 _N_<sup>6</sup>. For CCSD(T) the cost scales as _O_(_o_<sup>3</sup>_v_<sup>4</sup>).
+The row name "Measured" under "Cost" gives the relative cost as seen in benchmarks.
 
 | Elements   | #atoms | #electrons | 6-31g | 6-31g\* | cc-pVDZ | aug-cc-pVDZ | cc-pVTZ | aug-cc-pVTZ | cc-pVQZ |
 | ---------- | ------ | ---------- | ----- | ------- | ------- | ----------- | ------- | ----------- | ------- |
@@ -41,6 +43,7 @@ _N_<sup>6</sup>. For CCSD(T) the cost scales as _O_(_o_<sup>3</sup>_v_<sup>4</su
 | C, N, O    |   38   |       6-8  |  9    | 14      | 14      | 23          | 30      |   46        |  55     |
 | Total      |   79   |       293  | 424   | 614     | 737     | 1243        | 1714    |   2691      |  3320   |
 | Cost       |        |            |  1    | 4.4     | 9.2     | 73.7        | 266.4   |   1625.9    |  3758.8 |
+| Measured   |        |            |  1    | 3.8     | 8.0     |             |         |             |         |
 
 [Table 1. Basis sets sizes and total number of basis functions for the DGRTL fragment of Ubiquitin]
 
