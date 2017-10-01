@@ -36,8 +36,9 @@ set tce:pstat t
 tce
   2eorb
   2emet 15
-  tilesize 40
-  attilesize 45
+  tilesize 35
+  # attilesize 45
+  attilesize 35
   thresh 1.0e-3
   maxiter 100
 end
