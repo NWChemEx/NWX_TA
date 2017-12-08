@@ -1,0 +1,22 @@
+#!/usr/bin/gnuplot
+set logscale x
+set logscale y
+set xlabel "Number of cores"
+set xrange [4000:17000]
+set xtics 1024
+set xtics add ("2048" 2048, "4096" 4096, "8192" 8192, "16384" 16384, "32768" 32768)
+set ylabel "Time (s)"
+set yrange [0010:20000]
+set ytics 100
+set ytics add ("10" 10, "20" 20, "30" 30, "40" 40, "60" 60, "80" 80, "200" 200, "300" 300, "400" 400, "600" 600, "800" 800, "1000" 1000, "2000" 2000, "3000" 3000, "4000" 4000, "6000" 6000, "8000" 8000, "10000" 10000, "20000" 20000)
+set key autotitle columnhead left
+set terminal png
+set output "ubq_scalability_terms.png"
+plot \
+"ubq_631gp_titan_diag.dat" with linespoints, \
+"ubq_631gp_titan_diis.dat" with linespoints, \
+"ubq_631gp_titan_dgemm.dat" with linespoints, \
+"ubq_631gp_titan_scfen.dat" with linespoints, \
+"ubq_631gp_titan_2el.dat" with linespoints, \
+"ubq_631gp_titan_total.dat" with linespoints
+unset output

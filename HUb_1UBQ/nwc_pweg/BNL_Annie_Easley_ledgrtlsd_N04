@@ -1,0 +1,51 @@
+#!/bin/bash
+#SBATCH -A PQ0006
+#SBATCH -N 4
+#SBATCH -n 144
+#SBATCH -t 24:00:00
+#SBATCH -p long
+#SBATCH -o nwc_pweg_ic_ledgrtlsd_N04.out
+#SBATCH -e nwc_pweg_ic_ledgrtlsd_N04.err
+#SBATCH -J nwc_pweg
+#
+source /etc/profile.d/modules.sh
+module purge
+module load pgi/pgi64/17.5
+module load cuda/8.0
+module load openmpi/1.10.4-pgi
+unset PYTHONHOME
+export NWCHEM_TOP=~/IC/nwchem-trunk-svn/
+export NWCHEM_EXE=$NWCHEM_TOP/bin/LINUX64/nwchem
+export NONSTD_MPI=y
+export MPIRUN_PATH="mpirun -np $SLURM_NPROCS --hostfile ./hostfile"
+export NWCHEM_MEMORY_HEAP=134217728
+export NWCHEM_MEMORY_STACK=268435456
+export NWCHEM_MEMORY_GLOBAL=402653184
+ntask=`echo "$SLURM_TASKS_PER_NODE" | sed -e 's/([a-zA-Z0-9]\+)//g'`
+ntask=36
+nodes=(`scontrol show hostname $SLURM_NODELIST`)
+nnodes=${#nodes[@]}
+export SCRATCH_DIR=`pwd`/$SLURM_JOBID
+export PERMANENT_DIR=$SCRATCH_DIR
+mkdir $SCRATCH_DIR
+env | sort
+#DEBUG
+echo "ntask =" $ntask
+echo "nodes =" ${nodes[@]} ${#nodes[@]}
+echo "nnodes=" $nnodes 
+#DEBUG
+cp ../struct_h_added/ledgrtlsd.pdb $SCRATCH_DIR
+cp nwc_pweg_ledgrtlsd.nw           $SCRATCH_DIR
+cp $NWCHEM_EXE                 $SCRATCH_DIR
+cd $SCRATCH_DIR
+rm -f hostfile
+for (( ii=0; ii<$nnodes; ii++ ))
+do
+  for (( jj=1; jj<=$ntask; jj++ ))
+  do
+    # echo $ii $jj ${nodes[$ii]}
+    echo ${nodes[$ii]} >> hostfile
+  done
+done
+$MPIRUN_PATH ./nwchem nwc_pweg_ledgrtlsd.nw
+rm -rf $SCRATCH_DIR

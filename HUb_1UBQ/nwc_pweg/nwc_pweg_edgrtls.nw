@@ -1,0 +1,23 @@
+echo
+start nwc_pweg_dat
+title "E and Grad of 1UBQ-EDGRTLS"
+geometry noautoz
+   load format pdb "edgrtls.pdb"
+end
+nwpw
+  simulation_cell
+    boundary_conditions aperiodic
+    lattice
+      # coordinate ranges and lattice parameters.
+      # 20 - 36
+      # 12 - 25
+      #  9 - 26
+      lat_a 26.0
+      lat_b 23.0
+      lat_c 27.0
+    end
+  end
+  xc pbe96
+  lmbfgs
+end
+task pspw energy

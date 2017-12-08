@@ -1,0 +1,11 @@
+#!/usr/bin/gnuplot
+set xlabel "Basis sets"
+set ylabel "Energy (a.u.)"
+set xrange [0.75:3.25]
+set key autotitle columnhead right
+set terminal png
+set output "dgrtl_energy_delta.png"
+plot \
+"dgrtl_energy_hf_delta.dat" using 1:2:xticlabels(3) with linespoints, \
+"dgrtl_energy_ccsd_delta.dat" using 1:2:xticlabels(3) with linespoints
+unset output

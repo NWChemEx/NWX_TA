@@ -1,0 +1,23 @@
+echo
+start nwc_pweg_dat
+title "E and Grad of 1UBQ"
+geometry noautoz
+   load format pdb "ct500838h_si_003.pdb"
+end
+nwpw
+  simulation_cell
+    boundary_conditions aperiodic
+    lattice
+      # coordinate ranges and lattice parameters.
+      # 15 - 46
+      # 12 - 46
+      #  0 - 37
+      lat_a 41.0
+      lat_b 44.0
+      lat_c 47.0
+    end
+  end
+  xc pbe96
+  lmbfgs
+end
+task pspw energy
