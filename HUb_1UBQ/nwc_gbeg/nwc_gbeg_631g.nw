@@ -35,7 +35,7 @@ set quickguess t
 set dft:pstat t
 set int:cando_hnd f
 set int:acc_std double 1.d-10
-task dft ignore
+#task dft ignore
 
 set "ao basis" 631g
 dft

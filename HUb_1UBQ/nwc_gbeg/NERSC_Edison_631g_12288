@@ -1,12 +1,12 @@
 #!/bin/bash -l
-#SBATCH --nodes=128
+#SBATCH --nodes=512
 #SBATCH --ntasks-per-node=24
-#SBATCH --time=24:00:00
+#SBATCH --time=03:00:00
 #SBATCH --partition=regular
 #SBATCH --license=SCRATCH
-#SBATCH --job-name=eds_nwc_gbeg_pvdz_003072
-#SBATCH --error=eds_nwc_gbeg_pvdz_003072.e%j
-#SBATCH --output=eds_nwc_gbeg_pvdz_003072.o%j
+#SBATCH --job-name=eds_nwc_gbeg_631g_012288
+#SBATCH --error=eds_nwc_gbeg_631g_012288.e%j
+#SBATCH --output=eds_nwc_gbeg_631g_012288.o%j
 export NWCHEM_MEMORY_HEAP=6553600
 export NWCHEM_MEMORY_STACK=104857600
 export NWCHEM_MEMORY_GLOBAL=268435456
@@ -21,7 +21,7 @@ pwd
 #
 mkdir $SCRATCH_DIR
 cd ..
-cp nwc_gbeg/nwc_gbeg_pvdz.nw            $SCRATCH_DIR
+cp nwc_gbeg/nwc_gbeg_631g.nw            $SCRATCH_DIR
 cp nwc_gbeg/ub_start_631g.mos           $SCRATCH_DIR
 cp struct_h_added/ct500838h_si_003.xyz  $SCRATCH_DIR
 cd 
@@ -30,7 +30,7 @@ cd $SCRATCH_DIR
 #
 # Fire up NWChem
 #
-srun -n $SLURM_NPROCS ./nwchem nwc_gbeg_pvdz.nw
+srun -n $SLURM_NPROCS ./nwchem nwc_gbeg_631g.nw
 #
 # Clean up
 #

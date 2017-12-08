@@ -22,6 +22,7 @@ pwd
 mkdir $SCRATCH_DIR
 cd ..
 cp nwc_gbeg/nwc_gbeg_631g.nw            $SCRATCH_DIR
+cp nwc_gbeg/ub_start_631g.mos           $SCRATCH_DIR
 cp struct_h_added/ct500838h_si_003.xyz  $SCRATCH_DIR
 cd 
 cp edison/nwchem-dev/bin/LINUX64/nwchem $SCRATCH_DIR

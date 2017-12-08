@@ -1,12 +1,12 @@
 #!/bin/bash -l
-#SBATCH --nodes=128
+#SBATCH --nodes=64
 #SBATCH --ntasks-per-node=24
-#SBATCH --time=24:00:00
+#SBATCH --time=06:00:00
 #SBATCH --partition=regular
 #SBATCH --license=SCRATCH
-#SBATCH --job-name=eds_nwc_gbeg_pvdz_003072
-#SBATCH --error=eds_nwc_gbeg_pvdz_003072.e%j
-#SBATCH --output=eds_nwc_gbeg_pvdz_003072.o%j
+#SBATCH --job-name=eds_nwc_gbeg_631g_001536
+#SBATCH --error=eds_nwc_gbeg_631g_001536.e%j
+#SBATCH --output=eds_nwc_gbeg_631g_001536.o%j
 export NWCHEM_MEMORY_HEAP=6553600
 export NWCHEM_MEMORY_STACK=104857600
 export NWCHEM_MEMORY_GLOBAL=268435456
@@ -14,6 +14,7 @@ export NWCHEM_BASIS_LIBRARY=/global/common/sw/cray/cnl6/ivybridge/nwchem/6.6/int
 export SCRATCH_DIR=$SCRATCH/$SLURM_JOB_NAME.$SLURM_JOB_ID
 export PERMANENT_DIR=$SCRATCH_DIR
 export OMP_NUM_THREADS=1
+export START_DIR=`pwd`
 env | sort
 pwd
 #
@@ -21,8 +22,7 @@ pwd
 #
 mkdir $SCRATCH_DIR
 cd ..
-cp nwc_gbeg/nwc_gbeg_pvdz.nw            $SCRATCH_DIR
-cp nwc_gbeg/ub_start_631g.mos           $SCRATCH_DIR
+cp nwc_gbeg/nwc_gbeg_631g_start.nw      $SCRATCH_DIR
 cp struct_h_added/ct500838h_si_003.xyz  $SCRATCH_DIR
 cd 
 cp edison/nwchem-dev/bin/LINUX64/nwchem $SCRATCH_DIR
@@ -30,7 +30,11 @@ cd $SCRATCH_DIR
 #
 # Fire up NWChem
 #
-srun -n $SLURM_NPROCS ./nwchem nwc_gbeg_pvdz.nw
+srun -n $SLURM_NPROCS ./nwchem nwc_gbeg_631g_start.nw
+#
+# Save the guess wavefunction
+#
+cp ub_start_631g.mos $START_DIR
 #
 # Clean up
 #
