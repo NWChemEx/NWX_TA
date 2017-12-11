@@ -6,3 +6,6 @@
 #
 pdbfixer ../struct_raw/4pgr.pdb --add-atoms=all --add-residues --ph=8.0 
 mv output.pdb 4pgr.pdb
+#
+pdbfixer ../struct_raw/4pgr.pdb --add-atoms=all --add-residues --ph=6.0 
+mv output.pdb 4pgr_ph6.pdb
