@@ -30,6 +30,6 @@ initial structure.
     original DPPG residue is replaced by PA-PGR-PA but the latter three residues all have the
     same number causing confusion in NWChem. The renumbering is done through 
     ```
-    pdb4amber -i step5_assembly_min10_amber.pdb -o junk.pdb
+    pdb4amber -i 4pgr_amber_membrane_model_min_res.pdb -o 4pgr_amber_membrane_model_min_res_renum.pdb
     ```
 
