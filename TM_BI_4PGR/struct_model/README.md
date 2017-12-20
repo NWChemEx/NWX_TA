@@ -6,17 +6,19 @@ started is to use the Charmm-GUI to build the model using ../struct_h_added/4pgr
 initial structure.
 
 * 4pgr_charmm_membrane_model.pdb
-  Directly obtained from Charmm-GUI step5.
+  * Directly obtained from Charmm-GUI step5.
 
 * 4pgr_charmm_membrane_model_min.pdb
-  Obtained from 4pgr_membrane_model.pdb by applying 5000 additional minimization
-  steps with Charmm.
+  * Obtained from 4pgr_membrane_model.pdb by applying 5000 additional minimization
+    steps with Charmm.
 
 * 4pgr_amber_membrane_model_min.pdb
-  Obtained from 4pgr_charmm_membrane_model_min.pdb by running it through
-  charmmlipid2amber.py -i 4pgr_charmm_membrane_model_min.pdb -o 4pgr_amber_membrane_model_min.pdb
-  Note that the lipids, waters and ions have been updated. However, the 
-  histidine residues have not been translated.
+  * Obtained from 4pgr_charmm_membrane_model_min.pdb by running it through
+
+    charmmlipid2amber.py -i 4pgr_charmm_membrane_model_min.pdb -o 4pgr_amber_membrane_model_min.pdb
+
+  * Note that the lipids, waters and ions have been updated. However, the 
+    histidine residues have not been translated.
 
 * 4pgr_amber_membrane_model_min_res.pdb
   * Rename HSD histidine residues to the Amber HID convention.
