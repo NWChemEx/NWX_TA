@@ -1,0 +1,28 @@
+#!/bin/bash
+#PBS -A csc249adse11
+#PBS -N nwc_pweg_ledgrtlsd_50.001024
+#PBS -j oe
+#PBS -l walltime=2:00:00,nodes=64
+pwd
+ls
+export SCRATCH_DIR=$MEMBERWORK/csc249/$JOB_NAME.$PBS_JOBID
+export PERMANENT_DIR=$SCRATCH_DIR
+mkdir $SCRATCH_DIR
+cp NWX_TA/HUb_1UBQ/nwc_pweg/nwc_pweg_ledgrtlsd_50.nw  $SCRATCH_DIR
+cp NWX_TA/HUb_1UBQ/struct_h_added/ledgrtlsd.pdb       $SCRATCH_DIR
+cp titan/nwchem-1/bin/LINUX64/nwchem                  $SCRATCH_DIR
+cd $SCRATCH_DIR
+export MPICH_USE_DMAPP_COLL=1
+export MPICH_GNI_NUM_BUFS=300
+export MPICH_GNI_MBOX_PLACEMENT=nic
+export MPICH_GNI_LMT_PATH=disabled
+export COMEX_MAX_NB_OUTSTANDING=6
+export OMP_NUM_THREADS=1
+export NWCHEM_MEMORY_HEAP=6553600
+export NWCHEM_MEMORY_STACK=104857600
+export NWCHEM_MEMORY_GLOBAL=268435456
+export NWCHEM_BASIS_LIBRARY=/sw/xk6/nwchem/6.6/sles11.3_pgi15.7.0/src/basis/libraries/
+export NWCHEM_NWPW_LIBRARY=/sw/xk6/nwchem/6.6/sles11.3_pgi15.7.0/src/nwpw/libraryps/
+export NCORES=$((16*$PBS_NUM_NODES))
+aprun -n $NCORES $SCRATCH_DIR/nwchem nwc_pweg_ledgrtlsd_50.nw
+rm -rf $SCRATCH_DIR

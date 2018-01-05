@@ -1,0 +1,25 @@
+echo
+start nwc_pweg_dat
+title "E and Grad of 1UBQ-DGRTL"
+geometry noautoz
+   load format pdb "dgrtl.pdb"
+end
+charge +1
+nwpw
+  simulation_cell
+    boundary_conditions aperiodic
+    lattice
+      # coordinate ranges and lattice parameters.
+      # 23 - 36
+      # 12 - 25
+      #  9 - 23
+      lat_a 23.0
+      lat_b 23.0
+      lat_c 24.0
+    end
+  end
+  xc pbe96
+  lmbfgs
+  cutoff 200
+end
+task pspw energy
