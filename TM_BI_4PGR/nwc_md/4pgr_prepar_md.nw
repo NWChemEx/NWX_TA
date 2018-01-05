@@ -1,0 +1,42 @@
+echo
+start 4pgr_membrane_model_dat
+
+prepare
+   system 4pgr_md
+   source ../struct_model/4pgr_amber_membrane_model_min_res_renum.pdb 
+   new_top new_seq
+   new_rst
+   counter 25  Cl
+   counter 109 K
+   solvent name HOH model spce
+   periodic
+   box 71.405 68.084 130.494
+   write pdb inspection.pdb
+end
+
+#task prepare
+
+md
+   system 4pgr_md
+   leapfrog
+   step 0.002 equil 100 data 0
+   isotherm 298.15 trelax 0.1
+   isobar
+   print step 10
+end
+
+task md dynamics
+
+
+md
+   system 4pgr_md
+   leapfrog
+   step 0.002 equil 0 data 1000
+   isotherm 298.15 trelax 0.1
+   isobar
+   print step 100
+   record coord 100 ascii
+end
+
+task md dynamics
+
