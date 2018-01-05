@@ -1,0 +1,4021 @@
+ALLINEA_QUEUE_DLL=/opt/cray/pe/mpt/7.6.0/gni/mpich-intel/16.0/lib/libtvmpich.so.3.0.1
+ALPS_APP_ID=6056184792588894668
+ALPS_APP_PE=0
+ALPS_LLI_STATUS_OFFSET=1
+ALTD_ON=1
+ALTD_PATH=/usr/common/software/altd/2.0
+ALTD_SELECT_OFF_USERS=
+ALTD_SELECT_ON=0
+ALTD_SELECT_USERS=
+ALTD_VERBOSE=0
+ALTD_WORKDIR=/scratch1/scratchdirs/altdlogs
+ALT_LINKER=/usr/common/software/altd/2.0/bin/ld
+ATP_HOME=/opt/cray/pe/atp/2.1.1
+ATP_IGNORE_SIGTERM=1
+ATP_MRNET_COMM_PATH=/opt/cray/pe/atp/2.1.1/libexec/atp_mrnet_commnode_wrapper
+ATP_POST_LINK_OPTS=-Wl,-L/opt/cray/pe/atp/2.1.1/libApp/ 
+BASH_ENV=/global/homes/v/vandam/.bashrc
+BASH_FUNC_module%%=() {  eval `/opt/cray/pe/modules/3.2.10.6/bin/modulecmd bash $*`
+COLORTERM=1
+CPATH=/opt/intel/compilers_and_libraries_2018.0.128/linux/mkl/include
+CPU=x86_64
+CRAYLMD_LICENSE_FILE=27000@craycce.licenses.nersc.gov
+CRAYPAT_LICENSE_FILE=27000@craycce.licenses.nersc.gov
+CRAYPE_DIR=/opt/cray/pe/craype/2.5.12
+CRAYPE_NETWORK_TARGET=aries
+CRAYPE_USE_BUILDTOOLS=0
+CRAYPE_VERSION=2.5.12
+CRAY_ALPS_INCLUDE_OPTS=-I/opt/cray/alps/6.4.1-6.0.4.0_7.2__g86d0f3d.ari/include
+CRAY_ALPS_POST_LINK_OPTS=-L/opt/cray/alps/6.4.1-6.0.4.0_7.2__g86d0f3d.ari/lib64
+CRAY_CPU_TARGET=sandybridge
+CRAY_DMAPP_INCLUDE_OPTS=-I/opt/cray/dmapp/7.1.1-6.0.4.0_46.2__gb8abda2.ari/include -I/opt/cray/gni-headers/5.0.11-6.0.4.0_7.2__g7136988.ari/include 
+CRAY_DMAPP_POST_LINK_OPTS=-L/opt/cray/dmapp/7.1.1-6.0.4.0_46.2__gb8abda2.ari/lib64
+CRAY_GNI_HEADERS_INCLUDE_OPTS=-I/opt/cray/gni-headers/5.0.11-6.0.4.0_7.2__g7136988.ari/include
+CRAY_LD_LIBRARY_PATH=/opt/cray/pe/mpt/7.6.0/gni/mpich-intel/16.0/lib:/opt/cray/rca/2.2.15-6.0.4.1_13.1__g46acb0f.ari/lib64:/opt/cray/alps/6.4.1-6.0.4.0_7.2__g86d0f3d.ari/lib64:/opt/cray/xpmem/2.2.2-6.0.4.0_3.1__g43b0535.ari/lib64:/opt/cray/dmapp/7.1.1-6.0.4.0_46.2__gb8abda2.ari/lib64:/opt/cray/pe/pmi/5.0.12/lib64:/opt/cray/ugni/6.0.14-6.0.4.0_14.1__ge7db4a2.ari/lib64:/opt/cray/udreg/2.3.2-6.0.4.0_12.2__g2f9c3ee.ari/lib64:/opt/cray/pe/libsci/17.06.1/INTEL/16.0/x86_64/lib
+CRAY_LIBSCI_BASE_DIR=/opt/cray/pe/libsci/17.06.1
+CRAY_LIBSCI_DIR=/opt/cray/pe/libsci/17.06.1
+CRAY_LIBSCI_PREFIX_DIR=/opt/cray/pe/libsci/17.06.1/INTEL/16.0/x86_64
+CRAY_LIBSCI_VERSION=17.06.1
+CRAY_MPICH2_DIR=/opt/cray/pe/mpt/7.6.0/gni/mpich-intel/16.0
+CRAY_MPICH2_VER=7.6.0
+CRAY_MPICH_BASEDIR=/opt/cray/pe/mpt/7.6.0/gni
+CRAY_MPICH_DIR=/opt/cray/pe/mpt/7.6.0/gni/mpich-intel/16.0
+CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpt/7.6.0
+CRAY_PMI_INCLUDE_OPTS=-I/opt/cray/pe/pmi/5.0.12/include
+CRAY_PMI_POST_LINK_OPTS=-L/opt/cray/pe/pmi/5.0.12/lib64
+CRAY_PRE_COMPILE_OPTS=-hnetwork=aries
+CRAY_PRGENVINTEL=loaded
+CRAY_RCA_INCLUDE_OPTS=-I/opt/cray/rca/2.2.15-6.0.4.1_13.1__g46acb0f.ari/include -I/opt/cray/krca/2.2.2-6.0.4.0_5.2__g4614cf3.ari/include -I/opt/cray-hss-devel/8.0.0/include 
+CRAY_RCA_POST_LINK_OPTS=-L/opt/cray/rca/2.2.15-6.0.4.1_13.1__g46acb0f.ari/lib64 -lrca 
+CRAY_SITE_LIST_DIR=/etc/opt/cray/pe/modules
+CRAY_UDREG_INCLUDE_OPTS=-I/opt/cray/udreg/2.3.2-6.0.4.0_12.2__g2f9c3ee.ari/include
+CRAY_UDREG_POST_LINK_OPTS=-L/opt/cray/udreg/2.3.2-6.0.4.0_12.2__g2f9c3ee.ari/lib64
+CRAY_UGNI_INCLUDE_OPTS=-I/opt/cray/ugni/6.0.14-6.0.4.0_14.1__ge7db4a2.ari/include
+CRAY_UGNI_POST_LINK_OPTS=-L/opt/cray/ugni/6.0.14-6.0.4.0_14.1__ge7db4a2.ari/lib64
+CRAY_XPMEM_INCLUDE_OPTS=-I/opt/cray/xpmem/2.2.2-6.0.4.0_3.1__g43b0535.ari/include
+CRAY_XPMEM_POST_LINK_OPTS=-L/opt/cray/xpmem/2.2.2-6.0.4.0_3.1__g43b0535.ari/lib64
+CSCRATCH=/global/cscratch1/sd/vandam
+CSHEDIT=emacs
+CVS_RSH=ssh
+DISPLAY=edison03:20.0
+DMAPP_ABORT_ON_ERROR=1
+DVS_INCLUDE_OPTS=-I/opt/cray/dvs/2.7_2.2.31-6.0.4.1_6.1__gb3b87e6/include
+DVS_MAXNODES=1__
+DVS_VERSION=0.9.0
+ENVIRONMENT=BATCH
+FPATH=:/opt/cray/pe/modules/3.2.10.6/init/sh_funcs/no_redirect:/opt/cray/pe/modules/3.2.10.6/init/sh_funcs/no_redirect:/opt/cray/pe/modules/3.2.10.6/init/sh_funcs/no_redirect
+FROM_HEADER=
+GPG_TTY=not a tty
+G_BROKEN_FILENAMES=1
+HISTSIZE=1000
+HOME=/global/homes/v/vandam
+HOST=edison03
+HOSTNAME=nid04480
+HOSTTYPE=x86_64
+INPUTRC=/etc/inputrc
+INTEL_LICENSE_FILE=28518@crayintel.licenses.nersc.gov:28518@intel.licenses.nersc.gov
+INTEL_MAJOR_VERSION=18
+INTEL_MINOR_VERSION=18
+INTEL_PATH=/opt/intel/compilers_and_libraries_2018.0.128
+INTEL_VERSION=18.0.0.128
+JAVA_BINDIR=/usr/lib64/jvm/java/bin
+JAVA_HOME=/usr/lib64/jvm/java
+JAVA_ROOT=/usr/lib64/jvm/java
+JDK_HOME=/usr/lib64/jvm/java
+JRE_HOME=/usr/lib64/jvm/java/jre
+KSH_AUTOLOAD=1
+LD_LIBRARY_PATH=/usr/common/software/darshan/3.1.4/lib:/opt/cray/job/2.2.2-6.0.4.0_8.2__g3c644b5.ari/lib64:/opt/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64
+LESS=-M -I -R
+LESSCLOSE=lessclose.sh %s %s
+LESSKEY=/etc/lesskey.bin
+LESSOPEN=lessopen.sh %s
+LESS_ADVANCED_PREPROCESSOR=no
+LIBGL_ALWAYS_INDIRECT=1
+LIBGL_DEBUG=quiet
+LIBRARYMODULES=acml:alps:cray-dwarf:cray-fftw:cray-ga:cray-hdf5:cray-hdf5-parallel:cray-libsci:cray-libsci_acc:cray-mpich:cray-mpich-abi:cray-mpich2:cray-netcdf:cray-netcdf-hdf5parallel:cray-parallel-netcdf:cray-petsc:cray-petsc-complex:cray-shmem:cray-tpsl:cray-trilinos:cudatoolkit:fftw:ga:hdf5:hdf5-parallel:iobuf:libfast:netcdf:netcdf-hdf5parallel:ntk:onesided:papi:petsc:petsc-complex:pmi:tpsl:trilinos:xt-libsci:xt-mpich2:xt-mpt:xt-papi
+LIBRARY_PATH=/opt/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64
+LIBSCI_BASE_DIR=/opt/cray/pe/libsci/17.06.1
+LIBSCI_VERSION=17.06.1
+LOADEDMODULES=modules/3.2.10.6:nsg/1.2.0:intel/18.0.0.128:craype-network-aries:craype/2.5.12:cray-libsci/17.06.1:udreg/2.3.2-6.0.4.0_12.2__g2f9c3ee.ari:ugni/6.0.14-6.0.4.0_14.1__ge7db4a2.ari:pmi/5.0.12:dmapp/7.1.1-6.0.4.0_46.2__gb8abda2.ari:gni-headers/5.0.11-6.0.4.0_7.2__g7136988.ari:xpmem/2.2.2-6.0.4.0_3.1__g43b0535.ari:job/2.2.2-6.0.4.0_8.2__g3c644b5.ari:dvs/2.7_2.2.31-6.0.4.1_6.1__gb3b87e6:alps/6.4.1-6.0.4.0_7.2__g86d0f3d.ari:rca/2.2.15-6.0.4.1_13.1__g46acb0f.ari:atp/2.1.1:PrgEnv-intel/6.0.4:craype-ivybridge:cray-mpich/7.6.0:altd/2.0:darshan/3.1.4:Base-opts/2.4.123-6.0.4.0_10.1__g6460790.ari
+LOGNAME=vandam
+LS_COLORS=no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.xz=00;31:*.avi=01;35:*.bmp=01;35:*.fli=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:
+LS_OPTIONS=-N --color=none -T 0
+MACHTYPE=x86_64-suse-linux
+MAIL=/var/mail/vandam
+MANPATH=/usr/common/software/man:/usr/common/mss/man:/usr/common/nsg/man:/usr/common/software/man:/usr/common/mss/man:/usr/common/nsg/man:/opt/cray/pe/mpt/7.6.0/gni/man/mpich:/opt/cray/pe/atp/2.1.1/man:/opt/cray/alps/6.4.1-6.0.4.0_7.2__g86d0f3d.ari/man:/opt/cray/job/2.2.2-6.0.4.0_8.2__g3c644b5.ari/man:/opt/cray/pe/pmi/5.0.12/man:/opt/cray/pe/libsci/17.06.1/man:/opt/cray/pe/man/csmlversion:/opt/cray/pe/craype/2.5.12/man:/opt/intel/compilers_and_libraries_2018.0.128/linux/man/common:/usr/syscom/nsg/man:/opt/cray/pe/modules/3.2.10.6/share/man:/global/homes/v/vandam/man:/usr/local/man:/usr/share/man:/opt/cray/share/man:/opt/cray/pe/man:/opt/cray/share/man:/opt/cray/share/man
+MAN_POSIXLY_CORRECT=1
+MINICOM=-c on
+MKLROOT=/opt/intel/compilers_and_libraries_2018.0.128/linux/mkl
+MODULEPATH=/opt/cray/pe/craype/2.5.12/modulefiles:/opt/cray/pe/modulefiles:/opt/cray/modulefiles:/opt/modulefiles:/usr/common/software/modulefiles:/usr/syscom/nsg/modulefiles:/usr/common/das/modulefiles:/usr/common/ftg/modulefiles:/usr/common/graphics/modulefiles:/usr/common/jgi/modulefiles:/usr/common/tig/modulefiles:/opt/cray/craype/default/modulefiles:/opt/cray/ari/modulefiles:/opt/cray/pe/ari/modulefiles
+MODULESHOME=/opt/cray/pe/modules/3.2.10.6
+MODULE_VERSION=3.2.10.6
+MODULE_VERSION_STACK=3.2.10.6
+MORE=-sl
+MPICH_ABORT_ON_ERROR=1
+MPICH_DIR=/opt/cray/pe/mpt/7.6.0/gni/mpich-intel/16.0
+MPICH_GNI_ROUTING_MODE=ADAPTIVE_1
+MPICH_MPIIO_DVS_MAXNODES=14
+NERSC_HOST=edison
+NLSPATH=/opt/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64/locale/%l_%t/%N:/opt/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64/locale/%l_%t/%N
+NNTPSERVER=news
+NSG_HOME=/usr/syscom/nsg
+NWCHEM_BASIS_LIBRARY=/global/common/sw/cray/cnl6/ivybridge/nwchem/6.6/intel/17.0.2.174/kdw3gtl/share/nwchem/libraries/
+NWCHEM_MEMORY_GLOBAL=268435456
+NWCHEM_MEMORY_HEAP=6553600
+NWCHEM_MEMORY_STACK=104857600
+OMP_NUM_THREADS=1
+OSTYPE=linux
+PAGER=less
+PATH=/usr/common/software/bin:/usr/common/mss/bin:/usr/common/nsg/bin:/usr/common/software/darshan/3.1.4/bin:/usr/common/software/altd/2.0/bin:/usr/common/software/bin:/usr/common/mss/bin:/usr/common/nsg/bin:/opt/cray/pe/mpt/7.6.0/gni/bin:/opt/cray/rca/2.2.15-6.0.4.1_13.1__g46acb0f.ari/bin:/opt/cray/alps/6.4.1-6.0.4.0_7.2__g86d0f3d.ari/sbin:/opt/cray/job/2.2.2-6.0.4.0_8.2__g3c644b5.ari/bin:/opt/cray/pe/craype/2.5.12/bin:/opt/intel/compilers_and_libraries_2018.0.128/linux/bin/intel64:/usr/syscom/nsg/sbin:/usr/syscom/nsg/bin:/opt/cray/pe/modules/3.2.10.6/bin:/global/homes/v/vandam/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/cray/pe/bin
+PELOCAL_PRGENV=true
+PERMANENT_DIR=/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900
+PE_CRAY_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.8.1.3/CRAY/8.6/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.4.1.1.3/CRAY/8.6/lib/pkgconfig:/opt/cray/pe/netcdf/4.4.1.1.3/CRAY/8.6/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.10.0.3/CRAY/8.6/lib/pkgconfig:/opt/cray/pe/hdf5/1.10.0.3/CRAY/8.6/lib/pkgconfig:/opt/cray/pe/ga/5.3.0.7/CRAY/8.4/lib/pkgconfig
+PE_CXX_PKGCONFIG_LIBS=mpichcxx
+PE_ENV=INTEL
+PE_FFTW_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
+PE_FFTW_DEFAULT_TARGET_broadwell=broadwell
+PE_FFTW_DEFAULT_TARGET_haswell=haswell
+PE_FFTW_DEFAULT_TARGET_ivybridge=ivybridge
+PE_FFTW_DEFAULT_TARGET_mic_knl=mic_knl
+PE_FFTW_DEFAULT_TARGET_sandybridge=sandybridge
+PE_FFTW_DEFAULT_TARGET_share=share
+PE_FFTW_DEFAULT_TARGET_x86_64=x86_64
+PE_FFTW_DEFAULT_TARGET_x86_skylake=x86_skylake
+PE_FFTW_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/fftw/3.3.6.2/@PE_FFTW_DEFAULT_TARGET@/lib/pkgconfig
+PE_FORTRAN_PKGCONFIG_LIBS=mpichf90
+PE_GA_DEFAULT_FIXED_PRGENV=CRAY INTEL
+PE_GA_DEFAULT_GENCOMPILERS_GNU=5.1 4.9
+PE_GA_DEFAULT_GENCOMPS_GNU=51 49
+PE_GA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/ga/5.3.0.7/@PRGENV@/@PE_GA_DEFAULT_GENCOMPS@/lib/pkgconfig
+PE_GA_DEFAULT_VOLATILE_PRGENV=GNU
+PE_HDF5_DEFAULT_FIXED_PRGENV=CRAY INTEL
+PE_HDF5_DEFAULT_GENCOMPILERS_GNU=5.1 4.9
+PE_HDF5_DEFAULT_GENCOMPS_GNU=51 49
+PE_HDF5_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/hdf5/1.10.0.3/@PRGENV@/@PE_HDF5_DEFAULT_GENCOMPS@/lib/pkgconfig
+PE_HDF5_DEFAULT_VOLATILE_PRGENV=GNU
+PE_HDF5_PARALLEL_DEFAULT_FIXED_PRGENV=CRAY INTEL
+PE_HDF5_PARALLEL_DEFAULT_GENCOMPILERS_GNU=5.1 4.9
+PE_HDF5_PARALLEL_DEFAULT_GENCOMPS_GNU=51 49
+PE_HDF5_PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
+PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/hdf5-parallel/1.10.0.3/@PRGENV@/@PE_HDF5_PARALLEL_DEFAULT_GENCOMPS@/lib/pkgconfig
+PE_HDF5_PARALLEL_DEFAULT_VOLATILE_PRGENV=GNU
+PE_INTEL_DEFAULT_FIXED_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.8.1.3/INTEL/16.0/lib/pkgconfig:/opt/cray/pe/netcdf-hdf5parallel/4.4.1.1.3/INTEL/16.0/lib/pkgconfig:/opt/cray/pe/netcdf/4.4.1.1.3/INTEL/16.0/lib/pkgconfig:/opt/cray/pe/mpt/7.6.0/gni/mpich-intel/16.0/lib/pkgconfig:/opt/cray/pe/hdf5-parallel/1.10.0.3/INTEL/16.0/lib/pkgconfig:/opt/cray/pe/hdf5/1.10.0.3/INTEL/16.0/lib/pkgconfig:/opt/cray/pe/ga/5.3.0.7/INTEL/15.0/lib/pkgconfig
+PE_INTEL_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpt/7.6.0/gni/mpich-intel/16.0/lib/pkgconfig
+PE_LIBSCI_DEFAULT_GENCOMPILERS_CRAY_x86_64=8.6
+PE_LIBSCI_DEFAULT_GENCOMPILERS_GNU_x86_64=6.1 5.1 4.9
+PE_LIBSCI_DEFAULT_GENCOMPILERS_INTEL_x86_64=16.0
+PE_LIBSCI_DEFAULT_GENCOMPS_CRAY_x86_64=86
+PE_LIBSCI_DEFAULT_GENCOMPS_GNU_x86_64=61 51 49
+PE_LIBSCI_DEFAULT_GENCOMPS_INTEL_x86_64=160
+PE_LIBSCI_DEFAULT_OMP_REQUIRES=
+PE_LIBSCI_DEFAULT_OMP_REQUIRES_openmp=_mp
+PE_LIBSCI_DEFAULT_PKGCONFIG_VARIABLES=PE_LIBSCI_DEFAULT_OMP_REQUIRES_@openmp@
+PE_LIBSCI_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH
+PE_LIBSCI_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/17.06.1/@PRGENV@/@PE_LIBSCI_DEFAULT_GENCOMPS@/@PE_LIBSCI_DEFAULT_TARGET@/lib/pkgconfig
+PE_LIBSCI_DEFAULT_VOLATILE_PRGENV=CRAY GNU INTEL
+PE_LIBSCI_GENCOMPILERS_CRAY_x86_64=8.6
+PE_LIBSCI_GENCOMPILERS_GNU_x86_64=6.1 5.1 4.9
+PE_LIBSCI_GENCOMPILERS_INTEL_x86_64=16.0
+PE_LIBSCI_GENCOMPS_CRAY_x86_64=86
+PE_LIBSCI_GENCOMPS_GNU_x86_64=61 51 49
+PE_LIBSCI_GENCOMPS_INTEL_x86_64=160
+PE_LIBSCI_MODULE_NAME=cray-libsci/17.06.1
+PE_LIBSCI_OMP_REQUIRES=
+PE_LIBSCI_OMP_REQUIRES_openmp=_mp
+PE_LIBSCI_PKGCONFIG_LIBS=libsci_mpi:libsci
+PE_LIBSCI_PKGCONFIG_VARIABLES=PE_LIBSCI_OMP_REQUIRES_@openmp@
+PE_LIBSCI_REQUIRED_PRODUCTS=PE_MPICH
+PE_LIBSCI_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/17.06.1/@PRGENV@/@PE_LIBSCI_GENCOMPS@/@PE_LIBSCI_TARGET@/lib/pkgconfig
+PE_LIBSCI_VOLATILE_PRGENV=CRAY GNU INTEL
+PE_MPICH_ALTERNATE_LIBS_dpm=_dpm
+PE_MPICH_ALTERNATE_LIBS_multithreaded=_mt
+PE_MPICH_CXX_PKGCONFIG_LIBS=mpichcxx
+PE_MPICH_DEFAULT_DIR_CRAY_DEFAULT64=64
+PE_MPICH_DEFAULT_FIXED_PRGENV=INTEL
+PE_MPICH_DEFAULT_GENCOMPILERS_CRAY=8.6
+PE_MPICH_DEFAULT_GENCOMPILERS_GNU=5.1 4.9
+PE_MPICH_DEFAULT_GENCOMPS_CRAY=86
+PE_MPICH_DEFAULT_GENCOMPS_GNU=51 49
+PE_MPICH_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpt/7.6.0/gni/mpich-@PRGENV@@PE_MPICH_DEFAULT_DIR_DEFAULT64@/@PE_MPICH_DEFAULT_GENCOMPS@/lib/pkgconfig
+PE_MPICH_DEFAULT_VOLATILE_PRGENV=CRAY GNU
+PE_MPICH_DIR_CRAY_DEFAULT64=64
+PE_MPICH_FIXED_PRGENV=INTEL
+PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90
+PE_MPICH_GENCOMPILERS_CRAY=8.6
+PE_MPICH_GENCOMPILERS_GNU=5.1 4.9
+PE_MPICH_GENCOMPS_CRAY=86
+PE_MPICH_GENCOMPS_GNU=51 49
+PE_MPICH_MODULE_NAME=cray-mpich
+PE_MPICH_NV_LIBS=
+PE_MPICH_NV_LIBS_nvidia20=-lcudart
+PE_MPICH_NV_LIBS_nvidia35=-lcudart
+PE_MPICH_NV_LIBS_nvidia60=-lcudart
+PE_MPICH_PKGCONFIG_LIBS=mpich
+PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_NV_LIBS_@accelerator@:PE_MPICH_ALTERNATE_LIBS_@multithreaded@:PE_MPICH_ALTERNATE_LIBS_@dpm@
+PE_MPICH_TARGET_VAR_nvidia20=-lcudart
+PE_MPICH_TARGET_VAR_nvidia35=-lcudart
+PE_MPICH_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpt/7.6.0/gni/mpich-@PRGENV@@PE_MPICH_DIR_DEFAULT64@/@PE_MPICH_GENCOMPS@/lib/pkgconfig
+PE_MPICH_VOLATILE_PRGENV=CRAY GNU
+PE_NETCDF_DEFAULT_FIXED_PRGENV=CRAY INTEL
+PE_NETCDF_DEFAULT_GENCOMPILERS_GNU=5.1 4.9
+PE_NETCDF_DEFAULT_GENCOMPS_GNU=51 49
+PE_NETCDF_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5
+PE_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/netcdf/4.4.1.1.3/@PRGENV@/@PE_NETCDF_DEFAULT_GENCOMPS@/lib/pkgconfig
+PE_NETCDF_DEFAULT_VOLATILE_PRGENV=GNU
+PE_NETCDF_HDF5PARALLEL_DEFAULT_FIXED_PRGENV=CRAY INTEL
+PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPILERS_GNU=5.1 4.9
+PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPS_GNU=51 49
+PE_NETCDF_HDF5PARALLEL_DEFAULT_REQUIRED_PRODUCTS=PE_HDF5_PARALLEL:PE_MPICH
+PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/netcdf-hdf5parallel/4.4.1.1.3/@PRGENV@/@PE_NETCDF_HDF5PARALLEL_DEFAULT_GENCOMPS@/lib/pkgconfig
+PE_NETCDF_HDF5PARALLEL_DEFAULT_VOLATILE_PRGENV=GNU
+PE_PAPI_DEFAULT_ACCELL_FAMILY_LIBS=
+PE_PAPI_DEFAULT_ACCEL_FAMILY_LIBS_nvidia=,-lcupti,-lcudart,-lcuda
+PE_PAPI_DEFAULT_ACCEL_LIBS=
+PE_PAPI_DEFAULT_ACCEL_LIBS_nvidia35=,-lcupti,-lcudart,-lcuda
+PE_PAPI_DEFAULT_PKGCONFIG_VARIABLES=PE_PAPI_ACCEL_LIBS_@accelerator@
+PE_PARALLEL_NETCDF_DEFAULT_FIXED_PRGENV=CRAY INTEL
+PE_PARALLEL_NETCDF_DEFAULT_GENCOMPILERS_GNU=5.1 4.9
+PE_PARALLEL_NETCDF_DEFAULT_GENCOMPS_GNU=51 49
+PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/parallel-netcdf/1.8.1.3/@PRGENV@/@PE_PARALLEL_NETCDF_DEFAULT_GENCOMPS@/lib/pkgconfig
+PE_PARALLEL_NETCDF_DEFAULT_VOLATILE_PRGENV=GNU
+PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_haswell=8.6
+PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_mic_knl=8.6
+PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_sandybridge=8.6
+PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_skylake=8.6
+PE_PETSC_DEFAULT_GENCOMPILERS_CRAY_x86_64=8.6
+PE_PETSC_DEFAULT_GENCOMPILERS_GNU_haswell=5.3 4.9
+PE_PETSC_DEFAULT_GENCOMPILERS_GNU_mic_knl=5.3
+PE_PETSC_DEFAULT_GENCOMPILERS_GNU_sandybridge=5.3 4.9
+PE_PETSC_DEFAULT_GENCOMPILERS_GNU_skylake=6.1
+PE_PETSC_DEFAULT_GENCOMPILERS_GNU_x86_64=5.3 4.9
+PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_haswell=16.0
+PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_mic_knl=16.0
+PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_sandybridge=16.0
+PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_skylake=16.0
+PE_PETSC_DEFAULT_GENCOMPILERS_INTEL_x86_64=16.0
+PE_PETSC_DEFAULT_GENCOMPS_CRAY_haswell=86
+PE_PETSC_DEFAULT_GENCOMPS_CRAY_mic_knl=86
+PE_PETSC_DEFAULT_GENCOMPS_CRAY_sandybridge=86
+PE_PETSC_DEFAULT_GENCOMPS_CRAY_skylake=86
+PE_PETSC_DEFAULT_GENCOMPS_CRAY_x86_64=86
+PE_PETSC_DEFAULT_GENCOMPS_GNU_haswell=53 49
+PE_PETSC_DEFAULT_GENCOMPS_GNU_mic_knl=53
+PE_PETSC_DEFAULT_GENCOMPS_GNU_sandybridge=53 49
+PE_PETSC_DEFAULT_GENCOMPS_GNU_skylake=61
+PE_PETSC_DEFAULT_GENCOMPS_GNU_x86_64=53 49
+PE_PETSC_DEFAULT_GENCOMPS_INTEL_haswell=160
+PE_PETSC_DEFAULT_GENCOMPS_INTEL_mic_knl=160
+PE_PETSC_DEFAULT_GENCOMPS_INTEL_sandybridge=160
+PE_PETSC_DEFAULT_GENCOMPS_INTEL_skylake=160
+PE_PETSC_DEFAULT_GENCOMPS_INTEL_x86_64=160
+PE_PETSC_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_TPSL
+PE_PETSC_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/petsc/3.7.6.0/complex/@PRGENV@/@PE_PETSC_DEFAULT_GENCOMPS@/@PE_PETSC_DEFAULT_TARGET@/lib/pkgconfig
+PE_PETSC_DEFAULT_VOLATILE_PRGENV=CRAY CRAY64 GNU GNU64 INTEL INTEL64
+PE_PKGCONFIG_DEFAULT_PRODUCTS=PE_TRILINOS:PE_TPSL_64:PE_TPSL:PE_PETSC:PE_PARALLEL_NETCDF:PE_NETCDF_HDF5PARALLEL:PE_NETCDF:PE_MPICH:PE_LIBSCI:PE_HDF5_PARALLEL:PE_HDF5:PE_GA:PE_FFTW
+PE_PKGCONFIG_LIBS=darshan-runtime:mpich:AtpSigHandler:cray-rca:libsci_mpi:libsci
+PE_PKGCONFIG_PRODUCTS=PE_MPICH:PE_LIBSCI
+PE_PKGCONFIG_PRODUCTS_DEFAULT=PE_PAPI
+PE_PKG_CONFIG_PATH=/opt/cray/pe/cti/1.0.6/lib/pkgconfig:/opt/cray/pe/cti/1.0.5/lib/pkgconfig
+PE_PRODUCT_LIST=CRAYPE_IVYBRIDGE:CRAY_RCA:CRAY_ALPS:DVS:CRAY_XPMEM:CRAY_DMAPP:CRAY_PMI:CRAY_UGNI:CRAY_UDREG:CRAY_LIBSCI:CRAYPE:INTEL
+PE_SMA_DEFAULT_COMPFLAG=
+PE_SMA_DEFAULT_COMPFLAG_GNU=-fcray-pointer
+PE_SMA_DEFAULT_DIR_CRAY_DEFAULT64=64
+PE_SMA_DEFAULT_DIR_PGI_DEFAULT64=64
+PE_SMA_DEFAULT_PKGCONFIG_VARIABLES=PE_SMA_COMPFLAG_@prgenv@
+PE_SMA_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/mpt/7.6.0/gni/sma@PE_SMA_DEFAULT_DIR_DEFAULT64@/lib64/pkgconfig
+PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_haswell=8.6
+PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_mic_knl=8.6
+PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_sandybridge=8.6
+PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_64=8.6
+PE_TPSL_64_DEFAULT_GENCOMPILERS_CRAY_x86_skylake=8.6
+PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_haswell=5.1 4.9
+PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_mic_knl=5.1
+PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_sandybridge=5.1 4.9
+PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_64=5.1 4.9
+PE_TPSL_64_DEFAULT_GENCOMPILERS_GNU_x86_skylake=6.1
+PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_haswell=16.0
+PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_mic_knl=16.0
+PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_sandybridge=16.0
+PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_64=16.0
+PE_TPSL_64_DEFAULT_GENCOMPILERS_INTEL_x86_skylake=16.0
+PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_haswell=86
+PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_mic_knl=86
+PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_sandybridge=86
+PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_64=86
+PE_TPSL_64_DEFAULT_GENCOMPS_CRAY_x86_skylake=86
+PE_TPSL_64_DEFAULT_GENCOMPS_GNU_haswell=51 49
+PE_TPSL_64_DEFAULT_GENCOMPS_GNU_mic_knl=51
+PE_TPSL_64_DEFAULT_GENCOMPS_GNU_sandybridge=51 49
+PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_64=51 49
+PE_TPSL_64_DEFAULT_GENCOMPS_GNU_x86_skylake=61
+PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_haswell=160
+PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_mic_knl=160
+PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_sandybridge=160
+PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_64=160
+PE_TPSL_64_DEFAULT_GENCOMPS_INTEL_x86_skylake=160
+PE_TPSL_64_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_LIBSCI
+PE_TPSL_64_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/tpsl/17.06.1/@PRGENV@64/@PE_TPSL_64_DEFAULT_GENCOMPS@/@PE_TPSL_64_DEFAULT_TARGET@/lib/pkgconfig
+PE_TPSL_64_DEFAULT_VOLATILE_PRGENV=CRAY CRAY64 GNU GNU64 INTEL INTEL64
+PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_haswell=8.6
+PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_mic_knl=8.6
+PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_sandybridge=8.6
+PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_64=8.6
+PE_TPSL_DEFAULT_GENCOMPILERS_CRAY_x86_skylake=8.6
+PE_TPSL_DEFAULT_GENCOMPILERS_GNU_haswell=5.1 4.9
+PE_TPSL_DEFAULT_GENCOMPILERS_GNU_mic_knl=5.1
+PE_TPSL_DEFAULT_GENCOMPILERS_GNU_sandybridge=5.1 4.9
+PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_64=5.1 4.9
+PE_TPSL_DEFAULT_GENCOMPILERS_GNU_x86_skylake=6.1
+PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_haswell=16.0
+PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_mic_knl=16.0
+PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_sandybridge=16.0
+PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_64=16.0
+PE_TPSL_DEFAULT_GENCOMPILERS_INTEL_x86_skylake=16.0
+PE_TPSL_DEFAULT_GENCOMPS_CRAY_haswell=86
+PE_TPSL_DEFAULT_GENCOMPS_CRAY_mic_knl=86
+PE_TPSL_DEFAULT_GENCOMPS_CRAY_sandybridge=86
+PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_64=86
+PE_TPSL_DEFAULT_GENCOMPS_CRAY_x86_skylake=86
+PE_TPSL_DEFAULT_GENCOMPS_GNU_haswell=51 49
+PE_TPSL_DEFAULT_GENCOMPS_GNU_mic_knl=51
+PE_TPSL_DEFAULT_GENCOMPS_GNU_sandybridge=51 49
+PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_64=51 49
+PE_TPSL_DEFAULT_GENCOMPS_GNU_x86_skylake=61
+PE_TPSL_DEFAULT_GENCOMPS_INTEL_haswell=160
+PE_TPSL_DEFAULT_GENCOMPS_INTEL_mic_knl=160
+PE_TPSL_DEFAULT_GENCOMPS_INTEL_sandybridge=160
+PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_64=160
+PE_TPSL_DEFAULT_GENCOMPS_INTEL_x86_skylake=160
+PE_TPSL_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_LIBSCI
+PE_TPSL_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/tpsl/17.06.1/@PRGENV@/@PE_TPSL_DEFAULT_GENCOMPS@/@PE_TPSL_DEFAULT_TARGET@/lib/pkgconfig
+PE_TPSL_DEFAULT_VOLATILE_PRGENV=CRAY CRAY64 GNU GNU64 INTEL INTEL64
+PE_TRILINOS_DEFAULT_GENCOMPILERS_CRAY_x86_64=8.6
+PE_TRILINOS_DEFAULT_GENCOMPILERS_GNU_x86_64=5.1 4.9
+PE_TRILINOS_DEFAULT_GENCOMPILERS_INTEL_x86_64=16.0
+PE_TRILINOS_DEFAULT_GENCOMPS_CRAY_x86_64=86
+PE_TRILINOS_DEFAULT_GENCOMPS_GNU_x86_64=51 49
+PE_TRILINOS_DEFAULT_GENCOMPS_INTEL_x86_64=160
+PE_TRILINOS_DEFAULT_REQUIRED_PRODUCTS=PE_MPICH:PE_HDF5_PARALLEL:PE_NETCDF_HDF5PARALLEL:PE_LIBSCI:PE_TPSL
+PE_TRILINOS_DEFAULT_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/trilinos/12.10.1.1/@PRGENV@/@PE_TRILINOS_DEFAULT_GENCOMPS@/@PE_TRILINOS_DEFAULT_TARGET@/lib/pkgconfig
+PE_TRILINOS_DEFAULT_VOLATILE_PRGENV=CRAY GNU INTEL
+PKGCONFIG_ENABLED=1
+PKG_CONFIG_PATH=/usr/common/software/darshan/3.1.4/lib/pkgconfig:/opt/cray/rca/2.2.15-6.0.4.1_13.1__g46acb0f.ari/lib64/pkgconfig:/opt/cray/alps/6.4.1-6.0.4.0_7.2__g86d0f3d.ari/lib64/pkgconfig:/opt/cray/xpmem/2.2.2-6.0.4.0_3.1__g43b0535.ari/lib64/pkgconfig:/opt/cray/gni-headers/5.0.11-6.0.4.0_7.2__g7136988.ari/lib64/pkgconfig:/opt/cray/dmapp/7.1.1-6.0.4.0_46.2__gb8abda2.ari/lib64/pkgconfig:/opt/cray/pe/pmi/5.0.12/lib64/pkgconfig:/opt/cray/ugni/6.0.14-6.0.4.0_14.1__ge7db4a2.ari/lib64/pkgconfig:/opt/cray/udreg/2.3.2-6.0.4.0_12.2__g2f9c3ee.ari/lib64/pkgconfig:/opt/cray/pe/craype/2.5.12/pkg-config:/opt/cray/pe/iobuf/2.0.8/lib/pkgconfig:/opt/cray/pe/atp/2.1.1/lib/pkgconfig
+PKG_CONFIG_PATH_DEFAULT=/opt/cray/pe/papi/5.5.1.2/lib64/pkgconfig
+PMI_NO_FORK=1
+PRGENVMODULES=PrgEnv-cray:PrgEnv-gnu:PrgEnv-intel:PrgEnv-pathscale:PrgEnv-pgi
+PROFILEREAD=true
+PWD=/global/homes/v/vandam/edison/NWX_TA/HUb_1UBQ/nwc_pweg
+PYTHONSTARTUP=/etc/pythonstart
+QT_SYSTEM_DIR=/usr/share/desktop-data
+RCLOCAL_BASEOPTS=true
+RCLOCAL_PRGENV=true
+SBATCH_CPU_BIND=quiet,mask_cpu:0xFFFFFFFFFFFF
+SBATCH_CPU_BIND_LIST=0xFFFFFFFFFFFF
+SBATCH_CPU_BIND_TYPE=mask_cpu:
+SBATCH_CPU_BIND_VERBOSE=quiet
+SCRATCH=/scratch2/scratchdirs/vandam
+SCRATCH_DIR=/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900
+SDK_HOME=/usr/lib64/jvm/java
+SHELL=/bin/bash
+SHLVL=2
+SHMEM_ABORT_ON_ERROR=1
+SLURMD_NODENAME=nid04480
+SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+SLURM_CLUSTER_NAME=edison
+SLURM_CPUS_ON_NODE=48
+SLURM_GTIDS=0
+SLURM_JOBID=7997900
+SLURM_JOB_ACCOUNT=m2857
+SLURM_JOB_CPUS_PER_NODE=48(x4)
+SLURM_JOB_GID=51189
+SLURM_JOB_ID=7997900
+SLURM_JOB_NAME=eds_nwc_pweg_ledgrtlsdy_000096
+SLURM_JOB_NODELIST=nid0[4480-4482,6021]
+SLURM_JOB_NUM_NODES=4
+SLURM_JOB_PARTITION=regular
+SLURM_JOB_QOS=normal_regular_1
+SLURM_JOB_UID=51189
+SLURM_JOB_USER=vandam
+SLURM_LOCALID=0
+SLURM_MEM_PER_NODE=64392
+SLURM_NNODES=4
+SLURM_NODEID=0
+SLURM_NODELIST=nid0[4480-4482,6021]
+SLURM_NODE_ALIASES=(null)
+SLURM_NPROCS=96
+SLURM_NTASKS=96
+SLURM_NTASKS_PER_NODE=24
+SLURM_PRIO_PROCESS=0
+SLURM_PROCID=0
+SLURM_SPANK_NERSC_ZONESORT_INTERVAL=0
+SLURM_SPANK_SHIFTER_GID=51189
+SLURM_SUBMIT_DIR=/global/u2/v/vandam/edison/NWX_TA/HUb_1UBQ/nwc_pweg
+SLURM_SUBMIT_HOST=edison03
+SLURM_TASKS_PER_NODE=24(x4)
+SLURM_TASK_PID=5867
+SLURM_TOPOLOGY_ADDR=s15.s6.nid04480
+SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.node
+SSH_CLIENT=130.199.251.4 12494 22
+SSH_CONNECTION=130.199.251.4 12494 128.55.209.26 22
+SSH_TTY=/dev/pts/50
+START_DIR=/global/homes/v/vandam/edison/NWX_TA/HUb_1UBQ/nwc_pweg
+TARGETMODULES=craype-abudhabi:craype-abudhabi-cu:craype-accel-host:craype-accel-nvidia20:craype-accel-nvidia30:craype-accel-nvidia35:craype-barcelona:craype-broadwell:craype-haswell:craype-hugepages128K:craype-hugepages128M:craype-hugepages16M:craype-hugepages256M:craype-hugepages2M:craype-hugepages32M:craype-hugepages4M:craype-hugepages512K:craype-hugepages512M:craype-hugepages64M:craype-hugepages8M:craype-intel-knc:craype-interlagos:craype-interlagos-cu:craype-istanbul:craype-ivybridge:craype-mc12:craype-mc8:craype-mic-knl:craype-network-aries:craype-network-gemini:craype-network-infiniband:craype-network-none:craype-network-seastar:craype-sandybridge:craype-shanghai:craype-target-compute_node:craype-target-local_host:craype-target-native:craype-xeon:xtpe-barcelona:xtpe-interlagos:xtpe-interlagos-cu:xtpe-istanbul:xtpe-mc12:xtpe-mc8:xtpe-network-gemini:xtpe-network-seastar:xtpe-shanghai:xtpe-target-native:xtpe-xeon
+TERM=xterm-256color
+TMPDIR=/tmp
+TOOLMODULES=apprentice:apprentice2:atp:chapel:cray-lgdb:cray-snplauncher:craypat:craypkg-gen:ddt:gdb:iobuf:papi:perftools:perftools-lite:stat:totalview:xt-craypat:xt-lgdb:xt-papi:xt-totalview
+TZ=US/Pacific
+USER=vandam
+USERMODULES=PrgEnv-cray:PrgEnv-gnu:PrgEnv-intel:PrgEnv-pathscale:PrgEnv-pgi:acml:alps:apprentice:apprentice2:atp:blcr:cce:chapel:cray-ccdb:cray-fftw:cray-ga:cray-hdf5:cray-hdf5-parallel:cray-lgdb:cray-libsci:cray-libsci_acc:cray-mpich:cray-mpich-compat:cray-mpich2:cray-netcdf:cray-netcdf-hdf5parallel:cray-parallel-netcdf:cray-petsc:cray-petsc-complex:cray-shmem:cray-snplauncher:cray-tpsl:cray-trilinos:craypat:craype:craypkg-gen:cudatoolkit:ddt:fftw:ga:gcc:hdf5:hdf5-parallel:intel:iobuf:java:lgdb:libfast:libsci_acc:mpich1:netcdf:netcdf-hdf5parallel:netcdf-nofsync:netcdf-nofsync-hdf5parallel:ntk:onesided:papi:parallel-netcdf:pathscale:perftools:perftools-lite:petsc:petsc-complex:pgi:pmi:stat:totalview:tpsl:trilinos:xt-asyncpe:xt-craypat:xt-lgdb:xt-libsci:xt-mpich2:xt-mpt:xt-papi:xt-shmem:xt-totalview
+WINDOWMANAGER=
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_DATA_DIRS=/usr/share
+XDG_RUNTIME_DIR=/run/user/51189
+XDG_SESSION_ID=48648
+XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB
+XNLSPATH=/usr/share/X11/nls
+XTPE_NETWORK_TARGET=aries
+_=/usr/bin/env
+_LMFILES_=/opt/cray/pe/modulefiles/modules/3.2.10.6:/usr/syscom/nsg/modulefiles/nsg/1.2.0:/opt/modulefiles/intel/18.0.0.128:/opt/cray/pe/craype/2.5.12/modulefiles/craype-network-aries:/opt/cray/pe/modulefiles/craype/2.5.12:/opt/cray/pe/modulefiles/cray-libsci/17.06.1:/opt/cray/ari/modulefiles/udreg/2.3.2-6.0.4.0_12.2__g2f9c3ee.ari:/opt/cray/ari/modulefiles/ugni/6.0.14-6.0.4.0_14.1__ge7db4a2.ari:/opt/cray/pe/modulefiles/pmi/5.0.12:/opt/cray/ari/modulefiles/dmapp/7.1.1-6.0.4.0_46.2__gb8abda2.ari:/opt/cray/ari/modulefiles/gni-headers/5.0.11-6.0.4.0_7.2__g7136988.ari:/opt/cray/ari/modulefiles/xpmem/2.2.2-6.0.4.0_3.1__g43b0535.ari:/opt/cray/ari/modulefiles/job/2.2.2-6.0.4.0_8.2__g3c644b5.ari:/opt/cray/ari/modulefiles/dvs/2.7_2.2.31-6.0.4.1_6.1__gb3b87e6:/opt/cray/ari/modulefiles/alps/6.4.1-6.0.4.0_7.2__g86d0f3d.ari:/opt/cray/ari/modulefiles/rca/2.2.15-6.0.4.1_13.1__g46acb0f.ari:/opt/cray/pe/modulefiles/atp/2.1.1:/opt/cray/pe/modulefiles/PrgEnv-intel/6.0.4:/opt/cray/pe/craype/2.5.12/modulefiles/craype-ivybridge:/opt/cray/pe/modulefiles/cray-mpich/7.6.0:/usr/common/software/modulefiles/altd/2.0:/usr/common/software/modulefiles/darshan/3.1.4:/opt/modulefiles/Base-opts/2.4.123-6.0.4.0_10.1__g6460790.ari
+craype_already_loaded=0
+intel_already_loaded=0
+}
+/global/homes/v/vandam/edison/NWX_TA/HUb_1UBQ/nwc_pweg
+ argument  1 = nwc_pweg_ledgrtlsdy.nw
+ 
+
+
+============================== echo of input deck ==============================
+echo
+start nwc_pweg_dat
+title "E and Grad of 1UBQ-LEDGRTLSDY"
+geometry noautoz
+   load format pdb "ledgrtlsdy.pdb"
+end
+charge +1
+nwpw
+  simulation_cell
+    boundary_conditions aperiodic
+    lattice
+      # coordinate ranges and lattice parameters.
+      # 19 - 36
+      # 12 - 27
+      #  9 - 26
+      lat_a 27.0
+      lat_b 25.0
+      lat_c 27.0
+    end
+  end
+  xc pbe96
+  lmbfgs
+end
+task pspw energy
+================================================================================
+
+
+                                         
+                                         
+ 
+ 
+              Northwest Computational Chemistry Package (NWChem) 6.8
+              ------------------------------------------------------
+ 
+ 
+                    Environmental Molecular Sciences Laboratory
+                       Pacific Northwest National Laboratory
+                                Richland, WA 99352
+ 
+                              Copyright (c) 1994-2015
+                       Pacific Northwest National Laboratory
+                            Battelle Memorial Institute
+ 
+             NWChem is an open-source computational chemistry package
+                        distributed under the terms of the
+                      Educational Community License (ECL) 2.0
+             A copy of the license is included with this distribution
+                              in the LICENSE.TXT file
+ 
+                                  ACKNOWLEDGMENT
+                                  --------------
+
+            This software and its documentation were developed at the
+            EMSL at Pacific Northwest National Laboratory, a multiprogram
+            national laboratory, operated for the U.S. Department of Energy
+            by Battelle under Contract Number DE-AC05-76RL01830. Support
+            for this work was provided by the Department of Energy Office
+            of Biological and Environmental Research, Office of Basic
+            Energy Sciences, and the Office of Advanced Scientific Computing.
+
+
+           Job information
+           ---------------
+
+    hostname        = nid04480
+    program         = /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/./nwchem
+    date            = Sun Dec 10 22:34:51 2017
+
+    compiled        = Sat_Dec_09_21:03:43_2017
+    source          = /global/homes/v/vandam/edison/nwchem-1
+    nwchem branch   = Development
+    nwchem revision = nwchem_on_git-33-g3c4cbf4646b30649e18a6f8f9c6df3a50082e145
+    ga revision     = nwchem_on_git-33-g3c4cbf4
+    use scalapack   = T
+    input           = nwc_pweg_ledgrtlsdy.nw
+    prefix          = nwc_pweg_dat.
+    data base       = /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/nwc_pweg_dat.db
+    status          = startup
+    nproc           =       96
+    time left       =     -1s
+
+
+
+           Memory information
+           ------------------
+
+    heap     =    6553594 doubles =     50.0 Mbytes
+    stack    =  104857599 doubles =    800.0 Mbytes
+    global   =  268435456 doubles =   2048.0 Mbytes (distinct from heap & stack)
+    total    =  379846649 doubles =   2898.0 Mbytes
+    verify   = yes
+    hardfail = no 
+
+
+           Directory information
+           ---------------------
+ 
+  0 permanent = /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900
+  0 scratch   = /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900
+ 
+ 
+ 
+ 
+                                NWChem Input Module
+                                -------------------
+ 
+ 
+                           E and Grad of 1UBQ-LEDGRTLSDY
+                           -----------------------------
+
+ Scaling coordinates for geometry "geometry" by  1.889725989
+ (inverse scale =  0.529177249)
+
+ C1  symmetry detected
+ 
+ 
+                             Geometry "geometry" -> ""
+                             -------------------------
+ 
+ Output coordinates in angstroms (scale by  1.889725989 to convert to a.u.)
+ 
+  No.       Tag          Charge          X              Y              Z
+ ---- ---------------- ---------- -------------- -------------- --------------
+    1 N                    7.0000     6.14742005     3.43696566    -1.07702195
+    2 C                    6.0000     4.83429839     2.94749989    -0.62456115
+    3 C                    6.0000     3.87568442     4.11362427    -0.44793106
+    4 O                    8.0000     4.30340662     5.12306688     0.07434600
+    5 C                    6.0000     5.04572322     2.07237320     0.61433506
+    6 C                    6.0000     6.09728995     0.96905404     0.49649519
+    7 C                    6.0000     6.06672688     0.07163059     1.73703784
+    8 C                    6.0000     5.87393372     0.09200339    -0.71028820
+    9 N                    7.0000     2.62311276     3.94513453    -0.87488944
+   10 C                    6.0000     1.64403395     5.04962478    -0.78480081
+   11 C                    6.0000     0.72964329     4.83124328     0.38884021
+   12 O                    8.0000     0.32796662     3.69570830     0.63079305
+   13 C                    6.0000     0.86528694     5.06816151    -2.08521285
+   14 C                    6.0000    -0.34324528     6.02619195    -2.20012827
+   15 C                    6.0000    -0.41802996     6.64407773    -3.58137821
+   16 O                    8.0000    -1.32408305     7.33012570    -4.00789901
+   17 O                    8.0000     0.64282909     6.32220163    -4.20316986
+   18 N                    7.0000     0.37475195     5.84847947     1.13327333
+   19 C                    6.0000    -0.43146178     5.78763096     2.34759737
+   20 C                    6.0000    -1.72848709     4.99770133     2.37960558
+   21 O                    8.0000    -2.03656031     4.38694297     3.44255531
+   22 C                    6.0000    -0.68967365     7.24483397     2.83273861
+   23 C                    6.0000     0.51588707     7.82942960     3.54075011
+   24 O                    8.0000     0.46698502     9.01220351     3.94423922
+   25 O                    8.0000     1.54770491     7.16125534     3.69399859
+   26 N                    7.0000    -2.52813171     5.08904060     1.34175607
+   27 C                    6.0000    -3.84525007     4.43358773     1.24385942
+   28 C                    6.0000    -3.83629895     3.00471250     0.81431147
+   29 O                    8.0000    -4.87506925     2.30865621     0.87951822
+   30 N                    7.0000    -2.70296213     2.46553304     0.37994508
+   31 C                    6.0000    -2.59802891     1.03926762     0.01034396
+   32 C                    6.0000    -2.30981829     0.24504182     1.27539337
+   33 O                    8.0000    -1.85497071     0.81137341     2.29272381
+   34 C                    6.0000    -1.47257252     0.78910529    -0.99606089
+   35 C                    6.0000    -1.58157933     1.62808068    -2.28545098
+   36 C                    6.0000    -2.77622243     1.02170737    -3.07645368
+   37 N                    7.0000    -3.77715721     2.06484744    -3.09252753
+   38 C                    6.0000    -5.03458897     2.15546134    -2.78754965
+   39 N                    7.0000    -5.79151595     1.17348655    -2.33567902
+   40 N                    7.0000    -5.61950615     3.37933344    -2.87713733
+   41 N                    7.0000    -2.47259478    -1.05227142     1.20261856
+   42 C                    6.0000    -2.18125132    -1.98856284     2.31188109
+   43 C                    6.0000    -0.85245818    -2.69781885     1.95884609
+   44 O                    8.0000    -0.39820476    -2.63237696     0.82122173
+   45 C                    6.0000    -3.30983019    -3.05169572     2.47110479
+   46 O                    8.0000    -3.29618430    -3.72766825     1.13983211
+   47 C                    6.0000    -4.70549469    -2.53447033     2.75689053
+   48 N                    7.0000    -0.26491635    -3.32959741     2.95396640
+   49 C                    6.0000     0.97401722    -4.10584850     2.77421417
+   50 C                    6.0000     0.69161681    -5.23242915     1.78384603
+   51 O                    8.0000     1.51599139    -5.47775158     0.94553734
+   52 C                    6.0000     1.42548858    -4.61833829     4.15826252
+   53 C                    6.0000     1.74559244    -3.60155948     5.25343527
+   54 C                    6.0000     2.19155076    -4.31398935     6.54084734
+   55 C                    6.0000     2.93759817    -2.73768125     4.84749592
+   56 N                    7.0000    -0.52658703    -5.81009932     1.83683268
+   57 C                    6.0000    -0.79833620    -6.91419965     0.88273004
+   58 C                    6.0000    -0.76571573    -6.44708302    -0.55556198
+   59 O                    8.0000    -0.38947457    -7.23430861    -1.47559212
+   60 C                    6.0000    -2.13806754    -7.59986497     1.18587687
+   61 O                    8.0000    -3.19320023    -6.68338320     1.11009320
+   62 N                    7.0000    -1.11018551    -5.19360266    -0.78877557
+   63 C                    6.0000    -1.10814742    -4.62961359    -2.16488682
+   64 C                    6.0000     0.26608679    -4.80348712    -2.81888478
+   65 O                    8.0000     0.40909007    -4.92021594    -4.03946802
+   66 C                    6.0000    -1.56878627    -3.19271163    -2.22427215
+   67 C                    6.0000    -3.03953780    -2.93921459    -2.02560868
+   68 O                    8.0000    -3.40831925    -1.81438394    -1.63845206
+   69 O                    8.0000    -3.80875319    -3.91638345    -2.28830568
+   70 N                    7.0000     1.28283272    -4.61283164    -2.02735006
+   71 C                    6.0000     2.67913139    -4.74193788    -2.43931074
+   72 C                    6.0000     3.23059722    -6.13467794    -2.23191126
+   73 O                    8.0000     4.43741612    -6.32490000    -2.48382734
+   74 C                    6.0000     3.48485979    -3.71576413    -1.63947938
+   75 C                    6.0000     3.09889206    -2.28428022    -1.92741639
+   76 C                    6.0000     2.31814878    -1.55030079    -1.03401103
+   77 C                    6.0000     3.59442616    -1.65160851    -3.06454983
+   78 C                    6.0000     1.98798531    -0.22070516    -1.31698198
+   79 C                    6.0000     3.27590433    -0.33341402    -3.35060075
+   80 C                    6.0000     2.46804682     0.37261647    -2.46174238
+   81 O                    8.0000     2.24186544     1.70058773    -2.77132324
+   82 H                    1.0000     6.94469923     3.53896387    -0.35112438
+   83 H                    1.0000     4.33163915     2.28264230    -1.40237609
+   84 H                    1.0000     5.35459552     2.75573851     1.47266761
+   85 H                    1.0000     4.05550749     1.53069631     0.77537218
+   86 H                    1.0000     7.10423202     1.49354929     0.39344962
+   87 H                    1.0000     5.02085484    -0.36327323     1.86681980
+   88 H                    1.0000     6.81762868    -0.77645753     1.61102984
+   89 H                    1.0000     6.33884118     0.68669021     2.65733153
+   90 H                    1.0000     4.76000663     0.04843382    -0.94736863
+   91 H                    1.0000     6.43640016     0.52395226    -1.60304611
+   92 H                    1.0000     6.25762706    -0.95939858    -0.49145649
+   93 H                    1.0000     2.32063470     2.99260099    -1.29060073
+   94 H                    1.0000     2.16632199     6.05048938    -0.62723420
+   95 H                    1.0000     1.59701961     5.34660602    -2.91314518
+   96 H                    1.0000     0.40769149     4.02720772    -2.15472989
+   97 H                    1.0000    -1.30186717     5.44242932    -2.00025017
+   98 H                    1.0000    -0.21808264     6.86202852    -1.43466270
+   99 H                    1.0000     1.37779783     5.71987636    -3.72477753
+  100 H                    1.0000     0.71173663     6.82797463     0.81791393
+  101 H                    1.0000     0.21534829     5.15390647     3.03952222
+  102 H                    1.0000    -0.93716856     7.89459215     1.92941055
+  103 H                    1.0000    -1.55597762     7.22123667     3.57359933
+  104 H                    1.0000    -0.41155245     9.59133361     3.78892584
+  105 H                    1.0000    -2.19829897     5.68659371     0.50116898
+  106 H                    1.0000    -4.33722728     4.48591778     2.27047619
+  107 H                    1.0000    -4.40718159     4.99593646     0.42689806
+  108 H                    1.0000    -1.82491844     3.09365778     0.29375584
+  109 H                    1.0000    -3.57724440     0.71786938    -0.47582082
+  110 H                    1.0000    -0.48022913     1.03542669    -0.49178184
+  111 H                    1.0000    -1.54853847    -0.30407377    -1.30836476
+  112 H                    1.0000    -1.78456781     2.72102385    -2.03379669
+  113 H                    1.0000    -0.61561853     1.60102218    -2.89069273
+  114 H                    1.0000    -2.45936503     0.75270856    -4.13762050
+  115 H                    1.0000    -3.16331082     0.06126533    -2.60054647
+  116 H                    1.0000    -3.37744808     3.00622310    -3.44820499
+  117 H                    1.0000    -5.36911742     0.18733082    -2.19096773
+  118 H                    1.0000    -6.83472320     1.35401213    -2.10997757
+  119 H                    1.0000    -5.03754511     4.23549708    -3.19345549
+  120 H                    1.0000    -2.84360625    -1.46637355     0.27308162
+  121 H                    1.0000    -2.11213456    -1.41691327     3.29603843
+  122 H                    1.0000    -3.09707080    -3.69927815     3.38411325
+  123 H                    1.0000    -4.32857034    -3.86024240     0.78457706
+  124 H                    1.0000    -5.44627820    -3.02321055     2.04203196
+  125 H                    1.0000    -4.99165238    -2.78694709     3.83065739
+  126 H                    1.0000    -4.72852561    -1.40394017     2.61291432
+  127 H                    1.0000    -0.70891298    -3.27650733     3.94029314
+  128 H                    1.0000     1.82303117    -3.47688586     2.34597440
+  129 H                    1.0000     0.59227980    -5.28678463     4.55570888
+  130 H                    1.0000     2.42658452    -5.12313277     3.95164823
+  131 H                    1.0000     0.80044822    -2.98384478     5.41230618
+  132 H                    1.0000     2.67233928    -5.31330411     6.27574471
+  133 H                    1.0000     2.94748221    -3.66318735     7.09358091
+  134 H                    1.0000     1.28466100    -4.49441340     7.20882348
+  135 H                    1.0000     3.51455727    -3.25440364     4.01046775
+  136 H                    1.0000     2.56476281    -1.72372363     4.48266070
+  137 H                    1.0000     3.62331445    -2.58984211     5.74663705
+  138 H                    1.0000    -1.27522553    -5.48189860     2.54585008
+  139 H                    1.0000     0.03972662    -7.67420361     1.02147691
+  140 H                    1.0000    -2.31184973    -8.43364485     0.42740481
+  141 H                    1.0000    -2.09924294    -8.02657242     2.24203188
+  142 H                    1.0000    -3.70109580    -6.78842990     0.14025132
+  143 H                    1.0000    -1.40089078    -4.56176306     0.04078465
+  144 H                    1.0000    -1.87549459    -5.22591597    -2.76153477
+  145 H                    1.0000    -1.00820787    -2.61728231    -1.41500955
+  146 H                    1.0000    -1.35090046    -2.85501774    -3.29069120
+  147 H                    1.0000    -2.68853991    -1.05261611    -1.45390541
+  148 H                    1.0000     1.08090829    -4.34191728    -0.99892071
+  149 H                    1.0000     2.75605209    -4.54886595    -3.56066904
+  150 H                    1.0000     3.32163939    -3.91642594    -0.52888002
+  151 H                    1.0000     4.57596454    -3.83549954    -1.94715268
+  152 H                    1.0000     1.96043057    -2.01854836    -0.10344352
+  153 H                    1.0000     4.25237375    -2.20941105    -3.74956391
+  154 H                    1.0000     1.34602329     0.34878828    -0.62651040
+  155 H                    1.0000     3.65490806     0.14762702    -4.26592839
+  156 H                    1.0000     1.67422480     2.31140497    -2.11166847
+  157 H                    1.0000     5.99797081     4.35819886    -1.48966746
+  158 H                    1.0000    -6.57193849     3.48710748    -2.65428672
+  159 H                    1.0000     2.62903708    -6.90176095    -1.89344550
+ 
+      Atomic Mass 
+      ----------- 
+ 
+      N                 14.003070
+      C                 12.000000
+      O                 15.994910
+      H                  1.007825
+ 
+
+ Effective nuclear repulsion energy (a.u.)   16401.5265239332
+
+            Nuclear Dipole moment (a.u.) 
+            ----------------------------
+        X                 Y               Z
+ ---------------- ---------------- ----------------
+    -0.0000000000     0.0000000000     0.0000000000
+ 
+ 
+            XYZ format geometry
+            -------------------
+   159
+ geometry
+ N                     6.14742005     3.43696566    -1.07702195
+ C                     4.83429839     2.94749989    -0.62456115
+ C                     3.87568442     4.11362427    -0.44793106
+ O                     4.30340662     5.12306688     0.07434600
+ C                     5.04572322     2.07237320     0.61433506
+ C                     6.09728995     0.96905404     0.49649519
+ C                     6.06672688     0.07163059     1.73703784
+ C                     5.87393372     0.09200339    -0.71028820
+ N                     2.62311276     3.94513453    -0.87488944
+ C                     1.64403395     5.04962478    -0.78480081
+ C                     0.72964329     4.83124328     0.38884021
+ O                     0.32796662     3.69570830     0.63079305
+ C                     0.86528694     5.06816151    -2.08521285
+ C                    -0.34324528     6.02619195    -2.20012827
+ C                    -0.41802996     6.64407773    -3.58137821
+ O                    -1.32408305     7.33012570    -4.00789901
+ O                     0.64282909     6.32220163    -4.20316986
+ N                     0.37475195     5.84847947     1.13327333
+ C                    -0.43146178     5.78763096     2.34759737
+ C                    -1.72848709     4.99770133     2.37960558
+ O                    -2.03656031     4.38694297     3.44255531
+ C                    -0.68967365     7.24483397     2.83273861
+ C                     0.51588707     7.82942960     3.54075011
+ O                     0.46698502     9.01220351     3.94423922
+ O                     1.54770491     7.16125534     3.69399859
+ N                    -2.52813171     5.08904060     1.34175607
+ C                    -3.84525007     4.43358773     1.24385942
+ C                    -3.83629895     3.00471250     0.81431147
+ O                    -4.87506925     2.30865621     0.87951822
+ N                    -2.70296213     2.46553304     0.37994508
+ C                    -2.59802891     1.03926762     0.01034396
+ C                    -2.30981829     0.24504182     1.27539337
+ O                    -1.85497071     0.81137341     2.29272381
+ C                    -1.47257252     0.78910529    -0.99606089
+ C                    -1.58157933     1.62808068    -2.28545098
+ C                    -2.77622243     1.02170737    -3.07645368
+ N                    -3.77715721     2.06484744    -3.09252753
+ C                    -5.03458897     2.15546134    -2.78754965
+ N                    -5.79151595     1.17348655    -2.33567902
+ N                    -5.61950615     3.37933344    -2.87713733
+ N                    -2.47259478    -1.05227142     1.20261856
+ C                    -2.18125132    -1.98856284     2.31188109
+ C                    -0.85245818    -2.69781885     1.95884609
+ O                    -0.39820476    -2.63237696     0.82122173
+ C                    -3.30983019    -3.05169572     2.47110479
+ O                    -3.29618430    -3.72766825     1.13983211
+ C                    -4.70549469    -2.53447033     2.75689053
+ N                    -0.26491635    -3.32959741     2.95396640
+ C                     0.97401722    -4.10584850     2.77421417
+ C                     0.69161681    -5.23242915     1.78384603
+ O                     1.51599139    -5.47775158     0.94553734
+ C                     1.42548858    -4.61833829     4.15826252
+ C                     1.74559244    -3.60155948     5.25343527
+ C                     2.19155076    -4.31398935     6.54084734
+ C                     2.93759817    -2.73768125     4.84749592
+ N                    -0.52658703    -5.81009932     1.83683268
+ C                    -0.79833620    -6.91419965     0.88273004
+ C                    -0.76571573    -6.44708302    -0.55556198
+ O                    -0.38947457    -7.23430861    -1.47559212
+ C                    -2.13806754    -7.59986497     1.18587687
+ O                    -3.19320023    -6.68338320     1.11009320
+ N                    -1.11018551    -5.19360266    -0.78877557
+ C                    -1.10814742    -4.62961359    -2.16488682
+ C                     0.26608679    -4.80348712    -2.81888478
+ O                     0.40909007    -4.92021594    -4.03946802
+ C                    -1.56878627    -3.19271163    -2.22427215
+ C                    -3.03953780    -2.93921459    -2.02560868
+ O                    -3.40831925    -1.81438394    -1.63845206
+ O                    -3.80875319    -3.91638345    -2.28830568
+ N                     1.28283272    -4.61283164    -2.02735006
+ C                     2.67913139    -4.74193788    -2.43931074
+ C                     3.23059722    -6.13467794    -2.23191126
+ O                     4.43741612    -6.32490000    -2.48382734
+ C                     3.48485979    -3.71576413    -1.63947938
+ C                     3.09889206    -2.28428022    -1.92741639
+ C                     2.31814878    -1.55030079    -1.03401103
+ C                     3.59442616    -1.65160851    -3.06454983
+ C                     1.98798531    -0.22070516    -1.31698198
+ C                     3.27590433    -0.33341402    -3.35060075
+ C                     2.46804682     0.37261647    -2.46174238
+ O                     2.24186544     1.70058773    -2.77132324
+ H                     6.94469923     3.53896387    -0.35112438
+ H                     4.33163915     2.28264230    -1.40237609
+ H                     5.35459552     2.75573851     1.47266761
+ H                     4.05550749     1.53069631     0.77537218
+ H                     7.10423202     1.49354929     0.39344962
+ H                     5.02085484    -0.36327323     1.86681980
+ H                     6.81762868    -0.77645753     1.61102984
+ H                     6.33884118     0.68669021     2.65733153
+ H                     4.76000663     0.04843382    -0.94736863
+ H                     6.43640016     0.52395226    -1.60304611
+ H                     6.25762706    -0.95939858    -0.49145649
+ H                     2.32063470     2.99260099    -1.29060073
+ H                     2.16632199     6.05048938    -0.62723420
+ H                     1.59701961     5.34660602    -2.91314518
+ H                     0.40769149     4.02720772    -2.15472989
+ H                    -1.30186717     5.44242932    -2.00025017
+ H                    -0.21808264     6.86202852    -1.43466270
+ H                     1.37779783     5.71987636    -3.72477753
+ H                     0.71173663     6.82797463     0.81791393
+ H                     0.21534829     5.15390647     3.03952222
+ H                    -0.93716856     7.89459215     1.92941055
+ H                    -1.55597762     7.22123667     3.57359933
+ H                    -0.41155245     9.59133361     3.78892584
+ H                    -2.19829897     5.68659371     0.50116898
+ H                    -4.33722728     4.48591778     2.27047619
+ H                    -4.40718159     4.99593646     0.42689806
+ H                    -1.82491844     3.09365778     0.29375584
+ H                    -3.57724440     0.71786938    -0.47582082
+ H                    -0.48022913     1.03542669    -0.49178184
+ H                    -1.54853847    -0.30407377    -1.30836476
+ H                    -1.78456781     2.72102385    -2.03379669
+ H                    -0.61561853     1.60102218    -2.89069273
+ H                    -2.45936503     0.75270856    -4.13762050
+ H                    -3.16331082     0.06126533    -2.60054647
+ H                    -3.37744808     3.00622310    -3.44820499
+ H                    -5.36911742     0.18733082    -2.19096773
+ H                    -6.83472320     1.35401213    -2.10997757
+ H                    -5.03754511     4.23549708    -3.19345549
+ H                    -2.84360625    -1.46637355     0.27308162
+ H                    -2.11213456    -1.41691327     3.29603843
+ H                    -3.09707080    -3.69927815     3.38411325
+ H                    -4.32857034    -3.86024240     0.78457706
+ H                    -5.44627820    -3.02321055     2.04203196
+ H                    -4.99165238    -2.78694709     3.83065739
+ H                    -4.72852561    -1.40394017     2.61291432
+ H                    -0.70891298    -3.27650733     3.94029314
+ H                     1.82303117    -3.47688586     2.34597440
+ H                     0.59227980    -5.28678463     4.55570888
+ H                     2.42658452    -5.12313277     3.95164823
+ H                     0.80044822    -2.98384478     5.41230618
+ H                     2.67233928    -5.31330411     6.27574471
+ H                     2.94748221    -3.66318735     7.09358091
+ H                     1.28466100    -4.49441340     7.20882348
+ H                     3.51455727    -3.25440364     4.01046775
+ H                     2.56476281    -1.72372363     4.48266070
+ H                     3.62331445    -2.58984211     5.74663705
+ H                    -1.27522553    -5.48189860     2.54585008
+ H                     0.03972662    -7.67420361     1.02147691
+ H                    -2.31184973    -8.43364485     0.42740481
+ H                    -2.09924294    -8.02657242     2.24203188
+ H                    -3.70109580    -6.78842990     0.14025132
+ H                    -1.40089078    -4.56176306     0.04078465
+ H                    -1.87549459    -5.22591597    -2.76153477
+ H                    -1.00820787    -2.61728231    -1.41500955
+ H                    -1.35090046    -2.85501774    -3.29069120
+ H                    -2.68853991    -1.05261611    -1.45390541
+ H                     1.08090829    -4.34191728    -0.99892071
+ H                     2.75605209    -4.54886595    -3.56066904
+ H                     3.32163939    -3.91642594    -0.52888002
+ H                     4.57596454    -3.83549954    -1.94715268
+ H                     1.96043057    -2.01854836    -0.10344352
+ H                     4.25237375    -2.20941105    -3.74956391
+ H                     1.34602329     0.34878828    -0.62651040
+ H                     3.65490806     0.14762702    -4.26592839
+ H                     1.67422480     2.31140497    -2.11166847
+ H                     5.99797081     4.35819886    -1.48966746
+ H                    -6.57193849     3.48710748    -2.65428672
+ H                     2.62903708    -6.90176095    -1.89344550
+ 
+ ==============================================================================
+                                internuclear distances
+ ------------------------------------------------------------------------------
+       center one      |      center two      | atomic units |  angstroms
+ ------------------------------------------------------------------------------
+    2 C                |   1 N                |     2.78283  |     1.47261
+    3 C                |   2 C                |     2.87213  |     1.51986
+    4 O                |   3 C                |     2.29483  |     1.21437
+    5 C                |   2 C                |     2.89407  |     1.53147
+    6 C                |   5 C                |     2.88887  |     1.52872
+    7 C                |   6 C                |     2.89397  |     1.53142
+    8 C                |   6 C                |     2.85056  |     1.50845
+    9 N                |   3 C                |     2.52094  |     1.33402
+   10 C                |   9 N                |     2.79437  |     1.47872
+   11 C                |  10 C                |     2.84166  |     1.50374
+   12 O                |  11 C                |     2.32162  |     1.22855
+   13 C                |  10 C                |     2.86458  |     1.51587
+   14 C                |  13 C                |     2.92241  |     1.54647
+   15 C                |  14 C                |     2.86294  |     1.51500
+   16 O                |  15 C                |     2.29391  |     1.21388
+   17 O                |  15 C                |     2.40200  |     1.27108
+   18 N                |  11 C                |     2.47467  |     1.30954
+   19 C                |  18 N                |     2.75684  |     1.45886
+   20 C                |  19 C                |     2.87045  |     1.51898
+   21 O                |  20 C                |     2.38869  |     1.26404
+   22 C                |  19 C                |     2.94305  |     1.55739
+   23 C                |  22 C                |     2.86367  |     1.51539
+   24 O                |  23 C                |     2.36340  |     1.25066
+   25 O                |  23 C                |     2.34097  |     1.23879
+   26 N                |  20 C                |     2.48188  |     1.31336
+   27 C                |  26 N                |     2.78631  |     1.47445
+   28 C                |  27 C                |     2.81961  |     1.49207
+   29 O                |  28 C                |     2.36615  |     1.25211
+   30 N                |  28 C                |     2.50974  |     1.32810
+   31 C                |  30 N                |     2.79133  |     1.47711
+   32 C                |  31 C                |     2.87475  |     1.52125
+   33 O                |  32 C                |     2.36222  |     1.25003
+   34 C                |  31 C                |     2.89201  |     1.53039
+   35 C                |  34 C                |     2.91428  |     1.54217
+   36 C                |  35 C                |     2.94006  |     1.55581
+   37 N                |  36 C                |     2.73212  |     1.44578
+   38 C                |  37 N                |     2.45108  |     1.29706
+   39 N                |  38 C                |     2.49372  |     1.31962
+   40 N                |  38 C                |     2.56893  |     1.35942
+   41 N                |  32 C                |     2.47461  |     1.30951
+   42 C                |  41 N                |     2.79781  |     1.48054
+   43 C                |  42 C                |     2.92350  |     1.54705
+   44 O                |  43 C                |     2.31815  |     1.22671
+   45 C                |  42 C                |     2.94536  |     1.55862
+   46 O                |  45 C                |     2.82159  |     1.49312
+   47 C                |  45 C                |     2.86409  |     1.51561
+   48 N                |  43 C                |     2.48886  |     1.31705
+   49 C                |  48 N                |     2.78363  |     1.47304
+   50 C                |  49 C                |     2.88439  |     1.52636
+   51 O                |  50 C                |     2.26967  |     1.20106
+   52 C                |  49 C                |     2.91659  |     1.54339
+   53 C                |  52 C                |     2.88807  |     1.52830
+   54 C                |  53 C                |     2.90543  |     1.53749
+   55 C                |  53 C                |     2.88575  |     1.52707
+   56 N                |  50 C                |     2.54975  |     1.34927
+   57 C                |  56 N                |     2.80495  |     1.48432
+   58 C                |  57 C                |     2.85839  |     1.51260
+   59 O                |  58 C                |     2.39611  |     1.26797
+   60 C                |  57 C                |     2.90115  |     1.53522
+   61 O                |  60 C                |     2.64493  |     1.39964
+   62 N                |  58 C                |     2.49577  |     1.32070
+   63 C                |  62 N                |     2.81040  |     1.48720
+   64 C                |  63 C                |     2.89472  |     1.53182
+   65 O                |  64 C                |     2.33280  |     1.23446
+   66 C                |  63 C                |     2.85368  |     1.51010
+   67 C                |  66 C                |     2.84518  |     1.50560
+   68 O                |  67 C                |     2.35355  |     1.24545
+   69 O                |  67 C                |     2.40193  |     1.27105
+   70 N                |  64 C                |     2.46147  |     1.30255
+   71 C                |  70 N                |     2.76187  |     1.46152
+   72 C                |  71 C                |     2.85771  |     1.51223
+   73 O                |  72 C                |     2.35728  |     1.24742
+   74 C                |  71 C                |     2.89194  |     1.53035
+   75 C                |  74 C                |     2.85406  |     1.51031
+   76 C                |  75 C                |     2.63646  |     1.39516
+   77 C                |  75 C                |     2.63134  |     1.39244
+   78 C                |  76 C                |     2.64353  |     1.39889
+   79 C                |  77 C                |     2.61911  |     1.38597
+   80 C                |  78 C                |     2.59998  |     1.37585
+   80 C                |  79 C                |     2.63289  |     1.39326
+   81 O                |  80 C                |     2.61200  |     1.38221
+   82 H                |   1 N                |     2.04666  |     1.08304
+   83 H                |   2 C                |     2.15437  |     1.14004
+   84 H                |   5 C                |     2.15389  |     1.13979
+   85 H                |   5 C                |     2.15451  |     1.14012
+   86 H                |   6 C                |     2.15433  |     1.14002
+   87 H                |   7 C                |     2.15448  |     1.14010
+   88 H                |   7 C                |     2.15378  |     1.13973
+   89 H                |   7 C                |     2.15403  |     1.13986
+   90 H                |   8 C                |     2.15374  |     1.13971
+   91 H                |   8 C                |     2.15459  |     1.14016
+   92 H                |   8 C                |     2.15508  |     1.14042
+   93 H                |   9 N                |     2.04547  |     1.08242
+   94 H                |  10 C                |     2.15407  |     1.13989
+   95 H                |  13 C                |     2.15332  |     1.13949
+   96 H                |  13 C                |     2.15280  |     1.13922
+   97 H                |  14 C                |     2.15436  |     1.14004
+   98 H                |  14 C                |     2.15481  |     1.14027
+   99 H                |  17 O                |     2.01044  |     1.06388
+  100 H                |  18 N                |     2.04616  |     1.08278
+  101 H                |  19 C                |     2.15357  |     1.13962
+  102 H                |  22 C                |     2.15416  |     1.13993
+  103 H                |  22 C                |     2.15455  |     1.14014
+  104 H                |  24 O                |     2.01000  |     1.06365
+  105 H                |  26 N                |     2.04619  |     1.08280
+  106 H                |  27 C                |     2.15356  |     1.13961
+  107 H                |  27 C                |     2.15415  |     1.13992
+  108 H                |  30 N                |     2.04661  |     1.08302
+  109 H                |  31 C                |     2.15339  |     1.13952
+  110 H                |  34 C                |     2.15438  |     1.14005
+  111 H                |  34 C                |     2.15325  |     1.13945
+  112 H                |  35 C                |     2.15384  |     1.13976
+  113 H                |  35 C                |     2.15473  |     1.14023
+  114 H                |  36 C                |     2.15365  |     1.13966
+  115 H                |  36 C                |     2.15360  |     1.13964
+  116 H                |  37 N                |     2.04620  |     1.08280
+  117 H                |  39 N                |     2.04568  |     1.08253
+  118 H                |  39 N                |     2.04563  |     1.08250
+  119 H                |  40 N                |     2.04558  |     1.08247
+  120 H                |  41 N                |     2.04682  |     1.08313
+  121 H                |  42 C                |     2.15472  |     1.14023
+  122 H                |  45 C                |     2.15314  |     1.13939
+  124 H                |  47 C                |     2.15350  |     1.13958
+  125 H                |  47 C                |     2.15346  |     1.13956
+  126 H                |  47 C                |     2.15409  |     1.13989
+  127 H                |  48 N                |     2.04649  |     1.08296
+  128 H                |  49 C                |     2.15446  |     1.14009
+  129 H                |  52 C                |     2.15381  |     1.13975
+  130 H                |  52 C                |     2.15437  |     1.14004
+  131 H                |  53 C                |     2.15471  |     1.14022
+  132 H                |  54 C                |     2.15467  |     1.14020
+  133 H                |  54 C                |     2.15503  |     1.14039
+  134 H                |  54 C                |     2.15561  |     1.14070
+  135 H                |  55 C                |     2.15503  |     1.14039
+  136 H                |  55 C                |     2.15480  |     1.14027
+  137 H                |  55 C                |     2.15505  |     1.14040
+  138 H                |  56 N                |     2.04482  |     1.08207
+  139 H                |  57 C                |     2.15396  |     1.13983
+  140 H                |  60 C                |     2.15517  |     1.14047
+  141 H                |  60 C                |     2.15383  |     1.13976
+  143 H                |  62 N                |     2.04571  |     1.08254
+  144 H                |  63 C                |     2.15494  |     1.14035
+  145 H                |  66 C                |     2.15485  |     1.14030
+  146 H                |  66 C                |     2.15359  |     1.13963
+  147 H                |  68 O                |     2.01097  |     1.06416
+  148 H                |  70 N                |     2.04565  |     1.08251
+  149 H                |  71 C                |     2.15515  |     1.14046
+  150 H                |  74 C                |     2.15490  |     1.14032
+  151 H                |  74 C                |     2.15421  |     1.13996
+  152 H                |  76 C                |     2.08142  |     1.10144
+  153 H                |  77 C                |     2.08152  |     1.10149
+  154 H                |  78 C                |     2.08144  |     1.10145
+  155 H                |  79 C                |     2.08116  |     1.10130
+  156 H                |  81 O                |     2.00921  |     1.06323
+  157 H                |   1 N                |     1.92834  |     1.02043
+  158 H                |  40 N                |     1.85963  |     0.98408
+  159 H                |  72 C                |     1.95004  |     1.03192
+ ------------------------------------------------------------------------------
+                         number of included internuclear distances:        157
+ ==============================================================================
+
+
+
+ ==============================================================================
+                                 internuclear angles
+ ------------------------------------------------------------------------------
+        center 1       |       center 2       |       center 3       |  degrees
+ ------------------------------------------------------------------------------
+    2 C                |   1 N                |  82 H                |   118.80
+    2 C                |   1 N                | 157 H                |   107.08
+   82 H                |   1 N                | 157 H                |   107.09
+    1 N                |   2 C                |   3 C                |   110.07
+    1 N                |   2 C                |   5 C                |   108.38
+    1 N                |   2 C                |  83 H                |   112.17
+    3 C                |   2 C                |   5 C                |   115.56
+    3 C                |   2 C                |  83 H                |   104.40
+    5 C                |   2 C                |  83 H                |   106.23
+    2 C                |   3 C                |   4 O                |   117.75
+    2 C                |   3 C                |   9 N                |   117.27
+    4 O                |   3 C                |   9 N                |   124.98
+    2 C                |   5 C                |   6 C                |   116.42
+    2 C                |   5 C                |  84 H                |   107.70
+    2 C                |   5 C                |  85 H                |   105.42
+    6 C                |   5 C                |  84 H                |   107.72
+    6 C                |   5 C                |  85 H                |   105.39
+   84 H                |   5 C                |  85 H                |   114.45
+    5 C                |   6 C                |   7 C                |   110.29
+    5 C                |   6 C                |   8 C                |   112.30
+    5 C                |   6 C                |  86 H                |   106.41
+    7 C                |   6 C                |   8 C                |   107.72
+    7 C                |   6 C                |  86 H                |   111.13
+    8 C                |   6 C                |  86 H                |   109.02
+    6 C                |   7 C                |  87 H                |   109.52
+    6 C                |   7 C                |  88 H                |   109.47
+    6 C                |   7 C                |  89 H                |   109.45
+   87 H                |   7 C                |  88 H                |   109.46
+   87 H                |   7 C                |  89 H                |   109.45
+   88 H                |   7 C                |  89 H                |   109.48
+    6 C                |   8 C                |  90 H                |   109.47
+    6 C                |   8 C                |  91 H                |   109.46
+    6 C                |   8 C                |  92 H                |   109.43
+   90 H                |   8 C                |  91 H                |   109.50
+   90 H                |   8 C                |  92 H                |   109.48
+   91 H                |   8 C                |  92 H                |   109.48
+    3 C                |   9 N                |  10 C                |   120.52
+    3 C                |   9 N                |  93 H                |   119.77
+   10 C                |   9 N                |  93 H                |   119.71
+    9 N                |  10 C                |  11 C                |   109.98
+    9 N                |  10 C                |  13 C                |   107.28
+    9 N                |  10 C                |  94 H                |   111.15
+   11 C                |  10 C                |  13 C                |   111.03
+   11 C                |  10 C                |  94 H                |   107.35
+   13 C                |  10 C                |  94 H                |   110.07
+   10 C                |  11 C                |  12 O                |   119.13
+   10 C                |  11 C                |  18 N                |   119.71
+   12 O                |  11 C                |  18 N                |   121.16
+   10 C                |  13 C                |  14 C                |   118.22
+   10 C                |  13 C                |  95 H                |   107.24
+   10 C                |  13 C                |  96 H                |   104.33
+   14 C                |  13 C                |  95 H                |   107.25
+   14 C                |  13 C                |  96 H                |   104.34
+   95 H                |  13 C                |  96 H                |   115.91
+   13 C                |  14 C                |  15 C                |   111.04
+   13 C                |  14 C                |  97 H                |   109.08
+   13 C                |  14 C                |  98 H                |   108.57
+   15 C                |  14 C                |  97 H                |   109.10
+   15 C                |  14 C                |  98 H                |   108.57
+   97 H                |  14 C                |  98 H                |   110.48
+   14 C                |  15 C                |  16 O                |   125.99
+   14 C                |  15 C                |  17 O                |   107.55
+   16 O                |  15 C                |  17 O                |   126.46
+   15 C                |  17 O                |  99 H                |   120.00
+   11 C                |  18 N                |  19 C                |   126.20
+   11 C                |  18 N                | 100 H                |   116.92
+   19 C                |  18 N                | 100 H                |   116.88
+   18 N                |  19 C                |  20 C                |   120.74
+   18 N                |  19 C                |  22 C                |   108.17
+   18 N                |  19 C                | 101 H                |   102.41
+   20 C                |  19 C                |  22 C                |   109.78
+   20 C                |  19 C                | 101 H                |   100.52
+   22 C                |  19 C                | 101 H                |   115.17
+   19 C                |  20 C                |  21 O                |   118.50
+   19 C                |  20 C                |  26 N                |   117.84
+   21 O                |  20 C                |  26 N                |   123.35
+   19 C                |  22 C                |  23 C                |   112.00
+   19 C                |  22 C                | 102 H                |   108.81
+   19 C                |  22 C                | 103 H                |   108.00
+   23 C                |  22 C                | 102 H                |   108.85
+   23 C                |  22 C                | 103 H                |   107.99
+  102 H                |  22 C                | 103 H                |   111.21
+   22 C                |  23 C                |  24 O                |   118.98
+   22 C                |  23 C                |  25 O                |   120.82
+   24 O                |  23 C                |  25 O                |   120.18
+   23 C                |  24 O                | 104 H                |   120.01
+   20 C                |  26 N                |  27 C                |   124.43
+   20 C                |  26 N                | 105 H                |   117.80
+   27 C                |  26 N                | 105 H                |   117.77
+   26 N                |  27 C                |  28 C                |   116.07
+   26 N                |  27 C                | 106 H                |   107.78
+   26 N                |  27 C                | 107 H                |   105.58
+   28 C                |  27 C                | 106 H                |   107.81
+   28 C                |  27 C                | 107 H                |   105.61
+  106 H                |  27 C                | 107 H                |   114.21
+   27 C                |  28 C                |  29 O                |   120.82
+   27 C                |  28 C                |  30 N                |   119.21
+   29 O                |  28 C                |  30 N                |   119.95
+   28 C                |  30 N                |  31 C                |   122.31
+   28 C                |  30 N                | 108 H                |   118.84
+   31 C                |  30 N                | 108 H                |   118.85
+   30 N                |  31 C                |  32 C                |   108.03
+   30 N                |  31 C                |  34 C                |   112.00
+   30 N                |  31 C                | 109 H                |   108.54
+   32 C                |  31 C                |  34 C                |   108.80
+   32 C                |  31 C                | 109 H                |   111.74
+   34 C                |  31 C                | 109 H                |   107.78
+   31 C                |  32 C                |  33 O                |   120.61
+   31 C                |  32 C                |  41 N                |   116.58
+   33 O                |  32 C                |  41 N                |   122.64
+   31 C                |  34 C                |  35 C                |   114.14
+   31 C                |  34 C                | 110 H                |   108.30
+   31 C                |  34 C                | 111 H                |   106.74
+   35 C                |  34 C                | 110 H                |   108.29
+   35 C                |  34 C                | 111 H                |   106.74
+  110 H                |  34 C                | 111 H                |   112.74
+   34 C                |  35 C                |  36 C                |   105.51
+   34 C                |  35 C                | 112 H                |   110.47
+   34 C                |  35 C                | 113 H                |   111.78
+   36 C                |  35 C                | 112 H                |   110.44
+   36 C                |  35 C                | 113 H                |   111.80
+  112 H                |  35 C                | 113 H                |   106.91
+   35 C                |  36 C                |  37 N                |   104.84
+   35 C                |  36 C                | 114 H                |   110.60
+   35 C                |  36 C                | 115 H                |   112.15
+   37 N                |  36 C                | 114 H                |   110.64
+   37 N                |  36 C                | 115 H                |   112.18
+  114 H                |  36 C                | 115 H                |   106.52
+   36 C                |  37 N                |  38 C                |   135.97
+   36 C                |  37 N                | 116 H                |   112.05
+   38 C                |  37 N                | 116 H                |   111.99
+   37 N                |  38 C                |  39 N                |   125.77
+   37 N                |  38 C                |  40 N                |   117.68
+   39 N                |  38 C                |  40 N                |   116.47
+   38 C                |  39 N                | 117 H                |   119.99
+   38 C                |  39 N                | 118 H                |   120.00
+  117 H                |  39 N                | 118 H                |   120.01
+   38 C                |  40 N                | 119 H                |   120.00
+   38 C                |  40 N                | 158 H                |   120.01
+  119 H                |  40 N                | 158 H                |   119.99
+   32 C                |  41 N                |  42 C                |   124.08
+   32 C                |  41 N                | 120 H                |   117.97
+   42 C                |  41 N                | 120 H                |   117.94
+   41 N                |  42 C                |  43 C                |   106.74
+   41 N                |  42 C                |  45 C                |   111.43
+   41 N                |  42 C                | 121 H                |   109.97
+   43 C                |  42 C                |  45 C                |   109.42
+   43 C                |  42 C                | 121 H                |   112.01
+   45 C                |  42 C                | 121 H                |   107.32
+   42 C                |  43 C                |  44 O                |   120.35
+   42 C                |  43 C                |  48 N                |   115.51
+   44 O                |  43 C                |  48 N                |   124.13
+   42 C                |  45 C                |  46 O                |   102.19
+   42 C                |  45 C                |  47 C                |   116.95
+   42 C                |  45 C                | 122 H                |   109.53
+   46 O                |  45 C                |  47 C                |   109.33
+   46 O                |  45 C                | 122 H                |   117.09
+   47 C                |  45 C                | 122 H                |   102.40
+   45 C                |  47 C                | 124 H                |   109.51
+   45 C                |  47 C                | 125 H                |   109.47
+   45 C                |  47 C                | 126 H                |   109.47
+  124 H                |  47 C                | 125 H                |   109.44
+  124 H                |  47 C                | 126 H                |   109.45
+  125 H                |  47 C                | 126 H                |   109.49
+   43 C                |  48 N                |  49 C                |   122.40
+   43 C                |  48 N                | 127 H                |   118.80
+   49 C                |  48 N                | 127 H                |   118.80
+   48 N                |  49 C                |  50 C                |   108.21
+   48 N                |  49 C                |  52 C                |   108.15
+   48 N                |  49 C                | 128 H                |   112.42
+   50 C                |  49 C                |  52 C                |   113.01
+   50 C                |  49 C                | 128 H                |   107.53
+   52 C                |  49 C                | 128 H                |   107.59
+   49 C                |  50 C                |  51 O                |   118.47
+   49 C                |  50 C                |  56 N                |   117.23
+   51 O                |  50 C                |  56 N                |   124.03
+   49 C                |  52 C                |  53 C                |   118.88
+   49 C                |  52 C                | 129 H                |   107.07
+   49 C                |  52 C                | 130 H                |   103.97
+   53 C                |  52 C                | 129 H                |   107.06
+   53 C                |  52 C                | 130 H                |   103.92
+  129 H                |  52 C                | 130 H                |   116.45
+   52 C                |  53 C                |  54 C                |   110.64
+   52 C                |  53 C                |  55 C                |   110.45
+   52 C                |  53 C                | 131 H                |   106.66
+   54 C                |  53 C                |  55 C                |   104.97
+   54 C                |  53 C                | 131 H                |   112.01
+   55 C                |  53 C                | 131 H                |   112.19
+   53 C                |  54 C                | 132 H                |   109.50
+   53 C                |  54 C                | 133 H                |   109.49
+   53 C                |  54 C                | 134 H                |   109.45
+  132 H                |  54 C                | 133 H                |   109.47
+  132 H                |  54 C                | 134 H                |   109.44
+  133 H                |  54 C                | 134 H                |   109.48
+   53 C                |  55 C                | 135 H                |   109.49
+   53 C                |  55 C                | 136 H                |   109.44
+   53 C                |  55 C                | 137 H                |   109.46
+  135 H                |  55 C                | 136 H                |   109.48
+  135 H                |  55 C                | 137 H                |   109.46
+  136 H                |  55 C                | 137 H                |   109.49
+   50 C                |  56 N                |  57 C                |   117.29
+   50 C                |  56 N                | 138 H                |   121.37
+   57 C                |  56 N                | 138 H                |   121.34
+   56 N                |  57 C                |  58 C                |   112.18
+   56 N                |  57 C                |  60 C                |   111.41
+   56 N                |  57 C                | 139 H                |   106.45
+   58 C                |  57 C                |  60 C                |   110.15
+   58 C                |  57 C                | 139 H                |   107.81
+   60 C                |  57 C                | 139 H                |   108.65
+   57 C                |  58 C                |  59 O                |   120.31
+   57 C                |  58 C                |  62 N                |   117.09
+   59 O                |  58 C                |  62 N                |   122.58
+   57 C                |  60 C                |  61 O                |   110.78
+   57 C                |  60 C                | 140 H                |   109.16
+   57 C                |  60 C                | 141 H                |   108.69
+   61 O                |  60 C                | 140 H                |   109.14
+   61 O                |  60 C                | 141 H                |   108.72
+  140 H                |  60 C                | 141 H                |   110.35
+   58 C                |  62 N                |  63 C                |   121.53
+   58 C                |  62 N                | 143 H                |   119.25
+   63 C                |  62 N                | 143 H                |   119.22
+   62 N                |  63 C                |  64 C                |   110.69
+   62 N                |  63 C                |  66 C                |   113.38
+   62 N                |  63 C                | 144 H                |   106.55
+   64 C                |  63 C                |  66 C                |   111.40
+   64 C                |  63 C                | 144 H                |   108.72
+   66 C                |  63 C                | 144 H                |   105.77
+   63 C                |  64 C                |  65 O                |   122.47
+   63 C                |  64 C                |  70 N                |   115.10
+   65 O                |  64 C                |  70 N                |   121.62
+   63 C                |  66 C                |  67 C                |   116.94
+   63 C                |  66 C                | 145 H                |   107.60
+   63 C                |  66 C                | 146 H                |   105.10
+   67 C                |  66 C                | 145 H                |   107.55
+   67 C                |  66 C                | 146 H                |   105.09
+  145 H                |  66 C                | 146 H                |   114.87
+   66 C                |  67 C                |  68 O                |   118.84
+   66 C                |  67 C                |  69 O                |   115.75
+   68 O                |  67 C                |  69 O                |   125.41
+   67 C                |  68 O                | 147 H                |   120.01
+   64 C                |  70 N                |  71 C                |   124.16
+   64 C                |  70 N                | 148 H                |   117.93
+   71 C                |  70 N                | 148 H                |   117.91
+   70 N                |  71 C                |  72 C                |   113.02
+   70 N                |  71 C                |  74 C                |   107.24
+   70 N                |  71 C                | 149 H                |   109.06
+   72 C                |  71 C                |  74 C                |   110.73
+   72 C                |  71 C                | 149 H                |   105.44
+   74 C                |  71 C                | 149 H                |   111.40
+   71 C                |  72 C                |  73 O                |   117.75
+   71 C                |  72 C                | 159 H                |   121.13
+   73 O                |  72 C                | 159 H                |   121.12
+   71 C                |  74 C                |  75 C                |   113.66
+   71 C                |  74 C                | 150 H                |   108.40
+   71 C                |  74 C                | 151 H                |   107.00
+   75 C                |  74 C                | 150 H                |   108.41
+   75 C                |  74 C                | 151 H                |   107.02
+  150 H                |  74 C                | 151 H                |   112.42
+   74 C                |  75 C                |  76 C                |   121.30
+   74 C                |  75 C                |  77 C                |   119.70
+   76 C                |  75 C                |  77 C                |   118.89
+   75 C                |  76 C                |  78 C                |   120.17
+   75 C                |  76 C                | 152 H                |   119.94
+   78 C                |  76 C                | 152 H                |   119.89
+   75 C                |  77 C                |  79 C                |   121.26
+   75 C                |  77 C                | 153 H                |   119.36
+   79 C                |  77 C                | 153 H                |   119.38
+   76 C                |  78 C                |  80 C                |   119.72
+   76 C                |  78 C                | 154 H                |   120.14
+   80 C                |  78 C                | 154 H                |   120.13
+   77 C                |  79 C                |  80 C                |   118.92
+   77 C                |  79 C                | 155 H                |   120.52
+   80 C                |  79 C                | 155 H                |   120.56
+   78 C                |  80 C                |  79 C                |   120.97
+   78 C                |  80 C                |  81 O                |   122.93
+   79 C                |  80 C                |  81 O                |   116.03
+   80 C                |  81 O                | 156 H                |   120.02
+ ------------------------------------------------------------------------------
+                            number of included internuclear angles:        277
+ ==============================================================================
+
+
+
+  library name resolved from: compiled reference
+  NWCHEM_NWPW_LIBRARY set to: <
+ /global/homes/v/vandam/edison/nwchem-1/src/nwpw/libraryps/>
+  library name resolved from: compiled reference
+  NWCHEM_NWPW_LIBRARY set to: <
+ /global/homes/v/vandam/edison/nwchem-1/src/nwpw/libraryps/>
+  library name resolved from: compiled reference
+  NWCHEM_NWPW_LIBRARY set to: <
+ /global/homes/v/vandam/edison/nwchem-1/src/nwpw/libraryps/>
+  library name resolved from: compiled reference
+  NWCHEM_NWPW_LIBRARY set to: <
+ /global/homes/v/vandam/edison/nwchem-1/src/nwpw/libraryps/>
+          ****************************************************
+          *                                                  *
+          *               NWPW PSPW Calculation              *
+          *                                                  *
+          * [ (Grassmann/Stiefel manifold implementation)  ] *
+          *                                                  *
+          *      [ NorthWest Chemistry implementation ]      *
+          *                                                  *
+          *            version #5.10   06/12/02              *
+          *                                                  *
+          *    This code was developed by Eric J. Bylaska,   *
+          *    and was based upon algorithms and code        *
+          *    developed by the group of Prof. John H. Weare *
+          *                                                  *
+          ****************************************************
+     >>>  JOB STARTED       AT Sun Dec 10 22:34:54 2017  <<<
+          ================ input data ========================
+  library name resolved from: compiled reference
+  NWCHEM_NWPW_LIBRARY set to: <
+ /global/homes/v/vandam/edison/nwchem-1/src/nwpw/libraryps/>
+ Generating 1d pseudopotential for N   
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/N.vpp
+  library name resolved from: compiled reference
+  NWCHEM_NWPW_LIBRARY set to: <
+ /global/homes/v/vandam/edison/nwchem-1/src/nwpw/libraryps/>
+ Generating 1d pseudopotential for C   
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/C.vpp
+  library name resolved from: compiled reference
+  NWCHEM_NWPW_LIBRARY set to: <
+ /global/homes/v/vandam/edison/nwchem-1/src/nwpw/libraryps/>
+ Generating 1d pseudopotential for O   
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/O.vpp
+  library name resolved from: compiled reference
+  NWCHEM_NWPW_LIBRARY set to: <
+ /global/homes/v/vandam/edison/nwchem-1/src/nwpw/libraryps/>
+ Generating 1d pseudopotential for H   
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/H.vpp
+ random planewave guess, initial psi:
+ nwc_pweg_dat.movecs                               
+ -   spin, nalpha, nbeta:                     1                   226
+                     0
+
+ input psi filename:/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/nwc_pweg_dat.movecs
+ Warning - Gram-Schmidt being performed on psi:   226.000000000000     
+   143.638123347391        226.000000000000        82.3618766526094     
+
+ number of processors used:        96
+ processor grid           :  48 x   2
+ parallel mapping         :2d hilbert
+ parallel mapping         :  balanced
+ number of threads        :         1
+ parallel io              :       off
+
+ options:
+      boundary conditions  = aperiodic   (version4)
+      electron spin        = restricted
+      exchange-correlation = PBE96 (White and Bird) parameterization
+
+ elements involved in the cluster:
+      1: N   valence charge:  5.0000  lmax=  2
+             comment    : Hamann pseudopotential
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.700   0.700   0.700
+ 
+      2: C   valence charge:  4.0000  lmax=  2
+             comment    : Parameterized (J.Phys.Chem., vol 100, page 6966) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.800   0.850   0.850
+ 
+      3: O   valence charge:  6.0000  lmax=  2
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.700   0.700   0.700
+ 
+      4: H   valence charge:  1.0000  lmax=  1
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   1
+             local potential used           :   1
+             number of non-local projections:   1
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.800   0.800
+ 
+
+ total charge:   1.000
+
+ atomic composition:
+     N   :   13     C   :   49     O   :   19     H   :   78
+
+ number of electrons: spin up=   226 ( 113 per task)  down=   226 ( 113 per task) (Fourier space)
+ number of orbitals : spin up=   226 ( 113 per task)  down=   226 ( 113 per task) (Fourier space)
+
+ supercell:
+      cell_name:  cell_default                                      
+      lattice:    a1=<  27.000   0.000   0.000 >
+                  a2=<   0.000  25.000   0.000 >
+                  a3=<   0.000   0.000  27.000 >
+      reciprocal: b1=<   0.233   0.000  -0.000 >
+                  b2=<  -0.000   0.251  -0.000 >
+                  b3=<   0.000   0.000   0.233 >
+      lattice:    a=      27.000 b=     25.000 c=      27.000
+                  alpha=  90.000 beta=  90.000 gamma=  90.000
+                  omega=     18225.0
+
+      density cutoff= 25.000  fft= 64x 60x 64(    54395 waves     1133 per task)
+      wavefnc cutoff= 12.500  fft= 64x 60x 64(    19224 waves      400 per task)
+
+ technical parameters:
+      time step=      5.80     fictitious mass=  400000.0
+      tolerance=0.100E-06 (energy)   0.100E-06 (density)
+      maximum iterations =      1000 (   10 inner    100 outer )
+
+
+
+
+
+== Energy Calculation ==
+
+
+          ============ Grassmann lmbfgs iteration ============
+     >>>  ITERATION STARTED AT Sun Dec 10 22:35:03 2017  <<<
+    iter.           Energy         DeltaE       DeltaRho 
+    ------------------------------------------------------
+     -  15 steepest descent iterations performed
+      10   -0.5322868023E+03   -0.59000E+01    0.46612E+02
+     -  10 steepest descent iterations performed
+      20   -0.5493719173E+03   -0.42026E+00    0.17135E+00
+     -  10 steepest descent iterations performed
+      30   -0.5510959692E+03   -0.57314E-01    0.14921E-01
+     -  10 steepest descent iterations performed
+      40   -0.5514008916E+03   -0.16467E-01    0.24142E-02
+     -  10 steepest descent iterations performed
+      50   -0.5515045728E+03   -0.68309E-02    0.83612E-03
+      60   -0.5515726138E+03   -0.37533E-02    0.12990E-02
+      70   -0.5516083563E+03   -0.31267E-02    0.10476E-02
+      80   -0.5516295744E+03   -0.17588E-02    0.66667E-03
+      90   -0.5516464193E+03   -0.15492E-02    0.60920E-03
+     100   -0.5516595896E+03   -0.95643E-03    0.40311E-03
+     110   -0.5516656167E+03   -0.40992E-03    0.14553E-03
+     120   -0.5516684591E+03   -0.21069E-03    0.82018E-04
+     130   -0.5516699672E+03   -0.11049E-03    0.31729E-04
+     140   -0.5516707969E+03   -0.65561E-04    0.19226E-04
+     150   -0.5516712663E+03   -0.33470E-04    0.11872E-04
+     160   -0.5516714993E+03   -0.16673E-04    0.40765E-05
+     170   -0.5516716169E+03   -0.86918E-05    0.22175E-05
+     180   -0.5516716819E+03   -0.50603E-05    0.12213E-05
+     190   -0.5516717182E+03   -0.25103E-05    0.62357E-06
+     200   -0.5516717339E+03   -0.99431E-06    0.27635E-06
+     210   -0.5516717399E+03   -0.37886E-06    0.11446E-06
+     220   -0.5516717425E+03   -0.18685E-06    0.41672E-07
+     230   -0.5516717440E+03   -0.11945E-06    0.27940E-07
+     240   -0.5516717443E+03   -0.96676E-07    0.18963E-08
+  *** tolerance ok. iteration terminated
+     >>>  ITERATION ENDED   AT Sun Dec 10 22:37:49 2017  <<<
+
+
+==  Summary Of Results  ==
+ 
+ number of electrons: spin up=  226.00000  down=  226.00000 (real space)
+
+ total     energy    :  -0.5516717443E+03 (   -0.34696E+01/ion)
+ total orbital energy:  -0.8471146996E+02 (   -0.37483E+00/electron)
+ hartree   energy    :   0.9381474106E+04 (    0.41511E+02/electron)
+ exc-corr  energy    :  -0.1972122133E+03 (   -0.87262E+00/electron)
+ ion-ion   energy    :   0.8855425769E+04 (    0.55695E+02/ion)
+
+ kinetic (planewave) :   0.4381636802E+03 (    0.19388E+01/electron)
+ V_local (planewave) :  -0.1902553939E+05 (   -0.84184E+02/electron)
+ V_nl    (planewave) :  -0.3983699291E+01 (   -0.17627E-01/electron)
+ V_Coul  (planewave) :   0.1876294821E+05 (    0.83022E+02/electron)
+ V_xc.   (planewave) :  -0.2563002753E+03 (   -0.11341E+01/electron)
+ Virial Coefficient  :  -0.1193332934E+01
+
+ orbital energies:
+     0.1951321E+00 (   5.310eV)
+     0.1905381E+00 (   5.185eV)
+     0.1839956E+00 (   5.007eV)
+     0.1833212E+00 (   4.988eV)
+     0.1803705E+00 (   4.908eV)
+     0.1763051E+00 (   4.798eV)
+     0.1687077E+00 (   4.591eV)
+     0.1606325E+00 (   4.371eV)
+     0.1584575E+00 (   4.312eV)
+     0.1579505E+00 (   4.298eV)
+     0.1506208E+00 (   4.099eV)
+     0.1462874E+00 (   3.981eV)
+     0.1434034E+00 (   3.902eV)
+     0.1403585E+00 (   3.819eV)
+     0.1340029E+00 (   3.646eV)
+     0.1306742E+00 (   3.556eV)
+     0.1265080E+00 (   3.442eV)
+     0.1204465E+00 (   3.278eV)
+     0.1170375E+00 (   3.185eV)
+     0.1137391E+00 (   3.095eV)
+     0.1113921E+00 (   3.031eV)
+     0.1053291E+00 (   2.866eV)
+     0.1039758E+00 (   2.829eV)
+     0.9994247E-01 (   2.720eV)
+     0.9680608E-01 (   2.634eV)
+     0.9109034E-01 (   2.479eV)
+     0.8721643E-01 (   2.373eV)
+     0.8686964E-01 (   2.364eV)
+     0.8547515E-01 (   2.326eV)
+     0.8471603E-01 (   2.305eV)
+     0.8294883E-01 (   2.257eV)
+     0.7728782E-01 (   2.103eV)
+     0.7195927E-01 (   1.958eV)
+     0.7044935E-01 (   1.917eV)
+     0.6834340E-01 (   1.860eV)
+     0.6770949E-01 (   1.842eV)
+     0.6639374E-01 (   1.807eV)
+     0.5890901E-01 (   1.603eV)
+     0.5831320E-01 (   1.587eV)
+     0.5523337E-01 (   1.503eV)
+     0.5286454E-01 (   1.439eV)
+     0.5074147E-01 (   1.381eV)
+     0.4837322E-01 (   1.316eV)
+     0.4377836E-01 (   1.191eV)
+     0.3949870E-01 (   1.075eV)
+     0.3698200E-01 (   1.006eV)
+     0.3551638E-01 (   0.966eV)
+     0.3061344E-01 (   0.833eV)
+     0.2853456E-01 (   0.776eV)
+     0.2710617E-01 (   0.738eV)
+     0.2066674E-01 (   0.562eV)
+     0.1797332E-01 (   0.489eV)
+     0.8321942E-02 (   0.226eV)
+     0.3604621E-02 (   0.098eV)
+     0.3524984E-02 (   0.096eV)
+    -0.7104115E-03 (  -0.019eV)
+    -0.1562976E-02 (  -0.043eV)
+    -0.4672940E-02 (  -0.127eV)
+    -0.6833759E-02 (  -0.186eV)
+    -0.9245704E-02 (  -0.252eV)
+    -0.9685606E-02 (  -0.264eV)
+    -0.1198174E-01 (  -0.326eV)
+    -0.1365736E-01 (  -0.372eV)
+    -0.1497107E-01 (  -0.407eV)
+    -0.1828979E-01 (  -0.498eV)
+    -0.2137272E-01 (  -0.582eV)
+    -0.2457244E-01 (  -0.669eV)
+    -0.2583837E-01 (  -0.703eV)
+    -0.2653193E-01 (  -0.722eV)
+    -0.2802007E-01 (  -0.762eV)
+    -0.3184842E-01 (  -0.867eV)
+    -0.3429793E-01 (  -0.933eV)
+    -0.3506699E-01 (  -0.954eV)
+    -0.3801535E-01 (  -1.034eV)
+    -0.3942383E-01 (  -1.073eV)
+    -0.3952892E-01 (  -1.076eV)
+    -0.4225666E-01 (  -1.150eV)
+    -0.4926740E-01 (  -1.341eV)
+    -0.5033338E-01 (  -1.370eV)
+    -0.5107076E-01 (  -1.390eV)
+    -0.5321594E-01 (  -1.448eV)
+    -0.5552172E-01 (  -1.511eV)
+    -0.5966189E-01 (  -1.623eV)
+    -0.6092637E-01 (  -1.658eV)
+    -0.6233675E-01 (  -1.696eV)
+    -0.6448588E-01 (  -1.755eV)
+    -0.6496882E-01 (  -1.768eV)
+    -0.6684725E-01 (  -1.819eV)
+    -0.6903417E-01 (  -1.879eV)
+    -0.7140573E-01 (  -1.943eV)
+    -0.7381102E-01 (  -2.009eV)
+    -0.7869874E-01 (  -2.142eV)
+    -0.7925490E-01 (  -2.157eV)
+    -0.8360044E-01 (  -2.275eV)
+    -0.8406576E-01 (  -2.288eV)
+    -0.8534103E-01 (  -2.322eV)
+    -0.8668864E-01 (  -2.359eV)
+    -0.8886009E-01 (  -2.418eV)
+    -0.9021432E-01 (  -2.455eV)
+    -0.9198201E-01 (  -2.503eV)
+    -0.9414125E-01 (  -2.562eV)
+    -0.9805001E-01 (  -2.668eV)
+    -0.1002757E+00 (  -2.729eV)
+    -0.1011838E+00 (  -2.753eV)
+    -0.1037993E+00 (  -2.825eV)
+    -0.1050345E+00 (  -2.858eV)
+    -0.1065799E+00 (  -2.900eV)
+    -0.1075729E+00 (  -2.927eV)
+    -0.1100835E+00 (  -2.996eV)
+    -0.1132086E+00 (  -3.081eV)
+    -0.1167430E+00 (  -3.177eV)
+    -0.1172072E+00 (  -3.189eV)
+    -0.1225283E+00 (  -3.334eV)
+    -0.1254156E+00 (  -3.413eV)
+    -0.1261864E+00 (  -3.434eV)
+    -0.1297275E+00 (  -3.530eV)
+    -0.1310328E+00 (  -3.566eV)
+    -0.1321176E+00 (  -3.595eV)
+    -0.1336858E+00 (  -3.638eV)
+    -0.1353789E+00 (  -3.684eV)
+    -0.1392148E+00 (  -3.788eV)
+    -0.1427691E+00 (  -3.885eV)
+    -0.1450867E+00 (  -3.948eV)
+    -0.1470617E+00 (  -4.002eV)
+    -0.1481229E+00 (  -4.031eV)
+    -0.1511193E+00 (  -4.112eV)
+    -0.1518439E+00 (  -4.132eV)
+    -0.1535098E+00 (  -4.177eV)
+    -0.1594893E+00 (  -4.340eV)
+    -0.1693614E+00 (  -4.609eV)
+    -0.1720828E+00 (  -4.683eV)
+    -0.1752202E+00 (  -4.768eV)
+    -0.1760669E+00 (  -4.791eV)
+    -0.1793438E+00 (  -4.880eV)
+    -0.1803230E+00 (  -4.907eV)
+    -0.1819120E+00 (  -4.950eV)
+    -0.1868089E+00 (  -5.083eV)
+    -0.1899194E+00 (  -5.168eV)
+    -0.1949615E+00 (  -5.305eV)
+    -0.1993879E+00 (  -5.426eV)
+    -0.2015996E+00 (  -5.486eV)
+    -0.2036791E+00 (  -5.542eV)
+    -0.2080617E+00 (  -5.662eV)
+    -0.2121986E+00 (  -5.774eV)
+    -0.2129600E+00 (  -5.795eV)
+    -0.2184922E+00 (  -5.946eV)
+    -0.2236366E+00 (  -6.086eV)
+    -0.2315959E+00 (  -6.302eV)
+    -0.2350006E+00 (  -6.395eV)
+    -0.2375166E+00 (  -6.463eV)
+    -0.2407657E+00 (  -6.552eV)
+    -0.2445816E+00 (  -6.655eV)
+    -0.2464224E+00 (  -6.706eV)
+    -0.2508772E+00 (  -6.827eV)
+    -0.2547459E+00 (  -6.932eV)
+    -0.2573983E+00 (  -7.004eV)
+    -0.2638172E+00 (  -7.179eV)
+    -0.2658718E+00 (  -7.235eV)
+    -0.2672143E+00 (  -7.271eV)
+    -0.2708907E+00 (  -7.371eV)
+    -0.2792464E+00 (  -7.599eV)
+    -0.2828076E+00 (  -7.696eV)
+    -0.2855253E+00 (  -7.770eV)
+    -0.2920845E+00 (  -7.948eV)
+    -0.3039529E+00 (  -8.271eV)
+    -0.3068690E+00 (  -8.350eV)
+    -0.3206803E+00 (  -8.726eV)
+    -0.3230531E+00 (  -8.791eV)
+    -0.3254684E+00 (  -8.857eV)
+    -0.3358834E+00 (  -9.140eV)
+    -0.3372281E+00 (  -9.177eV)
+    -0.3385677E+00 (  -9.213eV)
+    -0.3418516E+00 (  -9.302eV)
+    -0.3524285E+00 (  -9.590eV)
+    -0.3640161E+00 (  -9.905eV)
+    -0.3657868E+00 (  -9.954eV)
+    -0.3826559E+00 ( -10.413eV)
+    -0.3863705E+00 ( -10.514eV)
+    -0.3918366E+00 ( -10.663eV)
+    -0.3926365E+00 ( -10.684eV)
+    -0.3939317E+00 ( -10.720eV)
+    -0.3994642E+00 ( -10.870eV)
+    -0.4071022E+00 ( -11.078eV)
+    -0.4252392E+00 ( -11.571eV)
+    -0.4296836E+00 ( -11.692eV)
+    -0.4321711E+00 ( -11.760eV)
+    -0.4408310E+00 ( -11.996eV)
+    -0.4429543E+00 ( -12.053eV)
+    -0.4536663E+00 ( -12.345eV)
+    -0.4605601E+00 ( -12.533eV)
+    -0.4807042E+00 ( -13.081eV)
+    -0.4851205E+00 ( -13.201eV)
+    -0.4960896E+00 ( -13.499eV)
+    -0.4995284E+00 ( -13.593eV)
+    -0.5210842E+00 ( -14.180eV)
+    -0.5396245E+00 ( -14.684eV)
+    -0.5475467E+00 ( -14.900eV)
+    -0.5524305E+00 ( -15.033eV)
+    -0.5639417E+00 ( -15.346eV)
+    -0.5709677E+00 ( -15.537eV)
+    -0.5851353E+00 ( -15.922eV)
+    -0.5910140E+00 ( -16.082eV)
+    -0.5975985E+00 ( -16.262eV)
+    -0.6059359E+00 ( -16.488eV)
+    -0.6204988E+00 ( -16.885eV)
+    -0.6268082E+00 ( -17.056eV)
+    -0.6301854E+00 ( -17.148eV)
+    -0.6627174E+00 ( -18.034eV)
+    -0.6729544E+00 ( -18.312eV)
+    -0.6760482E+00 ( -18.396eV)
+    -0.6854510E+00 ( -18.652eV)
+    -0.6870568E+00 ( -18.696eV)
+    -0.6971681E+00 ( -18.971eV)
+    -0.7055854E+00 ( -19.200eV)
+    -0.7095932E+00 ( -19.309eV)
+    -0.7323919E+00 ( -19.930eV)
+    -0.7347813E+00 ( -19.995eV)
+    -0.7450679E+00 ( -20.274eV)
+    -0.7569962E+00 ( -20.599eV)
+    -0.7741292E+00 ( -21.065eV)
+    -0.7858243E+00 ( -21.384eV)
+    -0.8168569E+00 ( -22.228eV)
+    -0.8471740E+00 ( -23.053eV)
+    -0.8534113E+00 ( -23.223eV)
+    -0.9491661E+00 ( -25.828eV)
+    -0.1010683E+01 ( -27.502eV)
+
+ Total PSPW energy     :  -0.5516717443E+03
+
+
+=== Spin Contamination ===
+ 
+ <Sexact^2> =   0.000000000000000E+000
+ <S^2>      =   0.000000000000000E+000
+ 
+
+
+== Center of Charge ==
+
+spin up     (    0.0169,    0.1296,   -0.0569 )
+spin down   (    0.0169,    0.1296,   -0.0569 )
+     total  (    0.0169,    0.1296,   -0.0569 )
+ionic       (   -0.0111,    0.0090,    0.0199 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (  -12.6442,  -54.4879,   34.7560 ) au
+|mu| =    65.8543 au,     167.3752 Debye
+
+ output psi filename:/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/nwc_pweg_dat.movecs
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.919788E+01
+  main loop   :   0.166352E+03
+  epilogue    :   0.400481E+01
+  total       :   0.179555E+03
+  cputime/step:   0.288305E+00       (     577 evalulations,     233 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.179682E+03  0.311407E+00       100.0 %
+  i/o time                   :   0.840060E+01  0.145591E-01         4.7 %
+  FFTs                       :   0.511443E+01  0.886383E-02         2.8 %
+  dot products               :   0.627368E+02  0.108729E+00        34.9 %
+  geodesic                   :   0.982365E+02  0.170254E+00        54.7 %
+  ffm_dgemm                  :   0.117324E+02  0.203335E-01         6.5 %
+  fmf_dgemm                  :   0.198101E+02  0.343329E-01        11.0 %
+  mmm_dgemm                  :   0.429958E+01  0.745161E-02         2.4 %
+  m_diagonalize              :   0.665959E+01  0.115418E-01         3.7 %
+  exchange correlation       :   0.190438E+01  0.330049E-02         1.1 %
+  local pseudopotentials     :   0.961990E-01  0.166723E-03         0.1 %
+  non-local pseudopotentials :   0.137256E+02  0.237878E-01         7.6 %
+  structure factors          :   0.261096E+00  0.452507E-03         0.1 %
+  phase factors              :   0.553846E-03  0.959872E-06         0.0 %
+  masking and packing        :   0.431352E+01  0.747578E-02         2.4 %
+  queue fft                  :   0.324558E+02  0.562493E-01        18.1 %
+  queue fft (serial)         :   0.867572E+01  0.150359E-01         4.8 %
+  queue fft (message passing):   0.231006E+02  0.400357E-01        12.9 %
+  non-local psp FFM          :   0.745006E+01  0.129117E-01         4.1 %
+  non-local psp FMF          :   0.585674E+01  0.101503E-01         3.3 %
+  non-local psp FFM A        :   0.151723E+00  0.262952E-03         0.1 %
+  non-local psp FFM B        :   0.621801E+01  0.107764E-01         3.5 %
+ 
+     >>>  JOB COMPLETED     AT Sun Dec 10 22:37:53 2017  <<<
+          ****************************************************
+          *                                                  *
+          *               NWPW PSPW Calculation              *
+          *                                                  *
+          * [ (Grassmann/Stiefel manifold implementation)  ] *
+          *                                                  *
+          *      [ NorthWest Chemistry implementation ]      *
+          *                                                  *
+          *            version #5.10   06/12/02              *
+          *                                                  *
+          *    This code was developed by Eric J. Bylaska,   *
+          *    and was based upon algorithms and code        *
+          *    developed by the group of Prof. John H. Weare *
+          *                                                  *
+          ****************************************************
+     >>>  JOB STARTED       AT Sun Dec 10 22:37:53 2017  <<<
+          ================ input data ========================
+ pseudopotential is not correctly formatted:
+ N.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/N.vpp
+ pseudopotential is not correctly formatted:
+ C.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/C.vpp
+ pseudopotential is not correctly formatted:
+ O.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/O.vpp
+ pseudopotential is not correctly formatted:
+ H.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/H.vpp
+ Error reading psi - bad grid
+ nfft :                    64                    60                    64
+ ngrid:                    90                    84                    90
+ Error reading psi - bad grid
+ nfft :                    64                    60                    64
+ ngrid:                    90                    84                    90
+ Error reading psi - bad grid
+ 
+ Grid is being converted:
+ ------------------------
+ 
+ To turn off automatic grid conversion:
+ 
+ set nwpw:psi_nogrid .false.
+ 
+ old_filename: nwc_pweg_dat.movecs                               
+ new_filename: nwc_pweg_dat.movecs                               
+ converting  :  64x 60x 64 -->  90x 84x 90
+converting .... psi:    1 spin: 1
+converting .... psi:    2 spin: 1
+converting .... psi:    3 spin: 1
+converting .... psi:    4 spin: 1
+converting .... psi:    5 spin: 1
+converting .... psi:    6 spin: 1
+converting .... psi:    7 spin: 1
+converting .... psi:    8 spin: 1
+converting .... psi:    9 spin: 1
+converting .... psi:   10 spin: 1
+converting .... psi:   11 spin: 1
+converting .... psi:   12 spin: 1
+converting .... psi:   13 spin: 1
+converting .... psi:   14 spin: 1
+converting .... psi:   15 spin: 1
+converting .... psi:   16 spin: 1
+converting .... psi:   17 spin: 1
+converting .... psi:   18 spin: 1
+converting .... psi:   19 spin: 1
+converting .... psi:   20 spin: 1
+converting .... psi:   21 spin: 1
+converting .... psi:   22 spin: 1
+converting .... psi:   23 spin: 1
+converting .... psi:   24 spin: 1
+converting .... psi:   25 spin: 1
+converting .... psi:   26 spin: 1
+converting .... psi:   27 spin: 1
+converting .... psi:   28 spin: 1
+converting .... psi:   29 spin: 1
+converting .... psi:   30 spin: 1
+converting .... psi:   31 spin: 1
+converting .... psi:   32 spin: 1
+converting .... psi:   33 spin: 1
+converting .... psi:   34 spin: 1
+converting .... psi:   35 spin: 1
+converting .... psi:   36 spin: 1
+converting .... psi:   37 spin: 1
+converting .... psi:   38 spin: 1
+converting .... psi:   39 spin: 1
+converting .... psi:   40 spin: 1
+converting .... psi:   41 spin: 1
+converting .... psi:   42 spin: 1
+converting .... psi:   43 spin: 1
+converting .... psi:   44 spin: 1
+converting .... psi:   45 spin: 1
+converting .... psi:   46 spin: 1
+converting .... psi:   47 spin: 1
+converting .... psi:   48 spin: 1
+converting .... psi:   49 spin: 1
+converting .... psi:   50 spin: 1
+converting .... psi:   51 spin: 1
+converting .... psi:   52 spin: 1
+converting .... psi:   53 spin: 1
+converting .... psi:   54 spin: 1
+converting .... psi:   55 spin: 1
+converting .... psi:   56 spin: 1
+converting .... psi:   57 spin: 1
+converting .... psi:   58 spin: 1
+converting .... psi:   59 spin: 1
+converting .... psi:   60 spin: 1
+converting .... psi:   61 spin: 1
+converting .... psi:   62 spin: 1
+converting .... psi:   63 spin: 1
+converting .... psi:   64 spin: 1
+converting .... psi:   65 spin: 1
+converting .... psi:   66 spin: 1
+converting .... psi:   67 spin: 1
+converting .... psi:   68 spin: 1
+converting .... psi:   69 spin: 1
+converting .... psi:   70 spin: 1
+converting .... psi:   71 spin: 1
+converting .... psi:   72 spin: 1
+converting .... psi:   73 spin: 1
+converting .... psi:   74 spin: 1
+converting .... psi:   75 spin: 1
+converting .... psi:   76 spin: 1
+converting .... psi:   77 spin: 1
+converting .... psi:   78 spin: 1
+converting .... psi:   79 spin: 1
+converting .... psi:   80 spin: 1
+converting .... psi:   81 spin: 1
+converting .... psi:   82 spin: 1
+converting .... psi:   83 spin: 1
+converting .... psi:   84 spin: 1
+converting .... psi:   85 spin: 1
+converting .... psi:   86 spin: 1
+converting .... psi:   87 spin: 1
+converting .... psi:   88 spin: 1
+converting .... psi:   89 spin: 1
+converting .... psi:   90 spin: 1
+converting .... psi:   91 spin: 1
+converting .... psi:   92 spin: 1
+converting .... psi:   93 spin: 1
+converting .... psi:   94 spin: 1
+converting .... psi:   95 spin: 1
+converting .... psi:   96 spin: 1
+converting .... psi:   97 spin: 1
+converting .... psi:   98 spin: 1
+converting .... psi:   99 spin: 1
+converting .... psi:  100 spin: 1
+converting .... psi:  101 spin: 1
+converting .... psi:  102 spin: 1
+converting .... psi:  103 spin: 1
+converting .... psi:  104 spin: 1
+converting .... psi:  105 spin: 1
+converting .... psi:  106 spin: 1
+converting .... psi:  107 spin: 1
+converting .... psi:  108 spin: 1
+converting .... psi:  109 spin: 1
+converting .... psi:  110 spin: 1
+converting .... psi:  111 spin: 1
+converting .... psi:  112 spin: 1
+converting .... psi:  113 spin: 1
+converting .... psi:  114 spin: 1
+converting .... psi:  115 spin: 1
+converting .... psi:  116 spin: 1
+converting .... psi:  117 spin: 1
+converting .... psi:  118 spin: 1
+converting .... psi:  119 spin: 1
+converting .... psi:  120 spin: 1
+converting .... psi:  121 spin: 1
+converting .... psi:  122 spin: 1
+converting .... psi:  123 spin: 1
+converting .... psi:  124 spin: 1
+converting .... psi:  125 spin: 1
+converting .... psi:  126 spin: 1
+converting .... psi:  127 spin: 1
+converting .... psi:  128 spin: 1
+converting .... psi:  129 spin: 1
+converting .... psi:  130 spin: 1
+converting .... psi:  131 spin: 1
+converting .... psi:  132 spin: 1
+converting .... psi:  133 spin: 1
+converting .... psi:  134 spin: 1
+converting .... psi:  135 spin: 1
+converting .... psi:  136 spin: 1
+converting .... psi:  137 spin: 1
+converting .... psi:  138 spin: 1
+converting .... psi:  139 spin: 1
+converting .... psi:  140 spin: 1
+converting .... psi:  141 spin: 1
+converting .... psi:  142 spin: 1
+converting .... psi:  143 spin: 1
+converting .... psi:  144 spin: 1
+converting .... psi:  145 spin: 1
+converting .... psi:  146 spin: 1
+converting .... psi:  147 spin: 1
+converting .... psi:  148 spin: 1
+converting .... psi:  149 spin: 1
+converting .... psi:  150 spin: 1
+converting .... psi:  151 spin: 1
+converting .... psi:  152 spin: 1
+converting .... psi:  153 spin: 1
+converting .... psi:  154 spin: 1
+converting .... psi:  155 spin: 1
+converting .... psi:  156 spin: 1
+converting .... psi:  157 spin: 1
+converting .... psi:  158 spin: 1
+converting .... psi:  159 spin: 1
+converting .... psi:  160 spin: 1
+converting .... psi:  161 spin: 1
+converting .... psi:  162 spin: 1
+converting .... psi:  163 spin: 1
+converting .... psi:  164 spin: 1
+converting .... psi:  165 spin: 1
+converting .... psi:  166 spin: 1
+converting .... psi:  167 spin: 1
+converting .... psi:  168 spin: 1
+converting .... psi:  169 spin: 1
+converting .... psi:  170 spin: 1
+converting .... psi:  171 spin: 1
+converting .... psi:  172 spin: 1
+converting .... psi:  173 spin: 1
+converting .... psi:  174 spin: 1
+converting .... psi:  175 spin: 1
+converting .... psi:  176 spin: 1
+converting .... psi:  177 spin: 1
+converting .... psi:  178 spin: 1
+converting .... psi:  179 spin: 1
+converting .... psi:  180 spin: 1
+converting .... psi:  181 spin: 1
+converting .... psi:  182 spin: 1
+converting .... psi:  183 spin: 1
+converting .... psi:  184 spin: 1
+converting .... psi:  185 spin: 1
+converting .... psi:  186 spin: 1
+converting .... psi:  187 spin: 1
+converting .... psi:  188 spin: 1
+converting .... psi:  189 spin: 1
+converting .... psi:  190 spin: 1
+converting .... psi:  191 spin: 1
+converting .... psi:  192 spin: 1
+converting .... psi:  193 spin: 1
+converting .... psi:  194 spin: 1
+converting .... psi:  195 spin: 1
+converting .... psi:  196 spin: 1
+converting .... psi:  197 spin: 1
+converting .... psi:  198 spin: 1
+converting .... psi:  199 spin: 1
+converting .... psi:  200 spin: 1
+converting .... psi:  201 spin: 1
+converting .... psi:  202 spin: 1
+converting .... psi:  203 spin: 1
+converting .... psi:  204 spin: 1
+converting .... psi:  205 spin: 1
+converting .... psi:  206 spin: 1
+converting .... psi:  207 spin: 1
+converting .... psi:  208 spin: 1
+converting .... psi:  209 spin: 1
+converting .... psi:  210 spin: 1
+converting .... psi:  211 spin: 1
+converting .... psi:  212 spin: 1
+converting .... psi:  213 spin: 1
+converting .... psi:  214 spin: 1
+converting .... psi:  215 spin: 1
+converting .... psi:  216 spin: 1
+converting .... psi:  217 spin: 1
+converting .... psi:  218 spin: 1
+converting .... psi:  219 spin: 1
+converting .... psi:  220 spin: 1
+converting .... psi:  221 spin: 1
+converting .... psi:  222 spin: 1
+converting .... psi:  223 spin: 1
+converting .... psi:  224 spin: 1
+converting .... psi:  225 spin: 1
+converting .... psi:  226 spin: 1
+
+ input psi filename:/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/nwc_pweg_dat.movecs
+
+ number of processors used:        96
+ processor grid           :  48 x   2
+ parallel mapping         :2d hilbert
+ parallel mapping         :  balanced
+ number of threads        :         1
+ parallel io              :       off
+
+ options:
+      boundary conditions  = aperiodic   (version4)
+      electron spin        = restricted
+      exchange-correlation = PBE96 (White and Bird) parameterization
+
+ elements involved in the cluster:
+      1: N   valence charge:  5.0000  lmax=  2
+             comment    : Hamann pseudopotential
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.700   0.700   0.700
+ 
+      2: C   valence charge:  4.0000  lmax=  2
+             comment    : Parameterized (J.Phys.Chem., vol 100, page 6966) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.800   0.850   0.850
+ 
+      3: O   valence charge:  6.0000  lmax=  2
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.700   0.700   0.700
+ 
+      4: H   valence charge:  1.0000  lmax=  1
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   1
+             local potential used           :   1
+             number of non-local projections:   1
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.800   0.800
+ 
+
+ total charge:   1.000
+
+ atomic composition:
+     N   :   13     C   :   49     O   :   19     H   :   78
+
+ number of electrons: spin up=   226 ( 113 per task)  down=   226 ( 113 per task) (Fourier space)
+ number of orbitals : spin up=   226 ( 113 per task)  down=   226 ( 113 per task) (Fourier space)
+
+ supercell:
+      cell_name:  cell_default                                      
+      lattice:    a1=<  27.000   0.000   0.000 >
+                  a2=<   0.000  25.000   0.000 >
+                  a3=<   0.000   0.000  27.000 >
+      reciprocal: b1=<   0.233   0.000  -0.000 >
+                  b2=<  -0.000   0.251  -0.000 >
+                  b3=<   0.000   0.000   0.233 >
+      lattice:    a=      27.000 b=     25.000 c=      27.000
+                  alpha=  90.000 beta=  90.000 gamma=  90.000
+                  omega=     18225.0
+
+      density cutoff= 50.000  fft= 90x 84x 90(   153820 waves     3204 per task)
+      wavefnc cutoff= 25.000  fft= 90x 84x 90(    54395 waves     1133 per task)
+
+ technical parameters:
+      time step=      5.80     fictitious mass=  400000.0
+      tolerance=0.100E-06 (energy)   0.100E-06 (density)
+      maximum iterations =      1000 (   10 inner    100 outer )
+
+
+
+
+
+== Energy Calculation ==
+
+
+          ============ Grassmann lmbfgs iteration ============
+     >>>  ITERATION STARTED AT Sun Dec 10 22:38:14 2017  <<<
+    iter.           Energy         DeltaE       DeltaRho 
+    ------------------------------------------------------
+      10   -0.5615775862E+03   -0.43801E-02    0.93481E+00
+     -  10 steepest descent iterations performed
+      20   -0.5615902181E+03   -0.23607E-03    0.67889E-03
+      30   -0.5615921909E+03   -0.96033E-04    0.11462E-03
+      40   -0.5615928289E+03   -0.43515E-04    0.21476E-04
+      50   -0.5615931043E+03   -0.19829E-04    0.49600E-05
+      60   -0.5615932300E+03   -0.90991E-05    0.20404E-05
+      70   -0.5615932939E+03   -0.48283E-05    0.11345E-05
+      80   -0.5615933296E+03   -0.28981E-05    0.59534E-06
+      90   -0.5615933510E+03   -0.17706E-05    0.36704E-06
+     100   -0.5615933629E+03   -0.86761E-06    0.17552E-06
+     110   -0.5615933685E+03   -0.35815E-06    0.68674E-07
+     120   -0.5615933708E+03   -0.13256E-06    0.23693E-07
+     130   -0.5615933712E+03   -0.94145E-07    0.24438E-08
+  *** tolerance ok. iteration terminated
+     >>>  ITERATION ENDED   AT Sun Dec 10 22:41:02 2017  <<<
+
+
+==  Summary Of Results  ==
+ 
+ number of electrons: spin up=  226.00000  down=  226.00000 (real space)
+
+ total     energy    :  -0.5615933712E+03 (   -0.35320E+01/ion)
+ total orbital energy:  -0.8377116183E+02 (   -0.37067E+00/electron)
+ hartree   energy    :   0.9392945008E+04 (    0.41562E+02/electron)
+ exc-corr  energy    :  -0.1991996008E+03 (   -0.88141E+00/electron)
+ ion-ion   energy    :   0.8855425769E+04 (    0.55695E+02/ion)
+
+ kinetic (planewave) :   0.4665466076E+03 (    0.20644E+01/electron)
+ V_local (planewave) :  -0.1905615540E+05 (   -0.84319E+02/electron)
+ V_nl    (planewave) :  -0.2115575374E+02 (   -0.93610E-01/electron)
+ V_Coul  (planewave) :   0.1878589002E+05 (    0.83123E+02/electron)
+ V_xc.   (planewave) :  -0.2588966306E+03 (   -0.11456E+01/electron)
+ Virial Coefficient  :  -0.1179555827E+01
+
+ orbital energies:
+     0.1907338E+00 (   5.190eV)
+     0.1853242E+00 (   5.043eV)
+     0.1823460E+00 (   4.962eV)
+     0.1808186E+00 (   4.920eV)
+     0.1749471E+00 (   4.761eV)
+     0.1680885E+00 (   4.574eV)
+     0.1631282E+00 (   4.439eV)
+     0.1549353E+00 (   4.216eV)
+     0.1520734E+00 (   4.138eV)
+     0.1484143E+00 (   4.039eV)
+     0.1437619E+00 (   3.912eV)
+     0.1387999E+00 (   3.777eV)
+     0.1353791E+00 (   3.684eV)
+     0.1342374E+00 (   3.653eV)
+     0.1273727E+00 (   3.466eV)
+     0.1257279E+00 (   3.421eV)
+     0.1208707E+00 (   3.289eV)
+     0.1152419E+00 (   3.136eV)
+     0.1096453E+00 (   2.984eV)
+     0.1070918E+00 (   2.914eV)
+     0.1053887E+00 (   2.868eV)
+     0.9590069E-01 (   2.610eV)
+     0.9547832E-01 (   2.598eV)
+     0.9476932E-01 (   2.579eV)
+     0.9106575E-01 (   2.478eV)
+     0.8035021E-01 (   2.186eV)
+     0.8012258E-01 (   2.180eV)
+     0.7881470E-01 (   2.145eV)
+     0.7541632E-01 (   2.052eV)
+     0.7513410E-01 (   2.045eV)
+     0.7143401E-01 (   1.944eV)
+     0.7036296E-01 (   1.915eV)
+     0.6504698E-01 (   1.770eV)
+     0.6374337E-01 (   1.735eV)
+     0.6285638E-01 (   1.710eV)
+     0.5626361E-01 (   1.531eV)
+     0.5558931E-01 (   1.513eV)
+     0.5467900E-01 (   1.488eV)
+     0.5140058E-01 (   1.399eV)
+     0.5052039E-01 (   1.375eV)
+     0.4675438E-01 (   1.272eV)
+     0.4533164E-01 (   1.234eV)
+     0.4049216E-01 (   1.102eV)
+     0.3515355E-01 (   0.957eV)
+     0.3167053E-01 (   0.862eV)
+     0.2660445E-01 (   0.724eV)
+     0.2531204E-01 (   0.689eV)
+     0.2392970E-01 (   0.651eV)
+     0.2249743E-01 (   0.612eV)
+     0.1645812E-01 (   0.448eV)
+     0.1602482E-01 (   0.436eV)
+     0.1309849E-01 (   0.356eV)
+     0.3365998E-02 (   0.092eV)
+     0.1089096E-02 (   0.030eV)
+    -0.5858388E-03 (  -0.016eV)
+    -0.4969190E-02 (  -0.135eV)
+    -0.8012362E-02 (  -0.218eV)
+    -0.9060356E-02 (  -0.247eV)
+    -0.1167354E-01 (  -0.318eV)
+    -0.1267234E-01 (  -0.345eV)
+    -0.1487193E-01 (  -0.405eV)
+    -0.1728251E-01 (  -0.470eV)
+    -0.1813192E-01 (  -0.493eV)
+    -0.1928515E-01 (  -0.525eV)
+    -0.2246592E-01 (  -0.611eV)
+    -0.2382708E-01 (  -0.648eV)
+    -0.2560776E-01 (  -0.697eV)
+    -0.2900210E-01 (  -0.789eV)
+    -0.3252253E-01 (  -0.885eV)
+    -0.3409197E-01 (  -0.928eV)
+    -0.3674608E-01 (  -1.000eV)
+    -0.3897461E-01 (  -1.061eV)
+    -0.3961953E-01 (  -1.078eV)
+    -0.4203852E-01 (  -1.144eV)
+    -0.4388545E-01 (  -1.194eV)
+    -0.4470010E-01 (  -1.216eV)
+    -0.4621112E-01 (  -1.257eV)
+    -0.5275077E-01 (  -1.435eV)
+    -0.5358869E-01 (  -1.458eV)
+    -0.5488045E-01 (  -1.493eV)
+    -0.5578232E-01 (  -1.518eV)
+    -0.5783896E-01 (  -1.574eV)
+    -0.5960187E-01 (  -1.622eV)
+    -0.6257564E-01 (  -1.703eV)
+    -0.6518827E-01 (  -1.774eV)
+    -0.6830821E-01 (  -1.859eV)
+    -0.6943035E-01 (  -1.889eV)
+    -0.7004271E-01 (  -1.906eV)
+    -0.7272693E-01 (  -1.979eV)
+    -0.7357540E-01 (  -2.002eV)
+    -0.7663366E-01 (  -2.085eV)
+    -0.7846834E-01 (  -2.135eV)
+    -0.8426357E-01 (  -2.293eV)
+    -0.8571464E-01 (  -2.332eV)
+    -0.8848627E-01 (  -2.408eV)
+    -0.8954469E-01 (  -2.437eV)
+    -0.9016559E-01 (  -2.454eV)
+    -0.9243860E-01 (  -2.515eV)
+    -0.9302009E-01 (  -2.531eV)
+    -0.9482304E-01 (  -2.580eV)
+    -0.9684597E-01 (  -2.635eV)
+    -0.9814101E-01 (  -2.671eV)
+    -0.1039619E+00 (  -2.829eV)
+    -0.1049230E+00 (  -2.855eV)
+    -0.1072544E+00 (  -2.919eV)
+    -0.1091911E+00 (  -2.971eV)
+    -0.1101750E+00 (  -2.998eV)
+    -0.1107930E+00 (  -3.015eV)
+    -0.1131047E+00 (  -3.078eV)
+    -0.1166013E+00 (  -3.173eV)
+    -0.1187871E+00 (  -3.232eV)
+    -0.1201146E+00 (  -3.269eV)
+    -0.1240820E+00 (  -3.376eV)
+    -0.1259842E+00 (  -3.428eV)
+    -0.1297688E+00 (  -3.531eV)
+    -0.1329596E+00 (  -3.618eV)
+    -0.1352963E+00 (  -3.682eV)
+    -0.1353952E+00 (  -3.684eV)
+    -0.1369932E+00 (  -3.728eV)
+    -0.1404591E+00 (  -3.822eV)
+    -0.1438724E+00 (  -3.915eV)
+    -0.1455501E+00 (  -3.961eV)
+    -0.1481353E+00 (  -4.031eV)
+    -0.1485661E+00 (  -4.043eV)
+    -0.1503241E+00 (  -4.091eV)
+    -0.1539395E+00 (  -4.189eV)
+    -0.1544143E+00 (  -4.202eV)
+    -0.1553072E+00 (  -4.226eV)
+    -0.1616749E+00 (  -4.399eV)
+    -0.1722277E+00 (  -4.687eV)
+    -0.1763239E+00 (  -4.798eV)
+    -0.1780825E+00 (  -4.846eV)
+    -0.1785509E+00 (  -4.859eV)
+    -0.1814428E+00 (  -4.937eV)
+    -0.1837808E+00 (  -5.001eV)
+    -0.1859588E+00 (  -5.060eV)
+    -0.1872336E+00 (  -5.095eV)
+    -0.1913633E+00 (  -5.207eV)
+    -0.1953509E+00 (  -5.316eV)
+    -0.2014834E+00 (  -5.483eV)
+    -0.2038861E+00 (  -5.548eV)
+    -0.2069975E+00 (  -5.633eV)
+    -0.2111244E+00 (  -5.745eV)
+    -0.2134370E+00 (  -5.808eV)
+    -0.2162675E+00 (  -5.885eV)
+    -0.2188439E+00 (  -5.955eV)
+    -0.2236766E+00 (  -6.087eV)
+    -0.2332320E+00 (  -6.347eV)
+    -0.2353555E+00 (  -6.404eV)
+    -0.2373911E+00 (  -6.460eV)
+    -0.2424843E+00 (  -6.598eV)
+    -0.2439146E+00 (  -6.637eV)
+    -0.2485504E+00 (  -6.763eV)
+    -0.2519475E+00 (  -6.856eV)
+    -0.2555103E+00 (  -6.953eV)
+    -0.2598261E+00 (  -7.070eV)
+    -0.2651168E+00 (  -7.214eV)
+    -0.2686634E+00 (  -7.311eV)
+    -0.2697631E+00 (  -7.341eV)
+    -0.2712851E+00 (  -7.382eV)
+    -0.2793568E+00 (  -7.602eV)
+    -0.2822023E+00 (  -7.679eV)
+    -0.2858784E+00 (  -7.779eV)
+    -0.2919997E+00 (  -7.946eV)
+    -0.3040826E+00 (  -8.275eV)
+    -0.3078628E+00 (  -8.377eV)
+    -0.3208364E+00 (  -8.730eV)
+    -0.3235341E+00 (  -8.804eV)
+    -0.3261386E+00 (  -8.875eV)
+    -0.3364525E+00 (  -9.155eV)
+    -0.3379202E+00 (  -9.195eV)
+    -0.3386679E+00 (  -9.216eV)
+    -0.3417551E+00 (  -9.300eV)
+    -0.3529188E+00 (  -9.603eV)
+    -0.3604768E+00 (  -9.809eV)
+    -0.3663316E+00 (  -9.968eV)
+    -0.3824880E+00 ( -10.408eV)
+    -0.3860352E+00 ( -10.505eV)
+    -0.3887719E+00 ( -10.579eV)
+    -0.3931539E+00 ( -10.698eV)
+    -0.3946306E+00 ( -10.739eV)
+    -0.3968586E+00 ( -10.799eV)
+    -0.4046357E+00 ( -11.011eV)
+    -0.4248077E+00 ( -11.560eV)
+    -0.4277723E+00 ( -11.640eV)
+    -0.4317924E+00 ( -11.750eV)
+    -0.4388512E+00 ( -11.942eV)
+    -0.4402072E+00 ( -11.979eV)
+    -0.4519186E+00 ( -12.297eV)
+    -0.4562906E+00 ( -12.416eV)
+    -0.4759286E+00 ( -12.951eV)
+    -0.4847067E+00 ( -13.190eV)
+    -0.4878640E+00 ( -13.276eV)
+    -0.4984949E+00 ( -13.565eV)
+    -0.5092667E+00 ( -13.858eV)
+    -0.5124492E+00 ( -13.945eV)
+    -0.5191004E+00 ( -14.126eV)
+    -0.5379539E+00 ( -14.639eV)
+    -0.5412314E+00 ( -14.728eV)
+    -0.5451143E+00 ( -14.833eV)
+    -0.5496015E+00 ( -14.956eV)
+    -0.5503941E+00 ( -14.977eV)
+    -0.5800097E+00 ( -15.783eV)
+    -0.5828142E+00 ( -15.859eV)
+    -0.5943426E+00 ( -16.173eV)
+    -0.6025116E+00 ( -16.395eV)
+    -0.6055259E+00 ( -16.477eV)
+    -0.6199230E+00 ( -16.869eV)
+    -0.6216047E+00 ( -16.915eV)
+    -0.6249527E+00 ( -17.006eV)
+    -0.6268878E+00 ( -17.059eV)
+    -0.6414064E+00 ( -17.454eV)
+    -0.6486200E+00 ( -17.650eV)
+    -0.6528022E+00 ( -17.764eV)
+    -0.6595713E+00 ( -17.948eV)
+    -0.6746140E+00 ( -18.357eV)
+    -0.6869914E+00 ( -18.694eV)
+    -0.6895804E+00 ( -18.765eV)
+    -0.7075471E+00 ( -19.253eV)
+    -0.7112904E+00 ( -19.355eV)
+    -0.7432521E+00 ( -20.225eV)
+    -0.7695100E+00 ( -20.940eV)
+    -0.8184278E+00 ( -22.271eV)
+    -0.8519449E+00 ( -23.183eV)
+    -0.9373966E+00 ( -25.508eV)
+    -0.1020603E+01 ( -27.772eV)
+
+ Total PSPW energy     :  -0.5615933712E+03
+
+
+=== Spin Contamination ===
+ 
+ <Sexact^2> =   0.000000000000000E+000
+ <S^2>      =   0.000000000000000E+000
+ 
+
+
+== Center of Charge ==
+
+spin up     (    0.0071,    0.0488,   -0.0614 )
+spin down   (    0.0071,    0.0488,   -0.0614 )
+     total  (    0.0071,    0.0488,   -0.0614 )
+ionic       (   -0.0111,    0.0090,    0.0199 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (   -8.2305,  -17.9765,   36.7690 ) au
+|mu| =    41.7475 au,     106.1055 Debye
+
+ output psi filename:/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/nwc_pweg_dat.movecs
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.206960E+02
+  main loop   :   0.168749E+03
+  epilogue    :   0.889576E+01
+  total       :   0.198341E+03
+  cputime/step:   0.587975E+00       (     287 evalulations,     124 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.198459E+03  0.691496E+00       100.0 %
+  i/o time                   :   0.180654E+02  0.629457E-01         9.1 %
+  FFTs                       :   0.794579E+01  0.276857E-01         4.0 %
+  dot products               :   0.432120E+02  0.150564E+00        21.8 %
+  geodesic                   :   0.726242E+02  0.253046E+00        36.6 %
+  ffm_dgemm                  :   0.120762E+02  0.420773E-01         6.1 %
+  fmf_dgemm                  :   0.292510E+02  0.101920E+00        14.7 %
+  mmm_dgemm                  :   0.188088E+01  0.655359E-02         0.9 %
+  m_diagonalize              :   0.312360E+01  0.108836E-01         1.6 %
+  exchange correlation       :   0.301157E+01  0.104933E-01         1.5 %
+  local pseudopotentials     :   0.121655E+00  0.423885E-03         0.1 %
+  non-local pseudopotentials :   0.261558E+02  0.911352E-01        13.2 %
+  structure factors          :   0.422374E+00  0.147169E-02         0.2 %
+  phase factors              :   0.720977E-03  0.251211E-05         0.0 %
+  masking and packing        :   0.478392E+01  0.166687E-01         2.4 %
+  queue fft                  :   0.390292E+02  0.135990E+00        19.7 %
+  queue fft (serial)         :   0.161309E+02  0.562053E-01         8.1 %
+  queue fft (message passing):   0.221159E+02  0.770589E-01        11.1 %
+  non-local psp FFM          :   0.163947E+02  0.571243E-01         8.3 %
+  non-local psp FMF          :   0.921486E+01  0.321075E-01         4.6 %
+  non-local psp FFM A        :   0.267291E+00  0.931326E-03         0.1 %
+  non-local psp FFM B        :   0.148136E+02  0.516153E-01         7.5 %
+ 
+     >>>  JOB COMPLETED     AT Sun Dec 10 22:41:12 2017  <<<
+          ****************************************************
+          *                                                  *
+          *               NWPW PSPW Calculation              *
+          *                                                  *
+          * [ (Grassmann/Stiefel manifold implementation)  ] *
+          *                                                  *
+          *      [ NorthWest Chemistry implementation ]      *
+          *                                                  *
+          *            version #5.10   06/12/02              *
+          *                                                  *
+          *    This code was developed by Eric J. Bylaska,   *
+          *    and was based upon algorithms and code        *
+          *    developed by the group of Prof. John H. Weare *
+          *                                                  *
+          ****************************************************
+     >>>  JOB STARTED       AT Sun Dec 10 22:41:12 2017  <<<
+          ================ input data ========================
+ pseudopotential is not correctly formatted:
+ N.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/N.vpp
+ pseudopotential is not correctly formatted:
+ C.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/C.vpp
+ pseudopotential is not correctly formatted:
+ O.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/O.vpp
+ pseudopotential is not correctly formatted:
+ H.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/H.vpp
+ Error reading psi - bad grid
+ nfft :                    90                    84                    90
+ ngrid:                   108                    98                   108
+ Error reading psi - bad grid
+ nfft :                    90                    84                    90
+ ngrid:                   108                    98                   108
+ Error reading psi - bad grid
+ 
+ Grid is being converted:
+ ------------------------
+ 
+ To turn off automatic grid conversion:
+ 
+ set nwpw:psi_nogrid .false.
+ 
+ old_filename: nwc_pweg_dat.movecs                               
+ new_filename: nwc_pweg_dat.movecs                               
+ converting  :  90x 84x 90 --> 108x 98x108
+converting .... psi:    1 spin: 1
+converting .... psi:    2 spin: 1
+converting .... psi:    3 spin: 1
+converting .... psi:    4 spin: 1
+converting .... psi:    5 spin: 1
+converting .... psi:    6 spin: 1
+converting .... psi:    7 spin: 1
+converting .... psi:    8 spin: 1
+converting .... psi:    9 spin: 1
+converting .... psi:   10 spin: 1
+converting .... psi:   11 spin: 1
+converting .... psi:   12 spin: 1
+converting .... psi:   13 spin: 1
+converting .... psi:   14 spin: 1
+converting .... psi:   15 spin: 1
+converting .... psi:   16 spin: 1
+converting .... psi:   17 spin: 1
+converting .... psi:   18 spin: 1
+converting .... psi:   19 spin: 1
+converting .... psi:   20 spin: 1
+converting .... psi:   21 spin: 1
+converting .... psi:   22 spin: 1
+converting .... psi:   23 spin: 1
+converting .... psi:   24 spin: 1
+converting .... psi:   25 spin: 1
+converting .... psi:   26 spin: 1
+converting .... psi:   27 spin: 1
+converting .... psi:   28 spin: 1
+converting .... psi:   29 spin: 1
+converting .... psi:   30 spin: 1
+converting .... psi:   31 spin: 1
+converting .... psi:   32 spin: 1
+converting .... psi:   33 spin: 1
+converting .... psi:   34 spin: 1
+converting .... psi:   35 spin: 1
+converting .... psi:   36 spin: 1
+converting .... psi:   37 spin: 1
+converting .... psi:   38 spin: 1
+converting .... psi:   39 spin: 1
+converting .... psi:   40 spin: 1
+converting .... psi:   41 spin: 1
+converting .... psi:   42 spin: 1
+converting .... psi:   43 spin: 1
+converting .... psi:   44 spin: 1
+converting .... psi:   45 spin: 1
+converting .... psi:   46 spin: 1
+converting .... psi:   47 spin: 1
+converting .... psi:   48 spin: 1
+converting .... psi:   49 spin: 1
+converting .... psi:   50 spin: 1
+converting .... psi:   51 spin: 1
+converting .... psi:   52 spin: 1
+converting .... psi:   53 spin: 1
+converting .... psi:   54 spin: 1
+converting .... psi:   55 spin: 1
+converting .... psi:   56 spin: 1
+converting .... psi:   57 spin: 1
+converting .... psi:   58 spin: 1
+converting .... psi:   59 spin: 1
+converting .... psi:   60 spin: 1
+converting .... psi:   61 spin: 1
+converting .... psi:   62 spin: 1
+converting .... psi:   63 spin: 1
+converting .... psi:   64 spin: 1
+converting .... psi:   65 spin: 1
+converting .... psi:   66 spin: 1
+converting .... psi:   67 spin: 1
+converting .... psi:   68 spin: 1
+converting .... psi:   69 spin: 1
+converting .... psi:   70 spin: 1
+converting .... psi:   71 spin: 1
+converting .... psi:   72 spin: 1
+converting .... psi:   73 spin: 1
+converting .... psi:   74 spin: 1
+converting .... psi:   75 spin: 1
+converting .... psi:   76 spin: 1
+converting .... psi:   77 spin: 1
+converting .... psi:   78 spin: 1
+converting .... psi:   79 spin: 1
+converting .... psi:   80 spin: 1
+converting .... psi:   81 spin: 1
+converting .... psi:   82 spin: 1
+converting .... psi:   83 spin: 1
+converting .... psi:   84 spin: 1
+converting .... psi:   85 spin: 1
+converting .... psi:   86 spin: 1
+converting .... psi:   87 spin: 1
+converting .... psi:   88 spin: 1
+converting .... psi:   89 spin: 1
+converting .... psi:   90 spin: 1
+converting .... psi:   91 spin: 1
+converting .... psi:   92 spin: 1
+converting .... psi:   93 spin: 1
+converting .... psi:   94 spin: 1
+converting .... psi:   95 spin: 1
+converting .... psi:   96 spin: 1
+converting .... psi:   97 spin: 1
+converting .... psi:   98 spin: 1
+converting .... psi:   99 spin: 1
+converting .... psi:  100 spin: 1
+converting .... psi:  101 spin: 1
+converting .... psi:  102 spin: 1
+converting .... psi:  103 spin: 1
+converting .... psi:  104 spin: 1
+converting .... psi:  105 spin: 1
+converting .... psi:  106 spin: 1
+converting .... psi:  107 spin: 1
+converting .... psi:  108 spin: 1
+converting .... psi:  109 spin: 1
+converting .... psi:  110 spin: 1
+converting .... psi:  111 spin: 1
+converting .... psi:  112 spin: 1
+converting .... psi:  113 spin: 1
+converting .... psi:  114 spin: 1
+converting .... psi:  115 spin: 1
+converting .... psi:  116 spin: 1
+converting .... psi:  117 spin: 1
+converting .... psi:  118 spin: 1
+converting .... psi:  119 spin: 1
+converting .... psi:  120 spin: 1
+converting .... psi:  121 spin: 1
+converting .... psi:  122 spin: 1
+converting .... psi:  123 spin: 1
+converting .... psi:  124 spin: 1
+converting .... psi:  125 spin: 1
+converting .... psi:  126 spin: 1
+converting .... psi:  127 spin: 1
+converting .... psi:  128 spin: 1
+converting .... psi:  129 spin: 1
+converting .... psi:  130 spin: 1
+converting .... psi:  131 spin: 1
+converting .... psi:  132 spin: 1
+converting .... psi:  133 spin: 1
+converting .... psi:  134 spin: 1
+converting .... psi:  135 spin: 1
+converting .... psi:  136 spin: 1
+converting .... psi:  137 spin: 1
+converting .... psi:  138 spin: 1
+converting .... psi:  139 spin: 1
+converting .... psi:  140 spin: 1
+converting .... psi:  141 spin: 1
+converting .... psi:  142 spin: 1
+converting .... psi:  143 spin: 1
+converting .... psi:  144 spin: 1
+converting .... psi:  145 spin: 1
+converting .... psi:  146 spin: 1
+converting .... psi:  147 spin: 1
+converting .... psi:  148 spin: 1
+converting .... psi:  149 spin: 1
+converting .... psi:  150 spin: 1
+converting .... psi:  151 spin: 1
+converting .... psi:  152 spin: 1
+converting .... psi:  153 spin: 1
+converting .... psi:  154 spin: 1
+converting .... psi:  155 spin: 1
+converting .... psi:  156 spin: 1
+converting .... psi:  157 spin: 1
+converting .... psi:  158 spin: 1
+converting .... psi:  159 spin: 1
+converting .... psi:  160 spin: 1
+converting .... psi:  161 spin: 1
+converting .... psi:  162 spin: 1
+converting .... psi:  163 spin: 1
+converting .... psi:  164 spin: 1
+converting .... psi:  165 spin: 1
+converting .... psi:  166 spin: 1
+converting .... psi:  167 spin: 1
+converting .... psi:  168 spin: 1
+converting .... psi:  169 spin: 1
+converting .... psi:  170 spin: 1
+converting .... psi:  171 spin: 1
+converting .... psi:  172 spin: 1
+converting .... psi:  173 spin: 1
+converting .... psi:  174 spin: 1
+converting .... psi:  175 spin: 1
+converting .... psi:  176 spin: 1
+converting .... psi:  177 spin: 1
+converting .... psi:  178 spin: 1
+converting .... psi:  179 spin: 1
+converting .... psi:  180 spin: 1
+converting .... psi:  181 spin: 1
+converting .... psi:  182 spin: 1
+converting .... psi:  183 spin: 1
+converting .... psi:  184 spin: 1
+converting .... psi:  185 spin: 1
+converting .... psi:  186 spin: 1
+converting .... psi:  187 spin: 1
+converting .... psi:  188 spin: 1
+converting .... psi:  189 spin: 1
+converting .... psi:  190 spin: 1
+converting .... psi:  191 spin: 1
+converting .... psi:  192 spin: 1
+converting .... psi:  193 spin: 1
+converting .... psi:  194 spin: 1
+converting .... psi:  195 spin: 1
+converting .... psi:  196 spin: 1
+converting .... psi:  197 spin: 1
+converting .... psi:  198 spin: 1
+converting .... psi:  199 spin: 1
+converting .... psi:  200 spin: 1
+converting .... psi:  201 spin: 1
+converting .... psi:  202 spin: 1
+converting .... psi:  203 spin: 1
+converting .... psi:  204 spin: 1
+converting .... psi:  205 spin: 1
+converting .... psi:  206 spin: 1
+converting .... psi:  207 spin: 1
+converting .... psi:  208 spin: 1
+converting .... psi:  209 spin: 1
+converting .... psi:  210 spin: 1
+converting .... psi:  211 spin: 1
+converting .... psi:  212 spin: 1
+converting .... psi:  213 spin: 1
+converting .... psi:  214 spin: 1
+converting .... psi:  215 spin: 1
+converting .... psi:  216 spin: 1
+converting .... psi:  217 spin: 1
+converting .... psi:  218 spin: 1
+converting .... psi:  219 spin: 1
+converting .... psi:  220 spin: 1
+converting .... psi:  221 spin: 1
+converting .... psi:  222 spin: 1
+converting .... psi:  223 spin: 1
+converting .... psi:  224 spin: 1
+converting .... psi:  225 spin: 1
+converting .... psi:  226 spin: 1
+
+ input psi filename:/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/nwc_pweg_dat.movecs
+
+ number of processors used:        96
+ processor grid           :  96 x   1
+ parallel mapping         :2d hilbert
+ parallel mapping         :  balanced
+ number of threads        :         1
+ parallel io              :       off
+
+ options:
+      boundary conditions  = aperiodic   (version4)
+      electron spin        = restricted
+      exchange-correlation = PBE96 (White and Bird) parameterization
+
+ elements involved in the cluster:
+      1: N   valence charge:  5.0000  lmax=  2
+             comment    : Hamann pseudopotential
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.700   0.700   0.700
+ 
+      2: C   valence charge:  4.0000  lmax=  2
+             comment    : Parameterized (J.Phys.Chem., vol 100, page 6966) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.800   0.850   0.850
+ 
+      3: O   valence charge:  6.0000  lmax=  2
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.700   0.700   0.700
+ 
+      4: H   valence charge:  1.0000  lmax=  1
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   1
+             local potential used           :   1
+             number of non-local projections:   1
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.800   0.800
+ 
+
+ total charge:   1.000
+
+ atomic composition:
+     N   :   13     C   :   49     O   :   19     H   :   78
+
+ number of electrons: spin up=   226 ( 226 per task)  down=   226 ( 226 per task) (Fourier space)
+ number of orbitals : spin up=   226 ( 226 per task)  down=   226 ( 226 per task) (Fourier space)
+
+ supercell:
+      cell_name:  cell_default                                      
+      lattice:    a1=<  27.000   0.000   0.000 >
+                  a2=<   0.000  25.000   0.000 >
+                  a3=<   0.000   0.000  27.000 >
+      reciprocal: b1=<   0.233   0.000  -0.000 >
+                  b2=<  -0.000   0.251  -0.000 >
+                  b3=<   0.000   0.000   0.233 >
+      lattice:    a=      27.000 b=     25.000 c=      27.000
+                  alpha=  90.000 beta=  90.000 gamma=  90.000
+                  omega=     18225.0
+
+      density cutoff= 75.000  fft=108x 98x108(   282731 waves     2945 per task)
+      wavefnc cutoff= 37.500  fft=108x 98x108(    99901 waves     1040 per task)
+
+ technical parameters:
+      time step=      5.80     fictitious mass=  400000.0
+      tolerance=0.100E-06 (energy)   0.100E-06 (density)
+      maximum iterations =      1000 (   10 inner    100 outer )
+
+
+
+
+
+== Energy Calculation ==
+
+
+          ============ Grassmann lmbfgs iteration ============
+     >>>  ITERATION STARTED AT Sun Dec 10 22:41:45 2017  <<<
+    iter.           Energy         DeltaE       DeltaRho 
+    ------------------------------------------------------
+      10   -0.5621189514E+03   -0.38883E-03    0.10935E-01
+      20   -0.5621206339E+03   -0.86887E-04    0.85271E-04
+      30   -0.5621211493E+03   -0.32057E-04    0.18999E-04
+      40   -0.5621213416E+03   -0.11937E-04    0.41002E-05
+      50   -0.5621214157E+03   -0.47429E-05    0.72141E-06
+      60   -0.5621214461E+03   -0.19280E-05    0.23464E-06
+      70   -0.5621214583E+03   -0.81420E-06    0.10680E-06
+      80   -0.5621214640E+03   -0.43402E-06    0.61273E-07
+      90   -0.5621214673E+03   -0.25496E-06    0.43310E-07
+     100   -0.5621214692E+03   -0.15031E-06    0.30246E-07
+     110   -0.5621214702E+03   -0.94979E-07    0.12869E-07
+  *** tolerance ok. iteration terminated
+     >>>  ITERATION ENDED   AT Sun Dec 10 22:46:32 2017  <<<
+
+
+==  Summary Of Results  ==
+ 
+ number of electrons: spin up=  226.00000  down=  226.00000 (real space)
+
+ total     energy    :  -0.5621214702E+03 (   -0.35354E+01/ion)
+ total orbital energy:  -0.8463027844E+02 (   -0.37447E+00/electron)
+ hartree   energy    :   0.9392620282E+04 (    0.41560E+02/electron)
+ exc-corr  energy    :  -0.1992414606E+03 (   -0.88160E+00/electron)
+ ion-ion   energy    :   0.8855425769E+04 (    0.55695E+02/ion)
+
+ kinetic (planewave) :   0.4674310445E+03 (    0.20683E+01/electron)
+ V_local (planewave) :  -0.1905647554E+05 (   -0.84321E+02/electron)
+ V_nl    (planewave) :  -0.2188156041E+02 (   -0.96821E-01/electron)
+ V_Coul  (planewave) :   0.1878524056E+05 (    0.83121E+02/electron)
+ V_xc.   (planewave) :  -0.2589447814E+03 (   -0.11458E+01/electron)
+ Virial Coefficient  :  -0.1181054039E+01
+
+ orbital energies:
+     0.1892230E+00 (   5.149eV)
+     0.1838516E+00 (   5.003eV)
+     0.1824207E+00 (   4.964eV)
+     0.1799513E+00 (   4.897eV)
+     0.1728966E+00 (   4.705eV)
+     0.1658042E+00 (   4.512eV)
+     0.1612712E+00 (   4.388eV)
+     0.1531171E+00 (   4.167eV)
+     0.1506698E+00 (   4.100eV)
+     0.1464720E+00 (   3.986eV)
+     0.1394577E+00 (   3.795eV)
+     0.1368049E+00 (   3.723eV)
+     0.1337919E+00 (   3.641eV)
+     0.1323588E+00 (   3.602eV)
+     0.1256266E+00 (   3.419eV)
+     0.1238955E+00 (   3.371eV)
+     0.1185552E+00 (   3.226eV)
+     0.1140707E+00 (   3.104eV)
+     0.1083132E+00 (   2.947eV)
+     0.1058321E+00 (   2.880eV)
+     0.1034599E+00 (   2.815eV)
+     0.9453279E-01 (   2.572eV)
+     0.9368728E-01 (   2.549eV)
+     0.9270037E-01 (   2.523eV)
+     0.8960578E-01 (   2.438eV)
+     0.7877086E-01 (   2.143eV)
+     0.7821418E-01 (   2.128eV)
+     0.7658628E-01 (   2.084eV)
+     0.7298835E-01 (   1.986eV)
+     0.7197740E-01 (   1.959eV)
+     0.6894464E-01 (   1.876eV)
+     0.6780004E-01 (   1.845eV)
+     0.6343377E-01 (   1.726eV)
+     0.6254812E-01 (   1.702eV)
+     0.6111789E-01 (   1.663eV)
+     0.5436136E-01 (   1.479eV)
+     0.5380747E-01 (   1.464eV)
+     0.5166580E-01 (   1.406eV)
+     0.4911815E-01 (   1.337eV)
+     0.4886924E-01 (   1.330eV)
+     0.4496657E-01 (   1.224eV)
+     0.4313280E-01 (   1.174eV)
+     0.3897229E-01 (   1.060eV)
+     0.3295448E-01 (   0.897eV)
+     0.2977170E-01 (   0.810eV)
+     0.2589914E-01 (   0.705eV)
+     0.2347293E-01 (   0.639eV)
+     0.2292515E-01 (   0.624eV)
+     0.2174491E-01 (   0.592eV)
+     0.1451594E-01 (   0.395eV)
+     0.1404358E-01 (   0.382eV)
+     0.1118869E-01 (   0.304eV)
+     0.1050505E-02 (   0.029eV)
+    -0.2310273E-03 (  -0.006eV)
+    -0.2498581E-02 (  -0.068eV)
+    -0.7108509E-02 (  -0.193eV)
+    -0.1048929E-01 (  -0.285eV)
+    -0.1096160E-01 (  -0.298eV)
+    -0.1434739E-01 (  -0.390eV)
+    -0.1511438E-01 (  -0.411eV)
+    -0.1709863E-01 (  -0.465eV)
+    -0.1907432E-01 (  -0.519eV)
+    -0.2032435E-01 (  -0.553eV)
+    -0.2144019E-01 (  -0.583eV)
+    -0.2377519E-01 (  -0.647eV)
+    -0.2586028E-01 (  -0.704eV)
+    -0.2816184E-01 (  -0.766eV)
+    -0.3065528E-01 (  -0.834eV)
+    -0.3516775E-01 (  -0.957eV)
+    -0.3661489E-01 (  -0.996eV)
+    -0.3969091E-01 (  -1.080eV)
+    -0.4083520E-01 (  -1.111eV)
+    -0.4185173E-01 (  -1.139eV)
+    -0.4431395E-01 (  -1.206eV)
+    -0.4584426E-01 (  -1.247eV)
+    -0.4672148E-01 (  -1.271eV)
+    -0.4849393E-01 (  -1.320eV)
+    -0.5458751E-01 (  -1.485eV)
+    -0.5595777E-01 (  -1.523eV)
+    -0.5670693E-01 (  -1.543eV)
+    -0.5826646E-01 (  -1.586eV)
+    -0.6017050E-01 (  -1.637eV)
+    -0.6148200E-01 (  -1.673eV)
+    -0.6539292E-01 (  -1.779eV)
+    -0.6710052E-01 (  -1.826eV)
+    -0.7065898E-01 (  -1.923eV)
+    -0.7160406E-01 (  -1.948eV)
+    -0.7200525E-01 (  -1.959eV)
+    -0.7479132E-01 (  -2.035eV)
+    -0.7571542E-01 (  -2.060eV)
+    -0.7894634E-01 (  -2.148eV)
+    -0.8059457E-01 (  -2.193eV)
+    -0.8633127E-01 (  -2.349eV)
+    -0.8813364E-01 (  -2.398eV)
+    -0.9019698E-01 (  -2.454eV)
+    -0.9133047E-01 (  -2.485eV)
+    -0.9205549E-01 (  -2.505eV)
+    -0.9445759E-01 (  -2.570eV)
+    -0.9503258E-01 (  -2.586eV)
+    -0.9721574E-01 (  -2.645eV)
+    -0.9936237E-01 (  -2.704eV)
+    -0.1008631E+00 (  -2.745eV)
+    -0.1065166E+00 (  -2.898eV)
+    -0.1073150E+00 (  -2.920eV)
+    -0.1097429E+00 (  -2.986eV)
+    -0.1113668E+00 (  -3.030eV)
+    -0.1123909E+00 (  -3.058eV)
+    -0.1128433E+00 (  -3.071eV)
+    -0.1157819E+00 (  -3.151eV)
+    -0.1184281E+00 (  -3.223eV)
+    -0.1214244E+00 (  -3.304eV)
+    -0.1224114E+00 (  -3.331eV)
+    -0.1263257E+00 (  -3.438eV)
+    -0.1282782E+00 (  -3.491eV)
+    -0.1315732E+00 (  -3.580eV)
+    -0.1353892E+00 (  -3.684eV)
+    -0.1377454E+00 (  -3.748eV)
+    -0.1378864E+00 (  -3.752eV)
+    -0.1395546E+00 (  -3.798eV)
+    -0.1430088E+00 (  -3.891eV)
+    -0.1448703E+00 (  -3.942eV)
+    -0.1481987E+00 (  -4.033eV)
+    -0.1499818E+00 (  -4.081eV)
+    -0.1512060E+00 (  -4.115eV)
+    -0.1524624E+00 (  -4.149eV)
+    -0.1553917E+00 (  -4.228eV)
+    -0.1567159E+00 (  -4.264eV)
+    -0.1577997E+00 (  -4.294eV)
+    -0.1635881E+00 (  -4.451eV)
+    -0.1744302E+00 (  -4.747eV)
+    -0.1780966E+00 (  -4.846eV)
+    -0.1802562E+00 (  -4.905eV)
+    -0.1810556E+00 (  -4.927eV)
+    -0.1832302E+00 (  -4.986eV)
+    -0.1853586E+00 (  -5.044eV)
+    -0.1886557E+00 (  -5.134eV)
+    -0.1906835E+00 (  -5.189eV)
+    -0.1930310E+00 (  -5.253eV)
+    -0.1969884E+00 (  -5.360eV)
+    -0.2037996E+00 (  -5.546eV)
+    -0.2062587E+00 (  -5.613eV)
+    -0.2087511E+00 (  -5.680eV)
+    -0.2128222E+00 (  -5.791eV)
+    -0.2156796E+00 (  -5.869eV)
+    -0.2177620E+00 (  -5.926eV)
+    -0.2204392E+00 (  -5.999eV)
+    -0.2258114E+00 (  -6.145eV)
+    -0.2346932E+00 (  -6.386eV)
+    -0.2377458E+00 (  -6.469eV)
+    -0.2394233E+00 (  -6.515eV)
+    -0.2426890E+00 (  -6.604eV)
+    -0.2468690E+00 (  -6.718eV)
+    -0.2508495E+00 (  -6.826eV)
+    -0.2540225E+00 (  -6.912eV)
+    -0.2574671E+00 (  -7.006eV)
+    -0.2621377E+00 (  -7.133eV)
+    -0.2663490E+00 (  -7.248eV)
+    -0.2712303E+00 (  -7.381eV)
+    -0.2726568E+00 (  -7.419eV)
+    -0.2734971E+00 (  -7.442eV)
+    -0.2806596E+00 (  -7.637eV)
+    -0.2834791E+00 (  -7.714eV)
+    -0.2877585E+00 (  -7.830eV)
+    -0.2932114E+00 (  -7.979eV)
+    -0.3056220E+00 (  -8.316eV)
+    -0.3094761E+00 (  -8.421eV)
+    -0.3223500E+00 (  -8.772eV)
+    -0.3253602E+00 (  -8.854eV)
+    -0.3285922E+00 (  -8.942eV)
+    -0.3376012E+00 (  -9.187eV)
+    -0.3389936E+00 (  -9.225eV)
+    -0.3409907E+00 (  -9.279eV)
+    -0.3428640E+00 (  -9.330eV)
+    -0.3547528E+00 (  -9.653eV)
+    -0.3618693E+00 (  -9.847eV)
+    -0.3687161E+00 ( -10.033eV)
+    -0.3834125E+00 ( -10.433eV)
+    -0.3875585E+00 ( -10.546eV)
+    -0.3898621E+00 ( -10.609eV)
+    -0.3942940E+00 ( -10.729eV)
+    -0.3966560E+00 ( -10.794eV)
+    -0.3989605E+00 ( -10.856eV)
+    -0.4056748E+00 ( -11.039eV)
+    -0.4264710E+00 ( -11.605eV)
+    -0.4290473E+00 ( -11.675eV)
+    -0.4343062E+00 ( -11.818eV)
+    -0.4407469E+00 ( -11.993eV)
+    -0.4421939E+00 ( -12.033eV)
+    -0.4531667E+00 ( -12.331eV)
+    -0.4584277E+00 ( -12.475eV)
+    -0.4794376E+00 ( -13.046eV)
+    -0.4858927E+00 ( -13.222eV)
+    -0.4892648E+00 ( -13.314eV)
+    -0.5003573E+00 ( -13.616eV)
+    -0.5095412E+00 ( -13.865eV)
+    -0.5129106E+00 ( -13.957eV)
+    -0.5205169E+00 ( -14.164eV)
+    -0.5386687E+00 ( -14.658eV)
+    -0.5425953E+00 ( -14.765eV)
+    -0.5457375E+00 ( -14.850eV)
+    -0.5520989E+00 ( -15.023eV)
+    -0.5527892E+00 ( -15.042eV)
+    -0.5807622E+00 ( -15.803eV)
+    -0.5838884E+00 ( -15.889eV)
+    -0.5936081E+00 ( -16.153eV)
+    -0.6035389E+00 ( -16.423eV)
+    -0.6066319E+00 ( -16.507eV)
+    -0.6216064E+00 ( -16.915eV)
+    -0.6233208E+00 ( -16.962eV)
+    -0.6253660E+00 ( -17.017eV)
+    -0.6279299E+00 ( -17.087eV)
+    -0.6429626E+00 ( -17.496eV)
+    -0.6501536E+00 ( -17.692eV)
+    -0.6557366E+00 ( -17.844eV)
+    -0.6607409E+00 ( -17.980eV)
+    -0.6809921E+00 ( -18.531eV)
+    -0.6885319E+00 ( -18.736eV)
+    -0.6910243E+00 ( -18.804eV)
+    -0.7082724E+00 ( -19.273eV)
+    -0.7126054E+00 ( -19.391eV)
+    -0.7467297E+00 ( -20.320eV)
+    -0.7713613E+00 ( -20.990eV)
+    -0.8198332E+00 ( -22.309eV)
+    -0.8538362E+00 ( -23.234eV)
+    -0.9348072E+00 ( -25.438eV)
+    -0.1024654E+01 ( -27.882eV)
+
+ Total PSPW energy     :  -0.5621214702E+03
+
+
+=== Spin Contamination ===
+ 
+ <Sexact^2> =   0.000000000000000E+000
+ <S^2>      =   0.000000000000000E+000
+ 
+
+
+== Center of Charge ==
+
+spin up     (    0.0035,    0.0185,   -0.0632 )
+spin down   (    0.0035,    0.0185,   -0.0632 )
+     total  (    0.0035,    0.0185,   -0.0632 )
+ionic       (   -0.0111,    0.0090,    0.0199 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (   -6.5867,   -4.2668,   37.5892 ) au
+|mu| =    38.3997 au,      97.5967 Debye
+
+ output psi filename:/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/nwc_pweg_dat.movecs
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.327264E+02
+  main loop   :   0.287626E+03
+  epilogue    :   0.124377E+02
+  total       :   0.332790E+03
+  cputime/step:   0.114137E+01       (     252 evalulations,     108 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.332883E+03  0.132096E+01       100.0 %
+  i/o time                   :   0.253434E+02  0.100569E+00         7.6 %
+  FFTs                       :   0.112135E+02  0.444979E-01         3.4 %
+  dot products               :   0.762168E+02  0.302448E+00        22.9 %
+  geodesic                   :   0.655491E+02  0.260116E+00        19.7 %
+  ffm_dgemm                  :   0.489751E+01  0.194346E-01         1.5 %
+  fmf_dgemm                  :   0.199802E+02  0.792865E-01         6.0 %
+  mmm_dgemm                  :   0.131424E+01  0.521524E-02         0.4 %
+  m_diagonalize              :   0.267682E+01  0.106223E-01         0.8 %
+  exchange correlation       :   0.348223E+01  0.138184E-01         1.0 %
+  local pseudopotentials     :   0.202697E+00  0.804354E-03         0.1 %
+  non-local pseudopotentials :   0.119890E+03  0.475752E+00        36.0 %
+  structure factors          :   0.149431E+01  0.592981E-02         0.4 %
+  phase factors              :   0.902653E-03  0.358196E-05         0.0 %
+  masking and packing        :   0.866214E+01  0.343736E-01         2.6 %
+  queue fft                  :   0.753162E+02  0.298874E+00        22.6 %
+  queue fft (serial)         :   0.265447E+02  0.105336E+00         8.0 %
+  queue fft (message passing):   0.475732E+02  0.188783E+00        14.3 %
+  non-local psp FFM          :   0.383905E+02  0.152343E+00        11.5 %
+  non-local psp FMF          :   0.790895E+02  0.313847E+00        23.8 %
+  non-local psp FFM A        :   0.365259E+00  0.144944E-02         0.1 %
+  non-local psp FFM B        :   0.355191E+02  0.140949E+00        10.7 %
+ 
+     >>>  JOB COMPLETED     AT Sun Dec 10 22:46:45 2017  <<<
+          ****************************************************
+          *                                                  *
+          *               NWPW PSPW Calculation              *
+          *                                                  *
+          * [ (Grassmann/Stiefel manifold implementation)  ] *
+          *                                                  *
+          *      [ NorthWest Chemistry implementation ]      *
+          *                                                  *
+          *            version #5.10   06/12/02              *
+          *                                                  *
+          *    This code was developed by Eric J. Bylaska,   *
+          *    and was based upon algorithms and code        *
+          *    developed by the group of Prof. John H. Weare *
+          *                                                  *
+          ****************************************************
+     >>>  JOB STARTED       AT Sun Dec 10 22:46:45 2017  <<<
+          ================ input data ========================
+ pseudopotential is not correctly formatted:
+ N.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/N.vpp
+ pseudopotential is not correctly formatted:
+ C.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/C.vpp
+ pseudopotential is not correctly formatted:
+ O.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/O.vpp
+ pseudopotential is not correctly formatted:
+ H.vpp                                             
+ 
+ Generated formatted_filename: 
+ /scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/H.vpp
+ Error reading psi - bad grid
+ nfft :                   108                    98                   108
+ ngrid:                   126                   120                   126
+ Error reading psi - bad grid
+ nfft :                   108                    98                   108
+ ngrid:                   126                   120                   126
+ Error reading psi - bad grid
+ 
+ Grid is being converted:
+ ------------------------
+ 
+ To turn off automatic grid conversion:
+ 
+ set nwpw:psi_nogrid .false.
+ 
+ old_filename: nwc_pweg_dat.movecs                               
+ new_filename: nwc_pweg_dat.movecs                               
+ converting  : 108x 98x108 --> 126x120x126
+converting .... psi:    1 spin: 1
+converting .... psi:    2 spin: 1
+converting .... psi:    3 spin: 1
+converting .... psi:    4 spin: 1
+converting .... psi:    5 spin: 1
+converting .... psi:    6 spin: 1
+converting .... psi:    7 spin: 1
+converting .... psi:    8 spin: 1
+converting .... psi:    9 spin: 1
+converting .... psi:   10 spin: 1
+converting .... psi:   11 spin: 1
+converting .... psi:   12 spin: 1
+converting .... psi:   13 spin: 1
+converting .... psi:   14 spin: 1
+converting .... psi:   15 spin: 1
+converting .... psi:   16 spin: 1
+converting .... psi:   17 spin: 1
+converting .... psi:   18 spin: 1
+converting .... psi:   19 spin: 1
+converting .... psi:   20 spin: 1
+converting .... psi:   21 spin: 1
+converting .... psi:   22 spin: 1
+converting .... psi:   23 spin: 1
+converting .... psi:   24 spin: 1
+converting .... psi:   25 spin: 1
+converting .... psi:   26 spin: 1
+converting .... psi:   27 spin: 1
+converting .... psi:   28 spin: 1
+converting .... psi:   29 spin: 1
+converting .... psi:   30 spin: 1
+converting .... psi:   31 spin: 1
+converting .... psi:   32 spin: 1
+converting .... psi:   33 spin: 1
+converting .... psi:   34 spin: 1
+converting .... psi:   35 spin: 1
+converting .... psi:   36 spin: 1
+converting .... psi:   37 spin: 1
+converting .... psi:   38 spin: 1
+converting .... psi:   39 spin: 1
+converting .... psi:   40 spin: 1
+converting .... psi:   41 spin: 1
+converting .... psi:   42 spin: 1
+converting .... psi:   43 spin: 1
+converting .... psi:   44 spin: 1
+converting .... psi:   45 spin: 1
+converting .... psi:   46 spin: 1
+converting .... psi:   47 spin: 1
+converting .... psi:   48 spin: 1
+converting .... psi:   49 spin: 1
+converting .... psi:   50 spin: 1
+converting .... psi:   51 spin: 1
+converting .... psi:   52 spin: 1
+converting .... psi:   53 spin: 1
+converting .... psi:   54 spin: 1
+converting .... psi:   55 spin: 1
+converting .... psi:   56 spin: 1
+converting .... psi:   57 spin: 1
+converting .... psi:   58 spin: 1
+converting .... psi:   59 spin: 1
+converting .... psi:   60 spin: 1
+converting .... psi:   61 spin: 1
+converting .... psi:   62 spin: 1
+converting .... psi:   63 spin: 1
+converting .... psi:   64 spin: 1
+converting .... psi:   65 spin: 1
+converting .... psi:   66 spin: 1
+converting .... psi:   67 spin: 1
+converting .... psi:   68 spin: 1
+converting .... psi:   69 spin: 1
+converting .... psi:   70 spin: 1
+converting .... psi:   71 spin: 1
+converting .... psi:   72 spin: 1
+converting .... psi:   73 spin: 1
+converting .... psi:   74 spin: 1
+converting .... psi:   75 spin: 1
+converting .... psi:   76 spin: 1
+converting .... psi:   77 spin: 1
+converting .... psi:   78 spin: 1
+converting .... psi:   79 spin: 1
+converting .... psi:   80 spin: 1
+converting .... psi:   81 spin: 1
+converting .... psi:   82 spin: 1
+converting .... psi:   83 spin: 1
+converting .... psi:   84 spin: 1
+converting .... psi:   85 spin: 1
+converting .... psi:   86 spin: 1
+converting .... psi:   87 spin: 1
+converting .... psi:   88 spin: 1
+converting .... psi:   89 spin: 1
+converting .... psi:   90 spin: 1
+converting .... psi:   91 spin: 1
+converting .... psi:   92 spin: 1
+converting .... psi:   93 spin: 1
+converting .... psi:   94 spin: 1
+converting .... psi:   95 spin: 1
+converting .... psi:   96 spin: 1
+converting .... psi:   97 spin: 1
+converting .... psi:   98 spin: 1
+converting .... psi:   99 spin: 1
+converting .... psi:  100 spin: 1
+converting .... psi:  101 spin: 1
+converting .... psi:  102 spin: 1
+converting .... psi:  103 spin: 1
+converting .... psi:  104 spin: 1
+converting .... psi:  105 spin: 1
+converting .... psi:  106 spin: 1
+converting .... psi:  107 spin: 1
+converting .... psi:  108 spin: 1
+converting .... psi:  109 spin: 1
+converting .... psi:  110 spin: 1
+converting .... psi:  111 spin: 1
+converting .... psi:  112 spin: 1
+converting .... psi:  113 spin: 1
+converting .... psi:  114 spin: 1
+converting .... psi:  115 spin: 1
+converting .... psi:  116 spin: 1
+converting .... psi:  117 spin: 1
+converting .... psi:  118 spin: 1
+converting .... psi:  119 spin: 1
+converting .... psi:  120 spin: 1
+converting .... psi:  121 spin: 1
+converting .... psi:  122 spin: 1
+converting .... psi:  123 spin: 1
+converting .... psi:  124 spin: 1
+converting .... psi:  125 spin: 1
+converting .... psi:  126 spin: 1
+converting .... psi:  127 spin: 1
+converting .... psi:  128 spin: 1
+converting .... psi:  129 spin: 1
+converting .... psi:  130 spin: 1
+converting .... psi:  131 spin: 1
+converting .... psi:  132 spin: 1
+converting .... psi:  133 spin: 1
+converting .... psi:  134 spin: 1
+converting .... psi:  135 spin: 1
+converting .... psi:  136 spin: 1
+converting .... psi:  137 spin: 1
+converting .... psi:  138 spin: 1
+converting .... psi:  139 spin: 1
+converting .... psi:  140 spin: 1
+converting .... psi:  141 spin: 1
+converting .... psi:  142 spin: 1
+converting .... psi:  143 spin: 1
+converting .... psi:  144 spin: 1
+converting .... psi:  145 spin: 1
+converting .... psi:  146 spin: 1
+converting .... psi:  147 spin: 1
+converting .... psi:  148 spin: 1
+converting .... psi:  149 spin: 1
+converting .... psi:  150 spin: 1
+converting .... psi:  151 spin: 1
+converting .... psi:  152 spin: 1
+converting .... psi:  153 spin: 1
+converting .... psi:  154 spin: 1
+converting .... psi:  155 spin: 1
+converting .... psi:  156 spin: 1
+converting .... psi:  157 spin: 1
+converting .... psi:  158 spin: 1
+converting .... psi:  159 spin: 1
+converting .... psi:  160 spin: 1
+converting .... psi:  161 spin: 1
+converting .... psi:  162 spin: 1
+converting .... psi:  163 spin: 1
+converting .... psi:  164 spin: 1
+converting .... psi:  165 spin: 1
+converting .... psi:  166 spin: 1
+converting .... psi:  167 spin: 1
+converting .... psi:  168 spin: 1
+converting .... psi:  169 spin: 1
+converting .... psi:  170 spin: 1
+converting .... psi:  171 spin: 1
+converting .... psi:  172 spin: 1
+converting .... psi:  173 spin: 1
+converting .... psi:  174 spin: 1
+converting .... psi:  175 spin: 1
+converting .... psi:  176 spin: 1
+converting .... psi:  177 spin: 1
+converting .... psi:  178 spin: 1
+converting .... psi:  179 spin: 1
+converting .... psi:  180 spin: 1
+converting .... psi:  181 spin: 1
+converting .... psi:  182 spin: 1
+converting .... psi:  183 spin: 1
+converting .... psi:  184 spin: 1
+converting .... psi:  185 spin: 1
+converting .... psi:  186 spin: 1
+converting .... psi:  187 spin: 1
+converting .... psi:  188 spin: 1
+converting .... psi:  189 spin: 1
+converting .... psi:  190 spin: 1
+converting .... psi:  191 spin: 1
+converting .... psi:  192 spin: 1
+converting .... psi:  193 spin: 1
+converting .... psi:  194 spin: 1
+converting .... psi:  195 spin: 1
+converting .... psi:  196 spin: 1
+converting .... psi:  197 spin: 1
+converting .... psi:  198 spin: 1
+converting .... psi:  199 spin: 1
+converting .... psi:  200 spin: 1
+converting .... psi:  201 spin: 1
+converting .... psi:  202 spin: 1
+converting .... psi:  203 spin: 1
+converting .... psi:  204 spin: 1
+converting .... psi:  205 spin: 1
+converting .... psi:  206 spin: 1
+converting .... psi:  207 spin: 1
+converting .... psi:  208 spin: 1
+converting .... psi:  209 spin: 1
+converting .... psi:  210 spin: 1
+converting .... psi:  211 spin: 1
+converting .... psi:  212 spin: 1
+converting .... psi:  213 spin: 1
+converting .... psi:  214 spin: 1
+converting .... psi:  215 spin: 1
+converting .... psi:  216 spin: 1
+converting .... psi:  217 spin: 1
+converting .... psi:  218 spin: 1
+converting .... psi:  219 spin: 1
+converting .... psi:  220 spin: 1
+converting .... psi:  221 spin: 1
+converting .... psi:  222 spin: 1
+converting .... psi:  223 spin: 1
+converting .... psi:  224 spin: 1
+converting .... psi:  225 spin: 1
+converting .... psi:  226 spin: 1
+
+ input psi filename:/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/nwc_pweg_dat.movecs
+
+ number of processors used:        96
+ processor grid           :  96 x   1
+ parallel mapping         :2d hilbert
+ parallel mapping         :  balanced
+ number of threads        :         1
+ parallel io              :       off
+
+ options:
+      boundary conditions  = aperiodic   (version4)
+      electron spin        = restricted
+      exchange-correlation = PBE96 (White and Bird) parameterization
+
+ elements involved in the cluster:
+      1: N   valence charge:  5.0000  lmax=  2
+             comment    : Hamann pseudopotential
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.700   0.700   0.700
+ 
+      2: C   valence charge:  4.0000  lmax=  2
+             comment    : Parameterized (J.Phys.Chem., vol 100, page 6966) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.800   0.850   0.850
+ 
+      3: O   valence charge:  6.0000  lmax=  2
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   2
+             local potential used           :   2
+             number of non-local projections:   4
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.700   0.700   0.700
+ 
+      4: H   valence charge:  1.0000  lmax=  1
+             comment    : Parameterized (Chem.Phys.Lett., vol 322, page 447) Hamman psp
+             pseudpotential type            :   0
+             highest angular component      :   1
+             local potential used           :   1
+             number of non-local projections:   1
+             aperiodic cutoff radius        :  1.000
+             cutoff =   0.800   0.800
+ 
+
+ total charge:   1.000
+
+ atomic composition:
+     N   :   13     C   :   49     O   :   19     H   :   78
+
+ number of electrons: spin up=   226 ( 226 per task)  down=   226 ( 226 per task) (Fourier space)
+ number of orbitals : spin up=   226 ( 226 per task)  down=   226 ( 226 per task) (Fourier space)
+
+ supercell:
+      cell_name:  cell_default                                      
+      lattice:    a1=<  27.000   0.000   0.000 >
+                  a2=<   0.000  25.000   0.000 >
+                  a3=<   0.000   0.000  27.000 >
+      reciprocal: b1=<   0.233   0.000  -0.000 >
+                  b2=<  -0.000   0.251  -0.000 >
+                  b3=<   0.000   0.000   0.233 >
+      lattice:    a=      27.000 b=     25.000 c=      27.000
+                  alpha=  90.000 beta=  90.000 gamma=  90.000
+                  omega=     18225.0
+
+      density cutoff=100.000  fft=126x120x126(   435137 waves     4532 per task)
+      wavefnc cutoff= 50.000  fft=126x120x126(   153820 waves     1602 per task)
+
+ technical parameters:
+      time step=      5.80     fictitious mass=  400000.0
+      tolerance=0.100E-06 (energy)   0.100E-06 (density)
+      maximum iterations =      1000 (   10 inner    100 outer )
+
+
+
+
+
+== Energy Calculation ==
+
+
+          ============ Grassmann lmbfgs iteration ============
+     >>>  ITERATION STARTED AT Sun Dec 10 22:47:32 2017  <<<
+    iter.           Energy         DeltaE       DeltaRho 
+    ------------------------------------------------------
+      10   -0.5624511820E+03   -0.39029E-03    0.10362E-01
+      20   -0.5624525585E+03   -0.61706E-04    0.90037E-04
+      30   -0.5624529097E+03   -0.21210E-04    0.18715E-04
+      40   -0.5624530412E+03   -0.84082E-05    0.46417E-05
+      50   -0.5624530962E+03   -0.38256E-05    0.11524E-05
+      60   -0.5624531228E+03   -0.19682E-05    0.37529E-06
+      70   -0.5624531367E+03   -0.10273E-05    0.17240E-06
+      80   -0.5624531440E+03   -0.53638E-06    0.84182E-07
+      90   -0.5624531478E+03   -0.28410E-06    0.45036E-07
+     100   -0.5624531499E+03   -0.15726E-06    0.23999E-07
+     110   -0.5624531511E+03   -0.95630E-07    0.14589E-07
+  *** tolerance ok. iteration terminated
+     >>>  ITERATION ENDED   AT Sun Dec 10 22:55:16 2017  <<<
+
+
+==  Summary Of Results  ==
+ 
+ number of electrons: spin up=  226.00000  down=  226.00000 (real space)
+
+ total     energy    :  -0.5624531511E+03 (   -0.35374E+01/ion)
+ total orbital energy:  -0.8512638939E+02 (   -0.37667E+00/electron)
+ hartree   energy    :   0.9392467965E+04 (    0.41560E+02/electron)
+ exc-corr  energy    :  -0.1993063047E+03 (   -0.88189E+00/electron)
+ ion-ion   energy    :   0.8855425769E+04 (    0.55695E+02/ion)
+
+ kinetic (planewave) :   0.4680128262E+03 (    0.20709E+01/electron)
+ V_local (planewave) :  -0.1905677625E+05 (   -0.84322E+02/electron)
+ V_nl    (planewave) :  -0.2227715265E+02 (   -0.98571E-01/electron)
+ V_Coul  (planewave) :   0.1878493593E+05 (    0.83119E+02/electron)
+ V_xc.   (planewave) :  -0.2590217389E+03 (   -0.11461E+01/electron)
+ Virial Coefficient  :  -0.1181889010E+01
+
+ orbital energies:
+     0.1880429E+00 (   5.117eV)
+     0.1826567E+00 (   4.970eV)
+     0.1816795E+00 (   4.944eV)
+     0.1794340E+00 (   4.883eV)
+     0.1708537E+00 (   4.649eV)
+     0.1639619E+00 (   4.462eV)
+     0.1596550E+00 (   4.344eV)
+     0.1516375E+00 (   4.126eV)
+     0.1494825E+00 (   4.068eV)
+     0.1453817E+00 (   3.956eV)
+     0.1367342E+00 (   3.721eV)
+     0.1348834E+00 (   3.670eV)
+     0.1322939E+00 (   3.600eV)
+     0.1308051E+00 (   3.559eV)
+     0.1247607E+00 (   3.395eV)
+     0.1217422E+00 (   3.313eV)
+     0.1164629E+00 (   3.169eV)
+     0.1130852E+00 (   3.077eV)
+     0.1073382E+00 (   2.921eV)
+     0.1047778E+00 (   2.851eV)
+     0.1020097E+00 (   2.776eV)
+     0.9363002E-01 (   2.548eV)
+     0.9241517E-01 (   2.515eV)
+     0.9132238E-01 (   2.485eV)
+     0.8840531E-01 (   2.406eV)
+     0.7745655E-01 (   2.108eV)
+     0.7711886E-01 (   2.099eV)
+     0.7535991E-01 (   2.051eV)
+     0.7141378E-01 (   1.943eV)
+     0.6983988E-01 (   1.900eV)
+     0.6713292E-01 (   1.827eV)
+     0.6627016E-01 (   1.803eV)
+     0.6247734E-01 (   1.700eV)
+     0.6171472E-01 (   1.679eV)
+     0.5964517E-01 (   1.623eV)
+     0.5336475E-01 (   1.452eV)
+     0.5241398E-01 (   1.426eV)
+     0.4976145E-01 (   1.354eV)
+     0.4802585E-01 (   1.307eV)
+     0.4770138E-01 (   1.298eV)
+     0.4384910E-01 (   1.193eV)
+     0.4185098E-01 (   1.139eV)
+     0.3816302E-01 (   1.038eV)
+     0.3147341E-01 (   0.856eV)
+     0.2833966E-01 (   0.771eV)
+     0.2556439E-01 (   0.696eV)
+     0.2343649E-01 (   0.638eV)
+     0.2168290E-01 (   0.590eV)
+     0.2133185E-01 (   0.580eV)
+     0.1356078E-01 (   0.369eV)
+     0.1281087E-01 (   0.349eV)
+     0.9812477E-02 (   0.267eV)
+    -0.3294079E-03 (  -0.009eV)
+    -0.1130899E-02 (  -0.031eV)
+    -0.3433143E-02 (  -0.093eV)
+    -0.8438628E-02 (  -0.230eV)
+    -0.1158493E-01 (  -0.315eV)
+    -0.1211737E-01 (  -0.330eV)
+    -0.1567797E-01 (  -0.427eV)
+    -0.1638387E-01 (  -0.446eV)
+    -0.1816117E-01 (  -0.494eV)
+    -0.1986149E-01 (  -0.540eV)
+    -0.2150891E-01 (  -0.585eV)
+    -0.2259339E-01 (  -0.615eV)
+    -0.2429446E-01 (  -0.661eV)
+    -0.2706118E-01 (  -0.736eV)
+    -0.2954022E-01 (  -0.804eV)
+    -0.3160537E-01 (  -0.860eV)
+    -0.3642357E-01 (  -0.991eV)
+    -0.3788384E-01 (  -1.031eV)
+    -0.4105904E-01 (  -1.117eV)
+    -0.4179972E-01 (  -1.137eV)
+    -0.4303615E-01 (  -1.171eV)
+    -0.4526276E-01 (  -1.232eV)
+    -0.4677213E-01 (  -1.273eV)
+    -0.4781787E-01 (  -1.301eV)
+    -0.4962306E-01 (  -1.350eV)
+    -0.5545066E-01 (  -1.509eV)
+    -0.5697837E-01 (  -1.550eV)
+    -0.5787498E-01 (  -1.575eV)
+    -0.5967772E-01 (  -1.624eV)
+    -0.6132756E-01 (  -1.669eV)
+    -0.6237314E-01 (  -1.697eV)
+    -0.6696183E-01 (  -1.822eV)
+    -0.6791894E-01 (  -1.848eV)
+    -0.7171097E-01 (  -1.951eV)
+    -0.7257070E-01 (  -1.975eV)
+    -0.7349290E-01 (  -2.000eV)
+    -0.7584533E-01 (  -2.064eV)
+    -0.7697127E-01 (  -2.095eV)
+    -0.8005991E-01 (  -2.179eV)
+    -0.8182668E-01 (  -2.227eV)
+    -0.8721985E-01 (  -2.373eV)
+    -0.8930000E-01 (  -2.430eV)
+    -0.9091336E-01 (  -2.474eV)
+    -0.9201431E-01 (  -2.504eV)
+    -0.9320534E-01 (  -2.536eV)
+    -0.9543285E-01 (  -2.597eV)
+    -0.9618304E-01 (  -2.617eV)
+    -0.9855979E-01 (  -2.682eV)
+    -0.1006542E+00 (  -2.739eV)
+    -0.1024177E+00 (  -2.787eV)
+    -0.1076983E+00 (  -2.931eV)
+    -0.1088843E+00 (  -2.963eV)
+    -0.1110122E+00 (  -3.021eV)
+    -0.1123935E+00 (  -3.058eV)
+    -0.1133007E+00 (  -3.083eV)
+    -0.1144087E+00 (  -3.113eV)
+    -0.1171457E+00 (  -3.188eV)
+    -0.1193424E+00 (  -3.247eV)
+    -0.1227955E+00 (  -3.341eV)
+    -0.1237531E+00 (  -3.368eV)
+    -0.1274473E+00 (  -3.468eV)
+    -0.1294982E+00 (  -3.524eV)
+    -0.1325563E+00 (  -3.607eV)
+    -0.1366557E+00 (  -3.719eV)
+    -0.1391203E+00 (  -3.786eV)
+    -0.1393420E+00 (  -3.792eV)
+    -0.1408993E+00 (  -3.834eV)
+    -0.1441994E+00 (  -3.924eV)
+    -0.1453432E+00 (  -3.955eV)
+    -0.1494736E+00 (  -4.067eV)
+    -0.1509409E+00 (  -4.107eV)
+    -0.1523693E+00 (  -4.146eV)
+    -0.1550297E+00 (  -4.219eV)
+    -0.1561925E+00 (  -4.250eV)
+    -0.1580024E+00 (  -4.299eV)
+    -0.1589635E+00 (  -4.326eV)
+    -0.1644741E+00 (  -4.476eV)
+    -0.1755473E+00 (  -4.777eV)
+    -0.1791582E+00 (  -4.875eV)
+    -0.1813293E+00 (  -4.934eV)
+    -0.1823386E+00 (  -4.962eV)
+    -0.1840141E+00 (  -5.007eV)
+    -0.1864201E+00 (  -5.073eV)
+    -0.1898427E+00 (  -5.166eV)
+    -0.1941092E+00 (  -5.282eV)
+    -0.1941601E+00 (  -5.283eV)
+    -0.1978259E+00 (  -5.383eV)
+    -0.2049920E+00 (  -5.578eV)
+    -0.2075594E+00 (  -5.648eV)
+    -0.2095779E+00 (  -5.703eV)
+    -0.2137239E+00 (  -5.816eV)
+    -0.2169862E+00 (  -5.905eV)
+    -0.2185921E+00 (  -5.948eV)
+    -0.2212549E+00 (  -6.021eV)
+    -0.2272663E+00 (  -6.184eV)
+    -0.2355282E+00 (  -6.409eV)
+    -0.2389494E+00 (  -6.502eV)
+    -0.2406358E+00 (  -6.548eV)
+    -0.2425168E+00 (  -6.599eV)
+    -0.2486668E+00 (  -6.767eV)
+    -0.2523769E+00 (  -6.868eV)
+    -0.2553163E+00 (  -6.948eV)
+    -0.2587176E+00 (  -7.040eV)
+    -0.2638651E+00 (  -7.180eV)
+    -0.2669185E+00 (  -7.263eV)
+    -0.2724825E+00 (  -7.415eV)
+    -0.2736250E+00 (  -7.446eV)
+    -0.2751922E+00 (  -7.488eV)
+    -0.2811539E+00 (  -7.651eV)
+    -0.2843010E+00 (  -7.736eV)
+    -0.2888504E+00 (  -7.860eV)
+    -0.2937439E+00 (  -7.993eV)
+    -0.3065831E+00 (  -8.343eV)
+    -0.3106773E+00 (  -8.454eV)
+    -0.3234435E+00 (  -8.801eV)
+    -0.3264321E+00 (  -8.883eV)
+    -0.3302043E+00 (  -8.985eV)
+    -0.3381999E+00 (  -9.203eV)
+    -0.3392957E+00 (  -9.233eV)
+    -0.3423611E+00 (  -9.316eV)
+    -0.3437720E+00 (  -9.355eV)
+    -0.3559214E+00 (  -9.685eV)
+    -0.3629045E+00 (  -9.875eV)
+    -0.3701967E+00 ( -10.074eV)
+    -0.3838040E+00 ( -10.444eV)
+    -0.3882060E+00 ( -10.564eV)
+    -0.3906551E+00 ( -10.630eV)
+    -0.3950759E+00 ( -10.751eV)
+    -0.3977023E+00 ( -10.822eV)
+    -0.4000579E+00 ( -10.886eV)
+    -0.4063491E+00 ( -11.057eV)
+    -0.4276015E+00 ( -11.636eV)
+    -0.4298949E+00 ( -11.698eV)
+    -0.4363771E+00 ( -11.875eV)
+    -0.4421511E+00 ( -12.032eV)
+    -0.4438351E+00 ( -12.077eV)
+    -0.4543592E+00 ( -12.364eV)
+    -0.4594917E+00 ( -12.504eV)
+    -0.4811761E+00 ( -13.094eV)
+    -0.4865583E+00 ( -13.240eV)
+    -0.4905723E+00 ( -13.349eV)
+    -0.5013373E+00 ( -13.642eV)
+    -0.5091912E+00 ( -13.856eV)
+    -0.5131443E+00 ( -13.963eV)
+    -0.5207815E+00 ( -14.171eV)
+    -0.5392986E+00 ( -14.675eV)
+    -0.5430379E+00 ( -14.777eV)
+    -0.5460204E+00 ( -14.858eV)
+    -0.5524122E+00 ( -15.032eV)
+    -0.5540301E+00 ( -15.076eV)
+    -0.5804204E+00 ( -15.794eV)
+    -0.5840906E+00 ( -15.894eV)
+    -0.5924900E+00 ( -16.123eV)
+    -0.6038618E+00 ( -16.432eV)
+    -0.6067177E+00 ( -16.510eV)
+    -0.6225868E+00 ( -16.942eV)
+    -0.6239926E+00 ( -16.980eV)
+    -0.6252593E+00 ( -17.014eV)
+    -0.6284114E+00 ( -17.100eV)
+    -0.6427826E+00 ( -17.491eV)
+    -0.6499089E+00 ( -17.685eV)
+    -0.6571120E+00 ( -17.881eV)
+    -0.6613670E+00 ( -17.997eV)
+    -0.6870866E+00 ( -18.697eV)
+    -0.6879535E+00 ( -18.720eV)
+    -0.6911216E+00 ( -18.807eV)
+    -0.7073153E+00 ( -19.247eV)
+    -0.7146709E+00 ( -19.447eV)
+    -0.7501732E+00 ( -20.413eV)
+    -0.7714327E+00 ( -20.992eV)
+    -0.8207394E+00 ( -22.334eV)
+    -0.8556676E+00 ( -23.284eV)
+    -0.9322188E+00 ( -25.367eV)
+    -0.1028603E+01 ( -27.990eV)
+
+ Total PSPW energy     :  -0.5624531511E+03
+
+
+=== Spin Contamination ===
+ 
+ <Sexact^2> =   0.000000000000000E+000
+ <S^2>      =   0.000000000000000E+000
+ 
+
+
+== Center of Charge ==
+
+spin up     (   -0.0001,   -0.0164,   -0.0645 )
+spin down   (   -0.0001,   -0.0164,   -0.0645 )
+     total  (   -0.0001,   -0.0164,   -0.0645 )
+ionic       (   -0.0111,    0.0090,    0.0199 )
+
+
+== Molecular Dipole wrt Center of Mass ==
+
+mu   =  (   -4.9653,   11.4999,   38.1817 ) au
+|mu| =    40.1839 au,     102.1314 Debye
+
+ output psi filename:/scratch2/scratchdirs/vandam/eds_nwc_pweg_ledgrtlsdy_000096.7997900/nwc_pweg_dat.movecs
+
+
+== Timing ==
+
+cputime in seconds
+  prologue    :   0.472092E+02
+  main loop   :   0.464489E+03
+  epilogue    :   0.191209E+02
+  total       :   0.530819E+03
+  cputime/step:   0.183592E+01       (     253 evalulations,     110 linesearches)
+
+
+Time spent doing                        total          step       percent
+  total time                 :   0.530902E+03  0.209843E+01       100.0 %
+  i/o time                   :   0.371115E+02  0.146686E+00         7.0 %
+  FFTs                       :   0.163748E+02  0.647225E-01         3.1 %
+  dot products               :   0.950507E+02  0.375695E+00        17.9 %
+  geodesic                   :   0.736803E+02  0.291226E+00        13.9 %
+  ffm_dgemm                  :   0.699658E+01  0.276545E-01         1.3 %
+  fmf_dgemm                  :   0.321183E+02  0.126950E+00         6.0 %
+  mmm_dgemm                  :   0.131325E+01  0.519073E-02         0.2 %
+  m_diagonalize              :   0.272204E+01  0.107590E-01         0.5 %
+  exchange correlation       :   0.623174E+01  0.246314E-01         1.2 %
+  local pseudopotentials     :   0.333823E+00  0.131946E-02         0.1 %
+  non-local pseudopotentials :   0.196489E+03  0.776638E+00        37.0 %
+  structure factors          :   0.219833E+01  0.868906E-02         0.4 %
+  phase factors              :   0.931978E-03  0.368371E-05         0.0 %
+  masking and packing        :   0.217762E+02  0.860719E-01         4.1 %
+  queue fft                  :   0.151500E+03  0.598815E+00        28.5 %
+  queue fft (serial)         :   0.467349E+02  0.184723E+00         8.8 %
+  queue fft (message passing):   0.102764E+03  0.406183E+00        19.4 %
+  non-local psp FFM          :   0.620998E+02  0.245454E+00        11.7 %
+  non-local psp FMF          :   0.130474E+03  0.515707E+00        24.6 %
+  non-local psp FFM A        :   0.597349E+00  0.236106E-02         0.1 %
+  non-local psp FFM B        :   0.589894E+02  0.233160E+00        11.1 %
+ 
+     >>>  JOB COMPLETED     AT Sun Dec 10 22:55:35 2017  <<<
+
+ Task  times  cpu:     1199.5s     wall:     1243.2s
+ 
+ 
+                                NWChem Input Module
+                                -------------------
+ 
+ 
+ Summary of allocated global arrays
+-----------------------------------
+  No active global arrays
+
+
+
+                         GA Statistics for process    0
+                         ------------------------------
+
+       create   destroy   get      put      acc     scatter   gather  read&inc
+calls:    0        0        0        0        0        0        0        0     
+number of processes/call 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+bytes total:             0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+bytes remote:            0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+Max memory consumed for GA by this process: 0 bytes
+ 
+ 
+ 
+                                     CITATION
+                                     --------
+                Please cite the following reference when publishing
+                           results obtained with NWChem:
+ 
+                 M. Valiev, E.J. Bylaska, N. Govind, K. Kowalski,
+              T.P. Straatsma, H.J.J. van Dam, D. Wang, J. Nieplocha,
+                        E. Apra, T.L. Windus, W.A. de Jong
+                 "NWChem: a comprehensive and scalable open-source
+                  solution for large scale molecular simulations"
+                      Comput. Phys. Commun. 181, 1477 (2010)
+                           doi:10.1016/j.cpc.2010.04.018
+ 
+                                      AUTHORS
+                                      -------
+          E. Apra, E. J. Bylaska, W. A. de Jong, N. Govind, K. Kowalski,
+       T. P. Straatsma, M. Valiev, H. J. J. van Dam, D. Wang, T. L. Windus,
+        J. Hammond, J. Autschbach, K. Bhaskaran-Nair, J. Brabec, K. Lopata,
+    S. A. Fischer, S. Krishnamoorthy, M. Jacquelin, W. Ma, M. Klemm, O. Villa,
+      Y. Chen, V. Anisimov, F. Aquino, S. Hirata, M. T. Hackler, V. Konjkov,
+      T. Risthaus, M. Malagoli, A. Marenich, A. Otero-de-la-Roza, J. Mullin,
+        P. Nichols, R. Peverati, J. Pittner, Y. Zhao, P.-D. Fan, A. Fonari,
+       M. Williamson, R. J. Harrison, J. R. Rehr, M. Dupuis, D. Silverstein,
+    D. M. A. Smith, J. Nieplocha, V. Tipparaju, M. Krishnan, B. E. Van Kuiken,
+        A. Vazquez-Mayagoitia, L. Jensen, M. Swart, Q. Wu, T. Van Voorhis,
+     A. A. Auer, M. Nooijen, L. D. Crosby, E. Brown, G. Cisneros, G. I. Fann,
+   H. Fruchtl, J. Garza, K. Hirao, R. A. Kendall, J. A. Nichols, K. Tsemekhman,
+    K. Wolinski, J. Anchell, D. E. Bernholdt, P. Borowski, T. Clark, D. Clerc,
+   H. Dachsel, M. J. O. Deegan, K. Dyall, D. Elwood, E. Glendening, M. Gutowski,
+   A. C. Hess, J. Jaffe, B. G. Johnson, J. Ju, R. Kobayashi, R. Kutteh, Z. Lin,
+   R. Littlefield, X. Long, B. Meng, T. Nakajima, S. Niu, L. Pollack, M. Rosing,
+   K. Glaesemann, G. Sandrone, M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe,
+                               A. T. Wong, Z. Zhang.
+
+ Total times  cpu:     1199.8s     wall:     1245.1s
+MA_summarize_allocated_blocks: starting scan ...
+MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
+MA usage statistics:
+
+	allocation statistics:
+					      heap	     stack
+					      ----	     -----
+	current number of blocks	         0	         0
+	maximum number of blocks	       320	        15
+	current total bytes		         0	         0
+	maximum total bytes		 127913512	  16015640
+	maximum total K-bytes		    127914	     16016
+	maximum total M-bytes		       128	        17
