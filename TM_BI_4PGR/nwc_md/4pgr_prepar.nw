@@ -14,7 +14,8 @@ prepare
    periodic
    box 71.405 68.084 130.494
    solvent name HOH model spce
-   write pdb inspection.pdb
+   write rst 4pgr_md.rst
+   #write pdb inspection.pdb
 end
 
 task prepare
