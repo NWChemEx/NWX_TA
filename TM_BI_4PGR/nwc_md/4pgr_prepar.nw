@@ -5,17 +5,17 @@ memory heap 100 stack 6000 global 200  mb
 
 prepare
    system 4pgr_md
-   source ../struct_model/4pgr_amber_membrane_model_min_res_renum.pdb 
+   source ../struct_model/4pgr_amber_membrane_model_min_res_rerenum.pdb 
    new_top new_seq
    new_rst
    histidine hid
-   counter 25  Cl
-   counter 109 K
+   # counter 25  Cl
+   # counter 109 K
    periodic
    box 71.405 68.084 130.494
    solvent name HOH model spce
    write rst 4pgr_md.rst
-   #write pdb inspection.pdb
+   write pdb inspection.pdb
 end
 
 task prepare

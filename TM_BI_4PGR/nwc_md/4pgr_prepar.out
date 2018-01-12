@@ -10,15 +10,16 @@ memory heap 100 stack 6000 global 200  mb
 
 prepare
    system 4pgr_md
-   source ../struct_model/4pgr_amber_membrane_model_min_res_renum.pdb
+   source ../struct_model/4pgr_amber_membrane_model_min_res_rerenum.pdb
    new_top new_seq
    new_rst
    histidine hid
-   counter 25  Cl
-   counter 109 K
+   # counter 25  Cl
+   # counter 109 K
    periodic
    box 71.405 68.084 130.494
    solvent name HOH model spce
+   write rst 4pgr_md.rst
    write pdb inspection.pdb
 end
 
@@ -63,11 +64,11 @@ task prepare
            Job information
            ---------------
 
-    hostname        = 10-4-11-162.user.vpn.bnl.local
+    hostname        = 10-4-11-81.user.vpn.bnl.local
     program         = /Users/vandam/nwchem-1-codar/bin/MACX64/nwchem
-    date            = Sat Jan  6 23:29:32 2018
+    date            = Thu Jan 11 21:31:20 2018
 
-    compiled        = Sat_Jan_06_23:14:38_2018
+    compiled        = Thu_Jan_11_15:31:38_2018
     source          = /Users/vandam/nwchem-1-codar
     nwchem branch   = Development
     nwchem revision = nwchem_on_git-34-g12a67e77a53c31e09ac69cd6f4248274c7e2bc51
@@ -114,226 +115,31 @@ task prepare
 
  Directories used for fragment and segment files
 
-                                       /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_s/
-                                       /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_x/
-                                       /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_q/
+                                       /Users/vandam/nwchem-1-codar/QA/../src/data/amber_s/
+                                       /Users/vandam/nwchem-1-codar/QA/../src/data/amber_x/
+                                       /Users/vandam/nwchem-1-codar/QA/../src/data/amber_q/
                                        ./
 
  Parameter files used to resolve force field parameters
 
-                                       /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_s/amber.par
-                                       /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_x/amber.par
-                                       /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_q/amber.par
+                                       /Users/vandam/nwchem-1-codar/QA/../src/data/amber_s/amber.par
+                                       /Users/vandam/nwchem-1-codar/QA/../src/data/amber_x/amber.par
+                                       /Users/vandam/nwchem-1-codar/QA/../src/data/amber_q/amber.par
                                        ./amber.par
- PDB geometry                          ../struct_model/4pgr_amber_membrane_model_min_res_renum.pdb
 
+ Deleted existing topology             4pgr.top
 
- Creating fragment for residue PA   
+ Deleted existing sequence             ./4pgr.seq
 
- Atom type definitions                 /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_s/amber.par
- Atom type definitions                 /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_x/amber.par
- Atom type definitions                 /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_q/amber.par
- Bond charge definitions               /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_s/amber.par
- Bond charge definitions               /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_x/amber.par
- Bond charge definitions               /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_q/amber.par
+ PDB geometry                          ../struct_model/4pgr_amber_membrane_model_min_res_rerenum.pdb
 
- Fragment                              PA
-
-  num name  type   link cntr  grp pgrp    charge     polarizab
-
-    1  C12  CT        3    0    0    1    1   -0.100000    0.000000
-    2  H2R  HC        0    0    0    1    1    0.050000    0.000000
-    3  H2S  HC        0    0    0    1    1    0.050000    0.000000
-    4  C13  CT        0    0    0    1    1   -0.100000    0.000000
-    5  H3R  HC        0    0    0    1    1    0.050000    0.000000
-    6  H3S  HC        0    0    0    1    1    0.050000    0.000000
-    7  C14  CT        0    0    0    1    1   -0.100000    0.000000
-    8  H4R  HC        0    0    0    1    1    0.050000    0.000000
-    9  H4S  HC        0    0    0    1    1    0.050000    0.000000
-   10  C15  CT        0    0    0    1    1   -0.100000    0.000000
-   11  H5R  HC        0    0    0    1    1    0.050000    0.000000
-   12  H5S  HC        0    0    0    1    1    0.050000    0.000000
-   13  C16  CT        0    0    0    1    1   -0.100000    0.000000
-   14  H6R  HC        0    0    0    1    1    0.050000    0.000000
-   15  H6S  HC        0    0    0    1    1    0.050000    0.000000
-   16  C17  CT        0    0    0    1    1   -0.100000    0.000000
-   17  H7R  HC        0    0    0    1    1    0.050000    0.000000
-   18  H7S  HC        0    0    0    1    1    0.050000    0.000000
-   19  C18  CT        0    0    0    1    1   -0.100000    0.000000
-   20  H8R  HC        0    0    0    1    1    0.050000    0.000000
-   21  H8S  HC        0    0    0    1    1    0.050000    0.000000
-   22  C19  CT        0    0    0    1    1   -0.100000    0.000000
-   23  H9R  HC        0    0    0    1    1    0.050000    0.000000
-   24  H9S  HC        0    0    0    1    1    0.050000    0.000000
-   25 C110  CT        0    0    0    1    1   -0.100000    0.000000
-   26 H10R  HC        0    0    0    1    1    0.050000    0.000000
-   27 H10S  HC        0    0    0    1    1    0.050000    0.000000
-   28 C111  CT        0    0    0    1    1   -0.100000    0.000000
-   29 H11R  HC        0    0    0    1    1    0.050000    0.000000
-   30 H11S  HC        0    0    0    1    1    0.050000    0.000000
-   31 C112  CT        0    0    0    1    1   -0.100000    0.000000
-   32 H12R  HC        0    0    0    1    1    0.050000    0.000000
-   33 H12S  HC        0    0    0    1    1    0.050000    0.000000
-   34 C113  CT        0    0    0    1    1   -0.100000    0.000000
-   35 H13R  HC        0    0    0    1    1    0.050000    0.000000
-   36 H13S  HC        0    0    0    1    1    0.050000    0.000000
-   37 C114  CT        0    0    0    1    1   -0.100000    0.000000
-   38 H14R  HC        0    0    0    1    1    0.050000    0.000000
-   39 H14S  HC        0    0    0    1    1    0.050000    0.000000
-   40 C115  CT        0    0    0    1    1   -0.100000    0.000000
-   41 H15R  HC        0    0    0    1    1    0.050000    0.000000
-   42 H15S  HC        0    0    0    1    1    0.050000    0.000000
-   43 C116  CT        0    0    0    1    1   -0.150000    0.000000
-   44 H16R  HC        0    0    0    1    1    0.050000    0.000000
-   45 H16S  HC        0    0    0    1    1    0.050000    0.000000
-   46 H16T  HC        0    0    0    1    1    0.050000    0.000000
-                                           ------------
-                         total charge    -0.000000
-
- Connectivity
-
-       1-  2
-       1-  3
-       1-  4
-       4-  5
-       4-  6
-       4-  7
-       7-  8
-       7-  9
-       7- 10
-      10- 11
-      10- 12
-      10- 13
-      13- 14
-      13- 15
-      13- 16
-      16- 17
-      16- 18
-      16- 19
-      19- 20
-      19- 21
-      19- 22
-      22- 23
-      22- 24
-      22- 25
-      25- 26
-      25- 27
-      25- 28
-      28- 29
-      28- 30
-      28- 31
-      31- 32
-      31- 33
-      31- 34
-      34- 35
-      34- 36
-      34- 37
-      37- 38
-      37- 39
-      37- 40
-      40- 41
-      40- 42
-      40- 43
-      43- 44
-      43- 45
-      43- 46
- 
- Created fragment                      ./PA.frg
-
-
- Creating fragment for residue PGR  
-
- Atom type definitions                 /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_s/amber.par
- Atom type definitions                 /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_x/amber.par
- Atom type definitions                 /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_q/amber.par
- Bond charge definitions               /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_s/amber.par
- Bond charge definitions               /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_x/amber.par
- Bond charge definitions               /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_q/amber.par
-
- Fragment                              PGR
-
-  num name  type   link cntr  grp pgrp    charge     polarizab
-
-    1  C33  CT        0    0    0    1    1    0.200000    0.000000
-    2  H3A  H1        0    0    0    1    1    0.050000    0.000000
-    3  H3B  H1        0    0    0    1    1    0.050000    0.000000
-    4  O36  OH        0    0    0    1    1   -0.490000    0.000000
-    5 HO6A  HO        0    0    0    1    1    0.190000    0.000000
-    6  C32  CT        0    0    0    1    1    0.250000    0.000000
-    7  H2A  H1        0    0    0    1    1    0.050000    0.000000
-    8  O35  OH        0    0    0    1    1   -0.490000    0.000000
-    9 HO5A  HO        0    0    0    1    1    0.190000    0.000000
-   10  C31  CT        0    0    0    1    1    0.200000    0.000000
-   11  H1A  H1        0    0    0    1    1    0.050000    0.000000
-   12  H1B  H1        0    0    0    1    1    0.050000    0.000000
-   13  P31  P         0    0    0    1    1   -0.340000    0.000000
-   14  O33  O2        0    0    0    1    1   -0.330000    0.000000
-   15  O34  O2        0    0    0    1    1   -0.330000    0.000000
-   16  O32  OS        0    0    0    1    1   -0.300000    0.000000
-   17  O31  OS        0    0    0    1    1   -0.300000    0.000000
-   18  C3   CT        0    0    0    1    1    0.200000    0.000000
-   19  HA   H1        0    0    0    1    1    0.050000    0.000000
-   20  HB   H1        0    0    0    1    1    0.050000    0.000000
-   21  C2   CT        0    0    0    1    1    0.250000    0.000000
-   22  HX   H1        0    0    0    1    1    0.050000    0.000000
-   23  O21  OS        0    0    0    1    1   -0.300000    0.000000
-   24  C21  C         3    1    0    1    1    0.570000    0.000000
-   25  O22  O         0    0    0    1    1   -0.570000    0.000000
-   26  C1   CT        0    0    0    1    1    0.200000    0.000000
-   27  HR   H1        0    0    0    1    1    0.050000    0.000000
-   28  HS   H1        0    0    0    1    1    0.050000    0.000000
-   29  O11  OS        0    0    0    1    1   -0.300000    0.000000
-   30  C11  C         4    1    0    1    1    0.570000    0.000000
-   31  O12  O         0    0    0    1    1   -0.570000    0.000000
-                                           ------------
-                         total charge    -1.000000
-
- Connectivity
-
-       1-  2
-       1-  3
-       1-  4
-       1-  6
-       4-  5
-       6-  7
-       6-  8
-       6- 10
-       8-  9
-      10- 11
-      10- 12
-      10- 16
-      13- 14
-      13- 15
-      13- 16
-      13- 17
-      17- 18
-      18- 19
-      18- 20
-      18- 21
-      21- 22
-      21- 23
-      21- 26
-      23- 24
-      24- 25
-      26- 27
-      26- 28
-      26- 29
-      29- 30
-      30- 31
- 
- Created fragment                      ./PGR.frg
-
- Created segment                       ./PA.sgm
- Created segment                       ./PGR.sgm
- Appended    25 counter ions Cl   to topology
- Appended   109 counter ions K    to topology
 
  Created sequence                      ./4pgr.seq
 
  
- Parameter file                        /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_s/amber.par
- Parameter file                        /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_x/amber.par
- Parameter file                        /Users/vandam/nwchem-1-wfn1/QA/../src/data/amber_q/amber.par
+ Parameter file                        /Users/vandam/nwchem-1-codar/QA/../src/data/amber_s/amber.par
+ Parameter file                        /Users/vandam/nwchem-1-codar/QA/../src/data/amber_x/amber.par
+ Parameter file                        /Users/vandam/nwchem-1-codar/QA/../src/data/amber_q/amber.par
  
  Total charge                             -0.000000
 
@@ -343,166 +149,29 @@ task prepare
 
  Restart generation using command file directives
 
- PDB file                              ../struct_model/4pgr_amber_membrane_model_min_res_renum.pdb
- Number of missing coordinates              134
+ PDB file                              ../struct_model/4pgr_amber_membrane_model_min_res_rerenum.pdb
+ Number of missing coordinates                0
  Total number of atoms                    14202
 
- Generating missing atom coordinates:   134    1
-
- Z-matrix definitions done
-
- Geometric rules definitions done
-
- Added counterion with energy              1324.876 kJ/mol
- Added counterion with energy              1343.698 kJ/mol
- Added counterion with energy              1370.668 kJ/mol
- Added counterion with energy              1398.333 kJ/mol
- Added counterion with energy              1561.789 kJ/mol
- Added counterion with energy              1588.805 kJ/mol
- Added counterion with energy              1613.678 kJ/mol
- Added counterion with energy              1643.944 kJ/mol
- Added counterion with energy              1690.070 kJ/mol
- Added counterion with energy              1707.511 kJ/mol
- Added counterion with energy              1737.591 kJ/mol
- Added counterion with energy              1771.831 kJ/mol
- Added counterion with energy              1820.686 kJ/mol
- Added counterion with energy              1852.026 kJ/mol
- Added counterion with energy              1872.735 kJ/mol
- Added counterion with energy              1889.519 kJ/mol
- Added counterion with energy              1920.641 kJ/mol
- Added counterion with energy              1940.210 kJ/mol
- Added counterion with energy              1962.592 kJ/mol
- Added counterion with energy              1990.519 kJ/mol
- Added counterion with energy              2004.718 kJ/mol
- Added counterion with energy              2022.414 kJ/mol
- Added counterion with energy              2058.385 kJ/mol
- Added counterion with energy              2092.339 kJ/mol
- Added counterion with energy              2143.127 kJ/mol
- Added counterion with energy             -4429.976 kJ/mol
- Added counterion with energy             -3914.078 kJ/mol
- Added counterion with energy             -3851.788 kJ/mol
- Added counterion with energy             -3717.690 kJ/mol
- Added counterion with energy             -3661.083 kJ/mol
- Added counterion with energy             -3558.935 kJ/mol
- Added counterion with energy             -3509.421 kJ/mol
- Added counterion with energy             -3437.852 kJ/mol
- Added counterion with energy             -3367.024 kJ/mol
- Added counterion with energy             -3320.263 kJ/mol
- Added counterion with energy             -3288.485 kJ/mol
- Added counterion with energy             -3246.427 kJ/mol
- Added counterion with energy             -3152.125 kJ/mol
- Added counterion with energy             -3085.012 kJ/mol
- Added counterion with energy             -3062.807 kJ/mol
- Added counterion with energy             -3022.105 kJ/mol
- Added counterion with energy             -3004.542 kJ/mol
- Added counterion with energy             -2930.051 kJ/mol
- Added counterion with energy             -2897.412 kJ/mol
- Added counterion with energy             -2867.007 kJ/mol
- Added counterion with energy             -2809.142 kJ/mol
- Added counterion with energy             -2784.413 kJ/mol
- Added counterion with energy             -2755.052 kJ/mol
- Added counterion with energy             -2715.515 kJ/mol
- Added counterion with energy             -2687.727 kJ/mol
- Added counterion with energy             -2626.219 kJ/mol
- Added counterion with energy             -2585.705 kJ/mol
- Added counterion with energy             -2552.924 kJ/mol
- Added counterion with energy             -2513.358 kJ/mol
- Added counterion with energy             -2466.456 kJ/mol
- Added counterion with energy             -2398.674 kJ/mol
- Added counterion with energy             -2371.850 kJ/mol
- Added counterion with energy             -2320.261 kJ/mol
- Added counterion with energy             -2291.526 kJ/mol
- Added counterion with energy             -2270.208 kJ/mol
- Added counterion with energy             -2233.926 kJ/mol
- Added counterion with energy             -2179.812 kJ/mol
- Added counterion with energy             -2148.949 kJ/mol
- Added counterion with energy             -2109.549 kJ/mol
- Added counterion with energy             -2072.936 kJ/mol
- Added counterion with energy             -2031.127 kJ/mol
- Added counterion with energy             -1996.783 kJ/mol
- Added counterion with energy             -1965.915 kJ/mol
- Added counterion with energy             -1940.444 kJ/mol
- Added counterion with energy             -1907.250 kJ/mol
- Added counterion with energy             -1867.721 kJ/mol
- Added counterion with energy             -1840.675 kJ/mol
- Added counterion with energy             -1816.269 kJ/mol
- Added counterion with energy             -1755.570 kJ/mol
- Added counterion with energy             -1709.664 kJ/mol
- Added counterion with energy             -1692.048 kJ/mol
- Added counterion with energy             -1657.995 kJ/mol
- Added counterion with energy             -1592.958 kJ/mol
- Added counterion with energy             -1572.136 kJ/mol
- Added counterion with energy             -1538.825 kJ/mol
- Added counterion with energy             -1511.062 kJ/mol
- Added counterion with energy             -1479.786 kJ/mol
- Added counterion with energy             -1452.405 kJ/mol
- Added counterion with energy             -1436.407 kJ/mol
- Added counterion with energy             -1416.942 kJ/mol
- Added counterion with energy             -1396.049 kJ/mol
- Added counterion with energy             -1368.883 kJ/mol
- Added counterion with energy             -1352.948 kJ/mol
- Added counterion with energy             -1310.840 kJ/mol
- Added counterion with energy             -1264.684 kJ/mol
- Added counterion with energy             -1239.125 kJ/mol
- Added counterion with energy             -1218.194 kJ/mol
- Added counterion with energy             -1188.130 kJ/mol
- Added counterion with energy             -1165.077 kJ/mol
- Added counterion with energy             -1145.681 kJ/mol
- Added counterion with energy             -1116.653 kJ/mol
- Added counterion with energy             -1087.199 kJ/mol
- Added counterion with energy             -1069.968 kJ/mol
- Added counterion with energy             -1048.226 kJ/mol
- Added counterion with energy             -1029.162 kJ/mol
- Added counterion with energy             -1009.233 kJ/mol
- Added counterion with energy              -971.837 kJ/mol
- Added counterion with energy              -954.715 kJ/mol
- Added counterion with energy              -920.490 kJ/mol
- Added counterion with energy              -900.987 kJ/mol
- Added counterion with energy              -879.741 kJ/mol
- Added counterion with energy              -857.193 kJ/mol
- Added counterion with energy              -841.511 kJ/mol
- Added counterion with energy              -800.488 kJ/mol
- Added counterion with energy              -776.345 kJ/mol
- Added counterion with energy              -752.930 kJ/mol
- Added counterion with energy              -724.910 kJ/mol
- Added counterion with energy              -704.293 kJ/mol
- Added counterion with energy              -687.959 kJ/mol
- Added counterion with energy              -651.646 kJ/mol
- Added counterion with energy              -626.638 kJ/mol
- Added counterion with energy              -590.413 kJ/mol
- Added counterion with energy              -570.578 kJ/mol
- Added counterion with energy              -546.331 kJ/mol
- Added counterion with energy              -525.265 kJ/mol
- Added counterion with energy              -500.899 kJ/mol
- Added counterion with energy              -465.213 kJ/mol
- Added counterion with energy              -432.775 kJ/mol
- Added counterion with energy              -414.516 kJ/mol
- Added counterion with energy              -388.001 kJ/mol
- Added counterion with energy              -371.171 kJ/mol
- Added counterion with energy              -354.868 kJ/mol
- Added counterion with energy              -322.275 kJ/mol
- Added counterion with energy              -282.720 kJ/mol
- Added counterion with energy              -257.192 kJ/mol
- Added counterion with energy              -219.114 kJ/mol
- Added counterion with energy              -203.286 kJ/mol
- Added counterion with energy              -181.159 kJ/mol
- Added counterion with energy              -157.127 kJ/mol
- Grid specifications for non-bonded atoms done
+ Generating missing atom coordinates:     0    1
 
  Crystal waters done
 
  Coordinates generated for missing atoms
 
 
- Boxsize determined to                     8.665200    8.483400   12.969400
+ Boxsize determined to                     7.065200    6.883400   12.969400
 
 
  Periodic boundary conditions on
  Box dimensions set to    71.405000   68.084000  130.494000
+
+ Created restart                       4pgr_md.rst
+
  Created pdb                           inspection.pdb
 
 
- Task  times  cpu:       25.7s     wall:       25.7s
+ Task  times  cpu:       15.0s     wall:       15.0s
 
 
                                 NWChem Input Module
@@ -574,4 +243,4 @@ MA usage statistics:
    K. Glaesemann, G. Sandrone, M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe,
                                A. T. Wong, Z. Zhang.
 
- Total times  cpu:       26.1s     wall:       26.1s
+ Total times  cpu:       15.1s     wall:       15.1s
