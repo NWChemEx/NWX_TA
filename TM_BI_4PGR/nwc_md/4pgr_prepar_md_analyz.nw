@@ -50,7 +50,7 @@ analysis
    reference 4pgr_md.rst
    file 4pgr_md.trj
    frames 1 10 1
-   copy 4pgr_md.xyz
+   copy 4pgr_md.pdb
 end
 
 task analysis
