@@ -1,0 +1,56 @@
+echo
+start 4pgr_membrane_model_dat
+
+prepare
+   system 4pgr_md
+   source ../struct_model/4pgr_amber_membrane_model_min_res_rerenum.pdb 
+   new_top new_seq
+   new_rst
+   histidine hid
+   # counter 25  Cl
+   # counter 109 K
+   periodic
+   box 71.405 68.084 130.494
+   solvent name HOH model spce
+   write rst 4pgr_md.rst
+   write pdb inspection.pdb
+end
+
+#task prepare
+
+
+
+md
+   system 4pgr_md
+   leapfrog
+   step 0.002 equil 1000 data 0
+   isotherm 298.15 trelax 0.1
+   isobar
+   print step 10
+end
+
+#task md dynamics
+
+
+
+md
+   system 4pgr_md
+   leapfrog
+   step 0.002 equil 0 data 1000
+   isotherm 298.15 trelax 0.1
+   isobar
+   print step 100
+   record coord 100 ascii
+end
+
+#task md dynamics
+
+analysis
+   system 4pgr_md
+   reference 4pgr_md.rst
+   file 4pgr_md.trj
+   frames 1 10 1
+   copy 4pgr_md.xyz
+end
+
+task analysis
