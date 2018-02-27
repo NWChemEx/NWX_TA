@@ -1,3 +1,26 @@
+# This input file does not work because the PA fragment is an open-shell doublet,
+# whereas the PGR fragment is a triplet. Unfortunately, the way NWChem checks the
+# number of electrons and the SCF type the calculation will fail.
+# 
+# Replacing the following lines in scf_get_info.F (lines 165-168 on Feb 27, 2018):
+#
+#        if (mod(nelec-nopen,2) .ne. 0) call errquit
+#       $     ('scf: no. of closed-shell electrons is not even!',nopen,
+#       &       INPUT_ERR)
+#        nclosed = (nelec-nopen) / 2
+#
+# with
+#
+#  c     if (mod(nelec-nopen,2) .ne. 0) call errquit
+#  c    $     ('scf: no. of closed-shell electrons is not even!',nopen,
+#  c    &       INPUT_ERR)
+#        nclosed = (nelec-nopen) / 2
+#        nopen   = nelec-(nclosed*2)
+#
+# circumvents the problem. I.e. if nopen is set it will be respected, if it is not
+# it will be computed to match the lowest spin multiplicity with the correct number
+# of electrons.
+#
 echo
 start 4pgr_membrane_model_dat
 
@@ -17,6 +40,10 @@ prepare
    maxscf 50
    write rst 4pgr_md.rst
    write pdb inspection.pdb
+end
+
+basis
+  * library "6-31g*"
 end
 
 task prepare
