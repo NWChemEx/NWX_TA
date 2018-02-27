@@ -14,6 +14,7 @@ prepare
    periodic
    box 71.405 68.084 130.494
    solvent name HOH model spce
+   maxscf 50
    write rst 4pgr_md.rst
    write pdb inspection.pdb
 end
