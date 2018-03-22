@@ -69,7 +69,7 @@ task scf energy
 
     hostname        = erato
     program         = /home/hvandam/nwchem-1-codar/bin/LINUX64/nwchem
-    date            = Mon Mar 12 17:25:41 2018
+    date            = Fri Mar 16 16:39:04 2018
 
     compiled        = Tue_Feb_27_17:26:40_2018
     source          = /home/hvandam/nwchem-1-codar
@@ -81,7 +81,7 @@ task scf energy
     prefix          = nwc_gbe_dat.
     data base       = ./nwc_gbe_dat.db
     status          = startup
-    nproc           =        1
+    nproc           =        6
     time left       =     -1s
 
 
@@ -89,10 +89,10 @@ task scf energy
            Memory information
            ------------------
 
-    heap     =   13107196 doubles =    100.0 Mbytes
-    stack    =   13107201 doubles =    100.0 Mbytes
+    heap     =   13107194 doubles =    100.0 Mbytes
+    stack    =   13107199 doubles =    100.0 Mbytes
     global   =   26214400 doubles =    200.0 Mbytes (distinct from heap & stack)
-    total    =   52428797 doubles =    400.0 Mbytes
+    total    =   52428793 doubles =    400.0 Mbytes
     verify   = yes
     hardfail = no 
 
@@ -256,7 +256,7 @@ task scf energy
         a"          2
 
 
- Forming initial guess at       0.3s
+ Forming initial guess at       0.2s
 
 
       Superposition of Atomic Density Guess
@@ -288,7 +288,7 @@ task scf energy
     11 a'         12 a'         13 a'      
 
 
- Starting SCF solution at       0.3s
+ Starting SCF solution at       0.2s
 
 
 
@@ -305,9 +305,12 @@ task scf energy
 
 
  Integral file          = ./nwc_gbe_dat.aoints.0
- Record size in doubles =    65536    No. of integs per rec  =    43688
- Max. records in memory =        2    Max. records in file   =  4788626
- No. of bits per label  =        8    No. of bits per value  =       64
+ Record size in doubles =  65536        No. of integs per rec  =  43688
+ Max. records in memory =      2        Max. records in file   = 854701
+ No. of bits per label  =      8        No. of bits per value  =     64
+
+
+File balance: exchanges=     0  moved=     0  time=   0.0
 
 
               iter       energy          gnorm     gmax       time
@@ -316,7 +319,7 @@ task scf energy
                  2      -75.9141865011  2.18D-01  1.38D-01      0.1
                  3      -75.9183783784  4.73D-02  3.60D-02      0.1
                  4      -75.9186807226  2.68D-04  1.53D-04      0.1
-                 5      -75.9186807276  1.81D-08  9.72D-09      0.1
+                 5      -75.9186807276  1.81D-08  9.72D-09      0.2
 
 
        Final RHF  results 
@@ -327,7 +330,7 @@ task scf energy
       Two-electron energy =     36.378760347561
  Nuclear repulsion energy =      7.444697472481
 
-        Time for solution =      0.0s
+        Time for solution =      0.1s
 
 
 
@@ -366,14 +369,14 @@ task scf energy
                        -------------------------------------
 
  Vector    2  Occ=2.000000D+00  E=-1.266710D+00  Symmetry=a'
-              MO Center= -1.1D-02, -1.5D-03,  2.3D-18, r^2= 5.3D-01
+              MO Center= -1.1D-02, -1.5D-03, -7.4D-18, r^2= 5.3D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      6      0.530542  1 O  s                  2      0.485776  1 O  s          
      1     -0.218998  1 O  s          
 
  Vector    3  Occ=2.000000D+00  E=-6.051445D-01  Symmetry=a'
-              MO Center=  1.2D-01, -1.2D-04, -1.2D-19, r^2= 1.0D+00
+              MO Center=  1.2D-01, -1.2D-04,  3.9D-20, r^2= 1.0D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      4      0.473874  1 O  py                 8      0.318231  1 O  py         
@@ -381,7 +384,7 @@ task scf energy
     11      0.177337  2 H  s                 13     -0.177913  3 H  s          
 
  Vector    4  Occ=2.000000D+00  E=-5.244099D-01  Symmetry=a'
-              MO Center= -9.5D-02,  2.4D-03,  2.7D-17, r^2= 8.9D-01
+              MO Center= -9.5D-02,  2.4D-03,  1.7D-18, r^2= 8.9D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      3      0.526055  1 O  px                 7      0.403714  1 O  px         
@@ -389,13 +392,13 @@ task scf energy
     10      0.151507  2 H  s          
 
  Vector    5  Occ=2.000000D+00  E=-4.946757D-01  Symmetry=a"
-              MO Center= -1.4D-01, -1.1D-03, -1.5D-17, r^2= 5.9D-01
+              MO Center= -1.4D-01, -1.1D-03, -1.4D-18, r^2= 5.9D-01
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      5      0.650479  1 O  pz                 9      0.500392  1 O  pz         
 
  Vector    6  Occ=0.000000D+00  E= 1.422675D-01  Symmetry=a'
-              MO Center=  5.6D-01,  1.7D-02, -1.9D-17, r^2= 2.5D+00
+              MO Center=  5.6D-01,  1.7D-02,  2.4D-17, r^2= 2.5D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
     11     -0.814357  2 H  s                  6      0.804626  1 O  s          
@@ -403,14 +406,14 @@ task scf energy
      3      0.307959  1 O  px         
 
  Vector    7  Occ=0.000000D+00  E= 2.274238D-01  Symmetry=a'
-              MO Center=  5.4D-01, -1.3D-02,  8.1D-19, r^2= 2.5D+00
+              MO Center=  5.4D-01, -1.3D-02, -2.2D-18, r^2= 2.5D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
     13     -0.998207  3 H  s                 11      0.980420  2 H  s          
      8     -0.721979  1 O  py                 4     -0.396050  1 O  py         
 
  Vector    8  Occ=0.000000D+00  E= 9.683123D-01  Symmetry=a'
-              MO Center=  5.9D-01,  8.3D-02, -1.2D-16, r^2= 1.8D+00
+              MO Center=  5.9D-01,  8.3D-02,  3.0D-16, r^2= 1.8D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
     10      0.886798  2 H  s                 12      0.815089  3 H  s          
@@ -419,7 +422,7 @@ task scf energy
      2     -0.271428  1 O  s                  7      0.164248  1 O  px         
 
  Vector    9  Occ=0.000000D+00  E= 9.898702D-01  Symmetry=a'
-              MO Center=  5.3D-01, -7.2D-02,  6.2D-18, r^2= 2.2D+00
+              MO Center=  5.3D-01, -7.2D-02, -5.6D-17, r^2= 2.2D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
     13      0.959365  3 H  s                 12     -0.946159  3 H  s          
@@ -427,13 +430,13 @@ task scf energy
      4     -0.301630  1 O  py         
 
  Vector   10  Occ=0.000000D+00  E= 1.163418D+00  Symmetry=a"
-              MO Center= -1.4D-01, -1.1D-03, -2.9D-16, r^2= 1.1D+00
+              MO Center= -1.4D-01, -1.1D-03,  5.0D-16, r^2= 1.1D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      9     -1.041947  1 O  pz                 5      0.955470  1 O  pz         
 
  Vector   11  Occ=0.000000D+00  E= 1.237769D+00  Symmetry=a'
-              MO Center= -4.8D-01, -9.2D-04,  3.5D-16, r^2= 1.1D+00
+              MO Center= -4.8D-01, -9.2D-04, -6.4D-16, r^2= 1.1D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      7      1.030506  1 O  px                 3     -0.856028  1 O  px         
@@ -441,7 +444,7 @@ task scf energy
     10     -0.254857  2 H  s                 12     -0.255245  3 H  s          
 
  Vector   12  Occ=0.000000D+00  E= 1.375672D+00  Symmetry=a'
-              MO Center= -2.8D-01, -2.5D-03, -1.9D-20, r^2= 1.2D+00
+              MO Center= -2.8D-01, -2.5D-03, -8.0D-21, r^2= 1.2D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      8      1.480516  1 O  py                 4     -0.975652  1 O  py         
@@ -449,7 +452,7 @@ task scf energy
     10     -0.269874  2 H  s                 12      0.267323  3 H  s          
 
  Vector   13  Occ=0.000000D+00  E= 1.645778D+00  Symmetry=a'
-              MO Center=  2.5D-01,  7.0D-04,  6.1D-17, r^2= 1.1D+00
+              MO Center=  2.5D-01,  7.0D-04, -1.3D-16, r^2= 1.1D+00
    Bfn.  Coefficient  Atom+Function         Bfn.  Coefficient  Atom+Function  
   ----- ------------  ---------------      ----- ------------  ---------------
      6      2.095129  1 O  s                  2     -1.554576  1 O  s          
@@ -486,49 +489,49 @@ task scf energy
 
      1   1 0 0      1.028816      0.000000      0.000000
      1   0 1 0      0.005517      0.000000      0.000000
-     1   0 0 1     -0.000000      0.000000      0.000000
+     1   0 0 1      0.000000      0.000000      0.000000
 
      2   2 0 0     -4.623489      0.000000      2.893527
      2   1 1 0     -0.005299      0.000000     -0.002487
-     2   1 0 1     -0.000000      0.000000      0.000000
+     2   1 0 1      0.000000      0.000000      0.000000
      2   0 2 0     -2.764648      0.000000      6.358461
-     2   0 1 1     -0.000000      0.000000      0.000000
+     2   0 1 1      0.000000      0.000000      0.000000
      2   0 0 2     -5.705920      0.000000      0.000000
 
 
- Parallel integral file used       1 records with       0 large values
+ Parallel integral file used       6 records with       0 large values
 
  -----------------------
  Performance information
  -----------------------
 
- Timer overhead =  1.00D-07 seconds/call
+ Timer overhead =  2.00D-07 seconds/call
 
                Nr. of calls         CPU time (s)                 Wall time (s)                GFlops
              ---------------    -------------------     ------------------------------   -------------------
 Name         Min   Avg   Max    Min     Avg     Max     Min     Avg     Max   Mx/calls   Min     Max     Sum
-scf: solv     4     4     4   1.10E-2 1.10E-2 1.10E-2  1.07E-2 1.07E-2 1.07E-2 2.67E-3   0.0     0.0     0.0   
-scf: sear     6     6     6   2.20E-2 2.20E-2 2.20E-2  5.21E-2 5.21E-2 5.21E-2 8.68E-3   0.0     0.0     0.0   
-scf: fock     2     2     2   2.20E-2 2.20E-2 2.20E-2  2.35E-2 2.35E-2 2.35E-2 1.17E-2   0.0     0.0     0.0   
-scf: fock    14    14    14   8.00E-3 8.00E-3 8.00E-3  4.47E-3 4.47E-3 4.47E-3 3.19E-4   0.0     0.0     0.0   
-scf: int-    31    31    31   1.00E-3 1.00E-3 1.00E-3  9.28E-4 9.28E-4 9.28E-4 2.99E-5   0.0     0.0     0.0   
-scf: mate     9     9     9   3.00E-3 3.00E-3 3.00E-3  1.74E-3 1.74E-3 1.74E-3 1.93E-4   0.0     0.0     0.0   
-scf: orth     6     6     6    0.0     0.0     0.0     2.74E-4 2.74E-4 2.74E-4 4.57E-5   0.0     0.0     0.0   
-scf: diag     4     4     4   1.00E-3 1.00E-3 1.00E-3  8.68E-4 8.68E-4 8.68E-4 2.17E-4   0.0     0.0     0.0   
-scf: veci     3     3     3    0.0     0.0     0.0     3.55E-4 3.55E-4 3.55E-4 1.18E-4   0.0     0.0     0.0   
-scf: sym      5     5     5   2.00E-3 2.00E-3 2.00E-3  1.19E-3 1.19E-3 1.19E-3 2.38E-4   0.0     0.0     0.0   
-scf: sym     23    23    23   2.00E-3 2.00E-3 2.00E-3  2.90E-3 2.90E-3 2.90E-3 1.26E-4   0.0     0.0     0.0   
-scf: k2cf     9     9     9   3.00E-3 3.00E-3 3.00E-3  2.47E-3 2.47E-3 2.47E-3 2.75E-4   0.0     0.0     0.0   
-scf: mull     1     1     1    0.0     0.0     0.0     1.60E-4 1.60E-4 1.60E-4 1.60E-4   0.0     0.0     0.0   
-scf: mult     1     1     1    0.0     0.0     0.0     4.09E-4 4.09E-4 4.09E-4 4.09E-4   0.0     0.0     0.0   
-scf: moan     1     1     1   1.00E-3 1.00E-3 1.00E-3  1.66E-3 1.66E-3 1.66E-3 1.66E-3   0.0     0.0     0.0   
-scf: tota     1     1     1   5.90E-2 5.90E-2 5.90E-2  0.11    0.11    0.11    0.11      0.0     0.0     0.0   
+scf: solv     4     4     4   5.90E-2 5.98E-2 6.10E-2  5.98E-2 5.98E-2 5.98E-2 1.50E-2   0.0     0.0     0.0   
+scf: sear     6     6     6   4.70E-2 6.32E-2 8.60E-2  0.12    0.12    0.12    2.06E-2   0.0     0.0     0.0   
+scf: fock     2     2     2   9.00E-3 9.67E-3 1.00E-2  9.53E-3 9.62E-3 9.76E-3 4.88E-3   0.0     0.0     0.0   
+scf: fock    14    14    14   2.00E-3 4.33E-3 7.00E-3  4.16E-3 4.65E-3 5.22E-3 3.73E-4   0.0     0.0     0.0   
+scf: int-    31    31    31   2.00E-3 3.17E-3 5.00E-3  3.27E-3 3.30E-3 3.31E-3 1.07E-4   0.0     0.0     0.0   
+scf: mate     9     9     9   8.00E-3 9.83E-3 1.20E-2  9.21E-3 9.21E-3 9.21E-3 1.02E-3   0.0     0.0     0.0   
+scf: orth     6     6     6   9.99E-4 3.00E-3 6.00E-3  2.60E-3 2.60E-3 2.60E-3 4.33E-4   0.0     0.0     0.0   
+scf: diag     4     4     4   3.00E-3 4.17E-3 5.00E-3  5.10E-3 5.11E-3 5.11E-3 1.28E-3   0.0     0.0     0.0   
+scf: veci     3     3     3    0.0    4.08E-2 4.90E-2  4.95E-2 4.95E-2 4.95E-2 1.65E-2   0.0     0.0     0.0   
+scf: sym      5     5     5   5.00E-3 5.00E-3 5.00E-3  5.00E-3 5.00E-3 5.00E-3 1.00E-3   0.0     0.0     0.0   
+scf: sym     23    23    23   9.00E-3 9.83E-3 1.20E-2  9.49E-3 9.87E-3 9.98E-3 4.34E-4   0.0     0.0     0.0   
+scf: k2cf     9     9     9   1.20E-2 1.28E-2 1.40E-2  1.21E-2 1.21E-2 1.21E-2 1.35E-3   0.0     0.0     0.0   
+scf: mull     1     1     1    0.0    6.67E-4 1.00E-3  7.47E-4 7.57E-4 7.60E-4 7.60E-4   0.0     0.0     0.0   
+scf: mult     1     1     1    0.0    3.33E-4 1.00E-3  2.47E-4 2.47E-4 2.48E-4 2.48E-4   0.0     0.0     0.0   
+scf: moan     1     1     1   3.00E-3 3.00E-3 3.00E-3  3.41E-3 3.52E-3 4.08E-3 4.08E-3   0.0     0.0     0.0   
+scf: tota     1     1     1   0.15    0.21    0.24     0.29    0.29    0.29    0.29      0.0     0.0     0.0   
 
  The average no. of pstat calls per process was 1.20D+02
- with a timing overhead of 1.20D-05s
+ with a timing overhead of 2.40D-05s
 
 
- Task  times  cpu:        0.1s     wall:        0.1s
+ Task  times  cpu:        0.2s     wall:        0.3s
 
 
                                 NWChem Input Module
@@ -545,11 +548,11 @@ scf: tota     1     1     1   5.90E-2 5.90E-2 5.90E-2  0.11    0.11    0.11    0
                          ------------------------------
 
        create   destroy   get      put      acc     scatter   gather  read&inc
-calls:  381      381     2175     1073     1206        0        0      309     
-number of processes/call 1.00e+00 1.00e+00 1.00e+00 0.00e+00 0.00e+00
-bytes total:             5.77e+05 3.82e+05 1.56e+05 0.00e+00 0.00e+00 2.47e+03
-bytes remote:            0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
-Max memory consumed for GA by this process: 19848 bytes
+calls:  381      381     1146      619      842        0        0      100     
+number of processes/call 1.40e+00 1.28e+00 1.29e+00 0.00e+00 0.00e+00
+bytes total:             4.72e+05 2.86e+05 1.22e+05 0.00e+00 0.00e+00 8.00e+02
+bytes remote:            4.79e+04 1.79e+04 2.86e+04 0.00e+00 0.00e+00 0.00e+00
+Max memory consumed for GA by this process: 12536 bytes
 
 MA_summarize_allocated_blocks: starting scan ...
 MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
@@ -561,7 +564,7 @@ MA usage statistics:
 	current number of blocks	         0	         0
 	maximum number of blocks	        18	        14
 	current total bytes		         0	         0
-	maximum total bytes		   1057472	  22509416
+	maximum total bytes		   1057488	  22509400
 	maximum total K-bytes		      1058	     22510
 	maximum total M-bytes		         2	        23
 
@@ -600,4 +603,4 @@ MA usage statistics:
    K. Glaesemann, G. Sandrone, M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe,
                                A. T. Wong, Z. Zhang.
 
- Total times  cpu:        0.1s     wall:        0.4s
+ Total times  cpu:        0.2s     wall:        0.5s

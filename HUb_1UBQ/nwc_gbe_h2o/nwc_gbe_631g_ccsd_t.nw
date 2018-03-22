@@ -43,13 +43,13 @@ set tce:nts T
 # uncomment "set tce:readint T"
 # it will save time :-)
 #
-set tce:tceiop   1
+set tce:tceiop   2048
 set tce:writeint F
 set tce:writet   F
-set tce:writex   F
+#set tce:writex   F
 set tce:readint  T
 set tce:readt    T
-set tce:readx    T
+#set tce:readx    T
 #######################
 
 task tce energy

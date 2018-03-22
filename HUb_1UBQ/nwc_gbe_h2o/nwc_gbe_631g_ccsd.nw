@@ -43,10 +43,10 @@ set tce:nts T
 # uncomment "set tce:readint T"
 # it will save time :-)
 #
-set tce:tceiop   1
+set tce:tceiop   2048
 set tce:writeint T
 set tce:writet   T
-set tce:writex   T
+#set tce:writex   T
 #set tce:readint T
 #######################
 

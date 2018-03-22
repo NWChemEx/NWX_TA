@@ -1,5 +1,5 @@
 #!/bin/bash
 export NWCHEM_EXE=/home/hvandam/nwchem-1-codar/bin/LINUX64/nwchem
-mpirun -np 1 $NWCHEM_EXE nwc_gbe_631g_rhf.nw     | tee nwc_gbe_631g_rhf.out
-mpirun -np 1 $NWCHEM_EXE nwc_gbe_631g_ccsd.nw    | tee nwc_gbe_631g_ccsd.out
-mpirun -np 2 $NWCHEM_EXE nwc_gbe_631g_ccsd_t.nw  | tee nwc_gbe_631g_ccsd_t.out
+mpirun -np 6 $NWCHEM_EXE nwc_gbe_631g_rhf.nw     | tee nwc_gbe_631g_rhf.out
+mpirun -np 6 $NWCHEM_EXE nwc_gbe_631g_ccsd.nw    | tee nwc_gbe_631g_ccsd.out
+mpirun -np 8 $NWCHEM_EXE nwc_gbe_631g_ccsd_t.nw  | tee nwc_gbe_631g_ccsd_t.out
