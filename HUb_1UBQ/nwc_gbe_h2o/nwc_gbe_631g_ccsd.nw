@@ -25,7 +25,9 @@ tce
   ccsd
   2eorb
   2emet 15
-  tilesize 40
+  # The tilesize has to be the same as in the CCSD(T) calculation
+  # otherwise the CCSD(T) code cannot read the data files.
+  tilesize 15
   attilesize 45
   thresh 1.0e-3
   maxiter 100

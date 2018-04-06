@@ -14,6 +14,7 @@ cp NWX_TA/HUb_1UBQ/nwc_gbe_h2o/nwc_gbe_631g_ccsd.nw   $SCRATCH_DIR
 cp NWX_TA/HUb_1UBQ/nwc_gbe_h2o/nwc_gbe_631g_ccsd_t.nw $SCRATCH_DIR
 cp titan/nwchem/bin/LINUX64/nwchem                    $SCRATCH_DIR
 cd $SCRATCH_DIR
+pwd
 export MPICH_USE_DMAPP_COLL=1
 export MPICH_GNI_NUM_BUFS=300
 export MPICH_GNI_MBOX_PLACEMENT=nic
