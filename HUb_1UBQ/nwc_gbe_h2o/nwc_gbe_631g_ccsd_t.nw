@@ -30,6 +30,7 @@ tce
   attilesize 45
   thresh 1.0e-3
   maxiter 100
+  cuda 1
 end
 
 set tce:nts T
