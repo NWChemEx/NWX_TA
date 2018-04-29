@@ -25,10 +25,12 @@ tce
   ccsd(t)
   2eorb
   2emet 15
-  tilesize 40
+  # See the CCSD calculation for tilesize
+  tilesize 15
   attilesize 45
   thresh 1.0e-3
   maxiter 100
+  cuda 1
 end
 
 set tce:nts T

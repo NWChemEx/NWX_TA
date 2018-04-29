@@ -3,20 +3,21 @@ restart nwc_gbe_dat
 title "E and Grad of 1UBQ"
 #memory stack 800 mb heap 100 mb global 2000 mb noverify
 geometry noautoz
-   load format pdb "h2o.pdb"
+   load format pdb "dgrtl.pdb"
 end
 basis 631g spherical
   * library 6-31g
 end
 
 set "ao basis" 631g
-charge 0
+charge +1
 scf
   thresh 1.0e-6
   tol2e 1.0e-10
   singlet
   rhf
   maxiter 300
+  vectors input nwc_gbe_dat.movecs output nwc_gbe_dat.movecs
 end
 set scf:pstat t
 set tce:pstat t
@@ -25,8 +26,6 @@ tce
   ccsd
   2eorb
   2emet 15
-  # The tilesize has to be the same as in the CCSD(T) calculation
-  # otherwise the CCSD(T) code cannot read the data files.
   tilesize 15
   attilesize 45
   thresh 1.0e-3
