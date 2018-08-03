@@ -52,3 +52,10 @@ The following steps were performed:
     ```
     pdbfixer  4pgs_amber_membrane_model_min_res_renum.pdb --add-atoms=all --ph=6 --positive-ion=K+ --negative-ion=Cl-
     ```
+
+* `4pgs_amber_membrane_model_min_res_renum_refixed.pdb`
+  * The model in `4pgs_amber_membrane_model_min_res_renum_fixed.pdb` has the z-axis in the opposite direction
+    of that in the `4pgr` case. So the structure needs to be rotated around the x-axis by 180 degrees:
+    ```
+    convpdb.pl -rotatex 180 -out amber 4pgs_amber_membrane_model_min_res_renum_fixed.pdb > 4pgs_amber_membrane_model_min_res_renum_refixed.pdb
+    ```
