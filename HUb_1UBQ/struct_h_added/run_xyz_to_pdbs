@@ -29,4 +29,136 @@ awk '$6 >= 50 && $6 <= 58 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -
 # Select all atoms associated with the LEDGRTLSDY subsequence using awk.
 #
 awk '$6 >= 50 && $6 <= 59 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -Oledgrtlsdy.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 49 && $6 <= 60 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O49-60.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 48 && $6 <= 61 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O48-61.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 47 && $6 <= 62 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O47-62.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 46 && $6 <= 63 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O46-63.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 45 && $6 <= 64 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O45-64.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 44 && $6 <= 65 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O44-65.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 43 && $6 <= 66 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O43-66.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 42 && $6 <= 67 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O42-67.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 41 && $6 <= 68 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O41-68.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 40 && $6 <= 69 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O40-69.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 39 && $6 <= 70 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O39-70.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 38 && $6 <= 71 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O38-71.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 37 && $6 <= 72 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O37-72.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 36 && $6 <= 73 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O36-73.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 35 && $6 <= 74 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O35-74.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 34 && $6 <= 75 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O34-75.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 33 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O33-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 30 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O30-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 28 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O28-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 26 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O26-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 24 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O24-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 22 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O22-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 20 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O20-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 18 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O18-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 16 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O16-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 14 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O14-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 12 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O12-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >= 10 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O10-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >=  8 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O08-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >=  6 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O06-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >=  4 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O04-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >=  2 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O02-76.pdb -h
+#
+# Select all atoms associated with the LEDGRTLSDY subsequence using awk.
+#
+awk '$6 >=  1 && $6 <= 76 { print }' ct500838h_si_003.pdb | obabel -ipdb -opdb -O01-76.pdb -h
 
