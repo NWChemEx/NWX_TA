@@ -59,3 +59,19 @@ The following steps were performed:
     ```
     convpdb.pl -rotatex 180 -out amber 4pgs_amber_membrane_model_min_res_renum_fixed.pdb > 4pgs_amber_membrane_model_min_res_renum_refixed.pdb
     ```
+
+For the large simulation we need to approach the matter a bit differently. 
+
+* `4pgs-1M.pdb`
+  * The 1 million atom model as obtained from Charmm-GUI (lipid layer in 100x100x100 Angstrom), and then
+    replicated (12 times in 2x2x3 pattern).
+
+* `4pgs-1M-amber.pdb`
+  * Take `4pgs-1M.pdb` and feed it through `pdb4amber`.
+  * This tool breaks the proteins though, as it somehow assumes that every histidine has to be a terminal
+    residue.
+  * The lipid residues have not been translated.
+  * The Calcium and Chloride ions have been lost.
+
+* `4pgs-1M-amber-manual.pdb`
+  * Take `4pgs-1M.pdb` and fix all the terminal histidine groups making the proteins whole again.
