@@ -75,3 +75,13 @@ For the large simulation we need to approach the matter a bit differently.
 
 * `4pgs-1M-amber-manual.pdb`
   * Take `4pgs-1M.pdb` and fix all the terminal histidine groups making the proteins whole again.
+
+* '4pgs-1M-amber-manual-lipid-ion.pdb`
+  * Rename ions so they are properly recognized
+  * Reorder the atoms so that the water molecules come last
+  * Rename the water residues from TIP to HOH
+  * Rename the water atoms from O, H1, and H2 to OW, 2HW, and 3HW
+  * Minimize the energy of the structure using Sander
+  * Add the box definition to the PDB file (handy because the NWChem input uses different units (nm) than the PDB file (Angstrom)).
+  * Fixed the lipids (each lipid is now three residues)
+  * Created a charge separation with the ions to put a voltage across the membranes
