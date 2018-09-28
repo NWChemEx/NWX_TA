@@ -1,0 +1,243 @@
+ argument  1 = 4pgs-1M-prepare.nw
+
+
+
+============================== echo of input deck ==============================
+echo
+start 4pgs-1M-amber-manual-lipid-ion-dat
+
+memory heap 50 global 100 stack 5120 MB
+
+prepare
+  system 4pgs-1M-amber-manual-lipid-ion-dat_md
+  source ../struct_model/4pgs-1M-amber-manual-lipid-ion.pdb
+  new_top new_seq
+  new_rst
+  periodic
+# box 212.484 313.178 225.4346
+  center
+  solvent name HOH model spce
+end
+
+task prepare
+================================================================================
+
+
+                                         
+                                         
+
+
+              Northwest Computational Chemistry Package (NWChem) 6.8
+              ------------------------------------------------------
+
+
+                    Environmental Molecular Sciences Laboratory
+                       Pacific Northwest National Laboratory
+                                Richland, WA 99352
+
+                              Copyright (c) 1994-2018
+                       Pacific Northwest National Laboratory
+                            Battelle Memorial Institute
+
+             NWChem is an open-source computational chemistry package
+                        distributed under the terms of the
+                      Educational Community License (ECL) 2.0
+             A copy of the license is included with this distribution
+                              in the LICENSE.TXT file
+
+                                  ACKNOWLEDGMENT
+                                  --------------
+
+            This software and its documentation were developed at the
+            EMSL at Pacific Northwest National Laboratory, a multiprogram
+            national laboratory, operated for the U.S. Department of Energy
+            by Battelle under Contract Number DE-AC05-76RL01830. Support
+            for this work was provided by the Department of Energy Office
+            of Biological and Environmental Research, Office of Basic
+            Energy Sciences, and the Office of Advanced Scientific Computing.
+
+
+           Job information
+           ---------------
+
+    hostname        = erato
+    program         = /home/hvandam/nwchem-1-codar/bin/LINUX64/nwchem
+    date            = Fri Sep 28 07:44:56 2018
+
+    compiled        = Thu_Sep_27_16:28:43_2018
+    source          = /home/hvandam/nwchem-1-codar
+    nwchem branch   = Development
+    nwchem revision = nwchem_on_git-518-ge31b73e
+    ga revision     = 5.6.5
+    use scalapack   = F
+    input           = 4pgs-1M-prepare.nw
+    prefix          = 4pgs-1M-amber-manual-lipid-ion-dat.
+    data base       = ./4pgs-1M-amber-manual-lipid-ion-dat.db
+    status          = startup
+    nproc           =        1
+    time left       =     -1s
+
+
+
+           Memory information
+           ------------------
+
+    heap     =    6553596 doubles =     50.0 Mbytes
+    stack    =  671088641 doubles =   5120.0 Mbytes
+    global   =   13107200 doubles =    100.0 Mbytes (distinct from heap & stack)
+    total    =  690749437 doubles =   5270.0 Mbytes
+    verify   = yes
+    hardfail = no 
+
+
+           Directory information
+           ---------------------
+
+  0 permanent = .
+  0 scratch   = .
+
+
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+                                  Prepare Module
+                                  --------------
+
+ Force field                           amber
+
+
+ Directories used for fragment and segment files
+
+                                       /home/hvandam/nwchem-1-codar/QA/../src/data/amber_s/
+                                       /home/hvandam/nwchem-1-codar/QA/../src/data/amber_x/
+                                       /home/hvandam/nwchem-1-codar/QA/../src/data/amber_q/
+                                       ./
+
+ Parameter files used to resolve force field parameters
+
+                                       /home/hvandam/nwchem-1-codar/QA/../src/data/amber_s/amber.par
+                                       /home/hvandam/nwchem-1-codar/QA/../src/data/amber_x/amber.par
+                                       /home/hvandam/nwchem-1-codar/QA/../src/data/amber_q/amber.par
+                                       ./amber.par
+
+ Deleted existing topology             4pgs-1M-amber-manual-lipid-ion-dat.top
+
+ Deleted existing sequence             ./4pgs-1M-amber-manual-lipid-ion-dat.seq
+
+ PDB geometry                          ../struct_model/4pgs-1M-amber-manual-lipid-ion.pdb
+
+
+ Created sequence                      ./4pgs-1M-amber-manual-lipid-ion-dat.seq
+
+ 
+ Parameter file                        /home/hvandam/nwchem-1-codar/QA/../src/data/amber_s/amber.par
+ Parameter file                        /home/hvandam/nwchem-1-codar/QA/../src/data/amber_x/amber.par
+ Parameter file                        /home/hvandam/nwchem-1-codar/QA/../src/data/amber_q/amber.par
+ 
+ Total charge                             -0.013824
+
+ Created topology                      4pgs-1M-amber-manual-lipid-ion-dat.top
+
+ Topology                              4pgs-1M-amber-manual-lipid-ion-dat.top
+
+ Restart generation using command file directives
+
+ There are       0 atoms with missing coordinates
+ PDB file                              ../struct_model/4pgs-1M-amber-manual-lipid-ion.pdb
+ Number of missing coordinates                0
+ Total number of atoms                   470460
+
+ Generating missing atom coordinates:     0    1
+
+ Crystal waters done
+
+ Coordinates generated for missing atoms
+
+
+ Periodic boundary conditions on
+ Solute centered in x-dimension
+ Solute centered in y-dimension
+ Solute centered in z-dimension
+
+ Boxsize determined to                    21.900900   31.647800   22.513400
+
+
+ Created restart                       4pgs-1M-amber-manual-lipid-ion-dat_md.rst
+
+
+ Task  times  cpu:      885.5s     wall:      890.3s
+
+
+                                NWChem Input Module
+                                -------------------
+
+
+ Summary of allocated global arrays
+-----------------------------------
+  No active global arrays
+
+
+
+                         GA Statistics for process    0
+                         ------------------------------
+
+       create   destroy   get      put      acc     scatter   gather  read&inc
+calls:    0        0        0        0        0        0        0        0     
+number of processes/call 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+bytes total:             0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+bytes remote:            0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00
+Max memory consumed for GA by this process: 0 bytes
+
+MA_summarize_allocated_blocks: starting scan ...
+MA_summarize_allocated_blocks: scan completed: 0 heap blocks, 0 stack blocks
+MA usage statistics:
+
+	allocation statistics:
+					      heap	     stack
+					      ----	     -----
+	current number of blocks	         0	         0
+	maximum number of blocks	         7	        33
+	current total bytes		         0	         0
+	maximum total bytes		 117326360	 826273128
+	maximum total K-bytes		    117327	    826274
+	maximum total M-bytes		       118	       827
+
+
+                                     CITATION
+                                     --------
+                Please cite the following reference when publishing
+                           results obtained with NWChem:
+
+                 M. Valiev, E.J. Bylaska, N. Govind, K. Kowalski,
+              T.P. Straatsma, H.J.J. van Dam, D. Wang, J. Nieplocha,
+                        E. Apra, T.L. Windus, W.A. de Jong
+                 "NWChem: a comprehensive and scalable open-source
+                  solution for large scale molecular simulations"
+                      Comput. Phys. Commun. 181, 1477 (2010)
+                           doi:10.1016/j.cpc.2010.04.018
+
+                                      AUTHORS
+                                      -------
+          E. Apra, E. J. Bylaska, W. A. de Jong, N. Govind, K. Kowalski,
+       T. P. Straatsma, M. Valiev, H. J. J. van Dam, D. Wang, T. L. Windus,
+        J. Hammond, J. Autschbach, K. Bhaskaran-Nair, J. Brabec, K. Lopata,
+    S. A. Fischer, S. Krishnamoorthy, M. Jacquelin, W. Ma, M. Klemm, O. Villa,
+      Y. Chen, V. Anisimov, F. Aquino, S. Hirata, M. T. Hackler, V. Konjkov,
+            D. Mejia-Rodriguez, T. Risthaus, M. Malagoli, A. Marenich,
+   A. Otero-de-la-Roza, J. Mullin, P. Nichols, R. Peverati, J. Pittner, Y. Zhao,
+        P.-D. Fan, A. Fonari, M. J. Williamson, R. J. Harrison, J. R. Rehr,
+      M. Dupuis, D. Silverstein, D. M. A. Smith, J. Nieplocha, V. Tipparaju,
+    M. Krishnan, B. E. Van Kuiken, A. Vazquez-Mayagoitia, L. Jensen, M. Swart,
+      Q. Wu, T. Van Voorhis, A. A. Auer, M. Nooijen, L. D. Crosby, E. Brown,
+      G. Cisneros, G. I. Fann, H. Fruchtl, J. Garza, K. Hirao, R. A. Kendall,
+      J. A. Nichols, K. Tsemekhman, K. Wolinski, J. Anchell, D. E. Bernholdt,
+      P. Borowski, T. Clark, D. Clerc, H. Dachsel, M. J. O. Deegan, K. Dyall,
+    D. Elwood, E. Glendening, M. Gutowski, A. C. Hess, J. Jaffe, B. G. Johnson,
+     J. Ju, R. Kobayashi, R. Kutteh, Z. Lin, R. Littlefield, X. Long, B. Meng,
+      T. Nakajima, S. Niu, L. Pollack, M. Rosing, K. Glaesemann, G. Sandrone,
+      M. Stave, H. Taylor, G. Thomas, J. H. van Lenthe, A. T. Wong, Z. Zhang.
+
+ Total times  cpu:      885.5s     wall:      890.4s
