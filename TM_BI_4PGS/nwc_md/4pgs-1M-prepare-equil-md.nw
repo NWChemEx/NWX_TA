@@ -20,7 +20,6 @@ md
    leapfrog
    step 0.002 equil 100 data 0
    isotherm 298.15 trelax 0.1
-   isobar
    print step 10
 end
 
@@ -29,11 +28,12 @@ end
 md
    system 4pgs-1M-amber-manual-lipid-ion-dat_md
    leapfrog
-   step 0.002 equil 100 data 100
-   isotherm 298.15 trelax 0.1
-   isobar
+   noshake
+   step 0.002 equil 1000 data 2000
+   #vreass 1 298.15
+   isotherm 0.0 298.15 trelax 0.1 anneal 0.0 2.0
    print step 10
-   record coord 10 ascii
+   record coord 10 binary
 end
 
 task md dynamics
