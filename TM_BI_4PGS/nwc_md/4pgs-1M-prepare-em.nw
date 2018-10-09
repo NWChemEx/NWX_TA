@@ -16,8 +16,13 @@ end
 #task prepare
 
 md
+  system 4pgs-1M-amber-manual-lipid-ion-dat_md
+  noshake
   sd 100
   cg 500
+  print step 1
+  #record rest 20 keep
+  record coord 1 binary
 end
 
 task md optimize
