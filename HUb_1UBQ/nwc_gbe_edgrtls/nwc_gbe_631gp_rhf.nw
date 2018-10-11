@@ -1,0 +1,62 @@
+echo
+start nwc_gbe_dat
+title "E and Grad of 1UBQ"
+#memory stack 800 mb heap 100 mb global 2000 mb noverify
+geometry noautoz
+   load format pdb "edgrtls.pdb"
+end
+basis 631g spherical
+  * library 6-31g
+end
+basis 631gp spherical
+  * library 6-31g*
+end
+basis pvdz spherical
+  * library cc-pVDZ
+end
+basis pvtz spherical
+  * library cc-pVTZ
+end
+basis pvqz spherical
+  * library cc-pVQZ
+end
+
+set "ao basis" 631gp
+charge +1
+scf
+  thresh 1.0e-6
+  tol2e 1.0e-10
+  singlet
+  rhf
+  maxiter 300
+end
+set scf:pstat t
+set tce:pstat t
+
+tce
+  2eorb
+  2emet 15
+  tilesize 40
+  attilesize 45
+  thresh 1.0e-3
+  maxiter 100
+end
+
+set tce:nts T
+
+### tce restart ########
+#
+# when generating 2-electron integrals for the first time:
+# uncomment "set tce:writeint T"
+# in following runs please
+# comment  "set tce:writeint T"
+# and
+# uncomment "set tce:readint T"
+# it will save time :-)
+#
+set tce:tceiop 2048
+set tce:writeint T
+#set tce:readint T
+#######################
+
+task tce energy

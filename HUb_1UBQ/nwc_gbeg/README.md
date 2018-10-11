@@ -60,6 +60,27 @@ directory before launching the program. On Titan this is required as the user
 directories are not accessible from the compute nodes. Hence, the Titan 
 job scripts are a good place to look for examples.
 
+A more detailed breakdown of the dimensions of the Ubiquitin system is given
+in Table 2.
+
+| Dimension           | Value |
+| ------------------- | ----- |
+| Atoms               | 1231  |
+| All electrons       | 4592  |
+| - Occupied orbitals | 2296  |
+| Core electrons      | 1212  |
+| - Core orbitals     |  606  |
+| Valence electrons   | 3380  |
+| - Occupied orbitals | 1690  |
+| All orbitals        |       |
+| - 6-31g             | 6680  |
+| - 6-31g\*           | 9690  |
+| Virtual orbitals    |       |
+| - 6-31g             | 4384  |
+| - 6-31g\*           | 7394  |
+
+[Table 2. Dimensions for Ubiquitin]
+
 
 ## References
 
