@@ -55,11 +55,11 @@ in Table 2.
 
 | Dimension           | Value |
 | ------------------- | ----- |
-| Atoms               | 79    |
+| Atoms               |  79   |
 | All electrons       | 292   |
 | - Occupied orbitals | 146   |
-| Core electrons      | 76    |
-| - Core orbitals     | 38    |
+| Core electrons      |  76   |
+| - Core orbitals     |  38   |
 | Valence electrons   | 216   |
 | - Occupied orbitals | 108   |
 | All orbitals        |       |
