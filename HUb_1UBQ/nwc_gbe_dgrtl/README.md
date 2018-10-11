@@ -47,6 +47,30 @@ The row name "Measured" under "Cost" gives the relative cost as seen in benchmar
 
 [Table 1. Basis sets sizes and total number of basis functions for the DGRTL fragment of Ubiquitin]
 
+In practice calculations on this system are run with a charge of +1 leaving 292 electron. 
+For correlated calculations we may freeze the core electrons which removes 2 electrons for
+every second atom, or 76 electrons, leaving 216 valence electrons. Doing this also removes
+38 core orbitals leaving 108 occupied orbitals. The resulting dimensions are given
+in Table 2.
+
+| Dimension           | Value |
+| ------------------- | ----- |
+| Atoms               | 79    |
+| All electrons       | 292   |
+| - Occupied orbitals | 146   |
+| Core electrons      | 76    |
+| - Core orbitals     | 38    |
+| Valence electrons   | 216   |
+| - Occupied orbitals | 108   |
+| All orbitals        |       |
+| - 6-31g             | 424   |
+| - 6-31g\*           | 614   |
+| Virtual orbitals    |       |
+| - 6-31g             | 278   |
+| - 6-31g\*           | 468   |
+
+[Table 2. Dimensions for the DGRTL fragment of Ubiquitin with charge +1]
+
 ## References
 
 [Dunning:1989] T. H. Dunning, Jr., "Gaussian basis sets for use in correlated
