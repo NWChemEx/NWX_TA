@@ -20,7 +20,7 @@ md
   noshake
   sd 100
   cg 500
-  print step 1
+  print step 1 timing
   #record rest 20 keep
   record coord 1 binary
 end
