@@ -1,0 +1,18 @@
+#!/usr/bin/gnuplot
+set title "(T) of CCSD(T) on DGRTL"
+set logscale x
+set logscale y
+set xlabel "Number of cores"
+set xrange [15000:80000]
+set xtics 1024
+set xtics add ("18688" 18688, "37376" 37376, "74752" 74752)
+set ylabel "Time (s)"
+set yrange [2000:9500]
+set ytics 1000
+set ytics add ("2000" 2000, "3000" 3000, "4000" 4000, "5000" 5000, "6000" 6000, "7000" 7000, "8000" 8000, "9000" 9000, "10000" 10000, "12000" 12000, "14000" 14000, "16000" 16000, "18000" 18000, "20000" 20000, "25000" 25000, "30000" 30000, "35000" 35000, "40000" 40000, "45000" 45000, "50000" 50000)
+set key off
+set terminal png
+set output "titan_dgrtl_scalability.png"
+plot \
+"dgrtl_631g_titan_ts.dat" with linespoints
+unset output

@@ -1,0 +1,28 @@
+echo
+start 4pgs-1M-amber-manual-lipid-ion-dat
+
+memory heap 50 global 2048 stack 2048 MB
+
+prepare
+  system 4pgs-1M-amber-manual-lipid-ion-dat_md
+  source ../struct_model/4pgs-1M-amber-manual-lipid-ion.pdb
+  new_top new_seq
+  new_rst
+  periodic
+  center
+  solvent name HOH model spce
+end
+
+#task prepare
+
+md
+  system 4pgs-1M-amber-manual-lipid-ion-dat_md
+  noshake
+  sd 100
+  cg 500
+  print step 1 timing
+  #record rest 20 keep
+  record coord 1 binary
+end
+
+task md optimize

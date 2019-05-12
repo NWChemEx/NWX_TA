@@ -1,0 +1,24 @@
+#!/usr/bin/gnuplot
+set logscale x
+set logscale y
+set xlabel "Number of cores"
+set xrange [40:1000]
+set xtics 48
+set xtics add ("96" 96, "128" 128, "192" 192, "256" 256, "384" 384, "512" 512, "768" 768)
+set ylabel "Time (s)"
+set yrange [250:3000]
+set ytics 300
+set ytics add ("400" 400, "500" 500, "600" 600, "700" 700, "800" 800, "900" 900, "1000" 1000, "1200" 1200, "1400" 1400, "1600" 1600, "1800" 1800, "2000" 2000, "2200" 2200, "2600" 2600, "3000" 3000)
+set key autotitle columnhead left
+set terminal png
+set output "planewave_fragments_scalability_50.png"
+plot \
+"dgrtl_titan_ts.dat" with linespoints, \
+"edgrtls_titan_ts.dat" with linespoints, \
+"ledgrtlsd_titan_ts.dat" with linespoints, \
+"ledgrtlsdy_titan_ts.dat" with linespoints, \
+"dgrtl_edison_ts.dat" with linespoints, \
+"edgrtls_edison_ts.dat" with linespoints, \
+"ledgrtlsd_edison_ts.dat" with linespoints, \
+"ledgrtlsdy_edison_ts.dat" with linespoints
+unset output

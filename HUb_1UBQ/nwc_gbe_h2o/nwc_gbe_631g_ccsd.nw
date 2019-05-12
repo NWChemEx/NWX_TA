@@ -1,0 +1,55 @@
+echo
+restart nwc_gbe_dat
+title "E and Grad of 1UBQ"
+#memory stack 800 mb heap 100 mb global 2000 mb noverify
+geometry noautoz
+   load format pdb "h2o.pdb"
+end
+basis 631g spherical
+  * library 6-31g
+end
+
+set "ao basis" 631g
+charge 0
+scf
+  thresh 1.0e-6
+  tol2e 1.0e-10
+  singlet
+  rhf
+  maxiter 300
+end
+set scf:pstat t
+set tce:pstat t
+
+tce
+  ccsd
+  2eorb
+  2emet 15
+  # The tilesize has to be the same as in the CCSD(T) calculation
+  # otherwise the CCSD(T) code cannot read the data files.
+  tilesize 15
+  attilesize 45
+  thresh 1.0e-3
+  maxiter 100
+end
+
+set tce:nts T
+
+### tce restart ########
+#
+# when generating 2-electron integrals for the first time:
+# uncomment "set tce:writeint T"
+# in following runs please
+# comment  "set tce:writeint T"
+# and
+# uncomment "set tce:readint T"
+# it will save time :-)
+#
+set tce:tceiop   2048
+set tce:writeint T
+set tce:writet   T
+#set tce:writex   T
+#set tce:readint T
+#######################
+
+task tce energy

@@ -32,4 +32,16 @@ initial structure.
     ```
     pdb4amber -i 4pgr_amber_membrane_model_min_res.pdb -o 4pgr_amber_membrane_model_min_res_renum.pdb
     ```
+  * Note that the element names needs to appear in columns 13 and 14, and in columns 77 and 78,
+    otherwise the nuclear charge may not be detected correctly. This means that element "K+" should
+    be renamed to "K ". For Chlorine " Cl-" in position 13 to 16 should be renamed to "Cl  ", and also
+    the " C" in positions 77 and 78 should be renamed to "Cl". 
 
+* `4pgr_amber_membrane_model_min_res_rerenum.pdb`
+  * In `4pgr_amber_membrane_model_min_res_renum.pdb` there are protein, lipid, and counter ion solute
+    residues. Between the lipid and counter ion solute residues there a large number of water solvent
+    residues. There are so many solvent residues that the residue numbers wrap around. This causes 
+    the solute residue numbers to be non-unique triggering errors in establishing the linkage between
+    the residues.
+  * Fix this problem swapping the counter ions with the solvent residues, and rerun `pdb4amber` 
+    to renumber the residues to get `4pgr_amber_membrane_model_min_res_rerenum.pdb`.

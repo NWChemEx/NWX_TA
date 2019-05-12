@@ -1,0 +1,27 @@
+echo
+start 4pgs-1M-amber-manual-lipid-ion-dat
+
+memory heap 50 global 2048 stack 2048 MB
+
+prepare
+  system 4pgs-1M-amber-manual-lipid-ion-dat_md
+  source ../struct_model/4pgs-1M-amber-manual-lipid-ion.pdb
+  new_top new_seq
+  new_rst
+  periodic
+  center
+  solvent name HOH model spce
+end
+
+#task prepare
+
+md
+   system 4pgs-1M-amber-manual-lipid-ion-dat_md
+   leapfrog
+   step 0.002 equil 100 data 0
+   isotherm 298.15 trelax 0.1
+   isobar
+   print step 10
+end
+
+task md dynamics
