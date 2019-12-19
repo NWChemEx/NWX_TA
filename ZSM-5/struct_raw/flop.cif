@@ -1,5 +1,14 @@
-344
-  system crystal lat_a 37.9967d0 lat_b 37.5659d0 lat_c 25.2638d0 alpha 90.0d0 beta  90.0d0 gamma 90.0d0 end
+_cell_length_a 37.9967
+_cell_length_b 37.5659
+_cell_length_c 25.2638
+_cell_angle_alpha 90.
+_cell_angle_beta  90.
+_cell_angle_gamma 90.
+loop_
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
   Si -0.0783203843525391  0.3531673182596435  0.2300193908365479
   Si  0.0805596116474609  0.2422473432596434 -0.1301806571634521
   Si  0.4216796156474609 -0.2577526867403563  0.3698193428365477
