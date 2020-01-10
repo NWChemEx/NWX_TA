@@ -11,6 +11,12 @@ to something unique individual fragments can be shown in the same view by hiding
 all others. A POV-Ray file can be generated for each fragment. Keeping the POV-Ray
 files makes it possible to rerender the images depending the on requirements for
 their use (low resolution for the web, high resolution for posters, etc.) 
+
+An example POV-Ray command is given in the comments at the top of each file.
+E.g.:
+```
+  povray +W2676 +H3336 -Ivmdscene.pov -Ovmdscene.pov.tga +P +X +A +FT +C
+```
 Hopefully this is useful.
 
 ## References
