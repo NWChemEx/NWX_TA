@@ -1,22 +1,53 @@
-# ZSM-5: Zeolite unit cell
+# Zeolite clusters for performance testing purposes
 
-This directory contains a single unit cell of zeolite ZSM-5. 
-The structure originates from https://icsd.fiz-karlsruhe.de and is
-associated with the paper [Koningsveld:1990]. In the structure as
-stored in the database alpha was 90.67 degrees, i.e. slightly
-different from 90.
-As [Alexopoulos:2016] found that the angle should really be 90 
-degrees alpha has been set to 90.
+Below a number of zeolite fragments are proposed as performance 
+test cases. The XYZ files contain finite structures, whereas the
+CIF files contain periodic structure. 
 
-## References
+In order to obtain a fair performance assessment for the actual target
+calculations the structures including water molecules are recommended.
+In particular they are:
 
-[Alexopoulos:2016] K. Alexopoulos, M.-S. Lee, Y. Liu, Y. Zhi, Y. Liu, M.-F.
-Reyniers, G.B. Marin, V.-A. Glezakou, R. Rousseau, J.A. Lercher,
-"Anharmonicity and Confinement in Zeolites: Structure, Spectroscopy, and
-Adsorption Free Energy of Ethanol in H-ZSM-5", _Journal of Physical Chemistry C_
-**120** (2016) 7172-7182. Doi: [10.1021/acs.jpcc.6b00923](https://dx.doi.org/10.1021/acs.jpcc.6b00923).
+* ZSM-5-Si05-O016-H12-Wat04.xyz
+* ZSM-5-Si06-O019-H14-Wat05.xyz
+* ZSM-5-Si07-O022-H16-Wat06.xyz
+* ZSM-5-Si08-O025-H18-Wat08.xyz
+* ZSM-5-Si10-O030-H20-Wat06.xyz
 
-[Koningsveld:1990] H. van Koningsveld, J.C. Jansen, H. van Bekkum,
-"The monoclinic framework structure of zeolite H-ZSM-5. Comparison with the
-orthorhombic framework of as-synthesized ZSM-5", _Zeolites_ **10** (1990)
-235-242. Doi: [10.1016/0144-2449(94)90134-1](https://dx.doi.org/10.1016/0144-2449(94)90134-1).
+The corresponding dry structures are also available.
+
+* ZSM-5-Si05-O016-H12.xyz
+* ZSM-5-Si06-O019-H14.xyz
+* ZSM-5-Si07-O022-H16.xyz
+* ZSM-5-Si08-O025-H18.xyz
+* ZSM-5-Si10-O030-H20.xyz
+* ZSM-5-Si11-O033-H22.xyz
+* ZSM-5-Si16-O044-H24.xyz
+* ZSM-5-Si22-O058-H28.xyz
+* ZSM-5-Si23-O061-H30-Wat10.xyz
+* ZSM-5-Si23-O061-H30.xyz
+* ZSM-5-Si28-O074-H36.xyz
+* ZSM-5-Si29-O077-H38.xyz
+* ZSM-5-Si34-O090-H44.xyz
+* ZSM-5-Si35-O093-H46.xyz
+* ZSM-5-Si40-O104-H48.xyz
+* ZSM-5-Si46-O118-H52.xyz
+* ZSM-5-Si47-O121-H54.xyz
+* ZSM-5-Si80-O192-Al16-H16-Wat00-Prop00.cif
+* ZSM-5-Si88-O192-Al08-H08-Wat00-Prop00.cif
+* ZSM-5-Si88-O192-Al08-H08-Wat00-Prop01.cif
+* ZSM-5-Si88-O192-Al08-H08-Wat00-Prop02.cif
+* ZSM-5-Si88-O192-Al08-H08-Wat00-Prop04.cif
+* ZSM-5-Si88-O192-Al08-H08-Wat01-Prop02.cif
+* ZSM-5-Si88-O192-Al08-H08-Wat02-Prop02.cif
+* ZSM-5-Si88-O192-Al08-H08-Wat04-Prop02.cif
+* ZSM-5-Si88-O192-Al08-H08-Wat08-Prop02.cif
+* ZSM-5-Si88-O192-Al08-H08-Wat16-Prop02.cif
+* ZSM-5-Si92-O192-Al04-H04-Wat00-Prop00.cif
+* ZSM-5-Si94-O192-Al02-H02-Wat00-Prop00.cif
+* ZSM-5-Si95-O192-Al01-H01-Wat00-Prop00.cif
+* ZSM-5-Si96-O192-Al00-H00-Wat00-Prop00.cif
+junk.txt
+junk.xyz
+junk2.txt
+junk2.xyz
