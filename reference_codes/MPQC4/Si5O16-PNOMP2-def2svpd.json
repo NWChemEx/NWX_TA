@@ -1,0 +1,66 @@
+{
+  "units": "2010CODATA",
+  "atoms": {
+    "file_name": "ZSM-5-Si05-O016-H12-Wat04.xyz",
+    "sort_input": false,
+    "charge": "0",
+    "attach_hydrogen": false,
+    "n_cluster": "5"
+  },
+  "sparse_threshold": "1e-11",
+  "obs": {
+    "name": "Def2-SVPD",
+    "atoms": "$:atoms"
+  },
+  "dfbs": {
+    "name": "Def2-SVPD-C",
+    "atoms": "$:atoms"
+  },
+  "wfn_world": {
+    "atoms": "$:atoms",
+    "basis": "$:obs",
+    "df_basis": "$:dfbs",
+    "screen": "schwarz",
+    "screen_threshold": "1e-10"
+  },
+  "scf": {
+    "type": "DirectDF-RHF",
+    "wfn_world": "$:wfn_world",
+    "atoms": "$:atoms"
+  },
+  "wfn": {
+    "type": "PaoPnoRMP2",
+    "atoms": "$:atoms",
+    "wfn_world": "$:wfn_world",
+    "ref": "$:scf",
+    "occ_block_size": "4",
+    "cluster coeffs": true,
+    "flatten pnos": false,
+    "use osvs": true,
+    "tpno": "1e-8",
+    "tosv": "1e-9",
+    "tC": "1e-4",
+    "ldf integrals": true,
+    "Fast E": true,
+    "Fast Zir": true,
+    "Fast Zia": true,
+    "tSpao": "1e-8",
+    "tIA": "7e-4",
+    "tIX": "1e-4",
+    "tIJ": "3e-5",
+    "tRS": "1e-9",
+    "tFIJ": "1e-4",
+    "localizer": {
+      "type": "FBLocalizer",
+      "wfn_world": "$:wfn_world",
+      "max_iter": 100
+    },
+    "unique id": "4clust",
+    "print maps": true
+  },
+  "property": {
+    "type": "Energy",
+    "wfn": "$:wfn",
+    "precision": "1e-10"
+  }
+}
