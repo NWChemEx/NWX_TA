@@ -109,7 +109,9 @@ This generated:
 - 7CAP_h.pdb
 - 3ALB_h.pdb 
 from the corresponding raw structures.
-Next step is to remove crystal waters and other unusual residues.
+Next step is to remove crystal waters and other unusual residues such as Zn and
+SO4. Note also that `pdb4amber` breaks the links between the proteins so those
+bonds needs to be reinstated.
 
 
 ## References
