@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -N ZSM-5-Si34-O090-H44-Wat08
+#PBS -l nodes=1:ppn=16
+
+if [ ! -z $PBS_JOBID ]; then
+    cd $PBS_O_WORKDIR
+fi
+
+export OMP_NUM_THREADS=1
+export PATH=`readlink -f ~/bin`:$PATH
+export MK_SCRATCH=`readlink -f ~/bin/test_make_scratch.sh`
+export MK_CLEAN=`readlink -f ~/bin/test_make_clean.sh`
+export NWCHEM_EXE=/home/hvandam/nwchem/bin/LINUX64/nwchem
+
+env
+
+. ${MK_SCRATCH}
+cp ${CMS_WORKDIR}/../struct_raw/ZSM-5-Si34-O090-H44-Wat08.xyz ZSM-5-Si34-O090-H44-Wat08.xyz
+cp ${CMS_WORKDIR}/ZSM-5-Si34-O090-H44-Wat08.nw                ZSM-5-Si34-O090-H44-Wat08.nw
+
+mpiexec -n 16 ${NWCHEM_EXE} ZSM-5-Si34-O090-H44-Wat08.nw 2>&1 > ${CMS_WORKDIR}/ZSM-5-Si34-O090-H44-Wat08.out.$PBS_JOBID
+
+. ${MK_CLEAN}
