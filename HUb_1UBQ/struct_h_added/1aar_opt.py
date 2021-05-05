@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 '''
 Need to optimize 1AAR into proper Cyclic Lys-48 linked di-Ubiquitin.
 
@@ -16,10 +16,10 @@ References:
     Chemistry Central Journal (2008) Vol. 2, Art. 5,
     https://doi.org/10.1186/1752-153X-2-5
 '''
-import pybel
-mol = pybel.readfile("pdb","1aar_h_2o4h.pdb").next()
-mol.AddBond(1227,1999,1)
-mol.AddBond(771,2455,1)
+from openbabel import pybel
+mol = next(pybel.readfile("pdb","1aar_h_2o4h.pdb"))
+mol.OBMol.AddBond(1227,1999,1)
+mol.OBMol.AddBond(771,2455,1)
 mol.localopt()
 output = pybel.Outputfile("pdb","1aar_cyclic.pdb")
 output.write(mol)
