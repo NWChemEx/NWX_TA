@@ -68,6 +68,51 @@ of atoms in each.
 | ./ct500838h_si_003.pdb | 1231    |
 | ./01-76.pdb            | 1235    |
 
+# di-, tri-, and tetra-Ubiquitin
+
+With about 1231 atoms per Ubiquitin molecule this protein is actually rather
+small. In particular DFT calculations on much larger molecules are quite 
+feasible. In biology Ubiquitin molecules can be stitched together in a number
+of ways. The common feature is a peptide bond between the C-terminus of a
+Ubiquitin molecules and a Lysine side chain. As each Ubiquitin protein has 7
+Lysine residues [Hirano:2011] there are 8 different ways (including connecting
+the C-terminus to the N-terminus of another Ubiquitin and simply making the
+protein chain longer) to stitch two of them together. The resulting different
+conformers convey different biological signals regarding what is supposed to
+happen with a protein tagged with such poly-Ubiquitin groups. 
+
+Obviously the existence of poly-Ubiquitin groups provides a straightforward
+route to larger protein structures. In this case we opt for structures made of
+2, 3, and 4 Ubiquitin proteins. To make the matter a bit more interesting we
+in particular use cyclic poly-Ubiquitins. These molecules are more compact than
+linear poly-Ubiquitins and are therefore computationally more challenging
+candidates. In addition, it has been found that they undergo fast conformation
+changes exposing different sides of the individual Ubiquitin components. 
+Therefore, they could be a target for interesting MD simulations.
+
+The original structures retrieved are (see ../struct_raw):
+- [1AAR](https://www.rcsb.org/structure/1AAR) linear di-Ubiquitin
+- [7CAP](https://www.rcsb.org/structure/7CAP) cyclic tri-Ubiquitin
+- [3ALB](https://www.rcsb.org/structure/3ALB) cyclic tetra-Ubiquitin
+The cyclic di-Ubiquitin structure is very similar to 1AAR [Hirano:2011]
+but was not reported separately. So this structure had to be obtained through
+simulation.
+
+As is common the original protein structures do not contain hydrogen atoms. So
+as a first step those need to be added. Using OpenBabel this can be accomplished
+with:
+```
+    pdb4amber --in <input>.pdb --out <output>.pdb --add-missing-atoms
+```
+This generated:
+- 1AAR_h.pdb
+- 7CAP_h.pdb
+- 3ALB_h.pdb 
+from the corresponding raw structures.
+Next step is to remove crystal waters and other unusual residues such as Zn and
+SO4. Note also that `pdb4amber` breaks the links between the proteins so those
+bonds needs to be reinstated.
+
 
 ## References
 
@@ -82,6 +127,12 @@ Cheminformatics_ (2011) **3**, 33-46,
 Doi: [10.1186/1758-2946-3-33](https://dx.doi.org/10.1186/1758-2946-3-33).
 The Open Babel Package, version 2.4.1, http://openbabel.org
 (accessed Aug 2017).
+
+[Hirano:2011] T. Hirano, O. Serve, M. Yagi-Utsumi, E. Takemoto, T. Hiromoto,
+T. Satoh, T. Mizushima, K. Kato, "Conformational Dynamics of Wild-type 
+Lys-48-linked Diubiquitin in Solution", _Journal of Biological Chemistry_ (2011)
+**286**, 37496-37502,
+Doi: [10.1074/jbc.M111.256354](https://doi.org/10.1074/jbc.M111.256354).
 
 [Jo:2008] S. Jo, T. Kim, V.G. Iyer, W. Im, “CHARMM-GUI: A Web-based Graphical
 User Interface for CHARMM”, _Journal of Computational Chemistry_ (2008) 

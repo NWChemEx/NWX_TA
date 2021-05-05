@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Fix PDB files by adding missing atoms (in particular Hydrogens)
+#
+pdb4amber --in ../struct_raw/1aar.pdb --out 1aar_h.pdb --add-missing-atoms
+pdb4amber --in ../struct_raw/7cap.pdb --out 7cap_h.pdb --add-missing-atoms
+pdb4amber --in ../struct_raw/3alb.pdb --out 3alb_h.pdb --add-missing-atoms
