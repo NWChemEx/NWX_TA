@@ -16,12 +16,34 @@ References:
     Chemistry Central Journal (2008) Vol. 2, Art. 5,
     https://doi.org/10.1186/1752-153X-2-5
 '''
-from openbabel import pybel
+from openbabel import openbabel, pybel
 mol = next(pybel.readfile("pdb","1aar_h_2o4h.pdb"))
 mol.OBMol.AddBond(1227,1999,1)
 mol.OBMol.AddBond(771,2455,1)
-mol.localopt()
-output = pybel.Outputfile("pdb","1aar_cyclic.pdb")
-output.write(mol)
+molout = mol
+constraints = openbabel.OBFFConstraints()
+for atom in openbabel.OBMolAtomIter(mol.OBMol):
+    atom_id = atom.GetIndex() + 1
+    if atom_id <= 2373:
+        constraints.AddAtomConstraint(atom_id)
+ff = openbabel.OBForceField.FindForceField("mmff94")
+ff.Setup(mol.OBMol)
+ff.SetConstraints(constraints)
+print(ff.Energy())
+#
+ff.WeightedRotorSearch(25,5000)
+#ff.FastRotorSearch()
+print(ff.Energy())
+ff.GetConformers(molout.OBMol)
+print(molout.OBMol.NumConformers())
+output = pybel.Outputfile("pdb","1aar_cyclic_1.pdb",overwrite=True)
+output.write(molout)
+output.close()
+#
+ff.ConjugateGradients(500,1.0e-6)
+print(ff.Energy())
+ff.GetConformers(molout.OBMol)
+output = pybel.Outputfile("pdb","1aar_cyclic.pdb",overwrite=True)
+output.write(molout)
 output.close()
 
