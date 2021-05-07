@@ -91,9 +91,11 @@ changes exposing different sides of the individual Ubiquitin components.
 Therefore, they could be a target for interesting MD simulations.
 
 The original structures retrieved are (see ../struct_raw):
+
 - [1AAR](https://www.rcsb.org/structure/1AAR) linear di-Ubiquitin
 - [7CAP](https://www.rcsb.org/structure/7CAP) cyclic tri-Ubiquitin
 - [3ALB](https://www.rcsb.org/structure/3ALB) cyclic tetra-Ubiquitin
+
 The cyclic di-Ubiquitin structure is very similar to 1AAR [Hirano:2011]
 but was not reported separately. So this structure had to be obtained through
 simulation.
@@ -105,9 +107,11 @@ with:
     pdb4amber --in <input>.pdb --out <output>.pdb --add-missing-atoms
 ```
 This generated:
+
 - 1AAR_h.pdb
 - 7CAP_h.pdb
 - 3ALB_h.pdb 
+
 from the corresponding raw structures.
 Next step is to remove crystal waters and other unusual residues such as Zn and
 SO4. Note also that `pdb4amber` breaks the links between the proteins so those
