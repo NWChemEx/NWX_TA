@@ -103,7 +103,7 @@ would be really problematic and not worth the effort. Thus we just have
 the linear di-Ubiquitin structure.
 
 As is common the original protein structures do not contain hydrogen atoms. So
-as a first step those need to be added. Using OpenBabel this can be accomplished
+as a first step those need to be added. Using pdb4amber this can be accomplished
 with:
 ```
     pdb4amber --in <input>.pdb --out <output>.pdb --add-missing-atoms
