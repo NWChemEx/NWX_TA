@@ -91,27 +91,38 @@ changes exposing different sides of the individual Ubiquitin components.
 Therefore, they could be a target for interesting MD simulations.
 
 The original structures retrieved are (see ../struct_raw):
+
 - [1AAR](https://www.rcsb.org/structure/1AAR) linear di-Ubiquitin
 - [7CAP](https://www.rcsb.org/structure/7CAP) cyclic tri-Ubiquitin
 - [3ALB](https://www.rcsb.org/structure/3ALB) cyclic tetra-Ubiquitin
+
 The cyclic di-Ubiquitin structure is very similar to 1AAR [Hirano:2011]
-but was not reported separately. So this structure had to be obtained through
-simulation.
+but was not reported separately. So this structure would have to be obtained
+through simulation. A quick attempt at such simulations showed that this
+would be really problematic and not worth the effort. Thus we just have
+the linear di-Ubiquitin structure.
 
 As is common the original protein structures do not contain hydrogen atoms. So
-as a first step those need to be added. Using OpenBabel this can be accomplished
+as a first step those need to be added. Using pdb4amber this can be accomplished
 with:
 ```
     pdb4amber --in <input>.pdb --out <output>.pdb --add-missing-atoms
 ```
 This generated:
-- 1AAR_h.pdb
-- 7CAP_h.pdb
-- 3ALB_h.pdb 
+
+- 1aar_h.pdb
+- 7cap_h.pdb
+- 3alb_h.pdb 
+
 from the corresponding raw structures.
 Next step is to remove crystal waters and other unusual residues such as Zn and
 SO4. Note also that `pdb4amber` breaks the links between the proteins so those
-bonds needs to be reinstated.
+bonds needs to be reinstated. This latter step requires deleting one of the
+C-terminus Oxygen atoms, and two of the Hydrogens on each of the LYS-48 NZ
+atoms. The resulting structures are:
+
+- 7cap_cyclic.pdb
+- 3alb_cyclic.pdb
 
 
 ## References
