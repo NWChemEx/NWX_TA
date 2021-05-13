@@ -97,10 +97,8 @@ The original structures retrieved are (see ../struct_raw):
 - [3ALB](https://www.rcsb.org/structure/3ALB) cyclic tetra-Ubiquitin
 
 The cyclic di-Ubiquitin structure is very similar to 1AAR [Hirano:2011]
-but was not reported separately. So this structure would have to be obtained
-through simulation. A quick attempt at such simulations showed that this
-would be really problematic and not worth the effort. Thus we just have
-the linear di-Ubiquitin structure.
+but was not reported separately. So this structure would had to be obtained
+through simulation.
 
 As is common the original protein structures do not contain hydrogen atoms. So
 as a first step those need to be added. Using pdb4amber this can be accomplished
@@ -119,8 +117,13 @@ Next step is to remove crystal waters and other unusual residues such as Zn and
 SO4. Note also that `pdb4amber` breaks the links between the proteins so those
 bonds needs to be reinstated. This latter step requires deleting one of the
 C-terminus Oxygen atoms, and two of the Hydrogens on each of the LYS-48 NZ
-atoms. The resulting structures are:
+atoms. For the `1aar_h.pdb` structure it was also necessary to add the bond
+between the `NZ` atom of LYS 48 on the first chain and the end of the 
+second chain. The resulting `1aar_cyclic.pdb` was then obtained by running
+100,000 time steps of dynamics at 310K (body temperature) at 1 femtosecond
+steps. The resulting structures are:
 
+- 1aar_cyclic.pdb
 - 7cap_cyclic.pdb
 - 3alb_cyclic.pdb
 
