@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -N ZSM-5-Si05-O016-H12-Wat03
+#PBS -N ZSM-5-Si34-O090-H44-Wat08
 #PBS -l nodes=1:ppn=16
 
 if [ ! -z $PBS_JOBID ]; then
@@ -15,9 +15,9 @@ export NWCHEM_EXE=/home/hvandam/nwchem/bin/LINUX64/nwchem
 env
 
 . ${MK_SCRATCH}
-cp ${CMS_WORKDIR}/../struct_raw/ZSM-5-Si05-O016-H12-Wat03.xyz ZSM-5-Si05-O016-H12-Wat03.xyz
-cp ${CMS_WORKDIR}/ZSM-5-Si05-O016-H12-Wat03.nw                ZSM-5-Si05-O016-H12-Wat03.nw
+cp ${CMS_WORKDIR}/../struct_raw/ZSM-5-Si34-O090-H44-Wat08.xyz ZSM-5-Si34-O090-H44-Wat08.xyz
+cp ${CMS_WORKDIR}/ZSM-5-Si34-O090-H44-Wat08.nw                ZSM-5-Si34-O090-H44-Wat08.nw
 
-mpiexec -n 16 ${NWCHEM_EXE} ZSM-5-Si05-O016-H12-Wat03.nw 2>&1 > ${CMS_WORKDIR}/ZSM-5-Si05-O016-H12-Wat03.out.$PBS_JOBID
+mpiexec -n 16 ${NWCHEM_EXE} ZSM-5-Si34-O090-H44-Wat08.nw 2>&1 > ${CMS_WORKDIR}/ZSM-5-Si34-O090-H44-Wat08.out.$PBS_JOBID
 
 . ${MK_CLEAN}

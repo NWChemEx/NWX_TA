@@ -1,0 +1,20 @@
+echo
+start flop
+memory 2000 mb
+geometry noautoz
+  load format xyz "ZSM-5-Si10-O030-H20-Wat02.xyz"
+end
+set geometry:actlist 61:66
+basis 
+  * library cc-pVDZ
+end
+dft
+  direct
+  xc pbe96
+  maxiter 200
+end
+driver
+  maxiter 300
+end
+task dft energy
+#task dft optimize

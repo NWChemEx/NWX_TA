@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -N 3ubq
+#PBS -l nodes=1:ppn=16
+export PATH=`readlink -f ~/bin`:$PATH
+export MK_SCRATCH=`readlink -f ~/bin/test_make_scratch.sh`
+export MK_CLEAN=`readlink -f ~/bin/test_make_clean.sh`
+export NWCHEM_EXE=/home/hvandam/nwchem-7.0.0-release/bin/LINUX64/nwchem
+cd /home/hvandam/NWX_TA/HUb_1UBQ/nwc_gbeg
+
+. ${MK_SCRATCH}
+
+echo ${CMS_WORKDIR}
+cp ${CMS_WORKDIR}/nwc_gbeg_3ubq_631gp.nw .
+cp ${CMS_WORKDIR}/../struct_h_added/7cap_cyclic.xyz .
+
+mpirun -np 16 ${NWCHEM_EXE} nwc_gbeg_3ubq_631gp.nw
+
+. ${MK_CLEAN}
