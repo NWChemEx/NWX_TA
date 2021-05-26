@@ -15,7 +15,7 @@ export NWCHEM_BASIS_LIBRARY=/global/common/software/m3352/nwchem/src/basis/libra
 export SCRATCH_DIR=$SCRATCH/$SLURM_JOB_NAME.$SLURM_JOB_ID
 export PERMANENT_DIR=$SCRATCH_DIR
 export OMP_NUM_THREADS=1
-env | sort
+env | grep -v GITHUB | sort
 pwd
 #
 # Copy data into place

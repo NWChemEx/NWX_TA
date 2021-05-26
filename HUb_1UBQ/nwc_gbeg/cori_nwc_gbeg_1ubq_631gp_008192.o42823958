@@ -27,7 +27,6 @@ CONDA_PROMPT_MODIFIER=(base)
 CONDA_PYTHON_EXE=/global/common/cori_cle7/software/python/3.7-anaconda-2019.10/bin/python
 CONDA_SHLVL=1
 CPATH=/opt/intel/compilers_and_libraries_2019.3.199/linux/mkl/include
-CPP_GITHUB_TOKEN=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
 CPU=x86_64
 CRAYPE_DIR=/opt/cray/pe/craype/2.6.2
 CRAYPE_LINK_TYPE=dynamic
