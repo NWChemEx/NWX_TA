@@ -1,9 +1,8 @@
 echo
 start nwc_gbeg_2ubq_dat
-memory global 2500 mb heap 500 mb stack 1000 mb
 title "E and Grad of 1UBQ"
 geometry noautoz
-   load format xyz "1aar_h.xyz"
+   load format xyz "1aar_cyclic.xyz"
 end
 basis 631g spherical
   * library 6-31g
@@ -38,6 +37,6 @@ dft
   tolerances acccoul 11
   vectors input project 631g 2ub_start_631g.mos  output 2ub_631gp.mos
   noprint "final vectors analysis" multipole
-  maxiter 120
+  maxiter 20 
 end
 task dft ignore

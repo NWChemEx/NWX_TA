@@ -1,0 +1,38 @@
+#!/bin/bash -l
+#SBATCH --nodes=256
+#SBATCH --ntasks-per-node=32
+#SBATCH --time=24:00:00
+#SBATCH --partition=regular
+#SBATCH --license=SCRATCH
+#SBATCH --constraint=haswell
+#SBATCH --job-name=cori_nwc_gbeg_2ubq_631gp_008192
+#SBATCH --error=cori_nwc_gbeg_2ubq_631gp_008192.e%j
+#SBATCH --output=cori_nwc_gbeg_2ubq_631gp_008192.o%j
+export NWCHEM_MEMORY_HEAP=33554432
+export NWCHEM_MEMORY_STACK=201326592
+export NWCHEM_MEMORY_GLOBAL=268435456
+export NWCHEM_BASIS_LIBRARY=/global/common/software/m3352/nwchem/src/basis/libraries/
+export SCRATCH_DIR=$SCRATCH/$SLURM_JOB_NAME.$SLURM_JOB_ID
+export PERMANENT_DIR=$SCRATCH_DIR
+export OMP_NUM_THREADS=1
+env | sort
+pwd
+#
+# Copy data into place
+#
+mkdir $SCRATCH_DIR
+cd ..
+cp nwc_gbeg/nwc_gbeg_2ubq_631gp.nw    $SCRATCH_DIR
+cp struct_h_added/1aar_cyclic.xyz     $SCRATCH_DIR
+cd 
+cp /global/common/software/m3352/nwchem/bin/LINUX64/nwchem $SCRATCH_DIR
+cd $SCRATCH_DIR
+#
+# Fire up NWChem
+#
+srun -n $SLURM_NPROCS ./nwchem nwc_gbeg_2ubq_631gp.nw
+#
+# Clean up
+#
+cd ..
+rm -rf $SCRATCH_DIR
