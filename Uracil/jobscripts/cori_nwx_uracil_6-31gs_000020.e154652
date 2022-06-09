@@ -1,0 +1,31 @@
+Currently Loaded Modulefiles:
+  1) modules/3.2.10.6       6) cray-libsci/18.07.1   11) cray-mpich/7.7.3
+  2) nsg/1.2.0              7) pmi/5.0.14            12) gcc/7.3.0
+  3) intel/18.0.1.163       8) atp/2.1.3             13) altd/2.0
+  4) craype-network-aries   9) PrgEnv-intel/6.0.4    14) darshan/3.1.4
+  5) craype/2.5.15         10) craype-haswell        15) esslurm
+cp: will not overwrite just-created '/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/Test_CCSD_T' with '../src/TAMM/build/tamm_Tests_External-prefix/src/tamm_Tests_External-build/Test_CCSD_T'
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.154652/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+srun: error: cgpu11: tasks 0-13,16-19: Exited with exit code 127
+srun: Terminating job step 154652.1
+slurmstepd: error: *** STEP 154652.1 ON cgpu11 CANCELLED AT 2019-06-06T10:47:26 ***
+srun: error: cgpu11: task 15: Terminated
+srun: error: cgpu11: task 14: Terminated
+srun: Force Terminated job step 154652.1

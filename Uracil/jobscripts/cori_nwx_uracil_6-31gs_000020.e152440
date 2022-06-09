@@ -1,0 +1,10 @@
+Currently Loaded Modulefiles:
+  1) modules/3.2.10.6       6) cray-libsci/18.07.1   11) cray-mpich/7.7.3
+  2) nsg/1.2.0              7) pmi/5.0.14            12) gcc/7.3.0
+  3) intel/18.0.1.163       8) atp/2.1.3             13) altd/2.0
+  4) craype-network-aries   9) PrgEnv-intel/6.0.4    14) darshan/3.1.4
+  5) craype/2.5.15         10) craype-haswell        15) esslurm
+cp: cannot stat '../uracil.nwx': No such file or directory
+cp: will not overwrite just-created '/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.152440/Test_CCSD_T' with '../src/TAMM/build/tamm_Tests_External-prefix/src/tamm_Tests_External-build/Test_CCSD_T'
+srun: error: cgpu07: tasks 0-19: Exited with exit code 1
+srun: Terminating job step 152440.1

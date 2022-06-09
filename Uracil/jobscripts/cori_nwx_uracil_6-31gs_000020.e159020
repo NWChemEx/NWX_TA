@@ -1,0 +1,30 @@
+Currently Loaded Modulefiles:
+  1) modules/3.2.10.6       7) pmi/5.0.14            13) altd/2.0
+  2) nsg/1.2.0              8) atp/2.1.3             14) darshan/3.1.4
+  3) intel/18.0.1.163       9) PrgEnv-intel/6.0.4    15) esslurm
+  4) craype-network-aries  10) craype-haswell        16) cuda/10.0
+  5) craype/2.5.15         11) cray-mpich/7.7.3      17) openmpi/3.1.0-ucx
+  6) cray-libsci/18.07.1   12) gcc/7.3.0
+cp: will not overwrite just-created '/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/Test_CCSD_T' with '../src/TAMM/build/tamm_Tests_External-prefix/src/tamm_Tests_External-build/Test_CCSD_T'
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+/global/cscratch1/sd/vandam/cori_nwx_uracil_6-31gs_000020.159020/./Test_CCSD_T: symbol lookup error: /opt/cray/pe/lib64/libmpich_gnu_71.so.3: undefined symbol: PMI2_Init
+srun: error: cgpu18: tasks 0-19: Exited with exit code 127
+srun: Terminating job step 159020.1

@@ -1,0 +1,37 @@
+12
+
+N            .034130    -.986909     .000000
+N          -1.173397     .981920     .000000
+C          -1.218805    -.408164     .000000
+C           -.007302    1.702153     .000000
+C           1.196200    1.107045     .000000
+C           1.289085    -.345905     .000000
+O           2.310232    -.996874     .000000
+O          -2.257041   -1.026495     .000000
+H            .049329   -1.997961     .000000
+H          -2.070598    1.437050     .000000
+H           -.125651    2.776484     .000000
+H           2.111671    1.674079     .000000
+
+COMMON {  
+    basis 6-31gs
+    geometry units angstrom
+}
+
+SCF 
+{ 
+    tilesize 30
+    restart false
+}
+
+CD {
+    diagtol 1e-8
+    max_cvecs 8 //factor*nao
+    debug false
+}
+
+CCSD {
+    cuda 8          // For the Cori GPU nodes which have 8 GPUs per node
+    threshold 1e-10
+    debug false
+}

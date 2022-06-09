@@ -1,0 +1,22 @@
+slurmstepd: error: Detected 1 oom-kill event(s) in step 21996969.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: nid01599: tasks 0-8,25-31: Out Of Memory
+srun: Terminating job step 21996969.0
+srun: error: nid12731: tasks 192-195,197-206,208-218,220-223: Terminated
+srun: error: nid01608: tasks 32-55,57-63: Terminated
+srun: error: nid02225: tasks 96-101,103-104,111-115,117-120,122-127: Terminated
+srun: error: nid01609: tasks 64-65,70,74,76-77,80-84,86,88-95: Terminated
+srun: error: nid12731: tasks 196,219: Terminated
+srun: error: nid02225: tasks 102,107-109,116,121: Terminated
+srun: error: nid01609: tasks 67-69,71,73,75,78: Terminated
+srun: error: nid12861: tasks 224-230,232-255: Terminated
+srun: error: nid02288: tasks 128-129,131-142,144-159: Terminated
+srun: error: nid01609: tasks 66,72,79,87: Terminated
+srun: error: nid02288: task 130: Terminated
+srun: error: nid12696: tasks 160-191: Terminated
+srun: error: nid01608: task 56: Terminated
+srun: error: nid12731: task 207: Terminated
+srun: error: nid12861: task 231: Terminated
+srun: error: nid02225: tasks 105-106,110: Terminated
+srun: error: nid01609: task 85: Terminated
+srun: error: nid02288: task 143: Terminated
+srun: Force Terminated job step 21996969.0

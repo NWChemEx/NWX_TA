@@ -1,0 +1,25 @@
+slurmstepd: error: Detected 1 oom-kill event(s) in step 23152726.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: nid00759: tasks 0-8,29-31: Out Of Memory
+srun: Terminating job step 23152726.0
+slurmstepd: error: *** STEP 23152726.0 ON nid00759 CANCELLED AT 2019-07-19T08:03:16 ***
+srun: error: nid00760: tasks 32-42,44,46-63: Terminated
+srun: error: nid01528: tasks 128-130,132-133,138,140,143-145,147-148,150-159: Terminated
+srun: error: nid01531: tasks 224-230,232-233,235,238-239,241-247,249-250,252-253,255: Terminated
+srun: error: nid01530: tasks 192-203,205-223: Terminated
+srun: error: nid00761: tasks 64,67,70,74,79,83,85,87-95: Terminated
+srun: error: nid01257: tasks 96-101,103-104,112,114-117,120-122,124-127: Terminated
+srun: error: nid01531: tasks 231,234,236,254: Terminated
+srun: error: nid01528: tasks 131,134,137,139,146,149: Terminated
+srun: error: nid01257: tasks 102,109-110,118: Terminated
+srun: error: nid00761: tasks 65,68-69,71,76-77,81-82,86: Terminated
+srun: error: nid00760: task 45: Terminated
+srun: error: nid01257: tasks 105-108,111,119,123: Terminated
+srun: error: nid01529: tasks 160-191: Terminated
+srun: error: nid01530: task 204: Terminated
+srun: error: nid00761: tasks 73,75: Terminated
+srun: error: nid01528: tasks 135-136,141-142: Terminated
+srun: error: nid01531: tasks 237,240,248,251: Terminated
+srun: error: nid01257: task 113: Terminated
+srun: error: nid00761: tasks 66,72,78,80,84: Terminated
+srun: error: nid00760: task 43: Terminated
+srun: Force Terminated job step 23152726.0

@@ -1,0 +1,37 @@
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+srun: error: nid02042: task 7: Aborted
+srun: Terminating job step 23246760.0
+slurmstepd: error: *** STEP 23246760.0 ON nid02042 CANCELLED AT 2019-07-23T17:40:38 ***
+srun: error: nid02189: tasks 32-43,45-63: Terminated
+srun: error: nid12796: tasks 128-131,133-135,140,143-146,149-154,156,158-159: Terminated
+srun: error: nid12844: tasks 192-199,201-205,207-210,213-223: Terminated
+srun: error: nid12821: tasks 160-161,163-167,169-170,173,175-177,179-181,183-191: Terminated
+srun: error: nid02194: tasks 64-65,67-69,71-72,74-76,78-81,83-95: Terminated
+srun: error: nid12855: tasks 224-226,228-229,232-233,239-241,244-245,248-255: Terminated
+srun: error: nid02042: tasks 0,16-31: Terminated
+srun: error: nid12790: tasks 96-97,99-104,107,110-117,119-123,125-127: Terminated
+srun: error: nid12844: task 211: Terminated
+srun: error: nid12796: tasks 137-139,147-148,155,157: Terminated
+srun: error: nid02194: tasks 66,70,73,82: Terminated
+srun: error: nid12821: tasks 162,172,174,178: Terminated
+srun: error: nid12790: tasks 98,106,108,118,124: Terminated
+srun: error: nid12855: tasks 227,231,236-237,242-243,246: Terminated
+srun: error: nid02042: tasks 11,15: Terminated
+srun: error: nid12821: task 171: Terminated
+srun: error: nid12790: task 105: Terminated
+srun: error: nid12844: tasks 200,212: Terminated
+srun: error: nid12796: tasks 132,136,141: Terminated
+srun: error: nid12855: tasks 230,234-235,247: Terminated
+srun: error: nid02042: tasks 1,9,13: Terminated
+srun: error: nid02042: tasks 4,6,10,14: Terminated
+srun: error: nid12855: task 238: Terminated
+srun: error: nid02194: task 77: Terminated
+srun: error: nid02189: task 44: Terminated
+srun: error: nid12796: task 142: Terminated
+srun: error: nid12844: task 206: Terminated
+srun: error: nid12790: task 109: Terminated
+srun: error: nid12821: tasks 168,182: Terminated
+srun: error: nid02042: tasks 3,5: Terminated
+srun: error: nid02042: tasks 2,8,12: Terminated
+srun: Force Terminated job step 23246760.0

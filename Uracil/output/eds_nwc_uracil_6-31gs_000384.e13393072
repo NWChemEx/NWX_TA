@@ -1,0 +1,3 @@
+PE 0: MPICH Warning: For one-sided operations, XPMEM will not be used for a specific
+RMA window if that window's memory is no more than 4K.
+Updating to CLE 5.2UP02 or beyond will resolve this issue.

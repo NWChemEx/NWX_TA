@@ -1,0 +1,19 @@
+slurmstepd: error: Detected 2 oom-kill event(s) in step 23457584.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: nid00801: tasks 0-2,4-31: Out Of Memory
+srun: Terminating job step 23457584.0
+slurmstepd: error: *** STEP 23457584.0 ON nid00801 CANCELLED AT 2019-08-01T21:49:12 ***
+srun: error: nid01060: tasks 224-240,242-255: Terminated
+srun: error: nid01058: tasks 160-165,167-191: Terminated
+srun: error: nid00851: tasks 64-83,85-95: Terminated
+srun: error: nid00852: tasks 96-112,114-127: Terminated
+srun: error: nid01057: tasks 128-152,154-159: Terminated
+srun: error: nid00802: tasks 32-35,37-63: Terminated
+srun: error: nid01059: tasks 192-212,214-223: Terminated
+srun: error: nid01059: task 213: Terminated
+srun: error: nid01060: task 241: Terminated
+srun: error: nid00852: task 113: Terminated
+srun: error: nid00802: task 36: Terminated
+srun: error: nid01057: task 153: Terminated
+srun: error: nid01058: task 166: Terminated
+srun: error: nid00851: task 84: Terminated
+srun: Force Terminated job step 23457584.0
