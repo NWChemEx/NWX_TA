@@ -1,0 +1,406 @@
++ NNODES=495
++ NRANKS_PER_NODE=24
++ NTOTRANKS=11880
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ module load cray-python emacs cmake cray-hdf5-parallel
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load cpe/23.05
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Unloading the cpe module is insufficient to restore the system defaults.
+Please run 'source
+/opt/cray/pe/cpe/23.05/restore_lmod_system_defaults.[csh|sh]'. 
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load rocm/5.5.1
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module list
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+
+Currently Loaded Modules:
+  1) craype-x86-trento                      12) cray-dsmml/0.2.2
+  2) libfabric/1.15.2.0                     13) cray-hdf5-parallel/1.12.2.3
+  3) craype-network-ofi                     14) cray-libsci/23.05.1.4
+  4) xpmem/2.6.2-2.5_2.22__gd067c3f.shasta  15) cray-mpich/8.1.26
+  5) emacs/28.1                             16) cray-pmi/6.1.11
+  6) cmake/3.23.2                           17) cray-python/3.10.10
+  7) PrgEnv-cray/8.4.0                      18) craype/2.7.21
+  8) cce/16.0.0                             19) perftools-base/23.05.0
+  9) darshan-runtime/3.4.0                  20) cpe/23.05
+ 10) hsi/default                            21) rocm/5.5.1
+ 11) DefApps/default
+
+ 
+
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ set -x
++ export MPICH_GPU_SUPPORT_ENABLED=0
++ MPICH_GPU_SUPPORT_ENABLED=0
++ export SLURM_MPI_TYPE=cray_shasta
++ SLURM_MPI_TYPE=cray_shasta
++ export FI_CXI_RX_MATCH_MODE=hybrid
++ FI_CXI_RX_MATCH_MODE=hybrid
++ export GA_NUM_PROGRESS_RANKS_PER_NODE=8
++ GA_NUM_PROGRESS_RANKS_PER_NODE=8
++ export GA_PROGRESS_RANKS_DISTRIBUTION_PACKED=0
++ GA_PROGRESS_RANKS_DISTRIBUTION_PACKED=0
++ export GA_PROGRESS_RANKS_DISTRIBUTION_CYCLIC=1
++ GA_PROGRESS_RANKS_DISTRIBUTION_CYCLIC=1
++ cd /lustre/orion/chm136/scratch/panyala/output
++ export TAMM_INP=/lustre/orion/chm136/scratch/panyala/exachem-dev/inputs/ubiquitin_dgrtl.json
++ TAMM_INP=/lustre/orion/chm136/scratch/panyala/exachem-dev/inputs/ubiquitin_dgrtl.json
++ export TAMM_EXE=/lustre/orion/chm136/scratch/panyala/exachem-dev/bfrontier/methods_stage/lustre/orion/chm136/scratch/panyala/install/tamm/methods/ExaChem
++ TAMM_EXE=/lustre/orion/chm136/scratch/panyala/exachem-dev/bfrontier/methods_stage/lustre/orion/chm136/scratch/panyala/install/tamm/methods/ExaChem
++ srun -N495 -n11880 -c1 --ntasks-per-gpu=2 --gpu-bind=closest -m block:cyclic /lustre/orion/chm136/scratch/panyala/exachem-dev/bfrontier/methods_stage/lustre/orion/chm136/scratch/panyala/install/tamm/methods/ExaChem /lustre/orion/chm136/scratch/panyala/exachem-dev/inputs/ubiquitin_dgrtl.json
+
+date: Mon Sep  4 17:25:53 2023
+program: "/lustre/orion/chm136/scratch/panyala/exachem-dev/bfrontier/methods_stage/lustre/orion/chm136/scratch/panyala/install/tamm/methods/ExaChem"
+input: /lustre/orion/chm136/scratch/panyala/exachem-dev/inputs/ubiquitin_dgrtl.json
+nnodes: 495, nproc: 7920
+prefix: ubiquitin_dgrtl
+
+Memory information
+{
+ CPU memory per node (GiB): 502
+ Total CPU memory (GiB): 248490
+ GPU memory per device (GiB): 63
+}
+
+
+Input file provided
+--------------------
+{
+  "geometry": {
+    "coordinates": [
+      "N         2.32906152     4.50497561    -1.74104900",
+      "C         2.62746889     4.39747324    -0.31708893",
+      "C         1.58316452     3.88229451     0.65826088",
+      "O         1.96536223     3.17203504     1.63153031",
+      "C         3.17093495     5.77310393     0.17051833",
+      "C         4.61984434     5.98216592    -0.22109840",
+      "O         5.17470143     7.06570304     0.06565919",
+      "O         5.24172042     5.10923915    -0.84227389",
+      "N         0.34751118     4.30287770     0.51273907",
+      "C        -0.76651384     3.94357402     1.40931708",
+      "C        -1.42962453     2.63454319     1.13913479",
+      "O        -2.25461301     2.15397265     1.94921872",
+      "N        -1.11857252     1.96615596     0.03444200",
+      "C        -1.67514052     0.63072531    -0.26339357",
+      "C        -0.80180935    -0.40750593     0.42477687",
+      "O         0.35946097    -0.12200259     0.78880720",
+      "C        -1.69557624     0.34016866    -1.76580603",
+      "C        -2.45516489     1.39076317    -2.60100976",
+      "C        -3.96055504     1.17262312    -2.27426608",
+      "N        -4.36917204     2.37842516    -1.58917952",
+      "C        -4.96902685     2.65972446    -0.47410020",
+      "N        -5.40925757     1.78228945     0.40777548",
+      "N        -5.10570620     3.97134461    -0.14396636",
+      "N        -1.29538921    -1.61649224     0.52247552",
+      "C        -0.56570687    -2.76611350     1.10378494",
+      "C        -0.11142581    -3.65076119    -0.08128729",
+      "O        -0.58915638    -3.48311333    -1.19864386",
+      "C        -1.47918793    -3.59968258     2.05247294",
+      "O        -2.57683571    -4.02927961     1.13594267",
+      "C        -2.07456032    -2.87604938     3.24367474",
+      "N         0.81388643    -4.54470352     0.20027685",
+      "C         1.31248684    -5.50593605    -0.79835355",
+      "C         0.14051370    -6.37085985    -1.25458680",
+      "O         0.03870186    -6.62648525    -2.42370100",
+      "C         2.45042237    -6.32411125    -0.15201459",
+      "C         3.69261129    -5.59040550     0.35231822",
+      "C         4.70766680    -6.58422804     0.94040330",
+      "C         4.42413898    -4.91980436    -0.80833304",
+      "H         2.58480150     5.43884488    -2.22572028",
+      "H         3.37933543     3.54155260    -0.28833884",
+      "H         2.54086211     6.60242560    -0.29281178",
+      "H         3.10728899     5.79370085     1.30869185",
+      "H         4.63044578     7.82303659     0.57710194",
+      "H         0.13215710     4.95838079    -0.32175738",
+      "H        -0.36130414     3.91589997     2.47409933",
+      "H        -1.56787139     4.73520305     1.23444982",
+      "H        -0.43275172     2.41605737    -0.67278395",
+      "H        -2.75019383     0.59403206     0.11267823",
+      "H        -0.61844170     0.29870313    -2.13699168",
+      "H        -2.24657428    -0.64792209    -1.90153682",
+      "H        -2.13236094     2.44339667    -2.30635858",
+      "H        -2.24324701     1.27875011    -3.71576259",
+      "H        -4.56233961     1.03107077    -3.23168567",
+      "H        -4.13226686     0.23968514    -1.64266829",
+      "H        -4.10975280     3.27006952    -2.14607627",
+      "H        -5.28087180     0.72266712     0.22726890",
+      "H        -5.89890886     2.12206391     1.31143854",
+      "H        -4.71938051     4.73840703    -0.80284397",
+      "H        -2.30014202    -1.78622743     0.15528244",
+      "H         0.31698638    -2.39451640     1.72256942",
+      "H        -0.86489037    -4.42176299     2.54748436",
+      "H        -3.54691947    -3.89542208     1.63656496",
+      "H        -3.19425144    -3.08211919     3.29344446",
+      "H        -1.57788383    -3.24634598     4.20012593",
+      "H        -1.89944599    -1.75508254     3.13355521",
+      "H         1.22300061    -4.57417275     1.20254884",
+      "H         1.73959766    -4.99148459    -1.72178413",
+      "H         2.00208582    -6.87456009     0.73962515",
+      "H         2.84186606    -6.97212753    -1.00439170",
+      "H         3.33405558    -4.83613543     1.12860648",
+      "H         4.58444703    -7.59838715     0.43407813",
+      "H         5.76562815    -6.19704927     0.76348413",
+      "H         4.52554617    -6.69481701     2.06102641",
+      "H         4.08863545    -5.38948867    -1.79186445",
+      "H         4.18170513    -3.80563401    -0.81677499",
+      "H         5.54843388    -5.06355819    -0.68258005",
+      "H         1.32610230     4.36202290    -1.85742047",
+      "H        -5.55568790     4.22360296     0.69405940",
+      "H        -0.54852316    -6.72763283    -0.57488815"
+    ],
+    "units": "angstrom"
+  },
+  "basis": {
+    "basisset": "cc-pvtz",
+    "gaussian_type": "spherical",
+    "atom_basis": null
+  },
+  "common": {
+    "maxiter": 50
+  },
+  "SCF": {
+    "tol_int": 1e-16,
+    "tol_lindep": 1e-06,
+    "conve": 1e-06,
+    "convd": 1e-05,
+    "diis_hist": 12,
+    "tilesize": 30,
+    "charge": 1,
+    "restart": false,
+    "noscf": true
+  },
+  "CD": {
+    "diagtol": 1e-05
+  },
+  "CC": {
+    "CCSD(T)": {
+      "skip_ccsd": true,
+      "cache_size": 12,
+      "ccsdt_tilesize": 40
+    },
+    "threshold": 1e-06,
+    "writet": true
+  },
+  "TASK": {
+    "mp2": false,
+    "cd_2e": false,
+    "ccsd": true,
+    "ccsd_t": false
+  }
+}
+
+Number of nodes, processes per node used for SCF calculation: 54, 16
+
+SCF Options
+{
+ charge       = 1
+ multiplicity = 1
+ level shift  = 0
+ tol_int      = 1e-16
+ tol_lindep   = 1e-06
+ conve        = 1e-06
+ convd        = 1e-05
+ diis_hist    = 12
+ AO_tilesize  = 30
+ writem       = 10
+ scf_type     = restricted
+ restart_size = 2000
+ restart      = false
+ debug        = false
+}
+
+Number of basis functions = 1714
+
+Total number of electrons = 292
+  # of alpha electrons    = 146
+  # of beta electons      = 146
+
+Nuclear repulsion energy  = 4475.26266810043
+
+# of {all,non-negligible} shell-pairs = {196251,105257}
+***** Reset tilesize to nbf*5% = 86
+Number of AO tiles = 626
+
+Time for initial setup: 1.56 secs
+
+Time for computing 1-e integrals T, V, S: 0.07 secs
+Time for computing orthogonalizer: 0.85 secs
+
+pre-computing data for Schwarz bounds... 
+Time to compute schwarz matrix: 0.09 secs
+
+Projecting minimal basis SOAD onto basis set specified (cc-pvtz)
+Initial guess: 1.69 secs
+Total Time to compute initial guess: 2.24 secs
+
+
+ SCF iterations
+-----------------------------------------------------------------
+ Iter     Energy            E-Diff       RMSD          Time(s)
+-----------------------------------------------------------------
+   1  -1890.4204327029    -1.89e+03     1.75e-03        10.6 
+   2  -1891.1738764109    -7.53e-01     7.31e-04        10.1 
+   3  -1891.7536127288    -5.80e-01     1.79e-04        11.0 
+   4  -1891.7757469453    -2.21e-02     7.22e-05        11.5 
+   5  -1891.7790083102    -3.26e-03     2.57e-05         9.5 
+   6  -1891.7793344274    -3.26e-04     1.24e-05         9.3 
+   7  -1891.7794155427    -8.11e-05     8.02e-06         9.1 
+   8  -1891.7794356692    -2.01e-05     2.97e-06         9.2 
+   9  -1891.7794386486    -2.98e-06     8.79e-07         9.3 
+  10  -1891.7794389706    -3.22e-07     2.64e-07         9.4 
+
+** Total SCF energy = -1891.7794389706196
+
+Nuclear repulsion energy = 4475.262668100429437
+#electrons        = 292.000000000000171
+1e energy kinetic = 1886.5040286584512614
+1e energy N-e     = -13359.4581287189594150
+1e energy         = -11472.9541000605076988
+2e energy         = 5105.9114276075479211
+writing orbitals and density to file... done.
+
+Time taken for Hartree-Fock: 106.63 secs
+
+CCSD Options
+{
+ cache_size           = 12
+ ccsdt_tilesize       = 40
+ ndiis                = 5
+ threshold            = 1e-06
+ tilesize             = 40
+ ccsd_maxiter         = 50
+ freeze_core          = 0
+ freeze_virtual       = 0
+ readt                = false
+ writet               = true
+ writev               = false
+ writet_iter          = 5
+ profile_ccsd         = false
+ balance_tiles        = true
+ eom_nroots           = 1
+ eom_microiter        = 50
+ eom_threshold        = 1e-06
+ debug                = false
+}
+
+#occupied, #virtual = 292, 3136
+
+Resetting CCSD tilesize to: 100
+
+CD Options
+{
+ debug            = false
+ write_cv         = false
+ diagtol          = 1e-05
+ write_vcount     = 5000
+ itilesize        = 1000
+ max_cvecs_factor = 10
+}
+
+-----------------------------------------------------
+Begin 2-index transformation ... 
+
+nAO, nMO, nelectrons = 1714, 3428, 292
+n_occ_alpha, n_vir_alpha, n_occ_beta, n_vir_beta = 146,1568,146,1568
+
+Time taken for Fao->Fmo transform: 0.80 secs
+
+-----------------------------------------------------
+Number of AO tiles = 626
+# of {all,non-negligible} shell-pairs = {196251,105257}
+
+    Begin Cholesky Decomposition
+---------------------------------------------
+- CPU memory required for computing cholesky vectors: 375.21 GiB
+
+- Time for computing the diagonal: 0.64 secs
+
+- Total number of cholesky vectors = 9616
+
+- Time to compute cholesky vectors: 9889.78 secs
+
+- CPU memory required for resizing the ao cholesky tensor: 585.64 GiB
+- CPU memory required for ao2mo transformation: 631.43 GiB
+- CPU memory required for the 2-step contraction: 841.91 GiB
+
+- Time for ao to mo transform: 9.55 secs
+
+    End Cholesky Decomposition
+---------------------------------------------
+
+Total Time taken for Cholesky Decomposition: 9904.46 secs
+
+----------------------------
+scf_type = restricted
+Closed-Shell SCF
+nbf = 1714
+nbf_orig = 1714
+n_lindep = 0
+focc = 1
+nmo = 3428
+nocc = 292
+nvir = 3136
+n_occ_alpha = 146
+n_vir_alpha = 1568
+n_occ_beta = 146
+n_vir_beta = 1568
+nelectrons = 292
+nelectrons_alpha = 146
+nelectrons_beta = 146
+n_frozen_core = 0
+n_frozen_virtual = 0
+----------------------------
+
+Total CPU memory required for Closed Shell Cholesky CCSD calculation: 54475.56 GiB
+ (V^4 intermediate size: 45037.51 GiB)
+
+
+ CCSD iterations
+------------------------------------------------------------
+  Iter     Residuum          Correlation          Time(s)
+------------------------------------------------------------
+   1     3.3166242264981    0.0000000000000         1084.17
+   2     0.3579984386688   -7.8022333660697         410.41
+   3     0.1217370919141   -7.7332288190986         409.75
+   4     0.0348545961000   -7.9493129581481         406.65
+   5     0.0245602274753   -7.9363385208870         411.23
+ MICROCYCLE DIIS UPDATE:                    6
+   6     0.0109214354466   -7.9627308476610         408.58
+   7     0.0052018772816   -7.9601505776313         408.03
+   8     0.0028010063510   -7.9623017621142         407.60
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1429264.0 ON frontier00100 CANCELLED AT 2023-09-04T21:26:06 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 1429264 ON frontier00100 CANCELLED AT 2023-09-04T21:26:06 DUE TO TIME LIMIT ***
