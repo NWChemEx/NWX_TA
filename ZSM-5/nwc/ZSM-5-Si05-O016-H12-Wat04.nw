@@ -2,9 +2,9 @@ echo
 start flop
 memory 2000 mb
 geometry noautoz
-  load format xyz "ZSM-5-Si08-O025-H18-Wat04.xyz"
+  load format xyz "ZSM-5-Si05-O016-H12-Wat04.xyz"
 end
-set geometry:actlist 52:63
+set geometry:actlist 34:42
 basis 
   * library 6-31g*
 end

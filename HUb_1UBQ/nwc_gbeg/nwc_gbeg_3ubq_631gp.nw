@@ -1,20 +1,14 @@
 echo
 start nwc_gbeg_dat
-title "E and Grad of 1UBQ"
+title "E and Grad of 3UBQ"
 geometry noautoz
-   load format xyz "ct500838h_si_003.xyz"
+   load format xyz "7cap_cyclic.xyz"
 end
 basis 631g spherical
   * library 6-31g
 end
 basis 631gp spherical
   * library 6-31g*
-end
-basis pvtz spherical
-  * library cc-pVTZ
-end
-basis apvtz spherical
-  * library aug-cc-pVTZ
 end
 
 set "ao basis" 631g
@@ -25,7 +19,7 @@ dft
   smear
   tolerances acccoul 11
   convergence energy 1d-5
-  vectors input atomic output ub_start_631g.mos
+  vectors input atomic output 3ub_start_631g.mos
   noprint "final vectors analysis" multipole
   maxiter 10
 end
@@ -33,7 +27,7 @@ set quickguess t
 set dft:pstat t
 set int:cando_hnd f
 set int:acc_std double 1.d-10
-task dft ignore
+#task dft ignore
 
 set "ao basis" 631gp
 dft
@@ -41,7 +35,7 @@ dft
   xc pbe0
   convergence energy 1d-5 
   tolerances acccoul 11
-  vectors input project 631g ub_start_631g.mos  output ub_631gp.mos
+  vectors input project 631g 3ub_start_631g.mos  output 3ub_631gp.mos
   noprint "final vectors analysis" multipole
   maxiter 120
 end

@@ -2,9 +2,9 @@ echo
 start flop
 memory 2000 mb
 geometry noautoz
-  load format xyz "ZSM-5-Si10-O030-H20-Wat04.xyz"
+  load format xyz "ZSM-5-Si08-O025-H18-Wat08.xyz"
 end
-set geometry:actlist 61:72
+set geometry:actlist 52:63
 basis 
   * library 6-31g*
 end
@@ -14,6 +14,6 @@ dft
   maxiter 200
 end
 driver
-  maxiter 300
+  maxiter 200
 end
 task dft optimize
