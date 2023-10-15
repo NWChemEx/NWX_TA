@@ -1,0 +1,477 @@
+Unloading the cpe module is insufficient to restore the system defaults.
+Please run 'source
+/opt/cray/pe/cpe/23.05/restore_lmod_system_defaults.[csh|sh]'. 
+
+Currently Loaded Modules:
+  1) craype-x86-trento                      12) cray-dsmml/0.2.2
+  2) libfabric/1.15.2.0                     13) cray-hdf5-parallel/1.12.2.3
+  3) craype-network-ofi                     14) cray-libsci/23.05.1.4
+  4) xpmem/2.6.2-2.5_2.22__gd067c3f.shasta  15) cray-mpich/8.1.26
+  5) emacs/28.1                             16) cray-pmi/6.1.11
+  6) cmake/3.23.2                           17) cray-python/3.10.10
+  7) PrgEnv-cray/8.4.0                      18) craype/2.7.21
+  8) cce/16.0.0                             19) perftools-base/23.05.0
+  9) darshan-runtime/3.4.0                  20) cpe/23.05
+ 10) hsi/default                            21) rocm/5.5.1
+ 11) DefApps/default
+
+ 
+
+GA_NUM_PROGRESS_RANKS_PER_NODE=8
+GA_PROGRESS_RANKS_DISTRIBUTION_PACKED=1
+GA_PROGRESS_RANKS_DISTRIBUTION_CYCLIC=0
+srun -N400 -n6400 -c1 --ntasks-per-gpu=2 --gpu-bind=closest -m block:cyclic /lustre/orion/chm136/scratch/jglabe/exachem-dev/build/methods_stage/lustre/orion/chm136/scratch/jglabe/tamm_install/tamm/methods/ExaChem 
+
+date: Fri Oct 13 00:45:06 2023
+program: "/lustre/orion/chm136/scratch/jglabe/exachem-dev/build/methods_stage/lustre/orion/chm136/scratch/jglabe/tamm_install/tamm/methods/ExaChem"
+input: /lustre/orion/chm136/scratch/jglabe/exachem-dev/inputs/dlpno/ubiquitin_dgrtl_dlpno.json
+nnodes: 400, nproc: 3200
+prefix: ubiquitin_dgrtl_dlpno
+
+Memory information
+{
+ CPU memory per node (GiB): 502
+ Total CPU memory (GiB): 200800
+ GPU memory per device (GiB): 63
+}
+
+
+Input file provided
+--------------------
+{
+  "geometry": {
+    "coordinates": [
+      "N         2.32906152     4.50497561    -1.74104900",
+      "C         2.62746889     4.39747324    -0.31708893",
+      "C         1.58316452     3.88229451     0.65826088",
+      "O         1.96536223     3.17203504     1.63153031",
+      "C         3.17093495     5.77310393     0.17051833",
+      "C         4.61984434     5.98216592    -0.22109840",
+      "O         5.17470143     7.06570304     0.06565919",
+      "O         5.24172042     5.10923915    -0.84227389",
+      "N         0.34751118     4.30287770     0.51273907",
+      "C        -0.76651384     3.94357402     1.40931708",
+      "C        -1.42962453     2.63454319     1.13913479",
+      "O        -2.25461301     2.15397265     1.94921872",
+      "N        -1.11857252     1.96615596     0.03444200",
+      "C        -1.67514052     0.63072531    -0.26339357",
+      "C        -0.80180935    -0.40750593     0.42477687",
+      "O         0.35946097    -0.12200259     0.78880720",
+      "C        -1.69557624     0.34016866    -1.76580603",
+      "C        -2.45516489     1.39076317    -2.60100976",
+      "C        -3.96055504     1.17262312    -2.27426608",
+      "N        -4.36917204     2.37842516    -1.58917952",
+      "C        -4.96902685     2.65972446    -0.47410020",
+      "N        -5.40925757     1.78228945     0.40777548",
+      "N        -5.10570620     3.97134461    -0.14396636",
+      "N        -1.29538921    -1.61649224     0.52247552",
+      "C        -0.56570687    -2.76611350     1.10378494",
+      "C        -0.11142581    -3.65076119    -0.08128729",
+      "O        -0.58915638    -3.48311333    -1.19864386",
+      "C        -1.47918793    -3.59968258     2.05247294",
+      "O        -2.57683571    -4.02927961     1.13594267",
+      "C        -2.07456032    -2.87604938     3.24367474",
+      "N         0.81388643    -4.54470352     0.20027685",
+      "C         1.31248684    -5.50593605    -0.79835355",
+      "C         0.14051370    -6.37085985    -1.25458680",
+      "O         0.03870186    -6.62648525    -2.42370100",
+      "C         2.45042237    -6.32411125    -0.15201459",
+      "C         3.69261129    -5.59040550     0.35231822",
+      "C         4.70766680    -6.58422804     0.94040330",
+      "C         4.42413898    -4.91980436    -0.80833304",
+      "H         2.58480150     5.43884488    -2.22572028",
+      "H         3.37933543     3.54155260    -0.28833884",
+      "H         2.54086211     6.60242560    -0.29281178",
+      "H         3.10728899     5.79370085     1.30869185",
+      "H         4.63044578     7.82303659     0.57710194",
+      "H         0.13215710     4.95838079    -0.32175738",
+      "H        -0.36130414     3.91589997     2.47409933",
+      "H        -1.56787139     4.73520305     1.23444982",
+      "H        -0.43275172     2.41605737    -0.67278395",
+      "H        -2.75019383     0.59403206     0.11267823",
+      "H        -0.61844170     0.29870313    -2.13699168",
+      "H        -2.24657428    -0.64792209    -1.90153682",
+      "H        -2.13236094     2.44339667    -2.30635858",
+      "H        -2.24324701     1.27875011    -3.71576259",
+      "H        -4.56233961     1.03107077    -3.23168567",
+      "H        -4.13226686     0.23968514    -1.64266829",
+      "H        -4.10975280     3.27006952    -2.14607627",
+      "H        -5.28087180     0.72266712     0.22726890",
+      "H        -5.89890886     2.12206391     1.31143854",
+      "H        -4.71938051     4.73840703    -0.80284397",
+      "H        -2.30014202    -1.78622743     0.15528244",
+      "H         0.31698638    -2.39451640     1.72256942",
+      "H        -0.86489037    -4.42176299     2.54748436",
+      "H        -3.54691947    -3.89542208     1.63656496",
+      "H        -3.19425144    -3.08211919     3.29344446",
+      "H        -1.57788383    -3.24634598     4.20012593",
+      "H        -1.89944599    -1.75508254     3.13355521",
+      "H         1.22300061    -4.57417275     1.20254884",
+      "H         1.73959766    -4.99148459    -1.72178413",
+      "H         2.00208582    -6.87456009     0.73962515",
+      "H         2.84186606    -6.97212753    -1.00439170",
+      "H         3.33405558    -4.83613543     1.12860648",
+      "H         4.58444703    -7.59838715     0.43407813",
+      "H         5.76562815    -6.19704927     0.76348413",
+      "H         4.52554617    -6.69481701     2.06102641",
+      "H         4.08863545    -5.38948867    -1.79186445",
+      "H         4.18170513    -3.80563401    -0.81677499",
+      "H         5.54843388    -5.06355819    -0.68258005",
+      "H         1.32610230     4.36202290    -1.85742047",
+      "H        -5.55568790     4.22360296     0.69405940",
+      "H        -0.54852316    -6.72763283    -0.57488815"
+    ],
+    "units": "angstrom"
+  },
+  "basis": {
+    "basisset": "6-31g",
+    "gaussian_type": "spherical",
+    "atom_basis": null
+  },
+  "common": {
+    "maxiter": 50
+  },
+  "SCF": {
+    "tol_int": 1e-16,
+    "tol_lindep": 1e-06,
+    "conve": 1e-10,
+    "convd": 1e-09,
+    "diis_hist": 12,
+    "tilesize": 30,
+    "charge": 1,
+    "restart": false,
+    "noscf": false
+  },
+  "CD": {
+    "diagtol": 1e-05
+  },
+  "CC": {
+    "CCSD(T)": {
+      "skip_ccsd": false,
+      "ccsdt_tilesize": 40
+    },
+    "threshold": 1e-06,
+    "writet": true,
+    "DLPNO": {
+      "df_basisset": "cc-pvtz-ri",
+      "localize": true,
+      "TCutPairs": 0.001,
+      "TCutPNO": 1e-06,
+      "TCutEN": 0.97,
+      "TCutPre": 0.001,
+      "TCutDOij": 1e-07,
+      "TCutDOPre": 0.03
+    }
+  },
+  "TASK": {
+    "scf": false,
+    "mp2": false,
+    "cd_2e": false,
+    "ccsd": false,
+    "ccsd_t": false,
+    "dlpno_ccsd": [
+      true,
+      ""
+    ]
+  }
+}
+Input file provided = /lustre/orion/chm136/scratch/jglabe/exachem-dev/inputs/dlpno/ubiquitin_dgrtl_dlpno.json
+
+Number of nodes, processes per node used for SCF calculation: 27, 8
+
+SCF Options
+{
+ charge       = 1
+ multiplicity = 1
+ level shift  = 0
+ tol_int      = 1e-16
+ tol_lindep   = 1e-06
+ conve        = 1e-10
+ convd        = 1e-09
+ diis_hist    = 12
+ AO_tilesize  = 30
+ writem       = 1
+ alpha        = 1
+ scf_type     = restricted
+ restart_size = 2000
+ restart      = false
+ debug        = false
+}
+
+Number of basis functions = 424
+
+Total number of electrons = 292
+  # of alpha electrons    = 146
+  # of beta electons      = 146
+
+Nuclear repulsion energy  = 4475.26266810043
+
+# of {all,non-negligible} shell-pairs = {37128,21813}
+Number of AO tiles = 272
+
+Time for initial setup: 0.31 secs
+
+Time for computing 1-e integrals T, V, S: 0.02 secs
+Time for computing orthogonalizer: 0.06 secs
+
+Superposition of Atomic Density Guess ...
+Time taken for SAD: 0.58 secs
+Total Time to compute initial guess: 0.89 secs
+
+
+ SCF iterations
+-----------------------------------------------------------------
+ Iter     Energy            E-Diff       RMSD          Time(s)
+-----------------------------------------------------------------
+   1  -1889.1269824644    -1.89e+03     1.07e-02         2.0 
+   2  -1889.7673476552    -6.40e-01     5.42e-03         1.6 
+   3  -1890.2150601314    -4.48e-01     9.36e-04         0.7 
+   4  -1890.2330169632    -1.80e-02     3.97e-04         0.7 
+   5  -1890.2358705578    -2.85e-03     2.16e-04         0.7 
+   6  -1890.2363083568    -4.38e-04     9.88e-05         0.7 
+   7  -1890.2364065415    -9.82e-05     4.36e-05         0.8 
+   8  -1890.2364234546    -1.69e-05     1.19e-05         0.8 
+   9  -1890.2364253453    -1.89e-06     3.04e-06         0.8 
+  10  -1890.2364255258    -1.81e-07     1.05e-06         0.9 
+  11  -1890.2364255490    -2.31e-08     3.85e-07         0.9 
+  12  -1890.2364255518    -2.86e-09     1.58e-07         0.9 
+  13  -1890.2364255523    -4.18e-10     7.90e-08         0.9 
+  14  -1890.2364255524    -1.39e-10     5.08e-08         0.9 
+  15  -1890.2364255524    -3.18e-11     2.17e-08         0.9 
+  16  -1890.2364255524    -1.00e-11     1.38e-08         0.9 
+  17  -1890.2364255524    -9.09e-13     6.18e-09         0.9 
+  18  -1890.2364255524    -2.73e-12     2.43e-09         0.9 
+  19  -1890.2364255524     6.37e-12     1.15e-09         0.9 
+  20  -1890.2364255524    -1.00e-11     2.90e-10         0.9 
+
+** Total SCF energy = -1890.2364255524408
+
+Nuclear repulsion energy = 4475.262668100429437
+#electrons        = 291.999999999999943
+1e energy kinetic = 1888.4568241648432831
+1e energy N-e     = -13355.9922997028934333
+1e energy         = -11467.5354755380503775
+2e energy         = 5102.0363817511743036
+writing orbitals and density to file... done.
+
+Time taken for Hartree-Fock: 20.97 secs
+Number of AO tiles = 272
+# of {all,non-negligible} shell-pairs = {37128,21813}
+
+Resetting CCSD tilesize to: 50
+
+density-fitting basis set rank = 4308
+Number of AO tiles = 1284
+Time to compute 3c-ints: 0.16 secs 
+Time to compute V^-1/2: 17.05s
+Time to compute ints_3c_trans: 2.21s
+
+-----------------------------------------------------
+Begin 2-index transformation ... 
+
+nAO, nMO, nelectrons = 424, 424, 292
+
+Time taken for Fao->Fmo transform: 0.03 secs
+
+----------------------------------------
+Total number of pairs = 10731
+Total number of pairs kept = 392
+Total pairs dropped = 10339 (PreScreen = 9794, NSkippedPairs = 0, NMP2Pairs = 545)
+Sum of dropped MP2 pair energies = -0.428126120795972
+Sum of dropped PAO/PNO pair energies = -0.002477938300078
+Input file provided = /lustre/orion/chm136/scratch/jglabe/exachem-dev/inputs/dlpno/ubiquitin_dgrtl_dlpno.json
+Input data dir provided = ubiquitin_dgrtl_dlpno.6-31g_files/restricted/dlpno//predlpno/
+Fock_AO dims = 424x424
+Fock_MO_occ dims = 146x146
+Fock_MO dims = 424x424
+LCAO_Eig dims = 424x424
+OVL_Eig dims = 424x424
+C_PAO_Eig dims = 424x424
+OVL_PAO dims = 424x424
+Time to construct dlpno input tensors: 1857.326953384000035 secs 
+
+CCSD Options
+{
+ cache_size           = 8
+ ccsdt_tilesize       = 40
+ ndiis                = 5
+ threshold            = 1e-06
+ tilesize             = 40
+ ccsd_maxiter         = 50
+ freeze_core          = 0
+ freeze_virtual       = 0
+ readt                = false
+ writet               = true
+ writev               = false
+ writet_iter          = 5
+ profile_ccsd         = false
+ balance_tiles        = true
+ dlpno_dfbasis        = cc-pvtz-ri
+ eom_nroots           = 1
+ eom_microiter        = 50
+ eom_threshold        = 1e-06
+ debug                = false
+}
+
+#occupied, #virtual = 292, 556
+Number of AO tiles = 272
+Number of AO tiles = 0
+Time to compute 3c integral (TE) tensors: 1.405324053 secs 
+
+CD Options
+{
+ debug            = false
+ write_cv         = false
+ diagtol          = 1e-05
+ write_vcount     = 5000
+ itilesize        = 1000
+ max_cvecs_factor = 10
+}
+
+-----------------------------------------------------
+Begin 2-index transformation ... 
+
+nAO, nMO, nelectrons = 424, 424, 292
+
+Time taken for Fao->Fmo transform: 0.03 secs
+
+-----------------------------------------------------
+
+Total Time taken for Cholesky Decomposition: 0.24 secs
+
+----------------------------
+scf_type = restricted
+Closed-Shell SCF
+nbf = 424
+nbf_orig = 424
+n_lindep = 0
+focc = 1
+nmo = 848
+nocc = 292
+nvir = 556
+n_occ_alpha = 146
+n_vir_alpha = 278
+n_occ_beta = 146
+n_vir_beta = 278
+nelectrons = 292
+nelectrons_alpha = 146
+nelectrons_beta = 146
+n_frozen_core = 0
+n_frozen_virtual = 0
+----------------------------
+Time to construct dlpno evl vectors: 0.65 secs 
+Time to construct TE variants: 1.76 secs 
+Time to construct new Sijkl variants: 0.95 secs 
+Tiled Index Space Sizes:
+MO: Total Size = 424
+Occ: Total Size = 146
+Virt: Total Size = 278
+LMOP: Total Size = 638
+PNO: Total Size = 31
+PAO: Total Size = 424
+DF: Total Size = 4308
+Time to construct dlpno t2 guess: 1.42 secs 
+DLPNO CCSD Memory Stats before init_4c_integrals
+------------------------------------------------
+allocation count: 218
+deallocation count: 145
+total memory allocated: 119.438403 GiB
+total memory deallocated: 59.820466 GiB
+maximum memory in single allocation: 13.064932 GiB
+maximum memory consumption: 77.680535 GiB
+Time for computing Int4c_ovov_0s_s0 0.5723091010 secs
+Time for computing Int4c_ovov_0s_s0_T 3.9696617020 secs
+Time for computing Int4c_oovv_0s_00_ii 3.6084556650 secs
+Time for computing Int4c_oovv_0s_00_jj 3.4280154100 secs
+Time for computing Int4c_ovov_00_0s_ii 1.2284903720 secs
+Time for computing Int4c_ovov_00_0s_jj 1.1557620090 secs
+Time for Opmin: 0.5944085230 secs 
+DLPNO CCSD Memory Stats before iterations
+-----------------------------------------
+allocation count: 244
+deallocation count: 165
+total memory allocated: 1249.219975 GiB
+total memory deallocated: 1172.115409 GiB
+maximum memory in single allocation: 405.012906 GiB
+maximum memory consumption: 510.321714 GiB
+
+
+ CCSD iterations
+------------------------------------------------------------
+ Iter     Residuum          Correlation          Time(s)
+------------------------------------------------------------
+DLPNO CCSD Memory Stats after energy equations
+----------------------------------------------
+allocation count: 258
+deallocation count: 179
+total memory allocated: 1251.309828 GiB
+total memory deallocated: 1174.205262 GiB
+maximum memory in single allocation: 405.012906 GiB
+maximum memory consumption: 510.321714 GiB
+DLPNO CCSD Memory Stats after singles equations
+-----------------------------------------------
+allocation count: 409
+deallocation count: 330
+total memory allocated: 1309.191498 GiB
+total memory deallocated: 1232.086931 GiB
+maximum memory in single allocation: 405.012906 GiB
+maximum memory consumption: 510.321714 GiB
+DLPNO CCSD Memory Stats after doubles equations
+-----------------------------------------------
+allocation count: 1160
+deallocation count: 1081
+total memory allocated: 5836.954123 GiB
+total memory deallocated: 5759.849556 GiB
+maximum memory in single allocation: 405.012906 GiB
+maximum memory consumption: 635.233201 GiB
+   1     0.2684729609075   -3.3853486616734         200.86
+   2     0.1085317390883   -3.6219076503153         202.00
+   3     0.0492692360666   -3.7548761610981         202.33
+   4     0.0265979633064   -3.7918354195865         203.03
+   5     0.0149773370053   -3.8123838939398         203.00
+ MICROCYCLE DIIS UPDATE:                    6
+   6     0.0091642499897   -3.8207309227575         202.91
+   7     0.0057293985762   -3.8256928542024         203.13
+   8     0.0037457197962   -3.8280641293850         203.36
+   9     0.0024675178968   -3.8295363477025         203.33
+  10     0.0016635621202   -3.8303212730872         209.33
+ MICROCYCLE DIIS UPDATE:                   11
+  11     0.0011245167328   -3.8308229509728         203.42
+  12     0.0007699547552   -3.8311133400054         202.96
+  13     0.0005281500964   -3.8313028317095         202.96
+  14     0.0003652028496   -3.8314192727124         203.59
+  15     0.0002530603183   -3.8314964470320         204.04
+ MICROCYCLE DIIS UPDATE:                   16
+  16     0.0001763488867   -3.8315458775934         203.12
+  17     0.0001231920899   -3.8315790381587         203.54
+  18     0.0000864366241   -3.8316008816586         203.26
+  19     0.0000608058451   -3.8316156788091         203.05
+  20     0.0000429296636   -3.8316256130638         202.83
+ MICROCYCLE DIIS UPDATE:                   21
+  21     0.0000303874167   -3.8316323971452         203.28
+  22     0.0000215751130   -3.8316370124433         203.68
+  23     0.0000153557370   -3.8316401858478         203.08
+  24     0.0000109576556   -3.8316423656674         203.71
+  25     0.0000078365192   -3.8316438733919         203.09
+ MICROCYCLE DIIS UPDATE:                   26
+  26     0.0000056168366   -3.8316449167332         202.56
+  27     0.0000040337073   -3.8316456421755         202.63
+  28     0.0000029022419   -3.8316461471799         204.39
+  29     0.0000020916597   -3.8316464999653         209.29
+  30     0.0000015098606   -3.8316467467860         203.22
+ MICROCYCLE DIIS UPDATE:                   31
+  31     0.0000010914470   -3.8316469199446         202.99
+  32     0.0000007900357   -3.8316470416219         202.87
+DLPNO CCSD Memory Stats
+-----------------------
+allocation count: 29620
+deallocation count: 29541
+total memory allocated: 148056.712685 GiB
+total memory deallocated: 147979.608119 GiB
+maximum memory in single allocation: 405.012906 GiB
+maximum memory consumption: 635.233201 GiB
+------------------------------------------------------------------
+ Iterations converged
+ CCSD correlation energy / hartree =        -3.831647041621852
+ CCSD total energy / hartree       =     -1894.068072594062642
+

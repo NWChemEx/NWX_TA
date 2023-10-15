@@ -1,0 +1,749 @@
+
+date: Wed Oct 11 17:11:21 2023
+program: "/hpc/home/mutl412/new-tamm-dev/exachem-dev/build/methods_stage/hpc/home/mutl412/new-tamm-dev/install_clang_2/methods/ExaChem"
+input: /hpc/home/mutl412/new-tamm-dev/exachem-dev/build/correctness_runs/inputs/ozone_cc-pvdz_tcut_pairs_tcutpre_1e-07_1_0e-5_tcut_pno_1_0e-7.json
+nnodes: 1, nproc: 12
+prefix: ozone_cc-pvdz_tcut_pairs_tcutpre_1e-07_1_0e-5_tcut_pno_1_0e-7
+
+Memory information
+{
+ CPU memory per node (GiB): 6046
+ Total CPU memory (GiB): 6046
+}
+
+
+Input file provided
+--------------------
+{
+  "geometry": {
+    "coordinates": [
+      "O   0.0000000000        0.0000000000        0.0000000000",
+      "O   0.0000000000       -2.0473224350       -1.2595211660",
+      "O   0.0000000000        2.0473224350       -1.2595211660"
+    ],
+    "units": "bohr"
+  },
+  "basis": {
+    "basisset": "cc-pvdz",
+    "atom_basis": null
+  },
+  "SCF": {
+    "tilesize": 30,
+    "restart": false
+  },
+  "CD": {
+    "diagtol": 1e-06,
+    "max_cvecs": 8
+  },
+  "CC": {
+    "threshold": 1e-08,
+    "tilesize": 30,
+    "debug": false,
+    "ccsd_maxiter": 150,
+    "EOMCCSD": {
+      "eom_nroots": 2,
+      "eom_type": "right",
+      "eom_threshold": 1e-06,
+      "eom_microiter": 50
+    },
+    "DLPNO": {
+      "df_basisset": "cc-pvtz-ri",
+      "localize": true,
+      "TCutPairs": 1e-05,
+      "TCutPNO": 1e-07,
+      "TCutEN": 0.0,
+      "TCutPre": 1e-07,
+      "TCutDOij": 1.0,
+      "TCutDOPre": 0.0
+    }
+  },
+  "TASK": {
+    "scf": false,
+    "mp2": false,
+    "cd_2e": false,
+    "ccsd": false,
+    "ccsd_t": false,
+    "dlpno_ccsd": [
+      true,
+      ""
+    ]
+  }
+}
+Input file provided = /hpc/home/mutl412/new-tamm-dev/exachem-dev/build/correctness_runs/inputs/ozone_cc-pvdz_tcut_pairs_tcutpre_1e-07_1_0e-5_tcut_pno_1_0e-7.json
+
+Number of nodes, processes per node used for SCF calculation: 1, 12
+
+SCF Options
+{
+ charge       = 0
+ multiplicity = 1
+ level shift  = 0
+ tol_int      = 1e-12
+ tol_lindep   = 1e-05
+ conve        = 1e-08
+ convd        = 1e-06
+ diis_hist    = 10
+ AO_tilesize  = 30
+ writem       = 1
+ alpha        = 1
+ scf_type     = restricted
+ restart_size = 2000
+ restart      = false
+ debug        = false
+}
+
+Number of basis functions = 42
+
+Total number of electrons = 24
+  # of alpha electrons    = 12
+  # of beta electons      = 12
+
+Nuclear repulsion energy  = 68.8807220354829
+
+# of {all,non-negligible} shell-pairs = {171,171}
+Number of AO tiles = 18
+
+Time for initial setup: 0.04 secs
+
+Time for computing 1-e integrals T, V, S: 0.01 secs
+Time for computing orthogonalizer: 0.00 secs
+
+Superposition of Atomic Density Guess ...
+Time taken for SAD: 0.07 secs
+Total Time to compute initial guess: 0.09 secs
+
+
+ SCF iterations
+-----------------------------------------------------------------
+ Iter     Energy            E-Diff       RMSD          Time(s)
+-----------------------------------------------------------------
+   1  -224.1061573640    -2.24e+02     2.24e-02         0.0 
+   2  -224.1337176769    -2.76e-02     1.12e-02         0.0 
+   3  -224.2629274238    -1.29e-01     2.24e-03         0.0 
+   4  -224.2651084798    -2.18e-03     1.22e-03         0.0 
+   5  -224.2654944777    -3.86e-04     4.92e-04         0.0 
+   6  -224.2655625474    -6.81e-05     2.60e-04         0.0 
+   7  -224.2655788857    -1.63e-05     8.11e-05         0.0 
+   8  -224.2655803023    -1.42e-06     5.69e-06         0.0 
+   9  -224.2655803137    -1.14e-08     1.48e-06         0.1 
+  10  -224.2655803143    -6.12e-10     4.64e-07         0.1 
+
+** Total SCF energy = -224.2655803143304
+
+Nuclear repulsion energy = 68.880722035482947
+#electrons        = 24.000000000000050
+1e energy kinetic = 224.0131410092753299
+1e energy N-e     = -669.1101862822953308
+1e energy         = -445.0970452730201146
+2e energy         = 151.9507425573041246
+writing orbitals and density to file... done.
+
+Time taken for Hartree-Fock: 0.60 secs
+Number of AO tiles = 18
+# of {all,non-negligible} shell-pairs = {171,171}
+
+Resetting CCSD tilesize to: 50
+
+density-fitting basis set rank = 243
+Number of AO tiles = 69
+Time to compute 3c-ints: 0.01 secs 
+Time to compute V^-1/2: 0.01s
+Time to compute ints_3c_trans: 0.01s
+
+-----------------------------------------------------
+Begin 2-index transformation ... 
+
+nAO, nMO, nelectrons = 42, 42, 24
+
+Time taken for Fao->Fmo transform: 0.00 secs
+
+-----------------------------------------------------
+
+Entering Jacobi type localization:
+Calculating Mulliken population analysis.
+Computing MO to AUX maps.
+<  0> [ 81]   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80 
+<  1> [ 81] 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 
+<  2> [ 81]  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 
+<  3> [ 81]   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80 
+<  4> [ 81] 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 
+<  5> [ 81]  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 
+<  6> [ 81]  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 
+<  7> [ 81] 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 
+<  8> [162]   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 
+<  9> [162]   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 
+< 10> [162]   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 
+< 11> [162]   0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 
+Computing MO to PAO maps (Mulliken approx. version).
+Computing PAO to AUX maps.
+NnonredPAOs = 30
+ELECTRON PAIR PRESCREENING
+Dipole-based pair screening          .... 
+used
+   TCutDOij = 1.000000000000
+   TCutPre = 0.000000100000
+   .... Finished loop over pairs
+                 1 OF   78 PAIRS WERE SKIPPED
+
+Number of pairs skipped by pre-screening         1
+Sum of pair energies estimated for screened out pairs ...      -0.000000006017 Eh
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 0 0 with orbs energies: -1.03743401 -1.03743401
+MP2 pair ( 0 0 ) energy ep = -0.0190028936621361
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0190028936621361, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 1 0 with orbs energies: -20.55464105 -1.03743401
+MP2 pair ( 1 0 ) energy ep = -0.0000143178788355
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0000142871204498, PAO->PNO diff = -0.0000000307583857
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 1 1 with orbs energies: -20.55464105 -20.55464105
+MP2 pair ( 1 1 ) energy ep = -0.0003114370395797
+PNO dims = 30 5, NPNO = 5, PNO energy = -0.0003113617122230, PAO->PNO diff = -0.0000000753273566
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 2 0 with orbs energies: -20.55464105 -1.03743401
+MP2 pair ( 2 0 ) energy ep = -0.0000143178788354
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0000142871204497, PAO->PNO diff = -0.0000000307583857
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 2 2 with orbs energies: -20.55464105 -20.55464105
+MP2 pair ( 2 2 ) energy ep = -0.0003114370395786
+PNO dims = 30 5, NPNO = 5, PNO energy = -0.0003113617122220, PAO->PNO diff = -0.0000000753273566
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 3 0 with orbs energies: -20.78561041 -1.03743401
+MP2 pair ( 3 0 ) energy ep = -0.0005131175869870
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0005130140103477, PAO->PNO diff = -0.0000001035766394
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 3 1 with orbs energies: -20.78561041 -20.55464105
+MP2 pair ( 3 1 ) energy ep = -0.0000001656181205
+3 DROP IJPAIR id = 6 i = 3 j = 1 MP2 energy = -0.0000001656181205
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 3 2 with orbs energies: -20.78561041 -20.55464105
+MP2 pair ( 3 2 ) energy ep = -0.0000001656181205
+3 DROP IJPAIR id = 7 i = 3 j = 2 MP2 energy = -0.0000001656181205
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 3 3 with orbs energies: -20.78561041 -20.78561041
+MP2 pair ( 3 3 ) energy ep = -0.0003367509634894
+PNO dims = 30 4, NPNO = 4, PNO energy = -0.0003366397720033, PAO->PNO diff = -0.0000001111914861
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 4 0 with orbs energies: -0.91096244 -1.03743401
+MP2 pair ( 4 0 ) energy ep = -0.0020118266488233
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0020118266488233, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 4 1 with orbs energies: -0.91096244 -20.55464105
+MP2 pair ( 4 1 ) energy ep = -0.0004597625049127
+PNO dims = 30 12, NPNO = 12, PNO energy = -0.0004597144577161, PAO->PNO diff = -0.0000000480471966
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 4 2 with orbs energies: -0.91096244 -20.55464105
+MP2 pair ( 4 2 ) energy ep = -0.0000016710533767
+DROP IJPAIR id = 11 i = 4 j = 2 MP2
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 4 3 with orbs energies: -0.91096244 -20.78561041
+MP2 pair ( 4 3 ) energy ep = -0.0000203269144626
+PNO dims = 30 4, NPNO = 4, PNO energy = -0.0000148492024597, PAO->PNO diff = -0.0000054777120029
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 4 4 with orbs energies: -0.91096244 -0.91096244
+MP2 pair ( 4 4 ) energy ep = -0.0178931915318291
+PNO dims = 30 18, NPNO = 18, PNO energy = -0.0178927360362471, PAO->PNO diff = -0.0000004554955820
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 5 0 with orbs energies: -0.91096244 -1.03743401
+MP2 pair ( 5 0 ) energy ep = -0.0020118266488327
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0020118266488327, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 5 1 with orbs energies: -0.91096244 -20.55464105
+MP2 pair ( 5 1 ) energy ep = -0.0000016710533767
+DROP IJPAIR id = 15 i = 5 j = 1 MP2
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 5 2 with orbs energies: -0.91096244 -20.55464105
+MP2 pair ( 5 2 ) energy ep = -0.0004597625049113
+PNO dims = 30 12, NPNO = 12, PNO energy = -0.0004597144577147, PAO->PNO diff = -0.0000000480471966
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 5 3 with orbs energies: -0.91096244 -20.78561041
+MP2 pair ( 5 3 ) energy ep = -0.0000203269144629
+PNO dims = 30 4, NPNO = 4, PNO energy = -0.0000148492024599, PAO->PNO diff = -0.0000054777120030
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 5 4 with orbs energies: -0.91096244 -0.91096244
+MP2 pair ( 5 4 ) energy ep = -0.0003855067612786
+PNO dims = 30 21, NPNO = 21, PNO energy = -0.0003832443504601, PAO->PNO diff = -0.0000022624108185
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 5 5 with orbs energies: -0.91096244 -0.91096244
+MP2 pair ( 5 5 ) energy ep = -0.0178931915318370
+PNO dims = 30 18, NPNO = 18, PNO energy = -0.0178927360362550, PAO->PNO diff = -0.0000004554955820
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 6 0 with orbs energies: -0.91315847 -1.03743401
+MP2 pair ( 6 0 ) energy ep = -0.0016289176670030
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0016289176670030, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 6 1 with orbs energies: -0.91315847 -20.55464105
+MP2 pair ( 6 1 ) energy ep = -0.0000051221670287
+DROP IJPAIR id = 21 i = 6 j = 1 MP2
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 6 2 with orbs energies: -0.91315847 -20.55464105
+MP2 pair ( 6 2 ) energy ep = -0.0004587501842444
+PNO dims = 30 12, NPNO = 12, PNO energy = -0.0004587035243582, PAO->PNO diff = -0.0000000466598862
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 6 3 with orbs energies: -0.91315847 -20.78561041
+MP2 pair ( 6 3 ) energy ep = -0.0000156356981037
+PNO dims = 30 4, NPNO = 4, PNO energy = -0.0000115807431703, PAO->PNO diff = -0.0000040549549334
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 6 4 with orbs energies: -0.91315847 -0.91096244
+MP2 pair ( 6 4 ) energy ep = -0.0004996298836000
+PNO dims = 30 20, NPNO = 20, PNO energy = -0.0004976291255495, PAO->PNO diff = -0.0000020007580506
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 6 5 with orbs energies: -0.91315847 -0.91096244
+MP2 pair ( 6 5 ) energy ep = -0.0155324047227016
+PNO dims = 30 21, NPNO = 21, PNO energy = -0.0155316792814544, PAO->PNO diff = -0.0000007254412472
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 6 6 with orbs energies: -0.91315847 -0.91315847
+MP2 pair ( 6 6 ) energy ep = -0.0178438560531754
+PNO dims = 30 17, NPNO = 17, PNO energy = -0.0178431134802651, PAO->PNO diff = -0.0000007425729104
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 7 0 with orbs energies: -0.91315847 -1.03743401
+MP2 pair ( 7 0 ) energy ep = -0.0016289176670010
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0016289176670010, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 7 1 with orbs energies: -0.91315847 -20.55464105
+MP2 pair ( 7 1 ) energy ep = -0.0004587501842456
+PNO dims = 30 12, NPNO = 12, PNO energy = -0.0004587035243595, PAO->PNO diff = -0.0000000466598862
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 7 2 with orbs energies: -0.91315847 -20.55464105
+MP2 pair ( 7 2 ) energy ep = -0.0000051221670287
+DROP IJPAIR id = 29 i = 7 j = 2 MP2
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 7 3 with orbs energies: -0.91315847 -20.78561041
+MP2 pair ( 7 3 ) energy ep = -0.0000156356981035
+PNO dims = 30 4, NPNO = 4, PNO energy = -0.0000115807431701, PAO->PNO diff = -0.0000040549549334
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 7 4 with orbs energies: -0.91315847 -0.91096244
+MP2 pair ( 7 4 ) energy ep = -0.0155324047226575
+PNO dims = 30 21, NPNO = 21, PNO energy = -0.0155316792814103, PAO->PNO diff = -0.0000007254412472
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 7 5 with orbs energies: -0.91315847 -0.91096244
+MP2 pair ( 7 5 ) energy ep = -0.0004996298836000
+PNO dims = 30 20, NPNO = 20, PNO energy = -0.0004976291255494, PAO->PNO diff = -0.0000020007580506
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 7 6 with orbs energies: -0.91315847 -0.91315847
+MP2 pair ( 7 6 ) energy ep = -0.0007148757232174
+PNO dims = 30 23, NPNO = 23, PNO energy = -0.0007134272168098, PAO->PNO diff = -0.0000014485064076
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 7 7 with orbs energies: -0.91315847 -0.91315847
+MP2 pair ( 7 7 ) energy ep = -0.0178438560531678
+PNO dims = 30 17, NPNO = 17, PNO energy = -0.0178431134802574, PAO->PNO diff = -0.0000007425729103
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 8 0 with orbs energies: -1.00430277 -1.03743401
+MP2 pair ( 8 0 ) energy ep = -0.0136023326964878
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0136023326964879, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 8 1 with orbs energies: -1.00430277 -20.55464105
+MP2 pair ( 8 1 ) energy ep = -0.0000171446504350
+PNO dims = 30 12, NPNO = 12, PNO energy = -0.0000170887912353, PAO->PNO diff = -0.0000000558591998
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 8 2 with orbs energies: -1.00430277 -20.55464105
+MP2 pair ( 8 2 ) energy ep = -0.0003024896050490
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0003024247697180, PAO->PNO diff = -0.0000000648353310
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 8 3 with orbs energies: -1.00430277 -20.78561041
+MP2 pair ( 8 3 ) energy ep = -0.0002740787042202
+PNO dims = 30 7, NPNO = 7, PNO energy = -0.0002724117029847, PAO->PNO diff = -0.0000016670012355
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 8 4 with orbs energies: -1.00430277 -0.91096244
+MP2 pair ( 8 4 ) energy ep = -0.0020491888874217
+PNO dims = 30 25, NPNO = 25, PNO energy = -0.0020477590600595, PAO->PNO diff = -0.0000014298273623
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 8 5 with orbs energies: -1.00430277 -0.91096244
+MP2 pair ( 8 5 ) energy ep = -0.0180170271573424
+PNO dims = 30 23, NPNO = 23, PNO energy = -0.0180160861496421, PAO->PNO diff = -0.0000009410077002
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 8 6 with orbs energies: -1.00430277 -0.91315847
+MP2 pair ( 8 6 ) energy ep = -0.0181003349017205
+PNO dims = 30 24, NPNO = 24, PNO energy = -0.0180989947890968, PAO->PNO diff = -0.0000013401126237
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 8 7 with orbs energies: -1.00430277 -0.91315847
+MP2 pair ( 8 7 ) energy ep = -0.0022819901044660
+PNO dims = 30 27, NPNO = 27, PNO energy = -0.0022812174975805, PAO->PNO diff = -0.0000007726068855
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 8 8 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 8 8 ) energy ep = -0.0241377136682711
+PNO dims = 30 25, NPNO = 25, PNO energy = -0.0241371640298094, PAO->PNO diff = -0.0000005496384617
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 0 with orbs energies: -1.00430277 -1.03743401
+MP2 pair ( 9 0 ) energy ep = -0.0136023326967183
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0136023326967183, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 1 with orbs energies: -1.00430277 -20.55464105
+MP2 pair ( 9 1 ) energy ep = -0.0003024896050468
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0003024247697158, PAO->PNO diff = -0.0000000648353310
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 2 with orbs energies: -1.00430277 -20.55464105
+MP2 pair ( 9 2 ) energy ep = -0.0000171446504342
+PNO dims = 30 12, NPNO = 12, PNO energy = -0.0000170887912344, PAO->PNO diff = -0.0000000558591998
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 3 with orbs energies: -1.00430277 -20.78561041
+MP2 pair ( 9 3 ) energy ep = -0.0002740787042278
+PNO dims = 30 7, NPNO = 7, PNO energy = -0.0002724117029923, PAO->PNO diff = -0.0000016670012355
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 4 with orbs energies: -1.00430277 -0.91096244
+MP2 pair ( 9 4 ) energy ep = -0.0180170271571814
+PNO dims = 30 23, NPNO = 23, PNO energy = -0.0180160861494812, PAO->PNO diff = -0.0000009410077002
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 5 with orbs energies: -1.00430277 -0.91096244
+MP2 pair ( 9 5 ) energy ep = -0.0020491888873880
+PNO dims = 30 25, NPNO = 25, PNO energy = -0.0020477590600257, PAO->PNO diff = -0.0000014298273623
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 6 with orbs energies: -1.00430277 -0.91315847
+MP2 pair ( 9 6 ) energy ep = -0.0022819901044293
+PNO dims = 30 27, NPNO = 27, PNO energy = -0.0022812174975438, PAO->PNO diff = -0.0000007726068855
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 7 with orbs energies: -1.00430277 -0.91315847
+MP2 pair ( 9 7 ) energy ep = -0.0181003349015573
+PNO dims = 30 24, NPNO = 24, PNO energy = -0.0180989947889337, PAO->PNO diff = -0.0000013401126237
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 8 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 9 8 ) energy ep = -0.0090780464733893
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0090780464733893, PAO->PNO diff = 0.0000000000000001
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 9 9 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 9 9 ) energy ep = -0.0241377136683021
+PNO dims = 30 25, NPNO = 25, PNO energy = -0.0241371640298404, PAO->PNO diff = -0.0000005496384617
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 0 with orbs energies: -1.00430277 -1.03743401
+MP2 pair ( 10 0 ) energy ep = -0.0136023326966767
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0136023326966768, PAO->PNO diff = 0.0000000000000001
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 1 with orbs energies: -1.00430277 -20.55464105
+MP2 pair ( 10 1 ) energy ep = -0.0000171446504343
+PNO dims = 30 12, NPNO = 12, PNO energy = -0.0000170887912346, PAO->PNO diff = -0.0000000558591998
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 2 with orbs energies: -1.00430277 -20.55464105
+MP2 pair ( 10 2 ) energy ep = -0.0003024896050461
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0003024247697151, PAO->PNO diff = -0.0000000648353310
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 3 with orbs energies: -1.00430277 -20.78561041
+MP2 pair ( 10 3 ) energy ep = -0.0002740787042274
+PNO dims = 30 7, NPNO = 7, PNO energy = -0.0002724117029919, PAO->PNO diff = -0.0000016670012355
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 4 with orbs energies: -1.00430277 -0.91096244
+MP2 pair ( 10 4 ) energy ep = -0.0020491888873826
+PNO dims = 30 25, NPNO = 25, PNO energy = -0.0020477590600203, PAO->PNO diff = -0.0000014298273623
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 5 with orbs energies: -1.00430277 -0.91096244
+MP2 pair ( 10 5 ) energy ep = -0.0180170271572049
+PNO dims = 30 23, NPNO = 23, PNO energy = -0.0180160861495048, PAO->PNO diff = -0.0000009410077001
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 6 with orbs energies: -1.00430277 -0.91315847
+MP2 pair ( 10 6 ) energy ep = -0.0181003349015717
+PNO dims = 30 24, NPNO = 24, PNO energy = -0.0180989947889480, PAO->PNO diff = -0.0000013401126236
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 7 with orbs energies: -1.00430277 -0.91315847
+MP2 pair ( 10 7 ) energy ep = -0.0022819901044256
+PNO dims = 30 27, NPNO = 27, PNO energy = -0.0022812174975401, PAO->PNO diff = -0.0000007726068855
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 8 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 10 8 ) energy ep = -0.0418586888783307
+PNO dims = 30 27, NPNO = 27, PNO energy = -0.0418578812639650, PAO->PNO diff = -0.0000008076143657
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 9 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 10 9 ) energy ep = -0.0117458004167000
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0117458004167000, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 10 10 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 10 10 ) energy ep = -0.0241377136682749
+PNO dims = 30 25, NPNO = 25, PNO energy = -0.0241371640298132, PAO->PNO diff = -0.0000005496384617
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 0 with orbs energies: -1.00430277 -1.03743401
+MP2 pair ( 11 0 ) energy ep = -0.0136023326965385
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0136023326965385, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 1 with orbs energies: -1.00430277 -20.55464105
+MP2 pair ( 11 1 ) energy ep = -0.0003024896050496
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0003024247697186, PAO->PNO diff = -0.0000000648353310
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 2 with orbs energies: -1.00430277 -20.55464105
+MP2 pair ( 11 2 ) energy ep = -0.0000171446504349
+PNO dims = 30 12, NPNO = 12, PNO energy = -0.0000170887912352, PAO->PNO diff = -0.0000000558591998
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 3 with orbs energies: -1.00430277 -20.78561041
+MP2 pair ( 11 3 ) energy ep = -0.0002740787042210
+PNO dims = 30 7, NPNO = 7, PNO energy = -0.0002724117029855, PAO->PNO diff = -0.0000016670012355
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 4 with orbs energies: -1.00430277 -0.91096244
+MP2 pair ( 11 4 ) energy ep = -0.0180170271573162
+PNO dims = 30 23, NPNO = 23, PNO energy = -0.0180160861496160, PAO->PNO diff = -0.0000009410077002
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 5 with orbs energies: -1.00430277 -0.91096244
+MP2 pair ( 11 5 ) energy ep = -0.0020491888874301
+PNO dims = 30 25, NPNO = 25, PNO energy = -0.0020477590600678, PAO->PNO diff = -0.0000014298273622
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 6 with orbs energies: -1.00430277 -0.91315847
+MP2 pair ( 11 6 ) energy ep = -0.0022819901044741
+PNO dims = 30 27, NPNO = 27, PNO energy = -0.0022812174975886, PAO->PNO diff = -0.0000007726068855
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 7 with orbs energies: -1.00430277 -0.91315847
+MP2 pair ( 11 7 ) energy ep = -0.0181003349017048
+PNO dims = 30 24, NPNO = 24, PNO energy = -0.0180989947890811, PAO->PNO diff = -0.0000013401126237
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 8 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 11 8 ) energy ep = -0.0117458004164582
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0117458004164582, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 9 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 11 9 ) energy ep = -0.0418586888784336
+PNO dims = 30 27, NPNO = 27, PNO energy = -0.0418578812640678, PAO->PNO diff = -0.0000008076143658
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 10 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 11 10 ) energy ep = -0.0090780464734045
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0090780464734045, PAO->PNO diff = 0.0000000000000000
+----------------------------------------------
+Constructing initial PAO amplitudes for pair 11 11 with orbs energies: -1.00430277 -1.00430277
+MP2 pair ( 11 11 ) energy ep = -0.0241377136683029
+PNO dims = 30 25, NPNO = 25, PNO energy = -0.0241371640298411, PAO->PNO diff = -0.0000005496384617
+----------------------------------------
+Total number of pairs = 78
+Total number of pairs kept = 71
+Total pairs dropped = 7 (PreScreen = 1, NSkippedPairs = 2, NMP2Pairs = 4)
+Sum of dropped MP2 pair energies = -0.000027504117863
+Sum of dropped PAO/PNO pair energies = -0.000060139924384
+Input file provided = /hpc/home/mutl412/new-tamm-dev/exachem-dev/build/correctness_runs/inputs/ozone_cc-pvdz_tcut_pairs_tcutpre_1e-07_1_0e-5_tcut_pno_1_0e-7.json
+Input data dir provided = ozone_cc-pvdz_tcut_pairs_tcutpre_1e-07_1_0e-5_tcut_pno_1_0e-7.cc-pvdz_files/restricted/dlpno//predlpno/
+Fock_AO dims = 42x42
+Fock_MO_occ dims = 12x12
+Fock_MO dims = 42x42
+LCAO_Eig dims = 42x42
+OVL_Eig dims = 42x42
+C_PAO_Eig dims = 42x42
+OVL_PAO dims = 42x42
+Time to construct dlpno input tensors: 0.146613786000000 secs 
+
+CCSD Options
+{
+ cache_size           = 8
+ ccsdt_tilesize       = 32
+ ndiis                = 5
+ threshold            = 1e-08
+ tilesize             = 30
+ ccsd_maxiter         = 150
+ freeze_core          = 0
+ freeze_virtual       = 0
+ readt                = false
+ writet               = false
+ writev               = false
+ writet_iter          = 5
+ profile_ccsd         = false
+ balance_tiles        = true
+ dlpno_dfbasis        = cc-pvtz-ri
+ eom_nroots           = 2
+ eom_microiter        = 50
+ eom_threshold        = 1e-06
+ debug                = false
+}
+
+#occupied, #virtual = 24, 60
+Number of AO tiles = 18
+Number of AO tiles = 0
+Time to compute 3c integral (TE) tensors: 0.013848618 secs 
+
+CD Options
+{
+ debug            = false
+ write_cv         = false
+ diagtol          = 1e-06
+ write_vcount     = 5000
+ itilesize        = 1000
+ max_cvecs_factor = 12
+}
+
+-----------------------------------------------------
+Begin 2-index transformation ... 
+
+nAO, nMO, nelectrons = 42, 42, 24
+
+Time taken for Fao->Fmo transform: 0.00 secs
+
+-----------------------------------------------------
+
+Total Time taken for Cholesky Decomposition: 0.01 secs
+
+----------------------------
+scf_type = restricted
+Closed-Shell SCF
+nbf = 42
+nbf_orig = 42
+n_lindep = 0
+focc = 1
+nmo = 84
+nocc = 24
+nvir = 60
+n_occ_alpha = 12
+n_vir_alpha = 30
+n_occ_beta = 12
+n_vir_beta = 30
+nelectrons = 24
+nelectrons_alpha = 12
+nelectrons_beta = 12
+n_frozen_core = 0
+n_frozen_virtual = 0
+----------------------------
+Time to construct dlpno evl vectors: 0.01 secs 
+Time to construct TE variants: 0.03 secs 
+Time to construct new Sijkl variants: 0.29 secs 
+Tiled Index Space Sizes:
+MO: Total Size = 42
+Occ: Total Size = 12
+Virt: Total Size = 30
+LMOP: Total Size = 130
+PNO: Total Size = 30
+PAO: Total Size = 42
+DF: Total Size = 243
+Time to construct dlpno t2 guess: 0.02 secs 
+DLPNO CCSD Memory Stats before init_4c_integrals
+------------------------------------------------
+allocation count: 158
+deallocation count: 88
+total memory allocated: 0.282313 GiB
+total memory deallocated: 0.051401 GiB
+maximum memory in single allocation: 0.113323 GiB
+maximum memory consumption: 0.253612 GiB
+Time for computing Int4c_ovov_0s_s0 0.0851092300 secs
+Time for computing Int4c_ovov_0s_s0_T 0.3162748390 secs
+Time for computing Int4c_oovv_0s_00_ii 0.1723611510 secs
+Time for computing Int4c_oovv_0s_00_jj 0.1706105290 secs
+Time for computing Int4c_ovov_00_0s_ii 0.1609190510 secs
+Time for computing Int4c_ovov_00_0s_jj 0.1523162570 secs
+Time for Opmin: 0.7223694450 secs 
+DLPNO CCSD Memory Stats before iterations
+-----------------------------------------
+allocation count: 184
+deallocation count: 108
+total memory allocated: 2.112933 GiB
+total memory deallocated: 1.202080 GiB
+maximum memory in single allocation: 0.222114 GiB
+maximum memory consumption: 1.092124 GiB
+
+
+ CCSD iterations
+------------------------------------------------------------
+ Iter     Residuum          Correlation          Time(s)
+------------------------------------------------------------
+DLPNO CCSD Memory Stats after energy equations
+----------------------------------------------
+allocation count: 198
+deallocation count: 122
+total memory allocated: 2.120816 GiB
+total memory deallocated: 1.209964 GiB
+maximum memory in single allocation: 0.222114 GiB
+maximum memory consumption: 1.092124 GiB
+DLPNO CCSD Memory Stats after singles equations
+-----------------------------------------------
+allocation count: 349
+deallocation count: 273
+total memory allocated: 2.195568 GiB
+total memory deallocated: 1.284715 GiB
+maximum memory in single allocation: 0.222114 GiB
+maximum memory consumption: 1.092124 GiB
+DLPNO CCSD Memory Stats after doubles equations
+-----------------------------------------------
+allocation count: 1100
+deallocation count: 1024
+total memory allocated: 20.855625 GiB
+total memory deallocated: 19.944772 GiB
+maximum memory in single allocation: 0.222114 GiB
+maximum memory consumption: 1.477721 GiB
+   1     0.2011657897818   -0.5747681062560         28.04
+   2     0.0724908050065   -0.5733637421243         28.62
+   3     0.0432680142768   -0.6026830819595         29.15
+   4     0.0319124397786   -0.6031688748637         28.66
+   5     0.0237725850900   -0.6091172258014         28.74
+ MICROCYCLE DIIS UPDATE:                    6
+   6     0.0192112032502   -0.6094455631758         29.07
+   7     0.0148722063341   -0.6118408853365         28.98
+   8     0.0121783377994   -0.6119420782972         28.90
+   9     0.0095268706699   -0.6132060096981         29.24
+  10     0.0078262860308   -0.6132118082217         29.33
+ MICROCYCLE DIIS UPDATE:                   11
+  11     0.0061497668153   -0.6139486098247         29.97
+  12     0.0050576609544   -0.6139216056437         30.32
+  13     0.0039852195684   -0.6143693148803         30.70
+  14     0.0032788075701   -0.6143350941145         30.75
+  15     0.0025891103398   -0.6146126393147         31.45
+ MICROCYCLE DIIS UPDATE:                   16
+  16     0.0021302257813   -0.6145809820837         30.27
+  17     0.0016852678413   -0.6147549563417         30.55
+  18     0.0013862973570   -0.6147289213610         32.36
+  19     0.0010985874632   -0.6148387351043         32.09
+  20     0.0009033805998   -0.6148185941966         31.50
+ MICROCYCLE DIIS UPDATE:                   21
+  21     0.0007170168777   -0.6148882461285         31.57
+  22     0.0005893498787   -0.6148732344225         31.47
+  23     0.0004684530496   -0.6149175747569         31.45
+  24     0.0003848504011   -0.6149066612707         31.53
+  25     0.0003063214707   -0.6149349710159         31.51
+ MICROCYCLE DIIS UPDATE:                   26
+  26     0.0002515186648   -0.6149271764551         31.17
+  27     0.0002004516664   -0.6149452953366         30.44
+  28     0.0001644983364   -0.6149398014530         30.38
+  29     0.0001312558308   -0.6149514221826         29.75
+  30     0.0001076531601   -0.6149475891373         29.32
+ MICROCYCLE DIIS UPDATE:                   31
+  31     0.0000859938304   -0.6149550558270         29.22
+  32     0.0000704908468   -0.6149524030010         29.24
+  33     0.0000563669302   -0.6149572083706         29.06
+  34     0.0000461796442   -0.6149553842852         29.20
+  35     0.0000369626403   -0.6149584814075         29.21
+ MICROCYCLE DIIS UPDATE:                   36
+  36     0.0000302660195   -0.6149572338657         29.19
+  37     0.0000242471038   -0.6149592326428         29.14
+  38     0.0000198438064   -0.6149583832216         28.90
+  39     0.0000159109041   -0.6149596747259         28.88
+  40     0.0000130148848   -0.6149590985572         28.89
+ MICROCYCLE DIIS UPDATE:                   41
+  41     0.0000104436030   -0.6149599339892         28.91
+  42     0.0000085385548   -0.6149595444297         28.86
+  43     0.0000068566342   -0.6149600854007         28.75
+  44     0.0000056032772   -0.6149598227441         28.74
+  45     0.0000045025990   -0.6149601733770         28.86
+ MICROCYCLE DIIS UPDATE:                   46
+  46     0.0000036779032   -0.6149599967117         29.17
+  47     0.0000029573005   -0.6149602241790         29.19
+  48     0.0000024146113   -0.6149601056039         28.98
+  49     0.0000019426618   -0.6149602532926         28.94
+  50     0.0000015855230   -0.6149601738553         28.85
+ MICROCYCLE DIIS UPDATE:                   51
+  51     0.0000012763196   -0.6149602698208         28.81
+  52     0.0000010412789   -0.6149602166912         28.65
+  53     0.0000008386375   -0.6149602790934         29.62
+  54     0.0000006839475   -0.6149602436114         29.85
+  55     0.0000005511055   -0.6149602842168         29.98
+ MICROCYCLE DIIS UPDATE:                   56
+  56     0.0000004492959   -0.6149602605517         30.06
+  57     0.0000003621886   -0.6149602869909         30.04
+  58     0.0000002951819   -0.6149602712259         29.78
+  59     0.0000002380505   -0.6149602884515         29.51
+  60     0.0000001939498   -0.6149602779605         29.37
+ MICROCYCLE DIIS UPDATE:                   61
+  61     0.0000001564708   -0.6149602891898         29.60
+  62     0.0000001274459   -0.6149602822151         29.60
+  63     0.0000001028544   -0.6149602895393         26.46
+  64     0.0000000837520   -0.6149602849065         27.12
+  65     0.0000000676137   -0.6149602896860         29.16
+ MICROCYCLE DIIS UPDATE:                   66
+  66     0.0000000550420   -0.6149602866111         29.05
+  67     0.0000000444493   -0.6149602897315         28.99
+  68     0.0000000361758   -0.6149602876922         28.88
+  69     0.0000000292222   -0.6149602897303         28.85
+  70     0.0000000237774   -0.6149602883786         28.90
+ MICROCYCLE DIIS UPDATE:                   71
+  71     0.0000000192121   -0.6149602897105         29.01
+  72     0.0000000156290   -0.6149602888151         28.90
+  73     0.0000000126313   -0.6149602896857         29.31
+  74     0.0000000102735   -0.6149602890930         28.92
+  75     0.0000000083048   -0.6149602896623         27.02
+DLPNO CCSD Memory Stats
+-----------------------
+allocation count: 69034
+deallocation count: 68958
+total memory allocated: 1407.814844 GiB
+total memory deallocated: 1406.903991 GiB
+maximum memory in single allocation: 0.222114 GiB
+maximum memory consumption: 1.477721 GiB
+------------------------------------------------------------------
+ Iterations converged
+ CCSD correlation energy / hartree =        -0.614960289662302
+ CCSD total energy / hartree       =      -224.880540603992699

@@ -1,0 +1,566 @@
+
+date: Tue Oct 10 20:10:11 2023
+program: "/hpc/home/mutl412/new-tamm-dev/exachem-dev/build/methods_stage/hpc/home/mutl412/new-tamm-dev/install_clang_2/methods/ExaChem"
+input: /hpc/home/mutl412/new-tamm-dev/exachem-dev/build/correctness_runs/inputs/ozone_cc-pvdz_tcut_pairs_2_5e-4_tcut_pno_5_0e-8.json
+nnodes: 1, nproc: 12
+prefix: ozone_cc-pvdz_tcut_pairs_2_5e-4_tcut_pno_5_0e-8
+
+Memory information
+{
+ CPU memory per node (GiB): 6046
+ Total CPU memory (GiB): 6046
+}
+
+
+Input file provided
+--------------------
+{
+  "geometry": {
+    "coordinates": [
+      "O   0.0000000000        0.0000000000        0.0000000000",
+      "O   0.0000000000       -2.0473224350       -1.2595211660",
+      "O   0.0000000000        2.0473224350       -1.2595211660"
+    ],
+    "units": "bohr"
+  },
+  "basis": {
+    "basisset": "cc-pvdz",
+    "atom_basis": null
+  },
+  "SCF": {
+    "tilesize": 30,
+    "restart": false
+  },
+  "CD": {
+    "diagtol": 1e-06,
+    "max_cvecs": 8
+  },
+  "CC": {
+    "threshold": 1e-08,
+    "tilesize": 30,
+    "debug": false,
+    "ccsd_maxiter": 100,
+    "EOMCCSD": {
+      "eom_nroots": 2,
+      "eom_type": "right",
+      "eom_threshold": 1e-06,
+      "eom_microiter": 50
+    },
+    "DLPNO": {
+      "df_basisset": "cc-pvtz-ri",
+      "localize": true,
+      "TCutPairs": 0.00025,
+      "TCutPNO": 5e-08,
+      "TCutEN": 0.0,
+      "TCutPre": 0.0,
+      "TCutDOij": 1.0,
+      "TCutDOPre": 0.0
+    }
+  },
+  "TASK": {
+    "scf": false,
+    "mp2": false,
+    "cd_2e": false,
+    "ccsd": false,
+    "ccsd_t": false,
+    "dlpno_ccsd": [
+      true,
+      ""
+    ]
+  }
+}
+Input file provided = /hpc/home/mutl412/new-tamm-dev/exachem-dev/build/correctness_runs/inputs/ozone_cc-pvdz_tcut_pairs_2_5e-4_tcut_pno_5_0e-8.json
+
+Number of nodes, processes per node used for SCF calculation: 1, 12
+
+SCF Options
+{
+ charge       = 0
+ multiplicity = 1
+ level shift  = 0
+ tol_int      = 1e-12
+ tol_lindep   = 1e-05
+ conve        = 1e-08
+ convd        = 1e-06
+ diis_hist    = 10
+ AO_tilesize  = 30
+ writem       = 1
+ alpha        = 1
+ scf_type     = restricted
+ restart_size = 2000
+ restart      = false
+ debug        = false
+}
+
+Number of basis functions = 42
+
+Total number of electrons = 24
+  # of alpha electrons    = 12
+  # of beta electons      = 12
+
+Nuclear repulsion energy  = 68.8807220354829
+
+# of {all,non-negligible} shell-pairs = {171,171}
+Number of AO tiles = 18
+
+Time for initial setup: 0.04 secs
+
+Time for computing 1-e integrals T, V, S: 0.01 secs
+Time for computing orthogonalizer: 0.00 secs
+
+Superposition of Atomic Density Guess ...
+Time taken for SAD: 0.08 secs
+Total Time to compute initial guess: 0.10 secs
+
+
+ SCF iterations
+-----------------------------------------------------------------
+ Iter     Energy            E-Diff       RMSD          Time(s)
+-----------------------------------------------------------------
+   1  -224.1061573640    -2.24e+02     2.24e-02         0.0 
+   2  -224.1337176769    -2.76e-02     1.12e-02         0.0 
+   3  -224.2629274238    -1.29e-01     2.24e-03         0.0 
+   4  -224.2651084798    -2.18e-03     1.22e-03         0.0 
+   5  -224.2654944777    -3.86e-04     4.92e-04         0.0 
+   6  -224.2655625474    -6.81e-05     2.60e-04         0.0 
+   7  -224.2655788857    -1.63e-05     8.11e-05         0.0 
+   8  -224.2655803023    -1.42e-06     5.69e-06         0.1 
+   9  -224.2655803137    -1.14e-08     1.48e-06         0.1 
+  10  -224.2655803143    -6.12e-10     4.64e-07         0.1 
+
+** Total SCF energy = -224.2655803143301
+
+Nuclear repulsion energy = 68.880722035482947
+#electrons        = 24.000000000000007
+1e energy kinetic = 224.0131410092747899
+1e energy N-e     = -669.1101862822938529
+1e energy         = -445.0970452730191482
+2e energy         = 151.9507425573036414
+writing orbitals and density to file... done.
+
+Time taken for Hartree-Fock: 0.64 secs
+Number of AO tiles = 18
+# of {all,non-negligible} shell-pairs = {171,171}
+
+Resetting CCSD tilesize to: 50
+
+density-fitting basis set rank = 243
+Number of AO tiles = 69
+Time to compute 3c-ints: 0.01 secs 
+Time to compute V^-1/2: 0.01s
+Time to compute ints_3c_trans: 0.00s
+
+-----------------------------------------------------
+Begin 2-index transformation ... 
+
+nAO, nMO, nelectrons = 42, 42, 24
+
+Time taken for Fao->Fmo transform: 0.00 secs
+
+-----------------------------------------------------
+
+Entering Jacobi type localization:
+Calculating Mulliken population analysis.
+Computing MO to AUX maps.
+Computing MO to PAO maps (Mulliken approx. version).
+Computing PAO to AUX maps.
+NnonredPAOs = 30
+ELECTRON PAIR PRESCREENING
+Dipole-based pair screening          .... 
+NOT used
+MP2 pair ( 0 0 ) energy ep = -0.0190028936621347
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0190028936621348, PAO->PNO diff = 0.0000000000000001
+MP2 pair ( 1 0 ) energy ep = -0.0000143178788355
+MP2 pair ( 1 1 ) energy ep = -0.0003114370395816
+PNO dims = 30 9, NPNO = 9, PNO energy = -0.0003114338544573, PAO->PNO diff = -0.0000000031851243
+MP2 pair ( 2 0 ) energy ep = -0.0000143178788354
+MP2 pair ( 2 1 ) energy ep = -0.0000000052918353
+MP2 pair ( 2 2 ) energy ep = -0.0003114370395801
+PNO dims = 30 9, NPNO = 9, PNO energy = -0.0003114338544558, PAO->PNO diff = -0.0000000031851243
+MP2 pair ( 3 0 ) energy ep = -0.0005131175869869
+PNO dims = 30 18, NPNO = 18, PNO energy = -0.0005130957415640, PAO->PNO diff = -0.0000000218454229
+MP2 pair ( 3 1 ) energy ep = -0.0000001656181205
+MP2 pair ( 3 2 ) energy ep = -0.0000001656181205
+MP2 pair ( 3 3 ) energy ep = -0.0003367509634893
+PNO dims = 30 4, NPNO = 4, PNO energy = -0.0003366397720032, PAO->PNO diff = -0.0000001111914861
+MP2 pair ( 4 0 ) energy ep = -0.0020118266488233
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0020118266488233, PAO->PNO diff = 0.0000000000000000
+MP2 pair ( 4 1 ) energy ep = -0.0004597625049157
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0004597326985726, PAO->PNO diff = -0.0000000298063432
+MP2 pair ( 4 2 ) energy ep = -0.0000016710533767
+MP2 pair ( 4 3 ) energy ep = -0.0000203269144626
+MP2 pair ( 4 4 ) energy ep = -0.0178931915318306
+PNO dims = 30 20, NPNO = 20, PNO energy = -0.0178930662292291, PAO->PNO diff = -0.0000001253026015
+MP2 pair ( 5 0 ) energy ep = -0.0020118266488325
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0020118266488325, PAO->PNO diff = 0.0000000000000000
+MP2 pair ( 5 1 ) energy ep = -0.0000016710533767
+MP2 pair ( 5 2 ) energy ep = -0.0004597625049138
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0004597326985706, PAO->PNO diff = -0.0000000298063432
+MP2 pair ( 5 3 ) energy ep = -0.0000203269144629
+MP2 pair ( 5 4 ) energy ep = -0.0003855067612786
+PNO dims = 30 25, NPNO = 25, PNO energy = -0.0003850558957833, PAO->PNO diff = -0.0000004508654953
+MP2 pair ( 5 5 ) energy ep = -0.0178931915318355
+PNO dims = 30 20, NPNO = 20, PNO energy = -0.0178930662292341, PAO->PNO diff = -0.0000001253026015
+MP2 pair ( 6 0 ) energy ep = -0.0016289176670027
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0016289176670027, PAO->PNO diff = 0.0000000000000000
+MP2 pair ( 6 1 ) energy ep = -0.0000051221670287
+MP2 pair ( 6 2 ) energy ep = -0.0004587501842464
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0004587200064593, PAO->PNO diff = -0.0000000301777870
+MP2 pair ( 6 3 ) energy ep = -0.0000156356981037
+MP2 pair ( 6 4 ) energy ep = -0.0004996298836000
+PNO dims = 30 23, NPNO = 23, PNO energy = -0.0004988557964952, PAO->PNO diff = -0.0000007740871047
+MP2 pair ( 6 5 ) energy ep = -0.0155324047227014
+PNO dims = 30 22, NPNO = 22, PNO energy = -0.0155320702362735, PAO->PNO diff = -0.0000003344864279
+MP2 pair ( 6 6 ) energy ep = -0.0178438560531709
+PNO dims = 30 19, NPNO = 19, PNO energy = -0.0178434856744417, PAO->PNO diff = -0.0000003703787292
+MP2 pair ( 7 0 ) energy ep = -0.0016289176670010
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0016289176670010, PAO->PNO diff = 0.0000000000000000
+MP2 pair ( 7 1 ) energy ep = -0.0004587501842482
+PNO dims = 30 13, NPNO = 13, PNO energy = -0.0004587200064612, PAO->PNO diff = -0.0000000301777870
+MP2 pair ( 7 2 ) energy ep = -0.0000051221670287
+MP2 pair ( 7 3 ) energy ep = -0.0000156356981035
+MP2 pair ( 7 4 ) energy ep = -0.0155324047226581
+PNO dims = 30 22, NPNO = 22, PNO energy = -0.0155320702362300, PAO->PNO diff = -0.0000003344864280
+MP2 pair ( 7 5 ) energy ep = -0.0004996298836000
+PNO dims = 30 23, NPNO = 23, PNO energy = -0.0004988557964953, PAO->PNO diff = -0.0000007740871047
+MP2 pair ( 7 6 ) energy ep = -0.0007148757232174
+PNO dims = 30 26, NPNO = 26, PNO energy = -0.0007145255820653, PAO->PNO diff = -0.0000003501411522
+MP2 pair ( 7 7 ) energy ep = -0.0178438560531683
+PNO dims = 30 19, NPNO = 19, PNO energy = -0.0178434856744392, PAO->PNO diff = -0.0000003703787291
+MP2 pair ( 8 0 ) energy ep = -0.0136023326964852
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0136023326964852, PAO->PNO diff = 0.0000000000000001
+MP2 pair ( 8 1 ) energy ep = -0.0000171446504351
+MP2 pair ( 8 2 ) energy ep = -0.0003024896050500
+PNO dims = 30 16, NPNO = 16, PNO energy = -0.0003024671084325, PAO->PNO diff = -0.0000000224966175
+MP2 pair ( 8 3 ) energy ep = -0.0002740787042202
+PNO dims = 30 7, NPNO = 7, PNO energy = -0.0002724117029847, PAO->PNO diff = -0.0000016670012355
+MP2 pair ( 8 4 ) energy ep = -0.0020491888874218
+PNO dims = 30 28, NPNO = 28, PNO energy = -0.0020490217440829, PAO->PNO diff = -0.0000001671433389
+MP2 pair ( 8 5 ) energy ep = -0.0180170271573422
+PNO dims = 30 24, NPNO = 24, PNO energy = -0.0180165292948401, PAO->PNO diff = -0.0000004978625021
+MP2 pair ( 8 6 ) energy ep = -0.0181003349017175
+PNO dims = 30 26, NPNO = 26, PNO energy = -0.0180997594434452, PAO->PNO diff = -0.0000005754582723
+MP2 pair ( 8 7 ) energy ep = -0.0022819901044660
+PNO dims = 30 28, NPNO = 28, PNO energy = -0.0022815362521428, PAO->PNO diff = -0.0000004538523232
+MP2 pair ( 8 8 ) energy ep = -0.0241377136682674
+PNO dims = 30 26, NPNO = 26, PNO energy = -0.0241374332668699, PAO->PNO diff = -0.0000002804013976
+MP2 pair ( 9 0 ) energy ep = -0.0136023326967195
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0136023326967195, PAO->PNO diff = 0.0000000000000000
+MP2 pair ( 9 1 ) energy ep = -0.0003024896050480
+PNO dims = 30 16, NPNO = 16, PNO energy = -0.0003024671084305, PAO->PNO diff = -0.0000000224966175
+MP2 pair ( 9 2 ) energy ep = -0.0000171446504343
+MP2 pair ( 9 3 ) energy ep = -0.0002740787042278
+PNO dims = 30 7, NPNO = 7, PNO energy = -0.0002724117029923, PAO->PNO diff = -0.0000016670012355
+MP2 pair ( 9 4 ) energy ep = -0.0180170271571820
+PNO dims = 30 24, NPNO = 24, PNO energy = -0.0180165292946800, PAO->PNO diff = -0.0000004978625020
+MP2 pair ( 9 5 ) energy ep = -0.0020491888873879
+PNO dims = 30 28, NPNO = 28, PNO energy = -0.0020490217440490, PAO->PNO diff = -0.0000001671433389
+MP2 pair ( 9 6 ) energy ep = -0.0022819901044292
+PNO dims = 30 28, NPNO = 28, PNO energy = -0.0022815362521060, PAO->PNO diff = -0.0000004538523231
+MP2 pair ( 9 7 ) energy ep = -0.0181003349015573
+PNO dims = 30 26, NPNO = 26, PNO energy = -0.0180997594432851, PAO->PNO diff = -0.0000005754582722
+MP2 pair ( 9 8 ) energy ep = -0.0090780464733882
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0090780464733883, PAO->PNO diff = 0.0000000000000000
+MP2 pair ( 9 9 ) energy ep = -0.0241377136683033
+PNO dims = 30 26, NPNO = 26, PNO energy = -0.0241374332669058, PAO->PNO diff = -0.0000002804013975
+MP2 pair ( 10 0 ) energy ep = -0.0136023326966739
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0136023326966739, PAO->PNO diff = 0.0000000000000001
+MP2 pair ( 10 1 ) energy ep = -0.0000171446504344
+MP2 pair ( 10 2 ) energy ep = -0.0003024896050471
+PNO dims = 30 16, NPNO = 16, PNO energy = -0.0003024671084296, PAO->PNO diff = -0.0000000224966175
+MP2 pair ( 10 3 ) energy ep = -0.0002740787042273
+PNO dims = 30 7, NPNO = 7, PNO energy = -0.0002724117029918, PAO->PNO diff = -0.0000016670012355
+MP2 pair ( 10 4 ) energy ep = -0.0020491888873826
+PNO dims = 30 28, NPNO = 28, PNO energy = -0.0020490217440437, PAO->PNO diff = -0.0000001671433389
+MP2 pair ( 10 5 ) energy ep = -0.0180170271572051
+PNO dims = 30 24, NPNO = 24, PNO energy = -0.0180165292947031, PAO->PNO diff = -0.0000004978625020
+MP2 pair ( 10 6 ) energy ep = -0.0181003349015690
+PNO dims = 30 26, NPNO = 26, PNO energy = -0.0180997594432968, PAO->PNO diff = -0.0000005754582722
+MP2 pair ( 10 7 ) energy ep = -0.0022819901044257
+PNO dims = 30 28, NPNO = 28, PNO energy = -0.0022815362521025, PAO->PNO diff = -0.0000004538523232
+MP2 pair ( 10 8 ) energy ep = -0.0418586888783254
+PNO dims = 30 29, NPNO = 29, PNO energy = -0.0418586249763497, PAO->PNO diff = -0.0000000639019757
+MP2 pair ( 10 9 ) energy ep = -0.0117458004166989
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0117458004166989, PAO->PNO diff = 0.0000000000000000
+MP2 pair ( 10 10 ) energy ep = -0.0241377136682712
+PNO dims = 30 26, NPNO = 26, PNO energy = -0.0241374332668738, PAO->PNO diff = -0.0000002804013975
+MP2 pair ( 11 0 ) energy ep = -0.0136023326965399
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0136023326965399, PAO->PNO diff = 0.0000000000000000
+MP2 pair ( 11 1 ) energy ep = -0.0003024896050508
+PNO dims = 30 16, NPNO = 16, PNO energy = -0.0003024671084333, PAO->PNO diff = -0.0000000224966175
+MP2 pair ( 11 2 ) energy ep = -0.0000171446504350
+MP2 pair ( 11 3 ) energy ep = -0.0002740787042210
+PNO dims = 30 7, NPNO = 7, PNO energy = -0.0002724117029856, PAO->PNO diff = -0.0000016670012355
+MP2 pair ( 11 4 ) energy ep = -0.0180170271573168
+PNO dims = 30 24, NPNO = 24, PNO energy = -0.0180165292948148, PAO->PNO diff = -0.0000004978625020
+MP2 pair ( 11 5 ) energy ep = -0.0020491888874299
+PNO dims = 30 28, NPNO = 28, PNO energy = -0.0020490217440911, PAO->PNO diff = -0.0000001671433389
+MP2 pair ( 11 6 ) energy ep = -0.0022819901044740
+PNO dims = 30 28, NPNO = 28, PNO energy = -0.0022815362521508, PAO->PNO diff = -0.0000004538523232
+MP2 pair ( 11 7 ) energy ep = -0.0181003349017048
+PNO dims = 30 26, NPNO = 26, PNO energy = -0.0180997594434326, PAO->PNO diff = -0.0000005754582722
+MP2 pair ( 11 8 ) energy ep = -0.0117458004164572
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0117458004164572, PAO->PNO diff = -0.0000000000000000
+MP2 pair ( 11 9 ) energy ep = -0.0418586888784361
+PNO dims = 30 29, NPNO = 29, PNO energy = -0.0418586249764603, PAO->PNO diff = -0.0000000639019758
+MP2 pair ( 11 10 ) energy ep = -0.0090780464734034
+PNO dims = 30 30, NPNO = 30, PNO energy = -0.0090780464734034, PAO->PNO diff = 0.0000000000000000
+MP2 pair ( 11 11 ) energy ep = -0.0241377136683041
+PNO dims = 30 26, NPNO = 26, PNO energy = -0.0241374332669066, PAO->PNO diff = -0.0000002804013975
+----------------------------------------
+Total number of pairs = 78
+Total number of pairs kept = 61
+Total pairs dropped = 17 (PreScreen = 0, NSkippedPairs = 17, NMP2Pairs = 0)
+Sum of dropped MP2 pair energies = 0.000000000000000
+Sum of dropped PAO/PNO pair energies = -0.000019053558490
+Input file provided = /hpc/home/mutl412/new-tamm-dev/exachem-dev/build/correctness_runs/inputs/ozone_cc-pvdz_tcut_pairs_2_5e-4_tcut_pno_5_0e-8.json
+Input data dir provided = ozone_cc-pvdz_tcut_pairs_2_5e-4_tcut_pno_5_0e-8.cc-pvdz_files/restricted/dlpno//predlpno/
+Fock_AO dims = 42x42
+Fock_MO_occ dims = 12x12
+Fock_MO dims = 42x42
+LCAO_Eig dims = 42x42
+OVL_Eig dims = 42x42
+C_PAO_Eig dims = 42x42
+OVL_PAO dims = 42x42
+Time to construct dlpno input tensors: 0.182672112000000 secs 
+
+CCSD Options
+{
+ cache_size           = 8
+ ccsdt_tilesize       = 32
+ ndiis                = 5
+ threshold            = 1e-08
+ tilesize             = 30
+ ccsd_maxiter         = 100
+ freeze_core          = 0
+ freeze_virtual       = 0
+ readt                = false
+ writet               = false
+ writev               = false
+ writet_iter          = 5
+ profile_ccsd         = false
+ balance_tiles        = true
+ dlpno_dfbasis        = cc-pvtz-ri
+ eom_nroots           = 2
+ eom_microiter        = 50
+ eom_threshold        = 1e-06
+ debug                = false
+}
+
+#occupied, #virtual = 24, 60
+Number of AO tiles = 18
+Number of AO tiles = 0
+Time to compute 3c integral (TE) tensors: 0.01609744 secs 
+
+CD Options
+{
+ debug            = false
+ write_cv         = false
+ diagtol          = 1e-06
+ write_vcount     = 5000
+ itilesize        = 1000
+ max_cvecs_factor = 12
+}
+
+-----------------------------------------------------
+Begin 2-index transformation ... 
+
+nAO, nMO, nelectrons = 42, 42, 24
+
+Time taken for Fao->Fmo transform: 0.00 secs
+
+-----------------------------------------------------
+
+Total Time taken for Cholesky Decomposition: 0.01 secs
+
+----------------------------
+scf_type = restricted
+Closed-Shell SCF
+nbf = 42
+nbf_orig = 42
+n_lindep = 0
+focc = 1
+nmo = 84
+nocc = 24
+nvir = 60
+n_occ_alpha = 12
+n_vir_alpha = 30
+n_occ_beta = 12
+n_vir_beta = 30
+nelectrons = 24
+nelectrons_alpha = 12
+nelectrons_beta = 12
+n_frozen_core = 0
+n_frozen_virtual = 0
+----------------------------
+Time to construct dlpno evl vectors: 0.01 secs 
+Time to construct TE variants: 0.02 secs 
+Time to construct new Sijkl variants: 0.24 secs 
+Tiled Index Space Sizes:
+MO: Total Size = 42
+Occ: Total Size = 12
+Virt: Total Size = 30
+LMOP: Total Size = 110
+PNO: Total Size = 30
+PAO: Total Size = 42
+DF: Total Size = 243
+Time to construct dlpno t2 guess: 0.02 secs 
+DLPNO CCSD Memory Stats before init_4c_integrals
+------------------------------------------------
+allocation count: 158
+deallocation count: 88
+total memory allocated: 0.224488 GiB
+total memory deallocated: 0.046964 GiB
+maximum memory in single allocation: 0.081137 GiB
+maximum memory consumption: 0.196731 GiB
+Time for computing Int4c_ovov_0s_s0 0.0799463420 secs
+Time for computing Int4c_ovov_0s_s0_T 0.2941627100 secs
+Time for computing Int4c_oovv_0s_00_ii 0.1622735790 secs
+Time for computing Int4c_oovv_0s_00_jj 0.1655642600 secs
+Time for computing Int4c_ovov_00_0s_ii 0.1468527640 secs
+Time for computing Int4c_ovov_00_0s_jj 0.1304479120 secs
+Time for Opmin: 0.7328221170 secs 
+DLPNO CCSD Memory Stats before iterations
+-----------------------------------------
+allocation count: 184
+deallocation count: 108
+total memory allocated: 1.553062 GiB
+total memory deallocated: 0.888718 GiB
+maximum memory in single allocation: 0.159028 GiB
+maximum memory consumption: 0.797215 GiB
+
+
+ CCSD iterations
+------------------------------------------------------------
+ Iter     Residuum          Correlation          Time(s)
+------------------------------------------------------------
+DLPNO CCSD Memory Stats after energy equations
+----------------------------------------------
+allocation count: 198
+deallocation count: 122
+total memory allocated: 1.559776 GiB
+total memory deallocated: 0.895432 GiB
+maximum memory in single allocation: 0.159028 GiB
+maximum memory consumption: 0.797215 GiB
+DLPNO CCSD Memory Stats after singles equations
+-----------------------------------------------
+allocation count: 349
+deallocation count: 273
+total memory allocated: 1.623883 GiB
+total memory deallocated: 0.959539 GiB
+maximum memory in single allocation: 0.159028 GiB
+maximum memory consumption: 0.797215 GiB
+DLPNO CCSD Memory Stats after doubles equations
+-----------------------------------------------
+allocation count: 1100
+deallocation count: 1024
+total memory allocated: 15.095377 GiB
+total memory deallocated: 14.431033 GiB
+maximum memory in single allocation: 0.159028 GiB
+maximum memory consumption: 1.070209 GiB
+   1     0.1998024079923   -0.5746395797951         25.57
+   2     0.0731889527730   -0.5731966018884         25.61
+   3     0.0441838530784   -0.6024717245904         25.35
+   4     0.0330675355225   -0.6029149910149         24.81
+   5     0.0248435137620   -0.6089608865530         24.84
+ MICROCYCLE DIIS UPDATE:                    6
+   6     0.0203424365788   -0.6092075812514         25.56
+   7     0.0158916899849   -0.6116884189917         25.45
+   8     0.0131660388187   -0.6117229595988         25.51
+   9     0.0104012669744   -0.6130550313239         25.86
+  10     0.0086370615834   -0.6130097285050         25.60
+ MICROCYCLE DIIS UPDATE:                   11
+  11     0.0068582940749   -0.6137994879034         26.32
+  12     0.0056982670701   -0.6137335623755         25.63
+  13     0.0045399163488   -0.6142215564453         25.34
+  14     0.0037721022177   -0.6141578097175         26.11
+  15     0.0030133782796   -0.6144654604912         25.97
+ MICROCYCLE DIIS UPDATE:                   16
+  16     0.0025030669966   -0.6144115626885         26.12
+  17     0.0020042726124   -0.6146077272622         25.82
+  18     0.0016641003267   -0.6145650889596         25.48
+  19     0.0013352834770   -0.6146910863221         25.85
+  20     0.0011080259561   -0.6146586658218         25.90
+ MICROCYCLE DIIS UPDATE:                   21
+  21     0.0008907750380   -0.6147400233671         26.04
+  22     0.0007387006849   -0.6147160100657         26.00
+  23     0.0005948882625   -0.6147687611643         25.82
+  24     0.0004929972515   -0.6147513018676         25.94
+  25     0.0003976418093   -0.6147856220741         25.92
+ MICROCYCLE DIIS UPDATE:                   26
+  26     0.0003293096451   -0.6147731012989         26.03
+  27     0.0002659931898   -0.6147954955959         25.84
+  28     0.0002201343836   -0.6147866105532         25.62
+  29     0.0001780392619   -0.6148012604242         25.77
+  30     0.0001472463452   -0.6147950074267         25.88
+ MICROCYCLE DIIS UPDATE:                   31
+  31     0.0001192291882   -0.6148046127693         26.40
+  32     0.0000985444875   -0.6148002413064         26.19
+  33     0.0000798791656   -0.6148065519171         26.70
+  34     0.0000659805616   -0.6148035123932         27.02
+  35     0.0000535349688   -0.6148076659723         26.52
+ MICROCYCLE DIIS UPDATE:                   36
+  36     0.0000441942533   -0.6148055620458         27.47
+  37     0.0000358896220   -0.6148083004119         27.39
+  38     0.0000296112409   -0.6148068495744         26.91
+  39     0.0000240661163   -0.6148086576366         26.15
+  40     0.0000198457360   -0.6148076603454         26.12
+ MICROCYCLE DIIS UPDATE:                   41
+  41     0.0000161410210   -0.6148088557932         26.09
+  42     0.0000133039205   -0.6148081721290         26.15
+  43     0.0000108275175   -0.6148089635216         26.26
+  44     0.0000089202842   -0.6148084959514         26.40
+  45     0.0000072641899   -0.6148090204589         26.64
+ MICROCYCLE DIIS UPDATE:                   46
+  46     0.0000059820696   -0.6148087013268         26.54
+  47     0.0000048741116   -0.6148090493179         26.39
+  48     0.0000040122410   -0.6148088318839         26.30
+  49     0.0000032707325   -0.6148090629859         26.42
+  50     0.0000026913866   -0.6148089150705         26.61
+ MICROCYCLE DIIS UPDATE:                   51
+  51     0.0000021949702   -0.6148090686820         26.17
+  52     0.0000018055552   -0.6148089681951         26.22
+  53     0.0000014731270   -0.6148090703826         25.96
+  54     0.0000012113912   -0.6148090021983         26.52
+  55     0.0000009887232   -0.6148090702276         26.26
+ MICROCYCLE DIIS UPDATE:                   56
+  56     0.0000008128143   -0.6148090240109         26.58
+  57     0.0000006636331   -0.6148090693312         26.32
+  58     0.0000005454145   -0.6148090380342         26.20
+  59     0.0000004454476   -0.6148090682452         26.38
+  60     0.0000003660045   -0.6148090470693         26.34
+ MICROCYCLE DIIS UPDATE:                   61
+  61     0.0000002990044   -0.6148090672199         26.57
+  62     0.0000002456218   -0.6148090529028         26.38
+  63     0.0000002007098   -0.6148090663503         26.54
+  64     0.0000001648411   -0.6148090566770         26.65
+  65     0.0000001347311   -0.6148090656556         26.82
+ MICROCYCLE DIIS UPDATE:                   66
+  66     0.0000001106316   -0.6148090591239         26.72
+  67     0.0000000904427   -0.6148090651214         26.43
+  68     0.0000000742517   -0.6148090607133         26.22
+  69     0.0000000607133   -0.6148090647211         25.89
+  70     0.0000000498362   -0.6148090617477         25.73
+ MICROCYCLE DIIS UPDATE:                   71
+  71     0.0000000407567   -0.6148090644269         25.88
+  72     0.0000000334498   -0.6148090624221         26.21
+  73     0.0000000273600   -0.6148090642138         26.13
+  74     0.0000000224517   -0.6148090628626         26.46
+  75     0.0000000183669   -0.6148090640612         26.28
+ MICROCYCLE DIIS UPDATE:                   76
+  76     0.0000000150700   -0.6148090631509         26.16
+  77     0.0000000123299   -0.6148090639529         26.02
+  78     0.0000000101154   -0.6148090633397         25.96
+  79     0.0000000082772   -0.6148090638766         26.04
+DLPNO CCSD Memory Stats
+-----------------------
+allocation count: 72706
+deallocation count: 72630
+total memory allocated: 1071.395950 GiB
+total memory deallocated: 1070.731606 GiB
+maximum memory in single allocation: 0.159028 GiB
+maximum memory consumption: 1.070209 GiB
+------------------------------------------------------------------
+ Iterations converged
+ CCSD correlation energy / hartree =        -0.614809063876581
+ CCSD total energy / hartree       =      -224.880389378206701
